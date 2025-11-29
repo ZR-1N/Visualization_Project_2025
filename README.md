@@ -40,12 +40,12 @@
 
 ## <a name="about"></a> 📖 关于本项目 (About This Project)
 
-此项目用于存放数据可视化课程实验五的相关代码
+此项目用于存放数据可视化课程实验五的相关代码。
 
 ## <a name="navigation"></a> 📚 仓库内容导航 (Repository Navigation)
 
-* `📁 /data_processing`: data_processing with python
-* `📁 /visualization`: visualization with D3.js
+* `📁 /data_processing`: Data processing with Python
+* `📁 /visualization`: Visualization with D3.js
 
 ## <a name="resources"></a> 🔗 相关资源 (Related Resources)
 
@@ -53,7 +53,7 @@
 
 我们非常欢迎各种形式的贡献！无论是提交 Issue 来报告 Bug、修正拼写，还是提交 Pull Request 来完善代码。
 
-也可以直接联系我:shangwenxuan.nku@gmail.com
+也可以直接联系我: <a href="mailto:shangwenxuan.nku@gmail.com">shangwenxuan.nku@gmail.com</a>
 
 请在贡献前阅读我们的 **[贡献指南 (CONTRIBUTING.md)](CONTRIBUTING.md)**。
 
