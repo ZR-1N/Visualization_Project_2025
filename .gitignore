@@ -1,3 +1,6 @@
+# ===========================
+# 1. 前端 / Node.js 部分
+# ===========================
 # Logs
 logs
 *.log
@@ -6,7 +9,7 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
+# Diagnostic reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
@@ -25,23 +28,23 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage
 .grunt
 
-# Bower dependency directory (https://bower.io/)
+# Bower dependency directory
 bower_components
 
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
+# Compiled binary addons
 build/Release
 
-# Dependency directories
+# Dependency directories (这是最重要的！)
 node_modules/
 jspm_packages/
 
-# Snowpack dependency directory (https://snowpack.dev/)
+# Snowpack dependency directory
 web_modules/
 
 # TypeScript cache
@@ -65,12 +68,12 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
+# dotenv environment variable files (保护 API Key 不被泄露)
 .env
 .env.*
 !.env.example
 
-# parcel-bundler cache (https://parceljs.org/)
+# parcel-bundler cache
 .cache
 .parcel-cache
 
@@ -84,16 +87,12 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
 
 # vuepress build output
 .vuepress/dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # Sveltekit cache directory
 .svelte-kit/
@@ -137,3 +136,48 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# ===========================
+# 2. Python 部分 (新增)
+# ===========================
+# 编译产生的字节码缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C 扩展
+*.so
+
+# Python 虚拟环境 (非常重要，绝对不能传到云端)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
+
+# 爬虫可能产生的调试日志
+*.log
+celerybeat-schedule
+
+# ===========================
+# 3. 系统与编辑器文件 (新增)
+# ===========================
+# Mac 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows 系统文件
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VS Code 配置文件 (个人设置不建议上传)
+.vscode/
+
+# JetBrains (PyCharm/WebStorm) 配置文件
+.idea/
