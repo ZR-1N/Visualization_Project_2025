@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Explorer: 计算机视觉演化图谱</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- 1. 基础布局设计 --- */
+        body {
+            background-color: #050505; /* 极黑背景 */
+            color: #e0e0e0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* 防止滚动 */
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 左侧控制面板 */
+        #sidebar {
+            width: 300px;
+            background: rgba(20, 20, 25, 0.95);
+            border-right: 1px solid #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            box-shadow: 5px 0 15px rgba(0,0,0,0.5);
+        }
+
+        /* 主画布区域 */
+        #main-view {
+            flex-grow: 1;
+            position: relative;
+            background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%); /* 星空背景 */
+        }
+
+        /* --- 2. UI 组件样式 --- */
+        h1 { font-size: 20px; color: #fff; margin-top: 0; letter-spacing: 1px; }
+        h2 { font-size: 14px; color: #888; margin-bottom: 20px; font-weight: 300; }
+        
+        .control-group { margin-bottom: 30px; }
+        label { display: block; font-size: 12px; color: #aaa; margin-bottom: 8px; font-weight: 600; }
+
+        /* 搜索框 */
+        #search-box {
+            width: 100%;
+            padding: 10px;
+            background: #2a2a35;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box; /* 防止padding撑破宽度 */
+            transition: border-color 0.3s;
+        }
+        #search-box:focus { outline: none; border-color: #ff9f1c; }
+
+        /* 年份滑块容器 */
+        .slider-container { display: flex; align-items: center; gap: 10px; }
+        #year-slider { flex-grow: 1; cursor: pointer; }
+        #year-display { font-size: 16px; font-weight: bold; color: #ff9f1c; width: 40px; text-align: right;}
+
+        /* 图例条 */
+        .legend-bar {
+            height: 10px;
+            width: 100%;
+            background: linear-gradient(to right, #000004, #57106e, #bc3754, #f98e09, #fcffa4);
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .legend-labels { display: flex; justify-content: space-between; font-size: 10px; color: #666; margin-top: 3px; }
+
+        /* 详情面板 (默认隐藏内容) */
+        #info-panel {
+            margin-top: auto; /* 推到底部 */
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        .info-title { font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 5px; line-height: 1.4;}
+        .info-meta { font-size: 12px; color: #ff9f1c; margin-bottom: 10px; }
+        .info-desc { font-size: 13px; color: #ccc; line-height: 1.5; max-height: 200px; overflow-y: auto; }
+        .tag { display: inline-block; padding: 2px 6px; background: #333; border-radius: 4px; font-size: 10px; margin-right: 4px; margin-top: 5px; color: #aaa;}
+
+        /* --- 3. D3 图表样式 --- */
+        #chart { width: 100%; height: 100%; }
+        
+        /* 点的样式 */
+        .dot { 
+            cursor: pointer; 
+            transition: opacity 0.3s ease; /* 平滑过渡 */
+        }
+        /* 搜索时不相关的点变暗 */
+        .dimmed { opacity: 0.05 !important; }
+        /* 选中的点高亮 */
+        .highlight { stroke: #fff; stroke-width: 2px; opacity: 1 !important; r: 6px !important; }
+
+        /* Tooltip */
+        #tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(4px);
+            padding: 8px 12px;
+            border-radius: 4px;
+            pointer-events: none;
+            display: none;
+            border: 1px solid #555;
+            font-size: 12px;
+            color: #fff;
+            z-index: 100;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>🌌 CV Explorer</h1>
+        <h2>20,000+ 篇顶会论文语义图谱</h2>
+
+        <div class="control-group">
+            <label>🔍 关键词搜索 (Search Topics)</label>
+            <input type="text" id="search-box" placeholder="输入 e.g. GAN, Transformer, NeRF...">
+        </div>
+
+        <div class="control-group">
+            <label>⏳ 时间旅行 (Time Travel)</label>
+            <div class="slider-container">
+                <span style="font-size:12px; color:#666">2015</span>
+                <input type="range" id="year-slider" min="2015" max="2024" value="2024" step="1">
+                <span id="year-display">ALL</span>
+            </div>
+            <div style="font-size: 10px; color: #555; margin-top: 5px;">* 拖动查看历年演变，最右为显示全部</div>
+        </div>
+
+        <div class="control-group">
+            <label>🎨 年份分布 (Color by Year)</label>
+            <div class="legend-bar"></div>
+            <div class="legend-labels">
+                <span>2015 (Dark)</span>
+                <span>2020</span>
+                <span>2024 (Bright)</span>
+            </div>
+        </div>
+
+        <div id="info-panel">
+            <div style="color: #555; font-style: italic; text-align: center; margin-top: 20px;">
+                点击图中的点<br>查看论文详情
+            </div>
+        </div>
+    </div>
+
+    <div id="main-view">
+        <div id="tooltip"></div>
+        <div id="chart"></div>
+    </div>
+
+    <script>
+        // --- 全局变量 ---
+        let allData = [];
+        let width, height;
+        const margin = 20;
+
+        // 设置画布
+        const chartContainer = document.getElementById("chart");
+        width = chartContainer.clientWidth;
+        height = chartContainer.clientHeight;
+
+        const svg = d3.select("#chart")
+            .append("svg")
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .attr("viewBox", [0, 0, width, height])
+            .style("cursor", "grab"); // 抓手图标
+
+        // 缩放层 (G)
+        const g = svg.append("g");
+
+        // 缩放行为
+        const zoom = d3.zoom()
+            .scaleExtent([0.5, 20]) // 缩放范围
+            .on("zoom", (event) => {
+                g.attr("transform", event.transform);
+            });
+        svg.call(zoom);
+
+        // 颜色比例尺 (Magma: 深黑紫 -> 亮黄)
+        // 这种配色在深色背景下看起来非常有科技感且符合时间逻辑
+        const colorScale = d3.scaleSequential(d3.interpolateMagma)
+            .domain([2014, 2025]); // 稍微放宽一点范围，让2015不要太黑，2024不要太白
+
+        // --- 加载数据 ---
+        d3.json("./data/final_data.json").then(function (data) {
+            allData = data.scatter;
+            console.log(`Loaded ${allData.length} papers.`);
+
+            // 坐标映射
+            const xExtent = d3.extent(allData, d => d.x);
+            const yExtent = d3.extent(allData, d => d.y);
+
+            const xScale = d3.scaleLinear()
+                .domain(xExtent)
+                .range([margin, width - margin]);
+
+            const yScale = d3.scaleLinear()
+                .domain(yExtent)
+                .range([height - margin, margin]);
+
+            // --- 渲染点 ---
+            // 为了性能，我们不绑定复杂数据到DOM，只绑定索引或轻量对象
+            const circles = g.selectAll("circle")
+                .data(allData)
+                .enter()
+                .append("circle")
+                .attr("class", "dot")
+                .attr("cx", d => xScale(d.x))
+                .attr("cy", d => yScale(d.y))
+                .attr("r", 1.8) // 默认半径
+                .attr("fill", d => colorScale(d.year))
+                .attr("opacity", 0.8);
+
+            // --- 交互逻辑 ---
+
+            // 1. Hover 提示框
+            circles.on("mouseover", function(event, d) {
+                d3.select("#tooltip")
+                    .style("display", "block")
+                    .style("left", (event.pageX + 15) + "px")
+                    .style("top", (event.pageY + 15) + "px")
+                    .html(`
+                        <div style="color:${colorScale(d.year)}">● ${d.year} ${d.conf}</div>
+                        <strong>${d.title}</strong>
+                    `);
+                
+                // 鼠标经过时稍微变大
+                d3.select(this).attr("r", 4).attr("opacity", 1);
+            })
+            .on("mouseout", function() {
+                d3.select("#tooltip").style("display", "none");
+                // 恢复原状 (需要判断是否被搜索高亮)
+                const isDimmed = d3.select(this).classed("dimmed");
+                if (!isDimmed) {
+                    d3.select(this).attr("r", 1.8).attr("opacity", 0.8);
+                }
+            });
+
+            // 2. 点击显示详情 (Side Panel)
+            circles.on("click", function(event, d) {
+                // 阻止事件冒泡
+                event.stopPropagation();
+
+                // 高亮选中点
+                d3.selectAll(".dot").classed("highlight", false).attr("r", 1.8);
+                d3.select(this).classed("highlight", true).attr("r", 8).raise(); // raise把点提到最上层
+
+                // 更新侧边栏
+                const kwsHtml = d.kws.map(k => `<span class="tag">${k}</span>`).join("");
+                const panel = d3.select("#info-panel");
+                panel.html(`
+                    <div class="info-meta" style="color:${colorScale(d.year)}">
+                        ${d.year} | ${d.conf}
+                    </div>
+                    <div class="info-title">${d.title}</div>
+                    <div style="font-size:12px; color:#888; margin-bottom:10px;">
+                        Authors: ${d.authors ? d.authors.slice(0, 100) + "..." : "Unknown"}
+                    </div>
+                    <div>${kwsHtml}</div>
+                    <hr style="border-color:#333; margin:15px 0;">
+                    <div class="info-desc">
+                        (Semantic Coordinate: ${d.x.toFixed(1)}, ${d.y.toFixed(1)})<br>
+                        This paper is clustered based on its abstract content.
+                    </div>
+                `);
+            });
+
+            // 点击空白处取消高亮
+            svg.on("click", () => {
+                d3.selectAll(".dot").classed("highlight", false).attr("r", 1.8);
+                d3.select("#info-panel").html(`
+                    <div style="color: #555; font-style: italic; text-align: center; margin-top: 20px;">
+                        点击图中的点<br>查看论文详情
+                    </div>
+                `);
+            });
+
+            // --- 控制器逻辑 ---
+
+            // A. 搜索功能
+            const searchBox = document.getElementById("search-box");
+            searchBox.addEventListener("input", (e) => {
+                const term = e.target.value.toLowerCase();
+                
+                if (term.length < 2) {
+                    // 搜索词太短，恢复原样
+                    circles.classed("dimmed", false).attr("r", 1.8);
+                    return;
+                }
+
+                circles.each(function(d) {
+                    // 匹配标题或关键词
+                    const match = d.title.toLowerCase().includes(term) || 
+                                  d.kws.some(k => k.includes(term));
+                    
+                    const el = d3.select(this);
+                    if (match) {
+                        el.classed("dimmed", false)
+                          .attr("r", 4)     // 匹配点变大
+                          .attr("opacity", 1)
+                          .raise();         // 提到最前
+                    } else {
+                        el.classed("dimmed", true)
+                          .attr("r", 1.0);  // 不匹配点变小
+                    }
+                });
+            });
+
+            // B. 年份滑块
+            const slider = document.getElementById("year-slider");
+            const yearDisplay = document.getElementById("year-display");
+            
+            slider.addEventListener("input", (e) => {
+                const year = parseInt(e.target.value);
+                
+                if (year === 2024) {
+                    // 设为2024时显示全部 (作为演示逻辑)
+                    yearDisplay.textContent = "ALL";
+                    circles.style("display", "block");
+                } else {
+                    yearDisplay.textContent = year;
+                    // 只显示 <= 当前年份的论文，或者只显示当年的
+                    // 这里我们做 "累积模式"：显示到该年份为止的所有论文
+                    circles.style("display", d => d.year <= year ? "block" : "none");
+                }
+            });
+
+        }).catch(err => {
+            console.error(err);
+            d3.select("#chart").html("<h3 style='color:red; text-align:center; margin-top:50px'>数据加载失败，请检查 Live Server</h3>");
+        });
+
+        // 窗口大小调整适配
+        window.addEventListener("resize", () => {
+            const w = chartContainer.clientWidth;
+            const h = chartContainer.clientHeight;
+            svg.attr("viewBox", [0, 0, w, h]);
+        });
+
+    </script>
+</body>
+</html>
