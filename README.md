@@ -1,4 +1,4 @@
-<p align="center">
+<div align="center">
   <a href="https://github.com/ZR-1N/Visualization_Project_2025/stargazers">
     <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ZR-1N/Visualization_Project_2025?style=for-the-badge&color=yellow">
   </a>
@@ -14,14 +14,14 @@
   <a href="https://github.com/ZR-1N/Visualization_Project_2025/issues">
     <img alt="Open Issues" src="https://img.shields.io/github/issues/ZR-1N/Visualization_Project_2025?style=for-the-badge&color=red">
   </a>
-</p>
+</div>
 
 
 <h1 align="center">Visualization_Project_2025</h1>
 
-<p align="center">
+<div align="center">
   <strong>Visualization_Project_2025</strong>
-</p>
+</div>
 
 
 ---
