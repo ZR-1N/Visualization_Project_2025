@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>游戏星空图（Starfield）</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+        }
+
+        #canvas {
+            position: absolute;
+            inset: 0;
+            display: block;
+            background: #ffffff;
+        }
+        /* 控制面板 */
+        #panel {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(255,255,255,0.97);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            width: 300px;
+            z-index: 10;
+        }
+
+            #panel h3 {
+                margin: 4px 0 8px 0;
+                font-size: 14px;
+            }
+
+            #panel input, #panel select, #panel button {
+                width: 100%;
+                padding: 8px;
+                margin: 6px 0;
+                box-sizing: border-box;
+            }
+
+        #legend {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+        .tooltip {
+            position: absolute;
+            pointer-events: none;
+            background: rgba(0,0,0,0.85);
+            color: #fff;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 13px;
+            z-index: 20;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div id="panel">
+        <h3>Starfield Controls</h3>
+        <!-- 搜索 -->
+        <input id="searchBox" placeholder="搜索游戏名 (含关键字)" />
+        <button id="searchBtn">定位并放大</button>
+
+        <!-- 大小模式 -->
+        <label for="sizeBy">大小表示：</label>
+        <select id="sizeBy">
+            <option value="players">在线人数 (player_count)</option>
+            <option value="reviews">评论数 (total_reviews)</option>
+        </select>
+
+        <!-- 缩放复位 -->
+        <button id="resetView">重置视图</button>
+
+        <div id="legend">
+            <strong>售价颜色区间：</strong>
+            <div>绿色 0–5$，蓝色 5–15$，紫色 15–35$，红色 &gt;35$（区间内颜色深浅表示价格高低）</div>
+            <div style="margin-top:6px;">
+                <strong>边框颜色（好评率）：</strong> ≥85% 绿色, 70–85% 蓝色, 40–70% 黄色, 20–40% 红色, 0–20% 深红色
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip" style="display:none;"></div>
+
+    <!-- d3 v7 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- main 脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
