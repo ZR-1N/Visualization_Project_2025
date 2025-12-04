@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Steam Game Constellation (Embedded Data)</title>
+  <style>
+    body { margin:0; background:#020617; color:#fff; font-family:sans-serif; }
+    #canvas { width:100vw; height:100vh; display:block; }
+    #tooltip {
+      position: absolute; background: rgba(0,0,0,0.8);
+      padding: 8px 12px; border-radius: 6px;
+      font-size: 13px; pointer-events:none; display:none;
+    }
+    #sidebar {
+      position:absolute; top:10px; left:10px;
+      background:rgba(0,0,0,0.5); padding:10px; border-radius:6px;
+    }
+    select { width:160px; margin-bottom:6px; }
+  </style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div>
+    Size by:
+    <select id="sizeBy">
+      <option value="player_count">Players</option>
+      <option value="review_count">Reviews</option>
+    </select>
+  </div>
+
+  <div>
+    Color by:
+    <select id="colorBy">
+      <option value="price">Price</option>
+      <option value="positive_rate">Positive Rate</option>
+    </select>
+  </div>
+
+  <div>
+    Genre:
+    <select id="genreFilter"></select>
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
+<div id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="script_embedded.js"></script>
+
+</body>
+</html>
