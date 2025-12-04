@@ -1,0 +1,49 @@
+{
+    "appid": 674020,
+    "name": "World War 3",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Polish<strong>*</strong>, Russian<strong>*</strong>, German<strong>*</strong>, French<strong>*</strong>, Arabic<strong>*</strong>, Turkish<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese, Korean<strong>*</strong>, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 22,
+    "steamcharts_avg2weeks": 29,
+    "reviews": {
+        "total_reviews": 23219,
+        "positive": 12567,
+        "negative": 10652,
+        "score": 5
+    }
+}

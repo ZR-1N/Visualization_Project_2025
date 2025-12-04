@@ -1,0 +1,126 @@
+{
+    "appid": 214950,
+    "name": "Total War: ROME II - Emperor Edition",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 1199,
+        "discount_percent": 80,
+        "initial_formatted": "$59.99",
+        "final_formatted": "$11.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 47,
+            "description": "LAN PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 48,
+            "description": "LAN Co-op"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 79,
+            "description": "Save Anytime"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German<strong>*</strong>, French<strong>*</strong>, Italian, Spanish - Spain, Russian, Polish, Czech, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        850010,
+        792520,
+        694880,
+        327280,
+        297831,
+        297830,
+        311380,
+        267630,
+        273381,
+        261050,
+        273380,
+        212301,
+        258270,
+        259800
+    ],
+    "metacritic": {
+        "score": 76,
+        "url": "https://www.metacritic.com/game/pc/total-war-rome-ii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 5389,
+    "steamcharts_avg2weeks": 5374,
+    "reviews": {
+        "total_reviews": 46029,
+        "positive": 39080,
+        "negative": 6949,
+        "score": 8
+    }
+}

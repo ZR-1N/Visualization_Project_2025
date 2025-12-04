@@ -1,0 +1,75 @@
+{
+    "appid": 1196590,
+    "name": "Resident Evil Village",
+    "price": {
+        "currency": "USD",
+        "initial": 3999,
+        "final": 3999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$39.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Traditional Chinese, Arabic, Thai, Spanish - Latin America<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1731080,
+        1731081,
+        1456361,
+        1456360,
+        1608280,
+        1456362,
+        1456363
+    ],
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/resident-evil-village?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1542,
+    "steamcharts_avg2weeks": 1526,
+    "reviews": {
+        "total_reviews": 57013,
+        "positive": 54079,
+        "negative": 2934,
+        "score": 8
+    }
+}

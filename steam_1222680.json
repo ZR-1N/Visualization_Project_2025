@@ -1,0 +1,102 @@
+{
+    "appid": 1222680,
+    "name": "Need for Speed™ Heat",
+    "price": {
+        "currency": "USD",
+        "initial": 6999,
+        "final": 699,
+        "discount_percent": 90,
+        "initial_formatted": "$69.99",
+        "final_formatted": "$6.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "9",
+            "description": "Racing"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Korean, Portuguese - Brazil, Simplified Chinese, Traditional Chinese, Arabic, Japanese<strong>*</strong>, Polish<strong>*</strong>, Russian<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1281880,
+        1281881
+    ],
+    "metacritic": {
+        "score": 72,
+        "url": "https://www.metacritic.com/game/pc/need-for-speed-heat?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2769,
+    "steamcharts_avg2weeks": 2767,
+    "reviews": {
+        "total_reviews": 57332,
+        "positive": 48341,
+        "negative": 8991,
+        "score": 8
+    }
+}

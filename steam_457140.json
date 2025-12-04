@@ -1,0 +1,62 @@
+{
+    "appid": 457140,
+    "name": "Oxygen Not Included",
+    "price": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 749,
+        "discount_percent": 70,
+        "initial_formatted": "$24.99",
+        "final_formatted": "$7.49"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Simplified Chinese<strong>*</strong>, Korean<strong>*</strong>, Russian<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        4157740,
+        1452490,
+        2952300,
+        3302470,
+        3655420,
+        1244160
+    ],
+    "metacritic": {
+        "score": 85,
+        "url": "https://www.metacritic.com/game/pc/oxygen-not-included?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 10470,
+    "steamcharts_avg2weeks": 11196,
+    "reviews": {
+        "total_reviews": 49910,
+        "positive": 47882,
+        "negative": 2028,
+        "score": 9
+    }
+}

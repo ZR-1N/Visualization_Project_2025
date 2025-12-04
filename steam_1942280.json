@@ -1,0 +1,103 @@
+{
+    "appid": 1942280,
+    "name": "Brotato",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 299,
+        "discount_percent": 40,
+        "initial_formatted": "$4.99",
+        "final_formatted": "$2.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 39,
+            "description": "Shared/Split Screen Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English, French, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese, Italian, Turkish",
+    "dlc": [
+        2868390,
+        3281080
+    ],
+    "metacritic": null,
+    "player_count": 3213,
+    "steamcharts_avg2weeks": 3213,
+    "reviews": {
+        "total_reviews": 29161,
+        "positive": 28189,
+        "negative": 972,
+        "score": 9
+    }
+}

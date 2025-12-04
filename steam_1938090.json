@@ -1,0 +1,152 @@
+{
+    "appid": 1938090,
+    "name": "Call of Duty®",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 65,
+            "description": "Subtitle Options"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Korean, Polish, Russian, Traditional Chinese, Japanese<strong>*</strong>, Spanish - Latin America<strong>*</strong>, Arabic, Simplified Chinese<strong>*</strong>, Portuguese - Brazil<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3203410,
+        3997750,
+        3696030,
+        3159170,
+        3159180,
+        3159190,
+        3159200,
+        3159210,
+        3159220,
+        3159230,
+        3159240,
+        3159250,
+        3159260,
+        3159270,
+        3159280,
+        3159300,
+        2790750,
+        2790730,
+        2790710,
+        2790670,
+        2790660,
+        2783780,
+        2795080,
+        2783770,
+        2775840,
+        2731850,
+        2686650,
+        2625050,
+        2596430,
+        2534810,
+        2493660,
+        2459970,
+        2433000,
+        2396490,
+        2387940,
+        2354080,
+        2316850,
+        2278280,
+        2137910,
+        2127791,
+        2127790,
+        2053671
+    ],
+    "metacritic": null,
+    "player_count": 43722,
+    "steamcharts_avg2weeks": 43275,
+    "reviews": {
+        "total_reviews": 367978,
+        "positive": 218156,
+        "negative": 149822,
+        "score": 5
+    }
+}

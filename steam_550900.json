@@ -1,0 +1,73 @@
+{
+    "appid": 550900,
+    "name": "Metin2",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Arabic, Greek, Dutch, Polish, Portuguese - Portugal, Romanian, Russian, Czech, Turkish, Hungarian, Danish",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 0,
+    "steamcharts_avg2weeks": 1,
+    "reviews": {
+        "total_reviews": 2602,
+        "positive": 1774,
+        "negative": 828,
+        "score": 5
+    }
+}

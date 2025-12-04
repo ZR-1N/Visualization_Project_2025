@@ -1,0 +1,75 @@
+{
+    "appid": 241930,
+    "name": "Middle-earth™: Shadow of Mordor™",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 399,
+        "discount_percent": 80,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$3.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": null,
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Polish, Portuguese - Brazil<strong>*</strong>, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        318550,
+        318420,
+        318411,
+        313371,
+        313370,
+        313380,
+        318390,
+        313375,
+        318414,
+        318410,
+        313374,
+        318412,
+        313373,
+        313381,
+        322060,
+        311670
+    ],
+    "metacritic": {
+        "score": 84,
+        "url": "https://www.metacritic.com/game/pc/middle-earth-shadow-of-mordor?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 993,
+    "steamcharts_avg2weeks": 960,
+    "reviews": {
+        "total_reviews": 47400,
+        "positive": 43565,
+        "negative": 3835,
+        "score": 8
+    }
+}

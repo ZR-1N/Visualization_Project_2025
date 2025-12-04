@@ -1,0 +1,84 @@
+{
+    "appid": 2567870,
+    "name": "Chained Together",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 39,
+            "description": "Shared/Split Screen Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 625,
+    "steamcharts_avg2weeks": 758,
+    "reviews": {
+        "total_reviews": 22382,
+        "positive": 20448,
+        "negative": 1934,
+        "score": 8
+    }
+}

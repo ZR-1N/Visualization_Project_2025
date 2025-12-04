@@ -1,0 +1,111 @@
+{
+    "appid": 245170,
+    "name": "Skullgirls 2nd Encore",
+    "price": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 2499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$24.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Japanese<strong>*</strong>, Portuguese - Brazil<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1557981,
+        1744550,
+        1557980,
+        1542600,
+        1549100,
+        2086220,
+        2659510
+    ],
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/skullgirls?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 126,
+    "steamcharts_avg2weeks": 126,
+    "reviews": {
+        "total_reviews": 17344,
+        "positive": 14892,
+        "negative": 2452,
+        "score": 8
+    }
+}

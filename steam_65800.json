@@ -1,0 +1,153 @@
+{
+    "appid": 65800,
+    "name": "Dungeon Defenders",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, French, German, Italian, Spanish - Spain",
+    "dlc": [
+        3971330,
+        3462540,
+        3359180,
+        238230,
+        3086970,
+        204387,
+        204380,
+        203700,
+        202520,
+        202521,
+        222680,
+        208546,
+        204384,
+        208545,
+        208544,
+        204383,
+        208543,
+        202524,
+        208541,
+        208542,
+        208540,
+        204382,
+        204388,
+        204386,
+        204385,
+        3228700,
+        204381,
+        203702,
+        203701,
+        202523,
+        2470720,
+        3228710,
+        3595260
+    ],
+    "metacritic": {
+        "score": 81,
+        "url": "https://www.metacritic.com/game/pc/dungeon-defenders?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 290,
+    "steamcharts_avg2weeks": 300,
+    "reviews": {
+        "total_reviews": 13501,
+        "positive": 12524,
+        "negative": 977,
+        "score": 8
+    }
+}

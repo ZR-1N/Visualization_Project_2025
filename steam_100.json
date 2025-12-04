@@ -1,0 +1,71 @@
+{
+    "appid": 100,
+    "name": "Counter-Strike: Condition Zero",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English, French, German, Italian, Spanish - Spain, Simplified Chinese, Traditional Chinese, Korean",
+    "dlc": null,
+    "metacritic": {
+        "score": 65,
+        "url": "https://www.metacritic.com/game/pc/counter-strike-condition-zero?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 51,
+    "steamcharts_avg2weeks": 42,
+    "reviews": {
+        "total_reviews": 1788,
+        "positive": 1650,
+        "negative": 138,
+        "score": 8
+    }
+}

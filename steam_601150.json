@@ -1,0 +1,116 @@
+{
+    "appid": 601150,
+    "name": "Devil May Cry 5",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Portuguese - Brazil, Polish, Russian, Simplified Chinese, Traditional Chinese, Japanese<strong>*</strong>, Korean<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1432640,
+        1432641,
+        1432642,
+        1432643,
+        1050460,
+        941966,
+        941967,
+        941968,
+        941969,
+        941970,
+        941971,
+        941972,
+        941973,
+        941962,
+        941963,
+        941964,
+        940500,
+        940501,
+        941950,
+        941951,
+        941952,
+        941953,
+        941954,
+        941955,
+        941956,
+        941957,
+        941958,
+        941959,
+        941960,
+        941961,
+        941965,
+        1426700
+    ],
+    "metacritic": {
+        "score": 89,
+        "url": "https://www.metacritic.com/game/pc/devil-may-cry-5?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1140,
+    "steamcharts_avg2weeks": 1192,
+    "reviews": {
+        "total_reviews": 47860,
+        "positive": 45548,
+        "negative": 2312,
+        "score": 9
+    }
+}

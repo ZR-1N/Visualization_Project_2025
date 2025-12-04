@@ -1,0 +1,154 @@
+{
+    "appid": 380600,
+    "name": "Fishing Planet",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        }
+    ],
+    "genres": [
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English, French, German, Polish, Russian, Ukrainian, Spanish - Spain, Dutch, Portuguese - Brazil, Simplified Chinese, Italian, Traditional Chinese, Japanese",
+    "dlc": [
+        3743490,
+        3743500,
+        2922540,
+        2922530,
+        1200349,
+        3351850,
+        1804840,
+        2922520,
+        3376360,
+        1200348,
+        496432,
+        730616,
+        730617,
+        1200341,
+        1804849,
+        1804844,
+        1200342,
+        1200346,
+        1200344,
+        3376390,
+        1000715,
+        730614,
+        730619,
+        1000712,
+        591986,
+        1000719,
+        496438,
+        3376370,
+        3376380,
+        1200343,
+        496439,
+        1804842,
+        591971,
+        1804843,
+        1804848,
+        1200345,
+        496431,
+        423369,
+        591984,
+        3255720,
+        1804846,
+        730611,
+        422473,
+        1000714,
+        591985,
+        3376400,
+        2654610,
+        1804845,
+        730615,
+        730612,
+        730613,
+        1200347,
+        1200340,
+        1000716,
+        1000717,
+        1000718,
+        423366,
+        423365,
+        423364,
+        423363,
+        423368,
+        591983,
+        423367,
+        730610
+    ],
+    "metacritic": null,
+    "player_count": 3253,
+    "steamcharts_avg2weeks": 3224,
+    "reviews": {
+        "total_reviews": 26607,
+        "positive": 22436,
+        "negative": 4171,
+        "score": 8
+    }
+}

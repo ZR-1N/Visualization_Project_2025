@@ -1,0 +1,135 @@
+{
+    "appid": 304930,
+    "name": "Unturned",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 47,
+            "description": "LAN PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 48,
+            "description": "LAN Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": [
+        306460
+    ],
+    "metacritic": null,
+    "player_count": 10133,
+    "steamcharts_avg2weeks": 9881,
+    "reviews": {
+        "total_reviews": 219714,
+        "positive": 199515,
+        "negative": 20199,
+        "score": 8
+    }
+}

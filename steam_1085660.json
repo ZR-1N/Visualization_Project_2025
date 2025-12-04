@@ -1,0 +1,105 @@
+{
+    "appid": 1085660,
+    "name": "Destiny 2",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 65,
+            "description": "Subtitle Options"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Polish<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Spanish - Latin America<strong>*</strong>, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3186540,
+        3186500,
+        3489050,
+        3186490,
+        3205620,
+        3700550,
+        3952700,
+        2336880,
+        1945340,
+        1656330,
+        1656370,
+        1314563,
+        1090200,
+        1090150,
+        1745440,
+        1569630
+    ],
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/destiny-2?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 38440,
+    "steamcharts_avg2weeks": 37759,
+    "reviews": {
+        "total_reviews": 374020,
+        "positive": 293128,
+        "negative": 80892,
+        "score": 6
+    }
+}

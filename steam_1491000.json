@@ -1,0 +1,94 @@
+{
+    "appid": 1491000,
+    "name": "War Robots: Frontiers",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 65,
+            "description": "Subtitle Options"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, French, Japanese, Polish, Russian, Traditional Chinese, Turkish, Korean<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3768870,
+        3556530,
+        3556540,
+        3556520
+    ],
+    "metacritic": null,
+    "player_count": 297,
+    "steamcharts_avg2weeks": 314,
+    "reviews": {
+        "total_reviews": 2045,
+        "positive": 1379,
+        "negative": 666,
+        "score": 5
+    }
+}

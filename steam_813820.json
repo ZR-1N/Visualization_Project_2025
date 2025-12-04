@@ -1,0 +1,57 @@
+{
+    "appid": 813820,
+    "name": "Realm Royale Reforged",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        },
+        {
+            "id": "70",
+            "description": "Early Access"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Polish, Russian, Portuguese - Portugal, Japanese, Spanish - Latin America<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 1,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 24231,
+        "positive": 17705,
+        "negative": 6526,
+        "score": 6
+    }
+}

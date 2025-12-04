@@ -1,0 +1,69 @@
+{
+    "appid": 761890,
+    "name": "Albion Online",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Portuguese - Brazil, Polish, Russian, Portuguese - Portugal, Spanish - Latin America, Korean, Simplified Chinese, Italian, Japanese, Traditional Chinese, Indonesian, Arabic, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 9392,
+    "steamcharts_avg2weeks": 9409,
+    "reviews": {
+        "total_reviews": 25837,
+        "positive": 19341,
+        "negative": 6496,
+        "score": 6
+    }
+}

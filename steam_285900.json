@@ -1,0 +1,102 @@
+{
+    "appid": 285900,
+    "name": "Gang Beasts",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 799,
+        "discount_percent": 60,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$7.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Portuguese - Brazil, Japanese, Korean, Simplified Chinese, Traditional Chinese",
+    "dlc": [
+        1003800
+    ],
+    "metacritic": null,
+    "player_count": 232,
+    "steamcharts_avg2weeks": 242,
+    "reviews": {
+        "total_reviews": 28983,
+        "positive": 24552,
+        "negative": 4431,
+        "score": 8
+    }
+}

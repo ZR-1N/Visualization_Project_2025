@@ -1,0 +1,73 @@
+{
+    "appid": 201810,
+    "name": "Wolfenstein: The New Order",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Polish, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        426820
+    ],
+    "metacritic": {
+        "score": 81,
+        "url": "https://www.metacritic.com/game/pc/wolfenstein-the-new-order?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 366,
+    "steamcharts_avg2weeks": 365,
+    "reviews": {
+        "total_reviews": 32533,
+        "positive": 29359,
+        "negative": 3174,
+        "score": 8
+    }
+}

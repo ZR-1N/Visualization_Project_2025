@@ -1,0 +1,82 @@
+{
+    "appid": 250900,
+    "name": "The Binding of Isaac: Rebirth",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3353470,
+        1426300,
+        401920,
+        570660,
+        322660
+    ],
+    "metacritic": null,
+    "player_count": 19912,
+    "steamcharts_avg2weeks": 20232,
+    "reviews": {
+        "total_reviews": 149115,
+        "positive": 144908,
+        "negative": 4207,
+        "score": 9
+    }
+}

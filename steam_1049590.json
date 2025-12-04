@@ -1,0 +1,76 @@
+{
+    "appid": 1049590,
+    "name": "Eternal Return",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Japanese<strong>*</strong>, Simplified Chinese, Korean<strong>*</strong>, Traditional Chinese, French, German, Spanish - Spain, Portuguese - Portugal, Spanish - Latin America, Russian, Thai, Vietnamese, Portuguese - Brazil<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2404310,
+        1300410
+    ],
+    "metacritic": null,
+    "player_count": 9715,
+    "steamcharts_avg2weeks": 10850,
+    "reviews": {
+        "total_reviews": 12606,
+        "positive": 10194,
+        "negative": 2412,
+        "score": 8
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "appid": 113400,
+    "name": "APB Reloaded",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 119,
+    "steamcharts_avg2weeks": 117,
+    "reviews": {
+        "total_reviews": 19765,
+        "positive": 11874,
+        "negative": 7891,
+        "score": 5
+    }
+}

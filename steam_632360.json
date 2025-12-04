@@ -1,0 +1,130 @@
+{
+    "appid": 632360,
+    "name": "Risk of Rain 2",
+    "price": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 824,
+        "discount_percent": 67,
+        "initial_formatted": "$24.99",
+        "final_formatted": "$8.24"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Simplified Chinese, Turkish",
+    "dlc": [
+        2781620,
+        2306620,
+        1607890,
+        1236890,
+        1905390,
+        3055680
+    ],
+    "metacritic": {
+        "score": 85,
+        "url": "https://www.metacritic.com/game/pc/risk-of-rain-2?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 19261,
+    "steamcharts_avg2weeks": 19588,
+    "reviews": {
+        "total_reviews": 227559,
+        "positive": 216209,
+        "negative": 11350,
+        "score": 9
+    }
+}

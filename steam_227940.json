@@ -1,0 +1,81 @@
+{
+    "appid": 227940,
+    "name": "Heroes & Generals",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Czech, Polish, Russian, Turkish, Portuguese - Brazil, Simplified Chinese, Korean, Japanese<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 3,
+    "steamcharts_avg2weeks": 3,
+    "reviews": {
+        "total_reviews": 55768,
+        "positive": 34692,
+        "negative": 21076,
+        "score": 5
+    }
+}

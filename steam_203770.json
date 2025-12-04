@@ -1,0 +1,89 @@
+{
+    "appid": 203770,
+    "name": "Crusader Kings II",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        }
+    ],
+    "genres": [
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English, French, German, Spanish - Spain",
+    "dlc": [
+        1538960,
+        1167860,
+        756660,
+        949870,
+        640140,
+        530780,
+        449980,
+        394320,
+        354330,
+        329010,
+        292982,
+        226667,
+        210908,
+        210906,
+        279600,
+        210902,
+        210895,
+        203778,
+        449981,
+        394321,
+        354331,
+        616180,
+        616170,
+        616210,
+        616160,
+        329013,
+        326530,
+        226666,
+        226665,
+        203776,
+        226671,
+        592800
+    ],
+    "metacritic": {
+        "score": 82,
+        "url": "https://www.metacritic.com/game/pc/crusader-kings-ii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1375,
+    "steamcharts_avg2weeks": 1308,
+    "reviews": {
+        "total_reviews": 47358,
+        "positive": 43111,
+        "negative": 4247,
+        "score": 8
+    }
+}

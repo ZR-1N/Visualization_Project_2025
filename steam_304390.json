@@ -1,0 +1,115 @@
+{
+    "appid": 304390,
+    "name": "FOR HONOR™",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Dutch, Japanese<strong>*</strong>, Korean, Polish, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese, Traditional Chinese, Czech<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        4080100,
+        3888050,
+        3854280,
+        3642940,
+        3534380,
+        3407080,
+        3255770,
+        3255730,
+        3255750,
+        3178740,
+        3028750,
+        3062480,
+        2914620,
+        2914600,
+        2914640,
+        2845690,
+        2625100,
+        2697740,
+        2541870,
+        2478490,
+        2235540,
+        2383414,
+        2285964,
+        2130700,
+        2235284,
+        2024830,
+        1976780,
+        1882102,
+        1641940,
+        1837260,
+        1483730,
+        1366900,
+        3340610,
+        3793350,
+        4080120
+    ],
+    "metacritic": {
+        "score": 76,
+        "url": "https://www.metacritic.com/game/pc/for-honor?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2110,
+    "steamcharts_avg2weeks": 1900,
+    "reviews": {
+        "total_reviews": 78284,
+        "positive": 54163,
+        "negative": 24121,
+        "score": 5
+    }
+}

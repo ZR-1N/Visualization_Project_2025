@@ -1,0 +1,77 @@
+{
+    "appid": 372000,
+    "name": "Tree of Savior (English Ver.)",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        }
+    ],
+    "genres": [
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English, Portuguese - Brazil, German, Simplified Chinese, Portuguese - Portugal, Russian, Thai",
+    "dlc": [
+        1920920,
+        2102090,
+        1861200,
+        1802960,
+        1680820,
+        1573050,
+        1543180,
+        1499440,
+        1413280,
+        1384240,
+        1353770,
+        1335990,
+        1278590,
+        1279460,
+        1873520
+    ],
+    "metacritic": null,
+    "player_count": 161,
+    "steamcharts_avg2weeks": 159,
+    "reviews": {
+        "total_reviews": 10349,
+        "positive": 6072,
+        "negative": 4277,
+        "score": 5
+    }
+}

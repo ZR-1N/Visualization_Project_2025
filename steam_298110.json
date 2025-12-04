@@ -1,0 +1,69 @@
+{
+    "appid": 298110,
+    "name": "Far Cry® 4",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 449,
+        "discount_percent": 85,
+        "initial_formatted": "$29.99",
+        "final_formatted": "$4.49"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Czech, Danish, Dutch, Finnish, Japanese<strong>*</strong>, Korean, Polish, Portuguese - Brazil<strong>*</strong>, Russian, Swedish, Norwegian, Simplified Chinese, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        324340,
+        324344,
+        324342,
+        324343,
+        338620
+    ],
+    "metacritic": {
+        "score": 80,
+        "url": "https://www.metacritic.com/game/pc/far-cry-4?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2506,
+    "steamcharts_avg2weeks": 2453,
+    "reviews": {
+        "total_reviews": 24195,
+        "positive": 19628,
+        "negative": 4567,
+        "score": 8
+    }
+}

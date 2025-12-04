@@ -1,0 +1,72 @@
+{
+    "appid": 322170,
+    "name": "Geometry Dash",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 46324,
+    "steamcharts_avg2weeks": 44127,
+    "reviews": {
+        "total_reviews": 223232,
+        "positive": 208594,
+        "negative": 14638,
+        "score": 8
+    }
+}

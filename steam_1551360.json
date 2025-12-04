@@ -1,0 +1,157 @@
+{
+    "appid": 1551360,
+    "name": "Forza Horizon 5",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 5999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$59.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "9",
+            "description": "Racing"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Czech, Hungarian, Japanese<strong>*</strong>, Korean<strong>*</strong>, Polish, Portuguese - Brazil<strong>*</strong>, Russian, Simplified Chinese<strong>*</strong>, Spanish - Latin America<strong>*</strong>, Traditional Chinese<strong>*</strong>, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3339980,
+        3051730,
+        2997790,
+        2676380,
+        2638820,
+        1613284,
+        1648020,
+        1613282,
+        1613285,
+        1613283,
+        1613280,
+        1613281,
+        1764060,
+        1764061,
+        1764062,
+        1812150,
+        1812151,
+        1812152,
+        1812153,
+        1824140,
+        1824141,
+        1824142,
+        1824143,
+        1846790,
+        1846791,
+        1852790,
+        1846792,
+        1890180,
+        1890181,
+        1890182,
+        1890183,
+        1919260,
+        1919261,
+        1919262,
+        1919263,
+        1949470,
+        1949471,
+        1949472,
+        1949473,
+        1949474,
+        1949475,
+        1949476,
+        1949477,
+        2013600,
+        2013620,
+        2013621,
+        2507010,
+        2614920,
+        2738880,
+        2814020,
+        2868420,
+        2894270
+    ],
+    "metacritic": null,
+    "player_count": 18301,
+    "steamcharts_avg2weeks": 19876,
+    "reviews": {
+        "total_reviews": 91002,
+        "positive": 80450,
+        "negative": 10552,
+        "score": 8
+    }
+}

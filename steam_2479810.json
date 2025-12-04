@@ -1,0 +1,88 @@
+{
+    "appid": 2479810,
+    "name": "Gray Zone Warfare",
+    "price": {
+        "currency": "USD",
+        "initial": 3999,
+        "final": 3999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$39.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "70",
+            "description": "Early Access"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Czech, Japanese, Korean, Polish, Portuguese - Brazil, Simplified Chinese, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 898,
+    "steamcharts_avg2weeks": 902,
+    "reviews": {
+        "total_reviews": 43139,
+        "positive": 30568,
+        "negative": 12571,
+        "score": 6
+    }
+}

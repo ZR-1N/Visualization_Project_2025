@@ -1,0 +1,72 @@
+{
+    "appid": 1118200,
+    "name": "People Playground",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 4425,
+    "steamcharts_avg2weeks": 4354,
+    "reviews": {
+        "total_reviews": 175236,
+        "positive": 173019,
+        "negative": 2217,
+        "score": 9
+    }
+}

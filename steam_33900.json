@@ -1,0 +1,77 @@
+{
+    "appid": 33900,
+    "name": "Arma 2",
+    "price": {
+        "currency": "USD",
+        "initial": 1299,
+        "final": 259,
+        "discount_percent": 80,
+        "initial_formatted": "$12.99",
+        "final_formatted": "$2.59"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        33934
+    ],
+    "metacritic": {
+        "score": 77,
+        "url": "https://www.metacritic.com/game/pc/arma-ii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 0,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 1865,
+        "positive": 1558,
+        "negative": 307,
+        "score": 8
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "appid": 700330,
+    "name": "SCP: Secret Laboratory",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Polish, Italian, German, Spanish - Spain, Czech, Russian, French, Traditional Chinese, Korean, Hungarian, Simplified Chinese, Spanish - Latin America, Serbian, Portuguese - Brazil, Romanian, Thai, Vietnamese, Catalan, Lithuanian, Dutch, Turkish, Galician<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 4408,
+    "steamcharts_avg2weeks": 4923,
+    "reviews": {
+        "total_reviews": 89130,
+        "positive": 82276,
+        "negative": 6854,
+        "score": 8
+    }
+}

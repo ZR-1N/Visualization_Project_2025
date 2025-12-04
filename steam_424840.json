@@ -1,0 +1,77 @@
+{
+    "appid": 424840,
+    "name": "Little Nightmares",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Korean, Portuguese - Brazil, Russian, Traditional Chinese, Japanese, Polish, Spanish - Latin America, Swedish",
+    "dlc": [
+        640920,
+        584095,
+        584096,
+        584097,
+        584090,
+        584091,
+        584092,
+        584094,
+        601710
+    ],
+    "metacritic": {
+        "score": 81,
+        "url": "https://www.metacritic.com/game/pc/little-nightmares?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 181,
+    "steamcharts_avg2weeks": 194,
+    "reviews": {
+        "total_reviews": 35022,
+        "positive": 32990,
+        "negative": 2032,
+        "score": 8
+    }
+}

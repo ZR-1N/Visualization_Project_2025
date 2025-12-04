@@ -1,0 +1,135 @@
+{
+    "appid": 230410,
+    "name": "Warframe",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German, French, Italian, Korean, Spanish - Spain, Simplified Chinese, Russian, Japanese, Polish, Portuguese - Brazil, Traditional Chinese, Turkish, Ukrainian, Thai<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2803600,
+        3559000,
+        3327800,
+        3658020,
+        4037750,
+        4037760,
+        3908560,
+        3908530,
+        3908540,
+        3908550,
+        3787460,
+        3778430,
+        2648430,
+        2633910
+    ],
+    "metacritic": {
+        "score": 69,
+        "url": "https://www.metacritic.com/game/pc/warframe?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 73222,
+    "steamcharts_avg2weeks": 73457,
+    "reviews": {
+        "total_reviews": 279882,
+        "positive": 256668,
+        "negative": 23214,
+        "score": 8
+    }
+}

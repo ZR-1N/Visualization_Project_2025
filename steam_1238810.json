@@ -1,0 +1,71 @@
+{
+    "appid": 1238810,
+    "name": "Battlefield™ V",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 4999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$49.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Arabic<strong>*</strong>, Japanese<strong>*</strong>, Korean, Polish, Portuguese - Brazil<strong>*</strong>, Russian, Simplified Chinese, Spanish - Latin America<strong>*</strong>, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1264170,
+        1264171
+    ],
+    "metacritic": null,
+    "player_count": 3455,
+    "steamcharts_avg2weeks": 3977,
+    "reviews": {
+        "total_reviews": 41097,
+        "positive": 28998,
+        "negative": 12099,
+        "score": 6
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "appid": 2358720,
+    "name": "Black Myth: Wukong",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 5999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$59.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese<strong>*</strong>, Traditional Chinese, Italian, Turkish, Thai, Czech<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2672610,
+        3288260
+    ],
+    "metacritic": null,
+    "player_count": 17024,
+    "steamcharts_avg2weeks": 17081,
+    "reviews": {
+        "total_reviews": 81146,
+        "positive": 76305,
+        "negative": 4841,
+        "score": 8
+    }
+}

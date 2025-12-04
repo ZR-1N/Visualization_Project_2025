@@ -1,0 +1,125 @@
+{
+    "appid": 236850,
+    "name": "Europa Universalis IV",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 4999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$49.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, German, French, Spanish - Spain",
+    "dlc": [
+        1896050,
+        2854750,
+        2502910,
+        2223660,
+        2012010,
+        1416420,
+        1259360,
+        827240,
+        721340,
+        538020,
+        436120,
+        373370,
+        338160,
+        279623,
+        279620,
+        241369,
+        1756130,
+        960920,
+        760070,
+        625050,
+        2721310,
+        617960,
+        617961,
+        2412250,
+        2412251,
+        2591320,
+        2602580,
+        1756190,
+        338162,
+        2504220,
+        241373,
+        414301,
+        539260
+    ],
+    "metacritic": {
+        "score": 87,
+        "url": "https://www.metacritic.com/game/pc/europa-universalis-iv?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 7629,
+    "steamcharts_avg2weeks": 7629,
+    "reviews": {
+        "total_reviews": 68062,
+        "positive": 59343,
+        "negative": 8719,
+        "score": 8
+    }
+}

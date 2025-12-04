@@ -1,0 +1,114 @@
+{
+    "appid": 440,
+    "name": "Team Fortress 2",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 14,
+            "description": "Commentary available"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Danish, Dutch, Finnish, French, German, Italian, Japanese, Norwegian, Polish, Portuguese - Portugal, Russian, Simplified Chinese, Spanish - Spain, Swedish, Traditional Chinese, Korean, Czech, Hungarian, Portuguese - Brazil, Turkish, Greek, Bulgarian, Romanian, Thai, Ukrainian, Spanish - Latin America<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        629330
+    ],
+    "metacritic": {
+        "score": 92,
+        "url": "https://www.metacritic.com/game/pc/team-fortress-2?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 34275,
+    "steamcharts_avg2weeks": 34275,
+    "reviews": {
+        "total_reviews": 722079,
+        "positive": 645860,
+        "negative": 76219,
+        "score": 8
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "appid": 444200,
+    "name": "World of Tanks Blitz",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 79,
+            "description": "Save Anytime"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 77,
+            "description": "Touch Only Option"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Arabic<strong>*</strong>, Czech<strong>*</strong>, Finnish<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Polish<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Thai<strong>*</strong>, Traditional Chinese<strong>*</strong>, Turkish<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Ukrainian<strong>*</strong>, Hindi<strong>*</strong>, Vietnamese<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2446220,
+        2994440,
+        2994450,
+        2994270,
+        2994300,
+        2994290,
+        2994310,
+        2994350,
+        2994370,
+        2994360,
+        2994420,
+        2994410,
+        2994380,
+        2994400,
+        2994390
+    ],
+    "metacritic": null,
+    "player_count": 7666,
+    "steamcharts_avg2weeks": 6956,
+    "reviews": {
+        "total_reviews": 23730,
+        "positive": 17740,
+        "negative": 5990,
+        "score": 6
+    }
+}

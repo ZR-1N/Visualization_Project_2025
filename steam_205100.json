@@ -1,0 +1,97 @@
+{
+    "appid": 205100,
+    "name": "Dishonored",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        212894,
+        212893,
+        208575,
+        208570,
+        455050
+    ],
+    "metacritic": {
+        "score": 91,
+        "url": "https://www.metacritic.com/game/pc/dishonored?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 590,
+    "steamcharts_avg2weeks": 598,
+    "reviews": {
+        "total_reviews": 48587,
+        "positive": 47351,
+        "negative": 1236,
+        "score": 9
+    }
+}

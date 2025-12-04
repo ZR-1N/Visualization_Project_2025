@@ -1,0 +1,104 @@
+{
+    "appid": 108600,
+    "name": "Project Zomboid",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 39,
+            "description": "Shared/Split Screen Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "70",
+            "description": "Early Access"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Danish, Dutch, Hungarian, Norwegian, Polish, Portuguese - Portugal, Russian, Turkish, Japanese, Simplified Chinese, Portuguese - Brazil, Finnish, Korean, Thai, Traditional Chinese, Ukrainian",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 20178,
+    "steamcharts_avg2weeks": 19415,
+    "reviews": {
+        "total_reviews": 180821,
+        "positive": 169704,
+        "negative": 11117,
+        "score": 8
+    }
+}

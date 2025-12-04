@@ -1,0 +1,85 @@
+{
+    "appid": 1468810,
+    "name": "鬼谷八荒 Tale of Immortal",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "Simplified Chinese, Traditional Chinese, English, Korean",
+    "dlc": [
+        2408730,
+        1536810,
+        3294480,
+        3326620
+    ],
+    "metacritic": null,
+    "player_count": 1003,
+    "steamcharts_avg2weeks": 876,
+    "reviews": {
+        "total_reviews": 3777,
+        "positive": 2938,
+        "negative": 839,
+        "score": 6
+    }
+}

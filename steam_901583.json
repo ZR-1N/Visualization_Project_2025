@@ -1,0 +1,48 @@
+{
+    "appid": 901583,
+    "name": "Grand Theft Auto IV: Complete Edition",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English, French, German, Italian, Spanish - Spain",
+    "dlc": null,
+    "metacritic": {
+        "score": 90,
+        "url": "https://www.metacritic.com/game/pc/grand-theft-auto-iv?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": null,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 74579,
+        "positive": 60041,
+        "negative": 14538,
+        "score": 8
+    }
+}

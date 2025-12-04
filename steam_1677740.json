@@ -1,0 +1,73 @@
+{
+    "appid": 1677740,
+    "name": "Stumble Guys",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "9",
+            "description": "Racing"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Polish, Portuguese - Portugal, Portuguese - Brazil, Russian, Japanese, Korean, Indonesian, Spanish - Latin America",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 3228,
+    "steamcharts_avg2weeks": 3199,
+    "reviews": {
+        "total_reviews": 31492,
+        "positive": 26100,
+        "negative": 5392,
+        "score": 8
+    }
+}

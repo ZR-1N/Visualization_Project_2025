@@ -1,0 +1,80 @@
+{
+    "appid": 1832640,
+    "name": "Mirror 2: Project X",
+    "price": {
+        "currency": "USD",
+        "initial": 199,
+        "final": 199,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$1.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "70",
+            "description": "Early Access"
+        }
+    ],
+    "supported_languages": "Japanese<strong>*</strong>, English, Simplified Chinese, Traditional Chinese, Korean, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1881490,
+        2058650,
+        1960782,
+        1960780,
+        1960781,
+        1976460,
+        1858303,
+        1858305,
+        1867630,
+        1858300,
+        1858301
+    ],
+    "metacritic": null,
+    "player_count": 2,
+    "steamcharts_avg2weeks": 9,
+    "reviews": {
+        "total_reviews": 2590,
+        "positive": 1227,
+        "negative": 1363,
+        "score": 5
+    }
+}

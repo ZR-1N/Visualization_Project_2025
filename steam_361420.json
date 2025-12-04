@@ -1,0 +1,90 @@
+{
+    "appid": 361420,
+    "name": "ASTRONEER",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Dutch, Japanese, Korean, Polish, Russian, Simplified Chinese, Portuguese - Brazil, Turkish",
+    "dlc": [
+        3884830,
+        3042220,
+        3315070,
+        2876620,
+        2567000,
+        2567010,
+        2566990,
+        571010,
+        4144820
+    ],
+    "metacritic": null,
+    "player_count": 4777,
+    "steamcharts_avg2weeks": 4805,
+    "reviews": {
+        "total_reviews": 61138,
+        "positive": 56052,
+        "negative": 5086,
+        "score": 8
+    }
+}

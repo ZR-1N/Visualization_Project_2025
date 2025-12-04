@@ -1,0 +1,122 @@
+{
+    "appid": 304050,
+    "name": "Trove",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 79,
+            "description": "Save Anytime"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Portuguese - Brazil, Spanish - Spain, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3296310,
+        2689510,
+        693160,
+        380231,
+        462920,
+        881590,
+        881591,
+        807020,
+        789530,
+        658001,
+        462050,
+        658000
+    ],
+    "metacritic": null,
+    "player_count": 886,
+    "steamcharts_avg2weeks": 899,
+    "reviews": {
+        "total_reviews": 42237,
+        "positive": 32550,
+        "negative": 9687,
+        "score": 6
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "appid": 381210,
+    "name": "Dead by Daylight",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian, German, Spanish - Spain, Russian, Simplified Chinese, Portuguese - Brazil, Thai, Traditional Chinese, Japanese<strong>*</strong>, Korean, Polish, Spanish - Latin America, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        4019590,
+        3884020,
+        3796620,
+        3698790,
+        3448670,
+        3261720,
+        3103150,
+        3024580,
+        2958440,
+        2661270,
+        2661250,
+        2922730,
+        2526530,
+        2526540,
+        2526550,
+        2656010,
+        1135280,
+        2515990,
+        2469400,
+        2399750,
+        2102730,
+        1899750,
+        1634040,
+        1622941,
+        1622940,
+        530711,
+        700282,
+        1009821,
+        750381,
+        700280,
+        1089270,
+        1324970,
+        661770,
+        509060,
+        573940,
+        627510,
+        492140
+    ],
+    "metacritic": null,
+    "player_count": 44658,
+    "steamcharts_avg2weeks": 44041,
+    "reviews": {
+        "total_reviews": 341283,
+        "positive": 269504,
+        "negative": 71779,
+        "score": 6
+    }
+}

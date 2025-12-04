@@ -1,0 +1,120 @@
+{
+    "appid": 202970,
+    "name": "Call of Duty®: Black Ops II",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 1979,
+        "discount_percent": 67,
+        "initial_formatted": "$59.99",
+        "final_formatted": "$19.79"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        219103,
+        219101,
+        219098,
+        219097,
+        219092,
+        234770,
+        292021,
+        234792,
+        234776,
+        274121,
+        234775,
+        234793,
+        234785,
+        234790,
+        234788,
+        274120,
+        234774,
+        234787,
+        234789,
+        234773,
+        234779,
+        234772,
+        274122,
+        234791,
+        234786,
+        234771,
+        234794,
+        292020,
+        234778,
+        274123,
+        234777,
+        234780,
+        234781,
+        234782,
+        234783,
+        234784
+    ],
+    "metacritic": {
+        "score": 74,
+        "url": "https://www.metacritic.com/game/pc/call-of-duty-black-ops-ii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 261,
+    "steamcharts_avg2weeks": 260,
+    "reviews": {
+        "total_reviews": 22639,
+        "positive": 19181,
+        "negative": 3458,
+        "score": 8
+    }
+}

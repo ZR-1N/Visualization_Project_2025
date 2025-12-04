@@ -1,0 +1,84 @@
+{
+    "appid": 333930,
+    "name": "Dirty Bomb®",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 65,
+            "description": "Subtitle Options"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Portuguese - Brazil, Russian, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 63,
+        "url": "https://www.metacritic.com/game/pc/dirty-bomb?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 43,
+    "steamcharts_avg2weeks": 45,
+    "reviews": {
+        "total_reviews": 34445,
+        "positive": 27931,
+        "negative": 6514,
+        "score": 8
+    }
+}

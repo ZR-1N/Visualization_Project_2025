@@ -1,0 +1,117 @@
+{
+    "appid": 252490,
+    "name": "Rust",
+    "price": {
+        "currency": "USD",
+        "initial": 3999,
+        "final": 3999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$39.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Ukrainian<strong>*</strong>, Polish<strong>*</strong>, Portuguese - Portugal<strong>*</strong>, Turkish<strong>*</strong>, Arabic, Czech, Danish, Dutch, Finnish, Greek, Norwegian, Portuguese - Brazil, Spanish - Latin America, Swedish, Traditional Chinese, Vietnamese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3891560,
+        1174370,
+        1353060,
+        1670430,
+        1701720
+    ],
+    "metacritic": {
+        "score": 69,
+        "url": "https://www.metacritic.com/game/pc/rust?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 83528,
+    "steamcharts_avg2weeks": 82609,
+    "reviews": {
+        "total_reviews": 602573,
+        "positive": 520773,
+        "negative": 81800,
+        "score": 8
+    }
+}

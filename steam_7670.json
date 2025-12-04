@@ -1,0 +1,55 @@
+{
+    "appid": 7670,
+    "name": "BioShock™",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 96,
+        "url": "https://www.metacritic.com/game/pc/bioshock?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 49,
+    "steamcharts_avg2weeks": 54,
+    "reviews": {
+        "total_reviews": 16031,
+        "positive": 14960,
+        "negative": 1071,
+        "score": 8
+    }
+}

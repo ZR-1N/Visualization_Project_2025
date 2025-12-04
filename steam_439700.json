@@ -1,0 +1,41 @@
+{
+    "appid": 439700,
+    "name": "Z1 Battle Royale: Test Server",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 1,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 426,
+        "positive": 279,
+        "negative": 147,
+        "score": 5
+    }
+}

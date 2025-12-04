@@ -1,0 +1,91 @@
+{
+    "appid": 242760,
+    "name": "The Forest",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 48,
+            "description": "LAN Co-op"
+        },
+        {
+            "id": 52,
+            "description": "Tracked Controller Support"
+        },
+        {
+            "id": 53,
+            "description": "VR Supported"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Czech, Finnish, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Swedish, Traditional Chinese, Turkish, Italian, Spanish - Spain<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/the-forest?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 4742,
+    "steamcharts_avg2weeks": 4591,
+    "reviews": {
+        "total_reviews": 205821,
+        "positive": 196111,
+        "negative": 9710,
+        "score": 9
+    }
+}

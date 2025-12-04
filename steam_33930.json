@@ -1,0 +1,87 @@
+{
+    "appid": 33930,
+    "name": "Arma 2: Operation Arrowhead",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 399,
+        "discount_percent": 80,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$3.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Czech, French, Italian, Spanish - Spain, German, Polish, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        65700,
+        65720,
+        33934
+    ],
+    "metacritic": {
+        "score": 73,
+        "url": "https://www.metacritic.com/game/pc/arma-ii-operation-arrowhead?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 198,
+    "steamcharts_avg2weeks": 194,
+    "reviews": {
+        "total_reviews": 11400,
+        "positive": 10569,
+        "negative": 831,
+        "score": 8
+    }
+}

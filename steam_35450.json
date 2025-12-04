@@ -1,0 +1,87 @@
+{
+    "appid": 35450,
+    "name": "Red Orchestra 2: Heroes of Stalingrad with Rising Storm",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German<strong>*</strong>, Russian<strong>*</strong>, Polish<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 76,
+        "url": "https://www.metacritic.com/game/pc/red-orchestra-2-heroes-of-stalingrad?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 160,
+    "steamcharts_avg2weeks": 160,
+    "reviews": {
+        "total_reviews": 16514,
+        "positive": 15285,
+        "negative": 1229,
+        "score": 8
+    }
+}

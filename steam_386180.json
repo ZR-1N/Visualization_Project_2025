@@ -1,0 +1,153 @@
+{
+    "appid": 386180,
+    "name": "Crossout",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 65,
+            "description": "Subtitle Options"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "9",
+            "description": "Racing"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Russian<strong>*</strong>, German, Spanish - Spain, Japanese, Thai, French, Simplified Chinese<strong>*</strong>, Portuguese - Portugal<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        4062960,
+        3258510,
+        3058580,
+        3385040,
+        1968801,
+        2126140,
+        1637530,
+        1437610,
+        1563120,
+        1254240,
+        1193840,
+        783870,
+        3609830,
+        2470520,
+        2127180,
+        1792900,
+        1585870,
+        893760,
+        887050,
+        1049120,
+        1076740,
+        1141790,
+        1356210,
+        1276340,
+        1158240,
+        960290,
+        809740,
+        643800,
+        1894060,
+        1946903,
+        1953610,
+        2720570,
+        2839920,
+        2620900,
+        3824030
+    ],
+    "metacritic": null,
+    "player_count": 2223,
+    "steamcharts_avg2weeks": 2173,
+    "reviews": {
+        "total_reviews": 21653,
+        "positive": 14879,
+        "negative": 6774,
+        "score": 5
+    }
+}

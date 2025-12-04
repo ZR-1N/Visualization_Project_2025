@@ -1,0 +1,81 @@
+{
+    "appid": 356190,
+    "name": "Middle-earth™: Shadow of War™",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 499,
+        "discount_percent": 90,
+        "initial_formatted": "$49.99",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Polish, Portuguese - Brazil<strong>*</strong>, Russian, Arabic, Korean, Simplified Chinese, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        716270,
+        533110,
+        561630,
+        561631,
+        561650,
+        561950,
+        666840,
+        784070
+    ],
+    "metacritic": null,
+    "player_count": 2801,
+    "steamcharts_avg2weeks": 2773,
+    "reviews": {
+        "total_reviews": 46979,
+        "positive": 41317,
+        "negative": 5662,
+        "score": 8
+    }
+}

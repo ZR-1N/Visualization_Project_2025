@@ -1,0 +1,88 @@
+{
+    "appid": 417910,
+    "name": "Street Warriors Online",
+    "price": {
+        "currency": "USD",
+        "initial": 199,
+        "final": 199,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$1.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Polish<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Turkish<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        559860,
+        572310,
+        572311
+    ],
+    "metacritic": null,
+    "player_count": 0,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 506,
+        "positive": 248,
+        "negative": 258,
+        "score": 5
+    }
+}

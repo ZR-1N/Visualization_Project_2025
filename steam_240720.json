@@ -1,0 +1,60 @@
+{
+    "appid": 240720,
+    "name": "Getting Over It with Bennett Foddy",
+    "price": {
+        "currency": "USD",
+        "initial": 799,
+        "final": 799,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$7.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 14,
+            "description": "Commentary available"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Japanese, Russian, Korean, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 304,
+    "steamcharts_avg2weeks": 310,
+    "reviews": {
+        "total_reviews": 43907,
+        "positive": 36997,
+        "negative": 6910,
+        "score": 8
+    }
+}

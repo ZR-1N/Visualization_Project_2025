@@ -1,0 +1,88 @@
+{
+    "appid": 1056640,
+    "name": "Phantasy Star Online 2 New Genesis",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Japanese<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2678110,
+        2687520,
+        2384760,
+        2278850,
+        2251110,
+        1717590,
+        1717591,
+        1788400,
+        1981630,
+        1981631,
+        1981632,
+        1981633,
+        2170460,
+        2170461
+    ],
+    "metacritic": null,
+    "player_count": 1313,
+    "steamcharts_avg2weeks": 1264,
+    "reviews": {
+        "total_reviews": 17750,
+        "positive": 12203,
+        "negative": 5547,
+        "score": 5
+    }
+}

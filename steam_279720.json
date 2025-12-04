@@ -1,0 +1,50 @@
+{
+    "appid": 279720,
+    "name": "The I of the Dragon",
+    "price": {
+        "currency": "USD",
+        "initial": 799,
+        "final": 799,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$7.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German<strong>*</strong>, Hungarian<strong>*</strong>, Czech<strong>*</strong>, Polish<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3039170
+    ],
+    "metacritic": null,
+    "player_count": 2,
+    "steamcharts_avg2weeks": 2,
+    "reviews": {
+        "total_reviews": 363,
+        "positive": 233,
+        "negative": 130,
+        "score": 5
+    }
+}

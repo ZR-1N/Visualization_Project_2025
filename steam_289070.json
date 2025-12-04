@@ -1,0 +1,114 @@
+{
+    "appid": 289070,
+    "name": "Sid Meier’s Civilization® VI",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 5999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$59.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 47,
+            "description": "LAN PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 32,
+            "description": "Steam Turn Notifications"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Polish<strong>*</strong>, Portuguese - Brazil, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Traditional Chinese<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2158250,
+        1308090,
+        947510,
+        645402,
+        1478300,
+        1436950,
+        1388850,
+        1284470,
+        1270540,
+        1253990
+    ],
+    "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/sid-meiers-civilization-vi?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 33413,
+    "steamcharts_avg2weeks": 34022,
+    "reviews": {
+        "total_reviews": 145474,
+        "positive": 122931,
+        "negative": 22543,
+        "score": 8
+    }
+}

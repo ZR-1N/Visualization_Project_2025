@@ -1,0 +1,81 @@
+{
+    "appid": 355840,
+    "name": "Survarium",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "70",
+            "description": "Early Access"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German, Polish, Russian<strong>*</strong>, Ukrainian<strong>*</strong>, French, Spanish - Spain, Simplified Chinese, Portuguese - Brazil, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 1,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 7354,
+        "positive": 3857,
+        "negative": 3497,
+        "score": 5
+    }
+}

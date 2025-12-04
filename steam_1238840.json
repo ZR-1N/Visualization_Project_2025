@@ -1,0 +1,80 @@
+{
+    "appid": 1238840,
+    "name": "Battlefield™ 1",
+    "price": {
+        "currency": "USD",
+        "initial": 3999,
+        "final": 3999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$39.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Polish, Russian, Traditional Chinese, Arabic<strong>*</strong>, Japanese<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Spanish - Latin America<strong>*</strong>, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1238851,
+        1314765,
+        1314764,
+        1314763,
+        1314762,
+        1314760,
+        1314761
+    ],
+    "metacritic": null,
+    "player_count": 3324,
+    "steamcharts_avg2weeks": 3313,
+    "reviews": {
+        "total_reviews": 48253,
+        "positive": 41612,
+        "negative": 6641,
+        "score": 8
+    }
+}

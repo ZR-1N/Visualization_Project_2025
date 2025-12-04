@@ -1,0 +1,78 @@
+{
+    "appid": 431960,
+    "name": "Wallpaper Engine",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 51,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        }
+    ],
+    "genres": [
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "51",
+            "description": "Animation & Modeling"
+        },
+        {
+            "id": "53",
+            "description": "Design & Illustration"
+        },
+        {
+            "id": "55",
+            "description": "Photo Editing"
+        },
+        {
+            "id": "57",
+            "description": "Utilities"
+        }
+    ],
+    "supported_languages": "English, German, Simplified Chinese, Polish, Portuguese - Brazil, French, Italian, Spanish - Spain, Finnish, Japanese, Korean, Swedish, Thai, Traditional Chinese, Turkish, Portuguese - Portugal, Russian, Danish, Czech, Arabic, Ukrainian, Indonesian, Persian",
+    "dlc": [
+        1790230
+    ],
+    "metacritic": null,
+    "player_count": 124931,
+    "steamcharts_avg2weeks": 124611,
+    "reviews": {
+        "total_reviews": 236674,
+        "positive": 232263,
+        "negative": 4411,
+        "score": 9
+    }
+}

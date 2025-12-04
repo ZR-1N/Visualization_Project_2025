@@ -1,0 +1,117 @@
+{
+    "appid": 782330,
+    "name": "DOOM Eternal",
+    "price": {
+        "currency": "USD",
+        "initial": 3999,
+        "final": 3999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$39.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean, Portuguese - Brazil<strong>*</strong>, Simplified Chinese, Spanish - Latin America<strong>*</strong>, Traditional Chinese, Polish<strong>*</strong>, Russian<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1098292,
+        1098293,
+        1098300,
+        1749101,
+        1749103,
+        1749102,
+        1749100,
+        1626003,
+        1626001,
+        1626002,
+        1626000,
+        1460020,
+        1460021
+    ],
+    "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/doom-eternal?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1319,
+    "steamcharts_avg2weeks": 1308,
+    "reviews": {
+        "total_reviews": 131484,
+        "positive": 119672,
+        "negative": 11812,
+        "score": 8
+    }
+}

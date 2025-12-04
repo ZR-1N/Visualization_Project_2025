@@ -1,0 +1,64 @@
+{
+    "appid": 273350,
+    "name": "Evolve Stage 2",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese, Korean, Portuguese - Brazil, Russian<strong>*</strong>, Traditional Chinese, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 77,
+        "url": "https://www.metacritic.com/game/pc/evolve?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 5,
+    "steamcharts_avg2weeks": 5,
+    "reviews": {
+        "total_reviews": 21401,
+        "positive": 14337,
+        "negative": 7064,
+        "score": 5
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "appid": 40,
+    "name": "Deathmatch Classic",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 75,
+            "description": "Keyboard Only Option"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English, French, German, Italian, Spanish - Spain, Korean, Russian, Simplified Chinese, Traditional Chinese",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 6,
+    "steamcharts_avg2weeks": 4,
+    "reviews": {
+        "total_reviews": 1719,
+        "positive": 1438,
+        "negative": 281,
+        "score": 8
+    }
+}

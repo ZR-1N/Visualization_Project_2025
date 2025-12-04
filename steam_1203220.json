@@ -1,0 +1,78 @@
+{
+    "appid": 1203220,
+    "name": "NARAKA: BLADEPOINT",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Simplified Chinese<strong>*</strong>, Traditional Chinese<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, French, German, Spanish - Spain, Russian, Turkish, Portuguese - Portugal, Vietnamese, Thai<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2731960,
+        2731970,
+        2731980,
+        2732000
+    ],
+    "metacritic": null,
+    "player_count": 86053,
+    "steamcharts_avg2weeks": 101339,
+    "reviews": {
+        "total_reviews": 23101,
+        "positive": 18763,
+        "negative": 4338,
+        "score": 8
+    }
+}

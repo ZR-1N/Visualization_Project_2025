@@ -1,0 +1,65 @@
+{
+    "appid": 767560,
+    "name": "War Robots",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Dutch, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Thai, Traditional Chinese, Turkish",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 1696,
+    "steamcharts_avg2weeks": 1710,
+    "reviews": {
+        "total_reviews": 11608,
+        "positive": 6966,
+        "negative": 4642,
+        "score": 5
+    }
+}

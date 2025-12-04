@@ -1,0 +1,44 @@
+{
+    "appid": 12100,
+    "name": "Grand Theft Auto III",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Italian, Spanish - Spain<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 93,
+        "url": "https://www.metacritic.com/game/pc/grand-theft-auto-iii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 28,
+    "steamcharts_avg2weeks": 36,
+    "reviews": {
+        "total_reviews": 6115,
+        "positive": 5154,
+        "negative": 961,
+        "score": 8
+    }
+}

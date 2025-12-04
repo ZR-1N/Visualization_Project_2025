@@ -1,0 +1,71 @@
+{
+    "appid": 17390,
+    "name": "SPORE™",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 499,
+        "discount_percent": 75,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, Czech, Danish, German, Spanish - Spain, Finnish, French, Italian, Hungarian, Dutch, Norwegian, Polish, Russian, Swedish, Portuguese - Portugal",
+    "dlc": null,
+    "metacritic": {
+        "score": 84,
+        "url": "https://www.metacritic.com/game/pc/spore?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 778,
+    "steamcharts_avg2weeks": 790,
+    "reviews": {
+        "total_reviews": 39544,
+        "positive": 36588,
+        "negative": 2956,
+        "score": 8
+    }
+}

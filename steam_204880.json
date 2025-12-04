@@ -1,0 +1,133 @@
+{
+    "appid": 204880,
+    "name": "Sins of a Solar Empire®: Rebellion",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 47,
+            "description": "LAN PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 48,
+            "description": "LAN Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 79,
+            "description": "Save Anytime"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, Japanese, Simplified Chinese, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Polish, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        974650,
+        487280,
+        255910,
+        228601,
+        228600
+    ],
+    "metacritic": {
+        "score": 82,
+        "url": "https://www.metacritic.com/game/pc/sins-of-a-solar-empire-rebellion?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 261,
+    "steamcharts_avg2weeks": 256,
+    "reviews": {
+        "total_reviews": 10954,
+        "positive": 10332,
+        "negative": 622,
+        "score": 8
+    }
+}

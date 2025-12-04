@@ -1,0 +1,79 @@
+{
+    "appid": 209080,
+    "name": "Guns of Icarus Online",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": {
+        "score": 64,
+        "url": "https://www.metacritic.com/game/pc/guns-of-icarus-online?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 10611,
+        "positive": 9639,
+        "negative": 972,
+        "score": 8
+    }
+}

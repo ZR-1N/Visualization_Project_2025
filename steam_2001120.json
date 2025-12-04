@@ -1,0 +1,114 @@
+{
+    "appid": 2001120,
+    "name": "Split Fiction",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 3999,
+        "discount_percent": 20,
+        "initial_formatted": "$49.99",
+        "final_formatted": "$39.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 39,
+            "description": "Shared/Split Screen Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean, Polish, Portuguese - Brazil, Simplified Chinese<strong>*</strong>, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        4110950
+    ],
+    "metacritic": null,
+    "player_count": 4301,
+    "steamcharts_avg2weeks": 4386,
+    "reviews": {
+        "total_reviews": 32527,
+        "positive": 31392,
+        "negative": 1135,
+        "score": 9
+    }
+}

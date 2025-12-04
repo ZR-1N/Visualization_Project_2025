@@ -1,0 +1,36 @@
+{
+    "appid": 365670,
+    "name": "Blender",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": null,
+    "genres": [
+        {
+            "id": "51",
+            "description": "Animation & Modeling"
+        },
+        {
+            "id": "53",
+            "description": "Design & Illustration"
+        },
+        {
+            "id": "58",
+            "description": "Video Production"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Portuguese - Portugal, Russian, Ukrainian, Korean, Simplified Chinese, Vietnamese",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 12153,
+    "steamcharts_avg2weeks": 12237,
+    "reviews": {
+        "total_reviews": 37360,
+        "positive": 35972,
+        "negative": 1388,
+        "score": 9
+    }
+}

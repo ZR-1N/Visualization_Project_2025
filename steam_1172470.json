@@ -1,0 +1,84 @@
+{
+    "appid": 1172470,
+    "name": "Apex Legends™",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 72,
+            "description": "Chat Speech-to-text"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Polish<strong>*</strong>, Portuguese - Brazil, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Traditional Chinese, Spanish - Latin America, Arabic<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/apex-legends?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 178435,
+    "steamcharts_avg2weeks": 178435,
+    "reviews": {
+        "total_reviews": 431471,
+        "positive": 331188,
+        "negative": 100283,
+        "score": 6
+    }
+}

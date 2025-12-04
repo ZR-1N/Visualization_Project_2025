@@ -1,0 +1,107 @@
+{
+    "appid": 219990,
+    "name": "Grim Dawn",
+    "price": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 2499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$24.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 48,
+            "description": "LAN Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Czech, Japanese, Russian, Simplified Chinese, Portuguese - Brazil, Italian, Korean, Vietnamese, Polish<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        897670,
+        642280,
+        2701090,
+        1088290,
+        565610,
+        483840,
+        1250890
+    ],
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/grim-dawn?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2441,
+    "steamcharts_avg2weeks": 2495,
+    "reviews": {
+        "total_reviews": 47096,
+        "positive": 44747,
+        "negative": 2349,
+        "score": 9
+    }
+}

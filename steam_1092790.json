@@ -1,0 +1,69 @@
+{
+    "appid": 1092790,
+    "name": "Inscryption",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, French, German, Spanish - Spain, Japanese, Korean, Russian, Simplified Chinese, Italian, Portuguese - Brazil, Traditional Chinese, Turkish",
+    "dlc": [
+        1752910
+    ],
+    "metacritic": {
+        "score": 85,
+        "url": "https://www.metacritic.com/game/pc/inscryption?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 794,
+    "steamcharts_avg2weeks": 794,
+    "reviews": {
+        "total_reviews": 80071,
+        "positive": 77594,
+        "negative": 2477,
+        "score": 9
+    }
+}

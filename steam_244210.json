@@ -1,0 +1,103 @@
+{
+    "appid": 244210,
+    "name": "Assetto Corsa",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 53,
+            "description": "VR Supported"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "9",
+            "description": "Racing"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        }
+    ],
+    "supported_languages": "English, Italian, Simplified Chinese, Traditional Chinese",
+    "dlc": [
+        675590,
+        540710,
+        540711,
+        347990,
+        404430,
+        423630,
+        467980,
+        493190,
+        509350,
+        619680,
+        526060
+    ],
+    "metacritic": {
+        "score": 85,
+        "url": "https://www.metacritic.com/game/pc/assetto-corsa?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 11255,
+    "steamcharts_avg2weeks": 10422,
+    "reviews": {
+        "total_reviews": 70420,
+        "positive": 65611,
+        "negative": 4809,
+        "score": 8
+    }
+}

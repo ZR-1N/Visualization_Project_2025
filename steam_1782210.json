@@ -1,0 +1,65 @@
+{
+    "appid": 1782210,
+    "name": "Crab Game",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "9",
+            "description": "Racing"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 1141,
+    "steamcharts_avg2weeks": 1221,
+    "reviews": {
+        "total_reviews": 83738,
+        "positive": 76949,
+        "negative": 6789,
+        "score": 8
+    }
+}

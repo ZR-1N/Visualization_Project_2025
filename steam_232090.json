@@ -1,0 +1,109 @@
+{
+    "appid": 232090,
+    "name": "Killing Floor 2",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Polish, Russian<strong>*</strong>, Portuguese - Brazil, Japanese<strong>*</strong>, Simplified Chinese, Korean, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1914490,
+        1524820,
+        1914560,
+        354020,
+        2363410
+    ],
+    "metacritic": {
+        "score": 75,
+        "url": "https://www.metacritic.com/game/pc/killing-floor-2?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2995,
+    "steamcharts_avg2weeks": 2989,
+    "reviews": {
+        "total_reviews": 62407,
+        "positive": 54548,
+        "negative": 7859,
+        "score": 8
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "appid": 813780,
+    "name": "Age of Empires II: Definitive Edition",
+    "price": {
+        "currency": "USD",
+        "initial": 3499,
+        "final": 3499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$34.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 47,
+            "description": "LAN PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 48,
+            "description": "LAN Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Japanese, Korean<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian, Simplified Chinese<strong>*</strong>, Spanish - Latin America<strong>*</strong>, Traditional Chinese<strong>*</strong>, Turkish, Vietnamese, Spanish - Spain<strong>*</strong>, Polish, Hindi, Malay<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3793540,
+        3080080,
+        2805520,
+        2805510,
+        2555420,
+        2141580,
+        1869820,
+        1557210,
+        1389240,
+        2672800,
+        2672810,
+        2672820,
+        1228810,
+        1039811
+    ],
+    "metacritic": {
+        "score": 84,
+        "url": "https://www.metacritic.com/game/pc/age-of-empires-ii-definitive-edition?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 17798,
+    "steamcharts_avg2weeks": 17681,
+    "reviews": {
+        "total_reviews": 65288,
+        "positive": 61994,
+        "negative": 3294,
+        "score": 8
+    }
+}

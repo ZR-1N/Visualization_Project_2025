@@ -1,0 +1,55 @@
+{
+    "appid": 10090,
+    "name": "Call of Duty: World at War",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain",
+    "dlc": null,
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/call-of-duty-world-at-war?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 429,
+    "steamcharts_avg2weeks": 421,
+    "reviews": {
+        "total_reviews": 37808,
+        "positive": 34864,
+        "negative": 2944,
+        "score": 8
+    }
+}

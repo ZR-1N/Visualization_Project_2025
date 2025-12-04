@@ -1,0 +1,151 @@
+{
+    "appid": 976310,
+    "name": "Mortal Kombat 11",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 499,
+        "discount_percent": 90,
+        "initial_formatted": "$49.99",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 75,
+            "description": "Keyboard Only Option"
+        },
+        {
+            "id": 71,
+            "description": "Narrated Game Menus"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain, Arabic, Polish, Portuguese - Brazil<strong>*</strong>, Russian, Simplified Chinese, Spanish - Latin America<strong>*</strong>, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1471870,
+        1449880,
+        1054480,
+        1273971,
+        1480230,
+        1449881,
+        1449882,
+        1449883,
+        1461160,
+        1160240,
+        1160241,
+        1051620,
+        1051621,
+        1095030,
+        1095031,
+        1116620,
+        1116621,
+        1160243,
+        1180720,
+        1180721,
+        1200550,
+        1200552,
+        1253300,
+        1253302,
+        1316180,
+        1316181,
+        1316182
+    ],
+    "metacritic": {
+        "score": 82,
+        "url": "https://www.metacritic.com/game/pc/mortal-kombat-11?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1218,
+    "steamcharts_avg2weeks": 1232,
+    "reviews": {
+        "total_reviews": 35216,
+        "positive": 30353,
+        "negative": 4863,
+        "score": 8
+    }
+}

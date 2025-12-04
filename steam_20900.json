@@ -1,0 +1,89 @@
+{
+    "appid": 20900,
+    "name": "The Witcher: Enhanced Edition Director's Cut",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 149,
+        "discount_percent": 85,
+        "initial_formatted": "$9.99",
+        "final_formatted": "$1.49"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 76,
+            "description": "Mouse Only Option"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 79,
+            "description": "Save Anytime"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English, French, German, Spanish - Spain, Italian, Czech, Russian, Hungarian, Polish, Traditional Chinese (text only)",
+    "dlc": [
+        1229370
+    ],
+    "metacritic": {
+        "score": 86,
+        "url": "https://www.metacritic.com/game/pc/the-witcher-enhanced-edition?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1250,
+    "steamcharts_avg2weeks": 1229,
+    "reviews": {
+        "total_reviews": 20695,
+        "positive": 17715,
+        "negative": 2980,
+        "score": 8
+    }
+}

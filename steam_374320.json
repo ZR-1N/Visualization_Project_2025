@@ -1,0 +1,107 @@
+{
+    "appid": 374320,
+    "name": "DARK SOULS™ III",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 2999,
+        "discount_percent": 50,
+        "initial_formatted": "$59.99",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 79,
+            "description": "Save Anytime"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Polish, Russian, Portuguese - Brazil, Simplified Chinese, Traditional Chinese, Japanese, Korean<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        442010,
+        506970,
+        506971
+    ],
+    "metacritic": {
+        "score": 89,
+        "url": "https://www.metacritic.com/game/pc/dark-souls-iii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 5921,
+    "steamcharts_avg2weeks": 6325,
+    "reviews": {
+        "total_reviews": 161628,
+        "positive": 151843,
+        "negative": 9785,
+        "score": 8
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "appid": 213670,
+    "name": "South Park™: The Stick of Truth™",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Polish, Portuguese - Brazil, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        257370,
+        257371
+    ],
+    "metacritic": null,
+    "player_count": 296,
+    "steamcharts_avg2weeks": 319,
+    "reviews": {
+        "total_reviews": 35447,
+        "positive": 34406,
+        "negative": 1041,
+        "score": 9
+    }
+}

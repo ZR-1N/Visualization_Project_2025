@@ -1,0 +1,123 @@
+{
+    "appid": 431240,
+    "name": "Golf With Your Friends",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 449,
+        "discount_percent": 70,
+        "initial_formatted": "$14.99",
+        "final_formatted": "$4.49"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Portuguese - Brazil, Russian, Simplified Chinese, Traditional Chinese, Japanese",
+    "dlc": [
+        3265830,
+        3041140,
+        3041150,
+        2366470,
+        2246730,
+        2130860,
+        2073740,
+        1901922,
+        1901921,
+        1901920,
+        1277570,
+        564170,
+        2591390,
+        2710860,
+        2710870,
+        2863570,
+        2456990,
+        2456991
+    ],
+    "metacritic": null,
+    "player_count": 947,
+    "steamcharts_avg2weeks": 901,
+    "reviews": {
+        "total_reviews": 50495,
+        "positive": 44734,
+        "negative": 5761,
+        "score": 8
+    }
+}

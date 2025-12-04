@@ -1,0 +1,63 @@
+{
+    "appid": 6060,
+    "name": "STAR WARS™ Battlefront II (Classic, 2005)",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 78,
+        "url": "https://www.metacritic.com/game/pc/star-wars-battlefront-ii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 128,
+    "steamcharts_avg2weeks": 116,
+    "reviews": {
+        "total_reviews": 39914,
+        "positive": 37928,
+        "negative": 1986,
+        "score": 9
+    }
+}

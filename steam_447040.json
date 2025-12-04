@@ -1,0 +1,95 @@
+{
+    "appid": 447040,
+    "name": "Watch_Dogs® 2",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 499,
+        "discount_percent": 90,
+        "initial_formatted": "$49.99",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Czech, Dutch, Hungarian, Japanese<strong>*</strong>, Korean, Polish, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese, Traditional Chinese, Spanish - Latin America<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        525031,
+        525030,
+        525000,
+        597076,
+        525010,
+        525011,
+        525012,
+        525013,
+        525014,
+        525015,
+        525016,
+        525017,
+        525018,
+        525019,
+        525032,
+        525033,
+        525034,
+        525035,
+        525036,
+        525037,
+        555240,
+        558390,
+        558391,
+        581400,
+        597070,
+        597071,
+        597072,
+        597073,
+        597074,
+        597075
+    ],
+    "metacritic": null,
+    "player_count": 1892,
+    "steamcharts_avg2weeks": 1942,
+    "reviews": {
+        "total_reviews": 25038,
+        "positive": 20591,
+        "negative": 4447,
+        "score": 8
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "appid": 1304930,
+    "name": "The Outlast Trials",
+    "price": {
+        "currency": "USD",
+        "initial": 3999,
+        "final": 3999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$39.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian, German, Spanish - Spain, Japanese, Korean, Polish, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Turkish, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2328320,
+        3030370,
+        3307910,
+        3518320,
+        3805230,
+        3805250,
+        3805260,
+        3805270
+    ],
+    "metacritic": null,
+    "player_count": 2165,
+    "steamcharts_avg2weeks": 2161,
+    "reviews": {
+        "total_reviews": 38035,
+        "positive": 35820,
+        "negative": 2215,
+        "score": 8
+    }
+}

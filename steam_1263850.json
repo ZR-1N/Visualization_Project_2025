@@ -1,0 +1,55 @@
+{
+    "appid": 1263850,
+    "name": "Football Manager 2021",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        }
+    ],
+    "supported_languages": "English, Italian, Spanish - Spain, French, German, Danish, Dutch, Greek, Korean, Norwegian, Polish, Portuguese - Portugal, Russian, Simplified Chinese, Swedish, Traditional Chinese, Turkish",
+    "dlc": [
+        1275920
+    ],
+    "metacritic": null,
+    "player_count": 561,
+    "steamcharts_avg2weeks": 577,
+    "reviews": {
+        "total_reviews": 9481,
+        "positive": 8936,
+        "negative": 545,
+        "score": 8
+    }
+}

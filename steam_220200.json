@@ -1,0 +1,70 @@
+{
+    "appid": 220200,
+    "name": "Kerbal Space Program",
+    "price": {
+        "currency": "USD",
+        "initial": 3999,
+        "final": 999,
+        "discount_percent": 75,
+        "initial_formatted": "$39.99",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English, Spanish - Spain, Simplified Chinese, Japanese, Russian, French, Italian, German, Portuguese - Brazil",
+    "dlc": [
+        283740,
+        982970
+    ],
+    "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/kerbal-space-program?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2433,
+    "steamcharts_avg2weeks": 2394,
+    "reviews": {
+        "total_reviews": 89553,
+        "positive": 85501,
+        "negative": 4052,
+        "score": 9
+    }
+}

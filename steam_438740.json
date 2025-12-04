@@ -1,0 +1,60 @@
+{
+    "appid": 438740,
+    "name": "Friday the 13th: The Game",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 61,
+        "url": "https://www.metacritic.com/game/pc/friday-the-13th-the-game?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 15,
+    "steamcharts_avg2weeks": 15,
+    "reviews": {
+        "total_reviews": 25425,
+        "positive": 19586,
+        "negative": 5839,
+        "score": 6
+    }
+}

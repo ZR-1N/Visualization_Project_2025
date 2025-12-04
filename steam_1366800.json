@@ -1,0 +1,84 @@
+{
+    "appid": 1366800,
+    "name": "Crosshair X",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "51",
+            "description": "Animation & Modeling"
+        },
+        {
+            "id": "53",
+            "description": "Design & Illustration"
+        },
+        {
+            "id": "54",
+            "description": "Education"
+        },
+        {
+            "id": "55",
+            "description": "Photo Editing"
+        },
+        {
+            "id": "57",
+            "description": "Utilities"
+        },
+        {
+            "id": "60",
+            "description": "Game Development"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Spanish - Latin America<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong>, Czech<strong>*</strong>, Polish<strong>*</strong>, Swedish<strong>*</strong>, Turkish<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 49604,
+    "steamcharts_avg2weeks": 49071,
+    "reviews": {
+        "total_reviews": 20174,
+        "positive": 18984,
+        "negative": 1190,
+        "score": 8
+    }
+}

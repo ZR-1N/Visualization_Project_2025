@@ -1,0 +1,262 @@
+{
+    "appid": 2246340,
+    "name": "Monster Hunter Wilds",
+    "price": {
+        "currency": "USD",
+        "initial": 6999,
+        "final": 6999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$69.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 75,
+            "description": "Keyboard Only Option"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 65,
+            "description": "Subtitle Options"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Arabic, Spanish - Latin America, Portuguese - Brazil<strong>*</strong>, Polish, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Traditional Chinese, Japanese<strong>*</strong>, Korean<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3308900,
+        3289630,
+        3336860,
+        3116990,
+        3410840,
+        3117090,
+        3117100,
+        3117110,
+        3117120,
+        3117130,
+        3117140,
+        3117170,
+        3157720,
+        3157730,
+        3117180,
+        3117190,
+        3117200,
+        3117210,
+        3117220,
+        3117230,
+        3289620,
+        3336850,
+        3336890,
+        3117250,
+        3117260,
+        3117280,
+        3117290,
+        3117370,
+        3117430,
+        3117440,
+        3117450,
+        3117460,
+        3117500,
+        3117300,
+        3117310,
+        3117320,
+        3117330,
+        3117340,
+        3117350,
+        3117520,
+        3117530,
+        3117540,
+        3117550,
+        3117510,
+        3117560,
+        3360450,
+        3360460,
+        3360470,
+        3360480,
+        3289640,
+        3289650,
+        3289700,
+        3289710,
+        3289660,
+        3289670,
+        3289680,
+        3289690,
+        3360490,
+        3360500,
+        3360510,
+        3360520,
+        3502660,
+        3360530,
+        3410850,
+        3289720,
+        3289730,
+        3289740,
+        3289750,
+        3289760,
+        3289830,
+        3289840,
+        3289850,
+        3289770,
+        3289780,
+        3289790,
+        3289800,
+        3289810,
+        3289820,
+        3289860,
+        3289870,
+        3289880,
+        3289890,
+        3619120,
+        3619130,
+        3619140,
+        3619150,
+        3619160,
+        3619170,
+        3619180,
+        3619190,
+        3289900,
+        3289910,
+        3360540,
+        3360550,
+        3289960,
+        3289980,
+        3289920,
+        3289930,
+        3289940,
+        3289950,
+        3619200,
+        3619210,
+        3619220,
+        3696220,
+        3696230,
+        3696240,
+        3696250,
+        3696260,
+        3696270,
+        3696280,
+        3696290,
+        3696300,
+        3767510,
+        3767520,
+        3696310,
+        3696340,
+        3696350,
+        3696360,
+        3696480,
+        3747820,
+        3747830,
+        3747840,
+        3747850,
+        3747860,
+        3801040,
+        3336910,
+        3336920,
+        3336930,
+        3696370,
+        3696380,
+        3696390,
+        3696400,
+        3696420,
+        3696430,
+        3696440,
+        3696450,
+        3696460,
+        3767530,
+        3772970,
+        3696470,
+        3885660
+    ],
+    "metacritic": null,
+    "player_count": 19647,
+    "steamcharts_avg2weeks": 19853,
+    "reviews": {
+        "total_reviews": 107821,
+        "positive": 69545,
+        "negative": 38276,
+        "score": 5
+    }
+}

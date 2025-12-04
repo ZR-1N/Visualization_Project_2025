@@ -1,0 +1,105 @@
+{
+    "appid": 391220,
+    "name": "Rise of the Tomb Raider™",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 52,
+            "description": "Tracked Controller Support"
+        },
+        {
+            "id": 53,
+            "description": "VR Supported"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Dutch, Polish<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong>, Japanese<strong>*</strong>, Simplified Chinese<strong>*</strong>, Traditional Chinese<strong>*</strong>, Korean<strong>*</strong>, Arabic<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        505540,
+        418800,
+        418810,
+        418790,
+        419110,
+        418680,
+        418690,
+        418700,
+        418710,
+        418750,
+        418760,
+        418770,
+        418780
+    ],
+    "metacritic": {
+        "score": 86,
+        "url": "https://www.metacritic.com/game/pc/rise-of-the-tomb-raider?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 644,
+    "steamcharts_avg2weeks": 672,
+    "reviews": {
+        "total_reviews": 38398,
+        "positive": 35422,
+        "negative": 2976,
+        "score": 8
+    }
+}

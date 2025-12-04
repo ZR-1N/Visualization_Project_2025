@@ -1,0 +1,105 @@
+{
+    "appid": 1250,
+    "name": "Killing Floor",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Hungarian, Polish, Russian<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        258750,
+        258751,
+        258752,
+        210943,
+        210944,
+        210945,
+        210938,
+        210937,
+        210934,
+        210936,
+        210931,
+        210933,
+        210932,
+        35429,
+        35425,
+        35419,
+        35417,
+        1257,
+        1256,
+        309990,
+        309991
+    ],
+    "metacritic": {
+        "score": 72,
+        "url": "https://www.metacritic.com/game/pc/killing-floor?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 278,
+    "steamcharts_avg2weeks": 278,
+    "reviews": {
+        "total_reviews": 35519,
+        "positive": 33863,
+        "negative": 1656,
+        "score": 9
+    }
+}

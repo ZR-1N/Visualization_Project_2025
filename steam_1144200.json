@@ -1,0 +1,76 @@
+{
+    "appid": 1144200,
+    "name": "Ready or Not",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 4999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$49.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Korean, Simplified Chinese, Italian, Spanish - Spain, Japanese, Polish, Portuguese - Portugal, Turkish, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3015760,
+        3089910,
+        3174120
+    ],
+    "metacritic": null,
+    "player_count": 5153,
+    "steamcharts_avg2weeks": 4958,
+    "reviews": {
+        "total_reviews": 173321,
+        "positive": 128138,
+        "negative": 45183,
+        "score": 6
+    }
+}

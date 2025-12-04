@@ -1,0 +1,82 @@
+{
+    "appid": 219640,
+    "name": "Chivalry: Medieval Warfare",
+    "price": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 2499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$24.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German, French, Italian, Spanish - Spain, Russian, Polish, Simplified Chinese, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        241280,
+        332240
+    ],
+    "metacritic": {
+        "score": 79,
+        "url": "https://www.metacritic.com/game/pc/chivalry-medieval-warfare?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 15,
+    "steamcharts_avg2weeks": 16,
+    "reviews": {
+        "total_reviews": 31664,
+        "positive": 25525,
+        "negative": 6139,
+        "score": 8
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "appid": 203140,
+    "name": "Hitman: Absolution™",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 199,
+        "discount_percent": 90,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$1.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong>, Polish<strong>*</strong>, Russian<strong>*</strong>, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 79,
+        "url": "https://www.metacritic.com/game/pc/hitman-absolution?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 425,
+    "steamcharts_avg2weeks": 461,
+    "reviews": {
+        "total_reviews": 17738,
+        "positive": 15528,
+        "negative": 2210,
+        "score": 8
+    }
+}

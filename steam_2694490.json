@@ -1,0 +1,90 @@
+{
+    "appid": 2694490,
+    "name": "Path of Exile 2",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "70",
+            "description": "Early Access"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Russian, Thai<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3349410,
+        3349420,
+        3349430,
+        3906470,
+        3906500,
+        3906480,
+        3906510,
+        3906490,
+        3906520
+    ],
+    "metacritic": null,
+    "player_count": 7442,
+    "steamcharts_avg2weeks": 7363,
+    "reviews": {
+        "total_reviews": 115796,
+        "positive": 85439,
+        "negative": 30357,
+        "score": 6
+    }
+}

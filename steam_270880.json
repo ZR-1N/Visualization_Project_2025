@@ -1,0 +1,182 @@
+{
+    "appid": 270880,
+    "name": "American Truck Simulator",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 499,
+        "discount_percent": 75,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 75,
+            "description": "Keyboard Only Option"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 79,
+            "description": "Save Anytime"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Japanese, Korean, Norwegian, Polish, Portuguese - Portugal, Portuguese - Brazil, Romanian, Russian, Simplified Chinese, Swedish, Turkish, Ukrainian, Traditional Chinese, Catalan, Lithuanian, Serbian, Slovak, Slovenian",
+    "dlc": [
+        3025440,
+        2730870,
+        2585150,
+        2543810,
+        2926440,
+        2910160,
+        2720080,
+        2675870,
+        2638630,
+        2298430,
+        2209650,
+        2386530,
+        1465750,
+        1967690,
+        1811080,
+        1415692,
+        1209471,
+        1209470,
+        1104880,
+        1015160,
+        800370,
+        684630,
+        1477840,
+        962750,
+        1076080,
+        1662380,
+        620610,
+        450550,
+        1621740,
+        520550,
+        561620,
+        1784890,
+        1116310,
+        951650,
+        432710,
+        588600,
+        546260,
+        566890,
+        463740,
+        1415690,
+        1708620,
+        1915840,
+        1236650,
+        1415691,
+        2093200,
+        1162160,
+        2187930,
+        2257950,
+        2386480,
+        3012580,
+        3146090,
+        3272290,
+        3486960,
+        3749870,
+        3793190,
+        3793200,
+        3872930,
+        4057480
+    ],
+    "metacritic": {
+        "score": 76,
+        "url": "https://www.metacritic.com/game/pc/american-truck-simulator?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 7007,
+    "steamcharts_avg2weeks": 6561,
+    "reviews": {
+        "total_reviews": 101933,
+        "positive": 99073,
+        "negative": 2860,
+        "score": 9
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "appid": 12120,
+    "name": "Grand Theft Auto: San Andreas",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": {
+        "score": 93,
+        "url": "https://www.metacritic.com/game/pc/grand-theft-auto-san-andreas?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 411,
+    "steamcharts_avg2weeks": 420,
+    "reviews": {
+        "total_reviews": 27158,
+        "positive": 24257,
+        "negative": 2901,
+        "score": 8
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "appid": 1158310,
+    "name": "Crusader Kings III",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 4999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$49.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Russian, Simplified Chinese, Korean, Polish, Japanese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3315530,
+        3486700,
+        3315520,
+        3315510,
+        3315500,
+        3315540,
+        3315550,
+        3275760,
+        2671080,
+        2671070,
+        2671040,
+        2671060,
+        3077630,
+        2671030,
+        2313540,
+        2313541,
+        2311920,
+        2114760,
+        2311930,
+        1303184,
+        1303182,
+        1303183,
+        1296730
+    ],
+    "metacritic": {
+        "score": 91,
+        "url": "https://www.metacritic.com/game/pc/crusader-kings-iii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 13280,
+    "steamcharts_avg2weeks": 14576,
+    "reviews": {
+        "total_reviews": 64002,
+        "positive": 57719,
+        "negative": 6283,
+        "score": 8
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "appid": 9480,
+    "name": "Saints Row 2",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English, French, German, Italian, Spanish - Spain, Dutch, Danish, Swedish, Russian",
+    "dlc": null,
+    "metacritic": {
+        "score": 72,
+        "url": "https://www.metacritic.com/game/pc/saints-row-2?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 80,
+    "steamcharts_avg2weeks": 82,
+    "reviews": {
+        "total_reviews": 12697,
+        "positive": 9511,
+        "negative": 3186,
+        "score": 6
+    }
+}

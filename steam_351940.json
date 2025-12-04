@@ -1,0 +1,71 @@
+{
+    "appid": 351940,
+    "name": "The Descendant",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 59,
+        "url": "https://www.metacritic.com/game/pc/the-descendant-episode-1---aftermath?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2,
+    "steamcharts_avg2weeks": 1,
+    "reviews": {
+        "total_reviews": 2615,
+        "positive": 2312,
+        "negative": 303,
+        "score": 8
+    }
+}

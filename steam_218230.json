@@ -1,0 +1,64 @@
+{
+    "appid": 218230,
+    "name": "PlanetSide 2",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English, German, French, Italian, Spanish - Spain, Russian, Simplified Chinese",
+    "dlc": null,
+    "metacritic": {
+        "score": 84,
+        "url": "https://www.metacritic.com/game/pc/planetside-2?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 477,
+    "steamcharts_avg2weeks": 484,
+    "reviews": {
+        "total_reviews": 47121,
+        "positive": 38508,
+        "negative": 8613,
+        "score": 8
+    }
+}

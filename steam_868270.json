@@ -1,0 +1,65 @@
+{
+    "appid": 868270,
+    "name": "The Cycle: Frontier",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German, French, Spanish - Spain, Polish, Russian, Simplified Chinese, Portuguese - Brazil, Italian, Japanese, Korean<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 4,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 25164,
+        "positive": 16751,
+        "negative": 8413,
+        "score": 5
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "appid": 232770,
+    "name": "POSTAL",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1986820
+    ],
+    "metacritic": {
+        "score": 56,
+        "url": "https://www.metacritic.com/game/pc/postal?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 32,
+    "steamcharts_avg2weeks": 34,
+    "reviews": {
+        "total_reviews": 5877,
+        "positive": 5379,
+        "negative": 498,
+        "score": 8
+    }
+}

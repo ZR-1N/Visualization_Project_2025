@@ -1,0 +1,172 @@
+{
+    "appid": 236390,
+    "name": "War Thunder",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 53,
+            "description": "VR Supported"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong>, Simplified Chinese, Russian<strong>*</strong>, Japanese<strong>*</strong>, Polish<strong>*</strong>, Czech<strong>*</strong>, Turkish<strong>*</strong>, Portuguese - Portugal, Korean, Portuguese - Brazil, Hungarian, Ukrainian, Traditional Chinese, Romanian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1478150,
+        4078870,
+        4078880,
+        4078890,
+        4078900,
+        4078910,
+        3543750,
+        2690300,
+        2232230,
+        3010110,
+        1108450,
+        1233370,
+        2054413,
+        1368800,
+        1423760,
+        1368801,
+        1368110,
+        1937490,
+        1582830,
+        3979610,
+        3979600,
+        3386540,
+        3010120,
+        1947130,
+        3780140,
+        3780160,
+        3780150,
+        3752060,
+        3752050,
+        3752040,
+        3386550,
+        1247130,
+        1247140,
+        2500430,
+        2500440,
+        1247150,
+        1945930,
+        1945840,
+        1945841
+    ],
+    "metacritic": {
+        "score": 81,
+        "url": "https://www.metacritic.com/game/pc/war-thunder?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 63449,
+    "steamcharts_avg2weeks": 62609,
+    "reviews": {
+        "total_reviews": 287587,
+        "positive": 214802,
+        "negative": 72785,
+        "score": 6
+    }
+}

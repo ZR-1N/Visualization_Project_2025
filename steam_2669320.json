@@ -1,0 +1,114 @@
+{
+    "appid": 2669320,
+    "name": "EA SPORTS FC™ 25",
+    "price": {
+        "currency": "USD",
+        "initial": 6999,
+        "final": 6999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$69.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 39,
+            "description": "Shared/Split Screen Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 75,
+            "description": "Keyboard Only Option"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 61,
+            "description": "HDR available"
+        }
+    ],
+    "genres": [
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Arabic<strong>*</strong>, Czech, Danish, Dutch<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong>, Norwegian, Polish<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Portuguese - Portugal, Russian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Spanish - Latin America<strong>*</strong>, Swedish, Traditional Chinese, Turkish<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3170610
+    ],
+    "metacritic": null,
+    "player_count": 15126,
+    "steamcharts_avg2weeks": 15486,
+    "reviews": {
+        "total_reviews": 30679,
+        "positive": 15950,
+        "negative": 14729,
+        "score": 5
+    }
+}

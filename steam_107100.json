@@ -1,0 +1,89 @@
+{
+    "appid": 107100,
+    "name": "Bastion",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Italian, Spanish - Spain, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        107104
+    ],
+    "metacritic": {
+        "score": 86,
+        "url": "https://www.metacritic.com/game/pc/bastion?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 24,
+    "steamcharts_avg2weeks": 24,
+    "reviews": {
+        "total_reviews": 24511,
+        "positive": 23610,
+        "negative": 901,
+        "score": 9
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "appid": 1721470,
+    "name": "Poppy Playtime",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Portuguese - Brazil<strong>*</strong>, Russian, Spanish - Latin America<strong>*</strong>, Japanese<strong>*</strong>, Korean<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1817490,
+        2555190,
+        3008670
+    ],
+    "metacritic": null,
+    "player_count": 675,
+    "steamcharts_avg2weeks": 675,
+    "reviews": {
+        "total_reviews": 45748,
+        "positive": 39198,
+        "negative": 6550,
+        "score": 8
+    }
+}

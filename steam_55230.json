@@ -1,0 +1,100 @@
+{
+    "appid": 55230,
+    "name": "Saints Row: The Third",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "Czech, Dutch, English<strong>*</strong>, French, German, Italian, Polish, Russian, Spanish - Spain<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        901805,
+        55394,
+        55399,
+        55400,
+        55392,
+        55391,
+        55397,
+        55398,
+        55396,
+        55382,
+        55381,
+        55380,
+        55389,
+        55388,
+        55390,
+        55386,
+        55387,
+        55395,
+        55385,
+        55393
+    ],
+    "metacritic": {
+        "score": 84,
+        "url": "https://www.metacritic.com/game/pc/saints-row-the-third?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 178,
+    "steamcharts_avg2weeks": 162,
+    "reviews": {
+        "total_reviews": 28299,
+        "positive": 26727,
+        "negative": 1572,
+        "score": 8
+    }
+}

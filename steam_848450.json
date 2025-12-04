@@ -1,0 +1,70 @@
+{
+    "appid": 848450,
+    "name": "Subnautica: Below Zero",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Japanese, Korean, Portuguese - Brazil, Spanish - Latin America, Russian, Simplified Chinese, Turkish, Ukrainian, Czech, Finnish, Hungarian, Polish, Traditional Chinese, Slovak<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1619010
+    ],
+    "metacritic": null,
+    "player_count": 555,
+    "steamcharts_avg2weeks": 554,
+    "reviews": {
+        "total_reviews": 56301,
+        "positive": 50469,
+        "negative": 5832,
+        "score": 8
+    }
+}

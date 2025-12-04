@@ -1,0 +1,63 @@
+{
+    "appid": 12210,
+    "name": "Grand Theft Auto IV: The Complete Edition",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 90,
+        "url": "https://www.metacritic.com/game/pc/grand-theft-auto-iv?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2411,
+    "steamcharts_avg2weeks": 2282,
+    "reviews": {
+        "total_reviews": 74579,
+        "positive": 60041,
+        "negative": 14538,
+        "score": 8
+    }
+}

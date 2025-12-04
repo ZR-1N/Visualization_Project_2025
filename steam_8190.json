@@ -1,0 +1,76 @@
+{
+    "appid": 8190,
+    "name": "Just Cause 2",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong>, Polish, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        259080,
+        35080,
+        35089,
+        35083,
+        35090,
+        35091,
+        35102,
+        35101
+    ],
+    "metacritic": {
+        "score": 84,
+        "url": "https://www.metacritic.com/game/pc/just-cause-2?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 153,
+    "steamcharts_avg2weeks": 153,
+    "reviews": {
+        "total_reviews": 24260,
+        "positive": 22288,
+        "negative": 1972,
+        "score": 8
+    }
+}

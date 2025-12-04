@@ -1,0 +1,97 @@
+{
+    "appid": 444090,
+    "name": "Paladins®",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Polish, Russian, Turkish, Portuguese - Brazil, Japanese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1517480,
+        1517481,
+        1721880,
+        1843930,
+        1843931,
+        1843932,
+        1895320,
+        2087420
+    ],
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/paladins?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 713,
+    "steamcharts_avg2weeks": 647,
+    "reviews": {
+        "total_reviews": 127469,
+        "positive": 104584,
+        "negative": 22885,
+        "score": 8
+    }
+}

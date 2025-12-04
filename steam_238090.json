@@ -1,0 +1,94 @@
+{
+    "appid": 238090,
+    "name": "Sniper Elite 3",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Polish, Portuguese - Brazil, Russian<strong>*</strong>, Czech, Japanese, Korean, Simplified Chinese, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        305181,
+        305182,
+        305183,
+        305184,
+        305185,
+        305186,
+        305187,
+        305180,
+        312680,
+        312690,
+        312740,
+        326430,
+        326431
+    ],
+    "metacritic": null,
+    "player_count": 81,
+    "steamcharts_avg2weeks": 82,
+    "reviews": {
+        "total_reviews": 9456,
+        "positive": 7314,
+        "negative": 2142,
+        "score": 6
+    }
+}

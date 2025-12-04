@@ -1,0 +1,78 @@
+{
+    "appid": 387290,
+    "name": "Ori and the Blind Forest: Definitive Edition",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Russian, Portuguese - Brazil",
+    "dlc": [
+        465980,
+        466390
+    ],
+    "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/ori-and-the-blind-forest-definitive-edition?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 274,
+    "steamcharts_avg2weeks": 274,
+    "reviews": {
+        "total_reviews": 33335,
+        "positive": 31391,
+        "negative": 1944,
+        "score": 8
+    }
+}

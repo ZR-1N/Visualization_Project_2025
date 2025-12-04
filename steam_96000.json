@@ -1,0 +1,59 @@
+{
+    "appid": 96000,
+    "name": "The Tiny Bang Story",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English, Russian, French, Italian, German, Spanish - Spain, Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Japanese, Korean, Norwegian, Polish, Portuguese - Portugal, Portuguese - Brazil, Romanian, Simplified Chinese, Swedish, Thai, Traditional Chinese, Turkish, Ukrainian, Arabic",
+    "dlc": null,
+    "metacritic": {
+        "score": 63,
+        "url": "https://www.metacritic.com/game/pc/the-tiny-bang-story?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2,
+    "steamcharts_avg2weeks": 4,
+    "reviews": {
+        "total_reviews": 2576,
+        "positive": 2196,
+        "negative": 380,
+        "score": 8
+    }
+}

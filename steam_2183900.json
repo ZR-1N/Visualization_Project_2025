@@ -1,0 +1,147 @@
+{
+    "appid": 2183900,
+    "name": "Warhammer 40,000: Space Marine 2",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 2399,
+        "discount_percent": 60,
+        "initial_formatted": "$59.99",
+        "final_formatted": "$23.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 78,
+            "description": "Adjustable Difficulty"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 65,
+            "description": "Subtitle Options"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Russian<strong>*</strong>, Czech, Japanese<strong>*</strong>, Korean, Polish, Portuguese - Brazil, Simplified Chinese<strong>*</strong>, Spanish - Latin America, Traditional Chinese, Turkish, Ukrainian, Thai<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3871350,
+        3871360,
+        3871320,
+        2792140,
+        3871330,
+        3871340,
+        3274440,
+        2792190,
+        3274430,
+        2792180,
+        3274400,
+        3274410,
+        2792170,
+        2792280,
+        3212020,
+        3212040,
+        2792150,
+        2486150,
+        3202690
+    ],
+    "metacritic": {
+        "score": 82,
+        "url": "https://www.metacritic.com/game/pc/warhammer-40000-space-marine-ii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 15358,
+    "steamcharts_avg2weeks": 15719,
+    "reviews": {
+        "total_reviews": 107917,
+        "positive": 93171,
+        "negative": 14746,
+        "score": 8
+    }
+}

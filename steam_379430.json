@@ -1,0 +1,89 @@
+{
+    "appid": 379430,
+    "name": "Kingdom Come: Deliverance",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Spanish - Spain, Czech<strong>*</strong>, Polish, Russian, Italian, Simplified Chinese, Turkish, Korean, Ukrainian, Portuguese - Brazil, Japanese<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1033890,
+        977420,
+        921950,
+        883150,
+        768530,
+        1052530,
+        794220,
+        801980,
+        836890,
+        836910,
+        836920,
+        836930,
+        836900
+    ],
+    "metacritic": {
+        "score": 76,
+        "url": "https://www.metacritic.com/game/pc/kingdom-come-deliverance?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 3304,
+    "steamcharts_avg2weeks": 3411,
+    "reviews": {
+        "total_reviews": 76570,
+        "positive": 64238,
+        "negative": 12332,
+        "score": 8
+    }
+}

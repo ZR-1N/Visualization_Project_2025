@@ -1,0 +1,63 @@
+{
+    "appid": 1366540,
+    "name": "Dyson Sphere Program",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        },
+        {
+            "id": "70",
+            "description": "Early Access"
+        }
+    ],
+    "supported_languages": "Simplified Chinese, English",
+    "dlc": [
+        1523190,
+        1530310
+    ],
+    "metacritic": null,
+    "player_count": 2423,
+    "steamcharts_avg2weeks": 2369,
+    "reviews": {
+        "total_reviews": 24534,
+        "positive": 23630,
+        "negative": 904,
+        "score": 9
+    }
+}

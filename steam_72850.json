@@ -1,0 +1,69 @@
+{
+    "appid": 72850,
+    "name": "The Elder Scrolls V: Skyrim",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English, French, German, Italian, Spanish - Spain, Japanese, Czech, Polish, Russian",
+    "dlc": [
+        1240360
+    ],
+    "metacritic": {
+        "score": 94,
+        "url": "https://www.metacritic.com/game/pc/the-elder-scrolls-v-skyrim?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1395,
+    "steamcharts_avg2weeks": 1367,
+    "reviews": {
+        "total_reviews": 173730,
+        "positive": 161527,
+        "negative": 12203,
+        "score": 8
+    }
+}

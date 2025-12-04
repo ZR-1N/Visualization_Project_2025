@@ -1,0 +1,119 @@
+{
+    "appid": 8500,
+    "name": "EVE Online",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 69,
+            "description": "Stereo Sound"
+        },
+        {
+            "id": 70,
+            "description": "Surround Sound"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German<strong>*</strong>, Russian<strong>*</strong>, French<strong>*</strong>, Korean<strong>*</strong>, Japanese<strong>*</strong>, Spanish - Spain<strong>*</strong>, Simplified Chinese<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2830570,
+        3549040,
+        3549050,
+        3549070,
+        3549080,
+        3549090,
+        1983083,
+        1983170,
+        1983085,
+        1983086,
+        1983087,
+        1983088,
+        1983089,
+        1983090,
+        1125050,
+        695740,
+        695741,
+        695742,
+        695743,
+        1983081,
+        2005520,
+        766712
+    ],
+    "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/eve-online-special-edition?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 4909,
+    "steamcharts_avg2weeks": 4789,
+    "reviews": {
+        "total_reviews": 22155,
+        "positive": 16139,
+        "negative": 6016,
+        "score": 6
+    }
+}

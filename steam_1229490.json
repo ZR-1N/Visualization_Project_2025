@@ -1,0 +1,19 @@
+{
+    "appid": 1229490,
+    "name": null,
+    "price": null,
+    "platforms": null,
+    "categories": null,
+    "genres": null,
+    "supported_languages": null,
+    "dlc": null,
+    "metacritic": null,
+    "player_count": 1953,
+    "steamcharts_avg2weeks": 1734,
+    "reviews": {
+        "total_reviews": 141058,
+        "positive": 137897,
+        "negative": 3161,
+        "score": 9
+    }
+}

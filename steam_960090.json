@@ -1,0 +1,71 @@
+{
+    "appid": 960090,
+    "name": "Bloons TD 6",
+    "price": {
+        "currency": "USD",
+        "initial": 1399,
+        "final": 1399,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$13.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Danish, Finnish, Japanese, Korean, Norwegian, Portuguese - Brazil, Russian, Simplified Chinese, Spanish - Latin America, Swedish, Traditional Chinese, Turkish, Polish, Spanish - Spain, Arabic, Dutch, Thai",
+    "dlc": [
+        3377850,
+        2117950,
+        4096360
+    ],
+    "metacritic": null,
+    "player_count": 8692,
+    "steamcharts_avg2weeks": 8645,
+    "reviews": {}
+}

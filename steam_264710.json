@@ -1,0 +1,81 @@
+{
+    "appid": 264710,
+    "name": "Subnautica",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 53,
+            "description": "VR Supported"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 31,
+            "description": "VR Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Polish, Russian, Simplified Chinese, Turkish, Finnish, Italian, Czech, Hungarian, Spanish - Spain, Danish, Japanese, Korean, Portuguese - Brazil, Bulgarian, Ukrainian, Dutch, Swedish, Vietnamese, Spanish - Latin America, Traditional Chinese, Portuguese - Portugal, Latvian, Lithuanian, Slovak<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1619300
+    ],
+    "metacritic": {
+        "score": 87,
+        "url": "https://www.metacritic.com/game/pc/subnautica?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2836,
+    "steamcharts_avg2weeks": 2778,
+    "reviews": {
+        "total_reviews": 186093,
+        "positive": 180138,
+        "negative": 5955,
+        "score": 9
+    }
+}

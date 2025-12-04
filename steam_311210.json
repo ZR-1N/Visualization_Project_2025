@@ -1,0 +1,114 @@
+{
+    "appid": 311210,
+    "name": "Call of Duty®: Black Ops III",
+    "price": {
+        "currency": "USD",
+        "initial": 5999,
+        "final": 1979,
+        "discount_percent": 67,
+        "initial_formatted": "$59.99",
+        "final_formatted": "$19.79"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, German<strong>*</strong>, Spanish - Spain<strong>*</strong>, Simplified Chinese, Traditional Chinese, Japanese, Polish, Portuguese - Brazil<strong>*</strong>, Russian<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        581450,
+        366843,
+        366849,
+        426730,
+        470190,
+        660850,
+        830450,
+        830451,
+        830460,
+        830461
+    ],
+    "metacritic": {
+        "score": 73,
+        "url": "https://www.metacritic.com/game/pc/call-of-duty-black-ops-iii?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 3443,
+    "steamcharts_avg2weeks": 3106,
+    "reviews": {
+        "total_reviews": 157887,
+        "positive": 137809,
+        "negative": 20078,
+        "score": 8
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "appid": 2379780,
+    "name": "Balatro",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 76,
+            "description": "Mouse Only Option"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 77,
+            "description": "Touch Only Option"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Dutch, Japanese, Polish, Portuguese - Brazil, Simplified Chinese, Spanish - Latin America, Traditional Chinese",
+    "dlc": [
+        2834460
+    ],
+    "metacritic": {
+        "score": 90,
+        "url": "https://www.metacritic.com/game/pc/balatro?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 8780,
+    "steamcharts_avg2weeks": 8835,
+    "reviews": {
+        "total_reviews": 108806,
+        "positive": 106787,
+        "negative": 2019,
+        "score": 9
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "appid": 282070,
+    "name": "This War of Mine",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Polish, Russian, Italian, Portuguese - Brazil, Spanish - Spain, Japanese, Korean, Turkish, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3323700,
+        750031,
+        481090,
+        750030,
+        974610,
+        1125630,
+        348040,
+        354350
+    ],
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/this-war-of-mine?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 402,
+    "steamcharts_avg2weeks": 417,
+    "reviews": {
+        "total_reviews": 26950,
+        "positive": 24850,
+        "negative": 2100,
+        "score": 8
+    }
+}

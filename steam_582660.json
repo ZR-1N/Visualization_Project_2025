@@ -1,0 +1,95 @@
+{
+    "appid": 582660,
+    "name": "Black Desert",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Japanese<strong>*</strong>, Russian<strong>*</strong>, Thai, Turkish, Traditional Chinese<strong>*</strong>, Portuguese - Brazil, Spanish - Latin America<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        1914120,
+        1914121,
+        1914122
+    ],
+    "metacritic": {
+        "score": 80,
+        "url": "https://www.metacritic.com/game/pc/black-desert-online-land-of-the-morning-light-edition?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 15938,
+    "steamcharts_avg2weeks": 15688,
+    "reviews": {
+        "total_reviews": 49849,
+        "positive": 35393,
+        "negative": 14456,
+        "score": 6
+    }
+}

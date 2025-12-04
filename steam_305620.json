@@ -1,0 +1,81 @@
+{
+    "appid": 305620,
+    "name": "The Long Dark",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, German, Russian, French, Spanish - Spain, Finnish, Japanese, Korean, Norwegian, Portuguese - Portugal, Simplified Chinese, Swedish, Traditional Chinese, Turkish, Portuguese - Brazil, Dutch, Italian, Polish, Ukrainian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        2091330,
+        2095000,
+        690180,
+        1328170
+    ],
+    "metacritic": null,
+    "player_count": 2027,
+    "steamcharts_avg2weeks": 2067,
+    "reviews": {
+        "total_reviews": 43540,
+        "positive": 38601,
+        "negative": 4939,
+        "score": 8
+    }
+}

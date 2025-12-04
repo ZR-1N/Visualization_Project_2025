@@ -1,0 +1,59 @@
+{
+    "appid": 3590,
+    "name": "Plants vs. Zombies GOTY Edition",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": {
+        "score": 87,
+        "url": "https://www.metacritic.com/game/pc/plants-vs-zombies?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 2027,
+    "steamcharts_avg2weeks": 2128,
+    "reviews": {
+        "total_reviews": 44124,
+        "positive": 43307,
+        "negative": 817,
+        "score": 9
+    }
+}

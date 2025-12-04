@@ -1,0 +1,95 @@
+{
+    "appid": 1222700,
+    "name": "A Way Out",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 599,
+        "discount_percent": 80,
+        "initial_formatted": "$29.99",
+        "final_formatted": "$5.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 39,
+            "description": "Shared/Split Screen Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Polish, Portuguese - Brazil, Russian<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 78,
+        "url": "https://www.metacritic.com/game/pc/a-way-out?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 579,
+    "steamcharts_avg2weeks": 623,
+    "reviews": {
+        "total_reviews": 29614,
+        "positive": 26230,
+        "negative": 3384,
+        "score": 8
+    }
+}

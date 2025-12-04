@@ -1,0 +1,156 @@
+{
+    "appid": 594650,
+    "name": "Hunt: Showdown 1896",
+    "price": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Russian, Simplified Chinese<strong>*</strong>, Polish, Turkish, Japanese, Portuguese - Brazil, Korean, Traditional Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3713770,
+        3713760,
+        3569970,
+        3768070,
+        3768100,
+        3415590,
+        3282900,
+        3548900,
+        3282880,
+        3389670,
+        3389830,
+        3204810,
+        3204800,
+        3037030,
+        2839560,
+        2719560,
+        2430650,
+        2643050,
+        2643040,
+        2585200,
+        2581740,
+        2531020,
+        2407941,
+        2407940,
+        2304380,
+        2304500,
+        2272530,
+        2272500,
+        2200640,
+        2160330,
+        2160020,
+        2133640,
+        2100450,
+        2081520,
+        2014790,
+        1966460,
+        1906330,
+        1887100,
+        1852480,
+        1852470,
+        1784880,
+        1784870,
+        1761570,
+        1720670,
+        1674570,
+        1674580,
+        1643020,
+        1610550,
+        1586080,
+        1576410,
+        1530430,
+        1397381,
+        1397380,
+        1374340,
+        1304601,
+        1304600,
+        1255000,
+        1255001,
+        1191490,
+        1228530,
+        1234950,
+        1225140,
+        1180490,
+        1180491,
+        1166470,
+        1166472,
+        1166471,
+        1143840
+    ],
+    "metacritic": {
+        "score": 81,
+        "url": "https://www.metacritic.com/game/pc/hunt-showdown?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 19283,
+    "steamcharts_avg2weeks": 19970,
+    "reviews": {
+        "total_reviews": 115041,
+        "positive": 87458,
+        "negative": 27583,
+        "score": 6
+    }
+}

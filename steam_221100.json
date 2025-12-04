@@ -1,0 +1,92 @@
+{
+    "appid": 221100,
+    "name": "DayZ",
+    "price": {
+        "currency": "USD",
+        "initial": 4999,
+        "final": 4999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$49.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 8,
+            "description": "Valve Anti-Cheat enabled"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Czech, Russian, Simplified Chinese, Traditional Chinese, Japanese, Polish, Portuguese - Brazil",
+    "dlc": [
+        3816030,
+        2968040,
+        2622430
+    ],
+    "metacritic": null,
+    "player_count": 36418,
+    "steamcharts_avg2weeks": 34177,
+    "reviews": {
+        "total_reviews": 202933,
+        "positive": 148947,
+        "negative": 53986,
+        "score": 6
+    }
+}

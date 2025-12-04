@@ -1,0 +1,64 @@
+{
+    "appid": 261570,
+    "name": "Ori and the Blind Forest",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Japanese, Russian, Simplified Chinese, Portuguese - Brazil",
+    "dlc": null,
+    "metacritic": {
+        "score": 88,
+        "url": "https://www.metacritic.com/game/pc/ori-and-the-blind-forest?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 66,
+    "steamcharts_avg2weeks": 62,
+    "reviews": {
+        "total_reviews": 14923,
+        "positive": 14241,
+        "negative": 682,
+        "score": 9
+    }
+}

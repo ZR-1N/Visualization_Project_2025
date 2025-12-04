@@ -1,0 +1,88 @@
+{
+    "appid": 766570,
+    "name": "Russian Fishing 4",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 15,
+            "description": "Stats"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "18",
+            "description": "Sports"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English, German, Russian, Simplified Chinese, French, Spanish - Spain, Polish, Portuguese - Brazil, Dutch, Korean, Japanese, Traditional Chinese, Turkish, Italian, Indonesian",
+    "dlc": [
+        1366920,
+        2338590
+    ],
+    "metacritic": null,
+    "player_count": 14092,
+    "steamcharts_avg2weeks": 15299,
+    "reviews": {
+        "total_reviews": 6830,
+        "positive": 5374,
+        "negative": 1456,
+        "score": 6
+    }
+}

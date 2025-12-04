@@ -1,0 +1,119 @@
+{
+    "appid": 307780,
+    "name": "Mortal Kombat X",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 399,
+        "discount_percent": 80,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$3.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 37,
+            "description": "Shared/Split Screen PvP"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, Italian<strong>*</strong>, Spanish - Spain<strong>*</strong>, Polish, Portuguese - Brazil<strong>*</strong>, Russian, German<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        524620,
+        347880,
+        351550,
+        354427,
+        351553,
+        351551,
+        351554,
+        351555,
+        347150,
+        354425,
+        347154,
+        351556,
+        347155,
+        347890,
+        351552,
+        354426,
+        524260,
+        524270,
+        524280,
+        524290,
+        524300,
+        524310,
+        524320
+    ],
+    "metacritic": {
+        "score": 84,
+        "url": "https://www.metacritic.com/game/pc/mortal-kombat-xl?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 747,
+    "steamcharts_avg2weeks": 719,
+    "reviews": {
+        "total_reviews": 19691,
+        "positive": 15162,
+        "negative": 4529,
+        "score": 6
+    }
+}

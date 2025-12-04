@@ -1,0 +1,115 @@
+{
+    "appid": 244850,
+    "name": "Space Engineers",
+    "price": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 999,
+        "discount_percent": 50,
+        "initial_formatted": "$19.99",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 27,
+            "description": "Cross-Platform Multiplayer"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 30,
+            "description": "Steam Workshop"
+        },
+        {
+            "id": 18,
+            "description": "Partial Controller Support"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 17,
+            "description": "Includes level editor"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, German, Spanish - Spain, Czech, Danish, Dutch, Polish, French, Italian, Finnish, Hungarian, Norwegian, Portuguese - Brazil, Swedish, Russian, Simplified Chinese",
+    "dlc": [
+        4116960,
+        3858380,
+        3601770,
+        3066290,
+        2914120,
+        2504720,
+        1958640,
+        1783760,
+        1676100,
+        1475830,
+        1374610,
+        1307680,
+        1241550,
+        1167910,
+        1135960,
+        1084680,
+        1049790,
+        573160
+    ],
+    "metacritic": null,
+    "player_count": 4969,
+    "steamcharts_avg2weeks": 5060,
+    "reviews": {
+        "total_reviews": 86109,
+        "positive": 76649,
+        "negative": 9460,
+        "score": 8
+    }
+}

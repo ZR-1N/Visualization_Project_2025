@@ -1,0 +1,60 @@
+{
+    "appid": 433850,
+    "name": "Z1 Battle Royale",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Spanish - Spain, Korean, Portuguese - Brazil, Russian, Simplified Chinese<br><strong>*</strong>languages with full audio support",
+    "dlc": null,
+    "metacritic": {
+        "score": 70,
+        "url": "https://www.metacritic.com/game/pc/h1z1?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 1001,
+    "steamcharts_avg2weeks": 1002,
+    "reviews": {
+        "total_reviews": 57068,
+        "positive": 28708,
+        "negative": 28360,
+        "score": 5
+    }
+}

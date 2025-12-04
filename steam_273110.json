@@ -1,0 +1,81 @@
+{
+    "appid": 273110,
+    "name": "Counter-Strike Nexon",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, German, Russian, Turkish, Spanish - Spain, Indonesian<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        3324690,
+        3324680,
+        3324670
+    ],
+    "metacritic": null,
+    "player_count": 466,
+    "steamcharts_avg2weeks": 525,
+    "reviews": {
+        "total_reviews": 15169,
+        "positive": 9022,
+        "negative": 6147,
+        "score": 5
+    }
+}

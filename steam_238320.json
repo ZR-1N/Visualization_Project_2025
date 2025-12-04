@@ -1,0 +1,81 @@
+{
+    "appid": 238320,
+    "name": "Outlast",
+    "price": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 13,
+            "description": "Captions available"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French, Italian, German, Spanish - Spain, Russian, Polish, Portuguese - Brazil, Japanese<br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        273300
+    ],
+    "metacritic": {
+        "score": 80,
+        "url": "https://www.metacritic.com/game/pc/outlast?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 202,
+    "steamcharts_avg2weeks": 209,
+    "reviews": {
+        "total_reviews": 37620,
+        "positive": 35977,
+        "negative": 1643,
+        "score": 9
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "appid": 42910,
+    "name": "Magicka",
+    "price": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 24,
+            "description": "Shared/Split Screen"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 25,
+            "description": "Steam Leaderboards"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        },
+        {
+            "id": 44,
+            "description": "Remote Play Together"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "3",
+            "description": "RPG"
+        }
+    ],
+    "supported_languages": "English, Russian, French, German, Italian, Polish, Spanish - Spain",
+    "dlc": [
+        255980,
+        73119,
+        73118,
+        73120,
+        73115,
+        73095,
+        73096,
+        73097,
+        73098,
+        73093,
+        73039,
+        73058,
+        73091,
+        73092,
+        42918,
+        73030,
+        73033,
+        73031,
+        73035,
+        73036,
+        73037,
+        73057,
+        266740,
+        813830
+    ],
+    "metacritic": {
+        "score": 74,
+        "url": "https://www.metacritic.com/game/pc/magicka?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 16,
+    "steamcharts_avg2weeks": 15,
+    "reviews": {
+        "total_reviews": 14789,
+        "positive": 12338,
+        "negative": 2451,
+        "score": 8
+    }
+}

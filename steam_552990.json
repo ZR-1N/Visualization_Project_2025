@@ -1,0 +1,134 @@
+{
+    "appid": 552990,
+    "name": "World of Warships",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": false,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 1,
+            "description": "Multi-player"
+        },
+        {
+            "id": 20,
+            "description": "MMO"
+        },
+        {
+            "id": 49,
+            "description": "PvP"
+        },
+        {
+            "id": 36,
+            "description": "Online PvP"
+        },
+        {
+            "id": 9,
+            "description": "Co-op"
+        },
+        {
+            "id": 38,
+            "description": "Online Co-op"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 35,
+            "description": "In-App Purchases"
+        },
+        {
+            "id": 64,
+            "description": "Adjustable Text Size"
+        },
+        {
+            "id": 67,
+            "description": "Camera Comfort"
+        },
+        {
+            "id": 66,
+            "description": "Color Alternatives"
+        },
+        {
+            "id": 68,
+            "description": "Custom Volume Controls"
+        },
+        {
+            "id": 74,
+            "description": "Playable without Timed Input"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        }
+    ],
+    "genres": [
+        {
+            "id": "1",
+            "description": "Action"
+        },
+        {
+            "id": "29",
+            "description": "Massively Multiplayer"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English<strong>*</strong>, French<strong>*</strong>, German<strong>*</strong>, Czech, Japanese<strong>*</strong>, Polish<strong>*</strong>, Russian<strong>*</strong>, Thai, Turkish, Spanish - Spain<strong>*</strong>, Korean<strong>*</strong>, Portuguese - Brazil<strong>*</strong>, Traditional Chinese<strong>*</strong>, Italian<strong>*</strong>, Simplified Chinese<strong>*</strong>, Ukrainian, Dutch<strong>*</strong>, Spanish - Latin America<strong>*</strong><br><strong>*</strong>languages with full audio support",
+    "dlc": [
+        4134400,
+        934680,
+        3197530,
+        1991000,
+        1880790,
+        934660,
+        3016850,
+        1954810,
+        845000,
+        2316650,
+        1954920,
+        2569960,
+        934650,
+        1739020,
+        844890,
+        934640,
+        1889260,
+        1953740,
+        1224060,
+        845020,
+        934690,
+        2569970,
+        1005550,
+        1690140,
+        2283211
+    ],
+    "metacritic": {
+        "score": 81,
+        "url": "https://www.metacritic.com/game/pc/world-of-warships?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 39552,
+    "steamcharts_avg2weeks": 41126,
+    "reviews": {
+        "total_reviews": 47359,
+        "positive": 38050,
+        "negative": 9309,
+        "score": 8
+    }
+}

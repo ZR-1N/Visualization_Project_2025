@@ -1,0 +1,63 @@
+{
+    "appid": 252130,
+    "name": "Divide By Sheep",
+    "price": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+    },
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": false
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 62,
+            "description": "Family Sharing"
+        }
+    ],
+    "genres": [
+        {
+            "id": "25",
+            "description": "Adventure"
+        },
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": null,
+    "metacritic": {
+        "score": 83,
+        "url": "https://www.metacritic.com/game/pc/divide-by-sheep?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 0,
+    "steamcharts_avg2weeks": null,
+    "reviews": {
+        "total_reviews": 1263,
+        "positive": 1136,
+        "negative": 127,
+        "score": 8
+    }
+}

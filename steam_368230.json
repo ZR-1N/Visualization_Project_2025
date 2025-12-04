@@ -1,0 +1,72 @@
+{
+    "appid": 368230,
+    "name": "Kingdom: Classic",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 28,
+            "description": "Full controller support"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        },
+        {
+            "id": 41,
+            "description": "Remote Play on Phone"
+        },
+        {
+            "id": 42,
+            "description": "Remote Play on Tablet"
+        },
+        {
+            "id": 43,
+            "description": "Remote Play on TV"
+        }
+    ],
+    "genres": [
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "28",
+            "description": "Simulation"
+        },
+        {
+            "id": "2",
+            "description": "Strategy"
+        }
+    ],
+    "supported_languages": "English, French, Italian, German, Spanish - Spain, Danish, Finnish, Norwegian, Portuguese - Brazil, Swedish",
+    "dlc": null,
+    "metacritic": {
+        "score": 74,
+        "url": "https://www.metacritic.com/game/pc/kingdom?ftag=MCD-06-10aaa1f"
+    },
+    "player_count": 44,
+    "steamcharts_avg2weeks": 44,
+    "reviews": {
+        "total_reviews": 9117,
+        "positive": 8018,
+        "negative": 1099,
+        "score": 8
+    }
+}

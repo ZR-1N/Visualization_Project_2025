@@ -1,0 +1,55 @@
+{
+    "appid": 346900,
+    "name": "AdVenture Capitalist",
+    "price": null,
+    "platforms": {
+        "windows": true,
+        "mac": true,
+        "linux": true
+    },
+    "categories": [
+        {
+            "id": 2,
+            "description": "Single-player"
+        },
+        {
+            "id": 22,
+            "description": "Steam Achievements"
+        },
+        {
+            "id": 29,
+            "description": "Steam Trading Cards"
+        },
+        {
+            "id": 23,
+            "description": "Steam Cloud"
+        }
+    ],
+    "genres": [
+        {
+            "id": "4",
+            "description": "Casual"
+        },
+        {
+            "id": "23",
+            "description": "Indie"
+        },
+        {
+            "id": "37",
+            "description": "Free To Play"
+        }
+    ],
+    "supported_languages": "English",
+    "dlc": [
+        471650
+    ],
+    "metacritic": null,
+    "player_count": 1302,
+    "steamcharts_avg2weeks": 1253,
+    "reviews": {
+        "total_reviews": 37869,
+        "positive": 32658,
+        "negative": 5211,
+        "score": 8
+    }
+}
