@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Steam Games Dashboard</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        .page {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+        }
+
+        h1 {
+            margin: 0 0 4px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #9ca3af;
+            margin-bottom: 16px;
+        }
+
+        .header-row {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .controls {
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        select {
+            background: #020617;
+            color: #e5e7eb;
+            border-radius: 999px;
+            border: 1px solid #1f2937;
+            padding: 6px 18px;
+            font-size: 13px;
+            outline: none;
+        }
+
+            select:focus {
+                border-color: #38bdf8;
+            }
+
+        .cards-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            margin: 16px 0 20px;
+        }
+
+        .card {
+            background: radial-gradient(circle at top left, #0b1220, #020617 55%);
+            border-radius: 14px;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            padding: 10px 12px;
+            box-shadow: 0 14px 30px rgba(15, 23, 42, 0.8);
+        }
+
+        .card-small-label {
+            font-size: 11px;
+            color: #9ca3af;
+        }
+
+        .metric-main {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        .metric-sub {
+            font-size: 11px;
+            color: #9ca3af;
+            margin-top: 2px;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+            gap: 16px;
+        }
+
+            .chart-grid.bottom {
+                margin-top: 16px;
+                grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+            }
+
+        .chart-card {
+            background: radial-gradient(circle at top left, #020617, #020617 55%);
+            border-radius: 14px;
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            padding: 12px 14px 10px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+            min-height: 260px;
+        }
+
+        .chart-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .chart-title {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .chart-subtitle {
+            font-size: 11px;
+            color: #9ca3af;
+        }
+
+        svg {
+            width: 100%;
+            height: 260px;
+        }
+
+        .chart-card.small svg {
+            height: 220px;
+        }
+
+        .axis path, .axis line {
+            stroke: #4b5563;
+        }
+
+        .axis text {
+            fill: #9ca3af;
+            font-size: 11px;
+        }
+
+        .axis-label {
+            fill: #9ca3af;
+            font-size: 11px;
+        }
+
+        .point {
+            stroke-width: 1px;
+            stroke: rgba(15, 23, 42, 0.9);
+            opacity: 0.9;
+        }
+
+            .point.dimmed {
+                opacity: 0.15;
+            }
+
+            .point.highlight {
+                stroke: #f9fafb;
+                stroke-width: 1.6px;
+            }
+
+        .bar {
+            fill: #38bdf8;
+            opacity: 0.85;
+        }
+
+            .bar:hover {
+                opacity: 1;
+            }
+
+        .bar-genre {
+            fill: #a855f7;
+            opacity: 0.85;
+        }
+
+        .bar-platform {
+            fill: #4ade80;
+            opacity: 0.9;
+        }
+
+        .tooltip {
+            position: fixed;
+            pointer-events: none;
+            background: #020617;
+            border: 1px solid rgba(148, 163, 184, 0.7);
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 11px;
+            color: #e5e7eb;
+            max-width: 260px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+            opacity: 0;
+            transform: translate(-50%, -110%);
+            z-index: 999;
+            white-space: normal;
+        }
+
+        .tooltip-title {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .tooltip-row {
+            margin-top: 2px;
+        }
+
+        .tooltip-label {
+            color: #9ca3af;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 4px;
+            font-size: 10px;
+            color: #9ca3af;
+        }
+
+        .legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .legend-color {
+            width: 18px;
+            height: 6px;
+            border-radius: 999px;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+            .search-box input {
+                flex: 1;
+                min-width: 180px;
+                background: #020617;
+                border-radius: 999px;
+                border: 1px solid #1f2937;
+                padding: 6px 10px;
+                font-size: 12px;
+                color: #e5e7eb;
+                outline: none;
+            }
+
+                .search-box input:focus {
+                    border-color: #38bdf8;
+                }
+
+        @media (max-width: 960px) {
+            .chart-grid,
+            .chart-grid.bottom {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            svg {
+                height: 260px;
+            }
+        }
+
+        .axis-grid line {
+            stroke: #1f2937;
+            stroke-opacity: 0.4;
+        }
+
+        .axis-grid path {
+            display: none;
+        }
+
+        .scatter-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+            margin-top: 6px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+            .scatter-toolbar select {
+                background: #020617;
+                color: #e5e7eb;
+                border-radius: 999px;
+                border: 1px solid #1f2937;
+                padding: 4px 10px;
+                font-size: 12px;
+                outline: none;
+            }
+
+                .scatter-toolbar select:focus {
+                    border-color: #38bdf8;
+                }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header-row">
+            <div>
+                <h1>Steam Games Overview</h1>
+                <div class="subtitle">
+                    Based on <span id="summary-total">–</span> games, showing price, players, reviews and genres.
+                </div>
+            </div>
+            <div class="controls">
+                <span>Filter by main genre:</span>
+                <select id="genreFilter">
+                    <option value="all">All genres</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="cards-row">
+            <div class="card">
+                <div class="card-small-label">Total games</div>
+                <div id="metric-total" class="metric-main">–</div>
+                <div id="metric-free" class="metric-sub">–</div>
+            </div>
+            <div class="card">
+                <div class="card-small-label">Price (paid only)</div>
+                <div id="metric-price" class="metric-main">–</div>
+                <div id="metric-price-sub" class="metric-sub">–</div>
+            </div>
+            <div class="card">
+                <div class="card-small-label">Current players</div>
+                <div id="metric-players" class="metric-main">–</div>
+                <div id="metric-players-sub" class="metric-sub">–</div>
+            </div>
+            <div class="card">
+                <div class="card-small-label">Reviews</div>
+                <div id="metric-reviews" class="metric-main">–</div>
+                <div id="metric-reviews-sub" class="metric-sub">–</div>
+            </div>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-card">
+                <div class="chart-title-row">
+                    <div>
+                        <div class="chart-title">Price vs Current Players</div>
+                        <div class="chart-subtitle">Point size = total reviews, color = review score, log Y axis.</div>
+                    </div>
+                    <div class="chart-subtitle" id="scatter-count">– games</div>
+                </div>
+                <div class="search-box">
+                    <input id="searchInput" type="text" placeholder="Highlight by game name..." />
+                </div>
+                <svg id="scatterSvg"></svg>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background:#f97316;"></div><span>score &lt; 6</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background:#eab308;"></div><span>6 – 7.9</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background:#22c55e;"></div><span>8 – 8.9</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background:#38bdf8;"></div><span>≥ 9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-title-row">
+                    <div>
+                        <div class="chart-title">Top 10 by players</div>
+                        <div class="chart-subtitle">From filtered games, highest current players.</div>
+                    </div>
+                </div>
+                <div class="scatter-toolbar">
+                    <span>Price range:</span>
+                    <select id="priceRangeFilter">
+                        <option value="all">All</option>
+                        <option value="0-5">$0 – $5</option>
+                        <option value="5-15">$5 – $15</option>
+                        <option value="15-30">$15 – $30</option>
+                        <option value="30-999">$30+</option>
+                    </select>
+                </div>
+
+                <svg id="topPlayersSvg"></svg>
+            </div>
+        </div>
+
+        <div class="chart-grid bottom">
+            <div class="chart-card small">
+                <div class="chart-title-row">
+                    <div>
+                        <div class="chart-title">游戏主类型词云</div>
+                        <div class="chart-subtitle">每个词的大小代表该类型的游戏数量。</div>
+                    </div>
+                </div>
+                <svg id="genreSvg"></svg>
+            </div>
+            <div class="chart-card small">
+                <div class="chart-title-row">
+                    <div>
+                        <div class="chart-title">Supported platforms</div>
+                        <div class="chart-subtitle">How many games support Windows / Mac / Linux.</div>
+                    </div>
+                </div>
+                <svg id="platformSvg"></svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

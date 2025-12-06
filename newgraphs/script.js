@@ -1,4 +1,5 @@
-window.rawData = [
+﻿
+const rawData = [
     {
         "appid": 10,
         "name": "Counter-Strike",
@@ -46688,554 +46689,604 @@ window.rawData = [
         }
     }
 ];
-// ---------------------------- 工具函数 ----------------------------
-function hexToRgb(hex) {
-    hex = hex.replace('#', '');
-    if (hex.length === 3) {
-        hex = hex.split('').map(h => h + h).join('');
-    }
-    const num = parseInt(hex, 16);
-    return {
-        r: num >> 16,
-        g: (num >> 8) & 255,
-        b: num & 255
-    };
+
+
+// ---------------------------- 预处理函数 ----------------------------
+function preprocess(rawData) {
+    return rawData.map(d => {
+        const priceFinal = d.price && typeof d.price.final === "number"
+            ? d.price.final / 100
+            : 0;
+
+        const isFree = !d.price || d.price.final === 0;
+
+        const totalReviews = d.reviews && typeof d.reviews.total_reviews === "number"
+            ? d.reviews.total_reviews
+            : 0;
+        const reviewScore = d.reviews && typeof d.reviews.score === "number"
+            ? d.reviews.score
+            : 0;
+
+        const playerCount = typeof d.player_count === "number"
+            ? d.player_count
+            : 0;
+
+        const primaryGenre = (d.genres && d.genres.length > 0)
+            ? d.genres[0].description
+            : "其他";
+
+        const metaScore = d.metacritic && typeof d.metacritic.score === "number"
+            ? d.metacritic.score
+            : null;
+
+        const languagesCount = d.supported_languages
+            ? d.supported_languages.split(",").length
+            : 0;
+
+        const dlcCount = Array.isArray(d.dlc) ? d.dlc.length : 0;
+
+        return {
+            ...d,
+            priceFinal,
+            isFree,
+            totalReviews,
+            reviewScore,
+            playerCount,
+            primaryGenre,
+            metaScore,
+            languagesCount,
+            dlcCount
+        };
+    });
 }
 
-function escapeHtml(s) {
-    return ('' + s).replace(/[&<>"']/g, c => ({
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#39;'
+
+// ---------------------------- 汇总指标 ----------------------------
+function fillSummaryCards(games) {
+    const totalGames = games.length;
+    const freeGames = games.filter(g => g.isFree).length;
+    const paidGames = games.filter(g => !g.isFree && g.priceFinal > 0);
+
+    const avgPrice = d3.mean(paidGames, d => d.priceFinal) || 0;
+    const minPrice = d3.min(paidGames, d => d.priceFinal) || 0;
+    const maxPrice = d3.max(paidGames, d => d.priceFinal) || 0;
+
+    const totalPlayers = d3.sum(games, d => d.playerCount);
+    const avgPlayers = d3.mean(games, d => d.playerCount) || 0;
+
+    const totalReviews = d3.sum(games, d => d.totalReviews);
+    const avgScore = d3.mean(games.filter(d => d.reviewScore > 0), d => d.reviewScore) || 0;
+
+    document.getElementById("summary-total").textContent = totalGames;
+
+    document.getElementById("metric-total").textContent = totalGames.toLocaleString("en-US");
+    document.getElementById("metric-free").textContent =
+        `其中免费游戏 ${freeGames} 款，占 ${(freeGames / totalGames * 100).toFixed(1)}%`;
+
+    document.getElementById("metric-price").textContent =
+        `$${avgPrice.toFixed(2)} 平均价格`;
+    document.getElementById("metric-price-sub").textContent =
+        `价格区间：$${minPrice.toFixed(2)} – $${maxPrice.toFixed(2)}`;
+
+    document.getElementById("metric-players").textContent =
+        totalPlayers.toLocaleString("en-US");
+    document.getElementById("metric-players-sub").textContent =
+        `平均每款约 ${Math.round(avgPlayers).toLocaleString("en-US")} 人在线`;
+
+    document.getElementById("metric-reviews").textContent =
+        totalReviews.toLocaleString("en-US");
+    document.getElementById("metric-reviews-sub").textContent =
+        `平均评测分约 ${avgScore.toFixed(1)} / 10`;
+}
+
+
+// ---------------------------- 类型筛选下拉框 ----------------------------
+function setupGenreFilter(games) {
+    const select = document.getElementById("genreFilter");
+    const genres = Array.from(new Set(games.map(g => g.primaryGenre))).sort();
+    genres.forEach(g => {
+        const opt = document.createElement("option");
+        opt.value = g;
+        opt.textContent = g;
+        select.appendChild(opt);
+    });
+}
+
+
+// ---------------------------- 仪表盘初始化 ----------------------------
+function initDashboard(allGames) {
+    const tooltip = d3.select("#tooltip");
+    const scatterSvg = d3.select("#scatterSvg");
+    const topPlayersSvg = d3.select("#topPlayersSvg");
+    const genreSvg = d3.select("#genreSvg");
+    const platformSvg = d3.select("#platformSvg");
+    const genreFilter = document.getElementById("genreFilter");
+    const searchInput = document.getElementById("searchInput");
+    const priceFilter = document.getElementById("priceRangeFilter");
+
+    let currentGenre = "all";
+    let currentPriceRange = "all";
+    let searchKeyword = "";
+
+    function inPriceRange(d) {
+        const p = d.priceFinal || 0;
+        switch (currentPriceRange) {
+            case "0-5":
+                return p >= 0 && p <= 5;
+            case "5-15":
+                return p > 5 && p <= 15;
+            case "15-30":
+                return p > 15 && p <= 30;
+            case "30-999":
+                return p > 30;
+            case "all":
+            default:
+                return true;
+        }
+    }
+
+    function getFilteredGames() {
+        let data = allGames;
+        if (currentGenre !== "all") {
+            data = data.filter(d => d.primaryGenre === currentGenre);
+        }
+        data = data.filter(inPriceRange);
+        return data;
+    }
+
+    function render() {
+        const data = getFilteredGames();
+        document.getElementById("scatter-count").textContent = `${data.length} games`;
+
+        renderScatter(scatterSvg, data, tooltip, searchKeyword);
+        renderTopPlayers(topPlayersSvg, data, tooltip);
+        renderGenres(genreSvg, data, tooltip);
+        renderPlatforms(platformSvg, data, tooltip);
+    }
+
+    genreFilter.addEventListener("change", () => {
+        currentGenre = genreFilter.value;
+        render();
+    });
+
+    if (priceFilter) {
+        priceFilter.addEventListener("change", () => {
+            currentPriceRange = priceFilter.value;
+            render();
+        });
+    }
+
+    searchInput.addEventListener("input", () => {
+        searchKeyword = searchInput.value.trim().toLowerCase();
+        render();
+    });
+
+    window.addEventListener("resize", () => {
+        render();
+    });
+
+    render();
+}
+
+
+
+// ---------------------------- 散点图：价格 vs 在线人数 ----------------------------
+function renderScatter(svg, data, tooltip, searchKeyword) {
+    const node = svg.node();
+    const width = node.clientWidth || 600;
+    const height = node.clientHeight || 260;
+
+    svg.selectAll("*").remove();
+
+    const margin = { top: 20, right: 18, bottom: 40, left: 56 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    const g = svg.append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const maxPrice = d3.max(data, d => d.priceFinal) || 1;
+    const maxPlayers = d3.max(data, d => d.playerCount) || 1;
+
+    const x = d3.scaleLinear()
+        .domain([0, maxPrice * 1.05])
+        .range([0, innerWidth]);
+
+    const y = d3.scaleLog()
+        .domain([1, maxPlayers * 1.2])
+        .range([innerHeight, 0])
+        .clamp(true);
+
+    const maxReviews = d3.max(data, d => d.totalReviews) || 1;
+    const r = d3.scaleSqrt()
+        .domain([1, maxReviews])
+        .range([3, 15]);
+
+    const color = d3.scaleLinear()
+        .domain([5, 7, 8.5, 9.5])
+        .range(["#f97316", "#eab308", "#22c55e", "#38bdf8"])
+        .clamp(true);
+
+    const xAxis = d3.axisBottom(x)
+        .ticks(6)
+        .tickFormat(d => `$${d}`);
+    const yAxis = d3.axisLeft(y)
+        .ticks(6, "~s");
+
+    // grid lines
+    const xGrid = d3.axisBottom(x)
+        .ticks(6)
+        .tickSize(-innerHeight)
+        .tickFormat("");
+    const yGrid = d3.axisLeft(y)
+        .ticks(6, "~s")
+        .tickSize(-innerWidth)
+        .tickFormat("");
+
+    g.append("g")
+        .attr("class", "axis-grid x-grid")
+        .attr("transform", `translate(0,${innerHeight})`)
+        .call(xGrid);
+
+    g.append("g")
+        .attr("class", "axis-grid y-grid")
+        .call(yGrid);
+
+    // axes
+    g.append("g")
+        .attr("class", "axis")
+        .attr("transform", `translate(0,${innerHeight})`)
+        .call(xAxis);
+
+    g.append("g")
+        .attr("class", "axis")
+        .call(yAxis);
+
+
+    g.append("text")
+        .attr("class", "axis-label")
+        .attr("x", innerWidth / 2)
+        .attr("y", innerHeight + 32)
+        .attr("text-anchor", "middle")
+        .text("价格（美元）");
+
+    g.append("text")
+        .attr("class", "axis-label")
+        .attr("transform", "rotate(-90)")
+        .attr("x", -innerHeight / 2)
+        .attr("y", -44)
+        .attr("text-anchor", "middle")
+        .text("当前在线玩家数（对数）");
+
+    let highlightedIds = new Set();
+    if (searchKeyword) {
+        data.forEach(d => {
+            if (d.name.toLowerCase().includes(searchKeyword)) {
+                highlightedIds.add(d.appid);
+            }
+        });
+    }
+
+    const points = g.append("g")
+        .selectAll("circle")
+        .data(data)
+        .join("circle")
+        .attr("class", "point")
+        .classed("dimmed", d => highlightedIds.size > 0 && !highlightedIds.has(d.appid))
+        .classed("highlight", d => highlightedIds.has(d.appid))
+        .attr("cx", d => x(d.priceFinal))
+        .attr("cy", d => y(Math.max(1, d.playerCount)))
+        .attr("r", d => r(Math.max(1, d.totalReviews)))
+        .attr("fill", d => color(d.reviewScore || 0));
+
+    points.on("mouseover", (event, d) => {
+        tooltip.style("opacity", 1);
+        const priceLabel = d.isFree ? "免费 / Free to Play"
+            : `$${d.priceFinal.toFixed(2)} ${d.price && d.price.discount_percent ? "(折扣中)" : ""}`;
+
+        tooltip.html(`
+            <div class="tooltip-title">${escapeHtml(d.name)}</div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">价格：</span>${priceLabel}
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">当前玩家：</span>${d.playerCount.toLocaleString("en-US")}
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">评测：</span>${d.reviewScore}/10 · ${d.totalReviews.toLocaleString("en-US")} 条评测
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">主类型：</span>${escapeHtml(d.primaryGenre)}
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">Metacritic：</span>${d.metaScore ?? "无"}
+            </div>
+        `);
+
+        tooltip.style("left", (event.clientX) + "px")
+            .style("top", (event.clientY - 16) + "px");
+
+    }).on("mousemove", (event) => {
+        tooltip.style("left", (event.clientX) + "px")
+            .style("top", (event.clientY - 16) + "px");
+    }).on("mouseout", () => {
+        tooltip.style("opacity", 0);
+    });
+}
+
+
+// ---------------------------- Top 10 玩家数 ----------------------------
+function renderTopPlayers(svg, data, tooltip) {
+    const node = svg.node();
+    const width = node.clientWidth || 400;
+    const height = node.clientHeight || 260;
+
+    svg.selectAll("*").remove();
+
+    const margin = { top: 14, right: 18, bottom: 26, left: 140 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    const g = svg.append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const top = data
+        .slice()
+        .sort((a, b) => d3.descending(a.playerCount, b.playerCount))
+        .slice(0, 10);
+
+    const y = d3.scaleBand()
+        .domain(top.map(d => d.name))
+        .range([0, innerHeight])
+        .padding(0.15);
+
+    const xMax = d3.max(top, d => d.playerCount) || 1;
+    const x = d3.scaleLinear()
+        .domain([0, xMax * 1.1])
+        .range([0, innerWidth]);
+
+    const xAxis = d3.axisBottom(x)
+        .ticks(4)
+        .tickFormat(d3.format("~s"));
+    const yAxis = d3.axisLeft(y)
+        .tickFormat(name => name.length > 16 ? name.slice(0, 14) + "…" : name);
+
+    g.append("g")
+        .attr("class", "axis")
+        .attr("transform", `translate(0,${innerHeight})`)
+        .call(xAxis);
+
+    g.append("g")
+        .attr("class", "axis")
+        .call(yAxis);
+
+    g.append("text")
+        .attr("class", "axis-label")
+        .attr("x", innerWidth / 2)
+        .attr("y", innerHeight + 20)
+        .attr("text-anchor", "middle")
+        .text("当前在线玩家数");
+
+    g.selectAll("rect")
+        .data(top)
+        .join("rect")
+        .attr("class", "bar")
+        .attr("x", 0)
+        .attr("y", d => y(d.name))
+        .attr("height", y.bandwidth())
+        .attr("width", d => x(d.playerCount))
+        .on("mouseover", (event, d) => {
+            tooltip.style("opacity", 1);
+            tooltip.html(`
+                <div class="tooltip-title">${escapeHtml(d.name)}</div>
+                <div class="tooltip-row">
+                    <span class="tooltip-label">当前玩家：</span>${d.playerCount.toLocaleString("en-US")}
+                </div>
+                <div class="tooltip-row">
+                    <span class="tooltip-label">评测：</span>${d.reviewScore}/10 · ${d.totalReviews.toLocaleString("en-US")} 条评测
+                </div>
+            `);
+            tooltip.style("left", (event.clientX) + "px")
+                .style("top", (event.clientY - 16) + "px");
+        })
+        .on("mousemove", (event) => {
+            tooltip.style("left", (event.clientX) + "px")
+                .style("top", (event.clientY - 16) + "px");
+        })
+        .on("mouseout", () => {
+            tooltip.style("opacity", 0);
+        });
+}
+
+
+// ---------------------------- 类型分布 ----------------------------
+// ======================= GENRE WORD CLOUD =======================
+function renderGenres(svg, data, tooltip) {
+    const node = svg.node();
+    const width = node.clientWidth || 500;
+    const height = node.clientHeight || 220;
+
+    svg.selectAll("*").remove();
+
+    // 按 primaryGenre 聚合，统计每种类型的游戏数
+    let grouped = Array.from(
+        d3.rollup(data, v => v.length, d => d.primaryGenre),
+        ([genre, count]) => ({ genre, count })
+    ).sort((a, b) => d3.descending(a.count, b.count));
+
+    // 只取前 25 个类型，避免太拥挤
+    grouped = grouped.slice(0, 25);
+
+    const minCount = d3.min(grouped, d => d.count) || 1;
+    const maxCount = d3.max(grouped, d => d.count) || 1;
+
+    // 字体大小映射：数量小的字 12，数量多的字 40
+    const fontSize = d3.scaleLinear()
+        .domain([minCount, maxCount])
+        .range([12, 40]);
+
+    // 颜色映射：数量少偏蓝，数量多偏紫
+    const color = d3.scaleLinear()
+        .domain([minCount, maxCount])
+        .range(["#38bdf8", "#a855f7"]);
+
+    const words = grouped.map(d => ({
+        text: d.genre,
+        size: fontSize(d.count),
+        count: d.count
+    }));
+
+    // 使用 d3-cloud 布局
+    const layout = d3.layout.cloud()
+        .size([width, height])
+        .words(words)
+        .padding(4)
+        .rotate(() => 0)  // 全部水平显示，阅读更清晰
+        .font("system-ui")
+        .fontSize(d => d.size)
+        .on("end", draw);
+
+    layout.start();
+
+    function draw(words) {
+        const g = svg.append("g")
+            .attr("transform", `translate(${width / 2},${height / 2})`);
+
+        const texts = g.selectAll("text")
+            .data(words)
+            .enter()
+            .append("text")
+            .style("font-size", d => d.size + "px")
+            .style("fill", d => color(d.count))
+            .attr("text-anchor", "middle")
+            .attr("transform", d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
+            .text(d => d.text);
+
+        // Tooltip
+        texts.on("mouseover", (event, d) => {
+            tooltip.style("opacity", 1);
+            tooltip.html(
+                `<div class="tooltip-title">${escapeHtml(d.text)}</div>` +
+                `<div class="tooltip-row"><span class="tooltip-label">Games: </span>${d.count}</div>`
+            );
+            tooltip.style("left", event.clientX + "px")
+                .style("top", (event.clientY - 16) + "px");
+        }).on("mousemove", event => {
+            tooltip.style("left", event.clientX + "px")
+                .style("top", (event.clientY - 16) + "px");
+        }).on("mouseout", () => {
+            tooltip.style("opacity", 0);
+        });
+    }
+}
+
+
+
+// ---------------------------- 平台分布 ----------------------------
+function renderPlatforms(svg, data, tooltip) {
+    const node = svg.node();
+    const width = node.clientWidth || 400;
+    const height = node.clientHeight || 220;
+
+    svg.selectAll("*").remove();
+
+    const margin = { top: 20, right: 10, bottom: 30, left: 52 };
+    const innerWidth = width - margin.left - margin.right;
+    const innerHeight = height - margin.top - margin.bottom;
+
+    const g = svg.append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const counts = [
+        {
+            platform: "Windows",
+            count: data.filter(d => d.platforms && d.platforms.windows).length
+        },
+        {
+            platform: "Mac",
+            count: data.filter(d => d.platforms && d.platforms.mac).length
+        },
+        {
+            platform: "Linux",
+            count: data.filter(d => d.platforms && d.platforms.linux).length
+        }
+    ];
+
+    const x = d3.scaleBand()
+        .domain(counts.map(d => d.platform))
+        .range([0, innerWidth])
+        .padding(0.35);
+
+    const maxCount = d3.max(counts, d => d.count) || 1;
+    const y = d3.scaleLinear()
+        .domain([0, maxCount * 1.1])
+        .range([innerHeight, 0]);
+
+    const xAxis = d3.axisBottom(x);
+    const yAxis = d3.axisLeft(y)
+        .ticks(4)
+        .tickFormat(d3.format("d"));
+
+    g.append("g")
+        .attr("class", "axis")
+        .attr("transform", `translate(0,${innerHeight})`)
+        .call(xAxis);
+
+    g.append("g")
+        .attr("class", "axis")
+        .call(yAxis);
+
+    g.append("text")
+        .attr("class", "axis-label")
+        .attr("x", innerWidth / 2)
+        .attr("y", innerHeight + 22)
+        .attr("text-anchor", "middle")
+        .text("平台");
+
+    g.selectAll("rect")
+        .data(counts)
+        .join("rect")
+        .attr("class", "bar-platform")
+        .attr("x", d => x(d.platform))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.count))
+        .attr("height", d => innerHeight - y(d.count))
+        .on("mouseover", (event, d) => {
+            tooltip.style("opacity", 1);
+            tooltip.html(`
+                <div class="tooltip-title">${d.platform}</div>
+                <div class="tooltip-row">
+                    <span class="tooltip-label">支持该平台的游戏数：</span>${d.count}
+                </div>
+            `);
+            tooltip.style("left", (event.clientX) + "px")
+                .style("top", (event.clientY - 16) + "px");
+        })
+        .on("mousemove", (event) => {
+            tooltip.style("left", (event.clientX) + "px")
+                .style("top", (event.clientY - 16) + "px");
+        })
+        .on("mouseout", () => {
+            tooltip.style("opacity", 0);
+        });
+}
+
+
+// ---------------------------- 小工具函数与入口 ----------------------------
+function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, c => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
     }[c]));
 }
 
-// ---------------------------- Canvas & 鼠标交互 ----------------------------
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-const tooltip = document.getElementById('tooltip');
-
-function resizeCanvas() {
-    const oldWidth = canvas.width || window.innerWidth;
-    const oldHeight = canvas.height || window.innerHeight;
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    // 这些对象都是在脚本后面才创建的，所以这里统一从 window 上拿
-    const sim = window.simulation;
-    const nodesArr = window.nodes;
-    const clouds = window.cloudDefs;
-
-    // 脚本刚加载时（还没初始化完），sim / nodes / clouds 都还没有，
-    // 直接返回就好，不要去访问它们
-    if (!sim || !Array.isArray(nodesArr) || !Array.isArray(clouds)) {
-        return;
-    }
-
-    // 下面这些只会在“已经初始化完成之后的窗口缩放”场景下运行
-    const dx = (canvas.width - oldWidth) / 2;
-    const dy = (canvas.height - oldHeight) / 2;
-
-    // 整体平移所有节点，让点云留在视图中间
-    nodesArr.forEach(n => {
-        n.x += dx;
-        n.y += dy;
-    });
-
-    // 更新 force 的中心
-    sim.force('center', d3.forceCenter(canvas.width / 2, canvas.height / 2));
-
-    // 更新各星云的吸引力中心
-    clouds.forEach(cd => {
-        const cx = canvas.width / 2 + cd.offset[0];
-        const cy = canvas.height / 2 + cd.offset[1];
-
-        sim
-            .force(
-                'cloudX_' + cd.id,
-                d3.forceX(cx).strength(d =>
-                    d.clouds.includes(cd.id) ? 0.12 : 0
-                )
-            )
-            .force(
-                'cloudY_' + cd.id,
-                d3.forceY(cy).strength(d =>
-                    d.clouds.includes(cd.id) ? 0.12 : 0
-                )
-            );
-    });
-
-    // 重新启动仿真，tick 的时候会自动调用 draw() 重画
-    sim.alpha(0.3).restart();
-}
-
-
-
-window.addEventListener('resize', resizeCanvas);
-resizeCanvas();
-
-let view = { x: 0, y: 0, k: 1 };
-
-canvas.addEventListener(
-    'wheel',
-    e => {
-        e.preventDefault();
-        const rect = canvas.getBoundingClientRect();
-        const mx = e.clientX - rect.left;
-        const my = e.clientY - rect.top;
-
-        const wx = (mx - view.x) / view.k;
-        const wy = (my - view.y) / view.k;
-
-        const scale = Math.exp(-e.deltaY * 0.0012);
-        view.k *= scale;
-
-        view.x = mx - wx * view.k;
-        view.y = my - wy * view.k;
-
-        draw();
-    },
-    { passive: false }
-);
-
-let dragging = false;
-let last = { x: 0, y: 0 };
-
-canvas.addEventListener('mousedown', e => {
-    dragging = true;
-    last.x = e.clientX;
-    last.y = e.clientY;
-});
-
-window.addEventListener('mouseup', () => {
-    dragging = false;
-});
-
-window.addEventListener('mousemove', e => {
-    if (!dragging) return;
-    view.x += e.clientX - last.x;
-    view.y += e.clientY - last.y;
-    last.x = e.clientX;
-    last.y = e.clientY;
-    draw();
-});
-
-document.getElementById('resetView').addEventListener('click', () => {
-    view = { x: 0, y: 0, k: 1 };
-    draw();
-});
-
-// ---------------------------- 数据预处理 ----------------------------
-function getPriceUSD(node) {
-    if (node.price && typeof node.price.final === 'number') {
-        return node.price.final / 100;
-    }
-    return 0;
-}
-
-function preprocessNode(d) {
-    const reviewsTotal = d.reviews?.total_reviews || 0;
-    const positive = d.reviews?.positive || 0;
-
-    return {
-        ...d,
-        price_usd: getPriceUSD(d),
-        reviews_total: reviewsTotal,
-        positive_pct: reviewsTotal > 0 ? Math.round((100 * positive) / reviewsTotal) : null,
-        player_count: d.player_count || 0,
-        clouds: [], // for force simulation
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: 0,
-        vy: 0,
-        r: 10
-    };
-}
-
-// 这里假设 rawData 已经在别处定义好
-let nodes = rawData.map(preprocessNode);
-window.nodes = nodes;
-
-
-// ---------------------------- 星云定义 ----------------------------
-const cloudDefs = [
-    // 更远一点，半径小一点 → 和中间分开
-    { id: 'Action', offset: [-420, -60], r: 360 },
-
-    // 右上
-    { id: 'Indie', offset: [360, -80], r: 360 },
-
-    // 左下
-    { id: 'RPG', offset: [-120, 260], r: 340 },
-
-    // 右下
-    { id: 'Strategy', offset: [420, 180], r: 340 },
-
-    // 中间稍微小一点，不要把一切都“吸”到中心
-    { id: 'Free', offset: [0, 20], r: 260 }
-];
-
-window.cloudDefs = cloudDefs;
-const cloudMap = {};
-cloudDefs.forEach(cd => {
-    cloudMap[cd.id] = cd;
-});
-
-function assignClouds() {
-    nodes.forEach(n => {
-        n.clouds = [];
-
-        if (n.genres) {
-            cloudDefs.forEach(cd => {
-                if (n.genres.some(g =>
-                    g.description?.toLowerCase().includes(cd.id.toLowerCase())
-                )) {
-                    n.clouds.push(cd.id);
-                }
-            });
-        }
-
-        if (n.price_usd === 0) {
-            n.clouds.push('Free');
-        }
-
-        if (n.clouds.length === 0) {
-            const randCloud = cloudDefs[Math.floor(Math.random() * cloudDefs.length)];
-            n.clouds.push(randCloud.id);
-        }
-    });
-}
-
-assignClouds();
-function clampNodeToClouds(n) {
-    if (!n.clouds || n.clouds.length === 0) return;
-
-    const cx0 = canvas.width / 2;
-    const cy0 = canvas.height / 2;
-
-    let best = null;
-    let bestE2 = Infinity;
-
-    n.clouds.forEach(id => {
-        const cd = cloudMap[id];
-        if (!cd) return;
-
-        const cx = cx0 + cd.offset[0];
-        const cy = cy0 + cd.offset[1];
-        const rx = cd.r;
-        const ry = cd.r * 0.8;
-
-        const dx = n.x - cx;
-        const dy = n.y - cy;
-
-        // 椭圆标准化坐标
-        const e2 = (dx * dx) / (rx * rx) + (dy * dy) / (ry * ry);
-
-        if (e2 < bestE2) {
-            bestE2 = e2;
-            best = { cx, cy, rx, ry, dx, dy, e2 };
-        }
-    });
-
-    if (!best) return;
-
-    // e2 <= 1 在椭圆内，>1 在外面；把它缩回到边界里一点点
-    if (best.e2 > 1) {
-        const scale = 0.98 / Math.sqrt(best.e2); // 0.98 留一点内边距
-        n.x = best.cx + best.dx * scale;
-        n.y = best.cy + best.dy * scale;
-    }
-}
-// 根据所属星云，给每个节点算一个“目标位置”
-function computeTargets() {
-    const cx0 = canvas.width / 2;
-    const cy0 = canvas.height / 2;
-
-    // 先算每个云的中心坐标
-    const centers = {};
-    cloudDefs.forEach(cd => {
-        centers[cd.id] = {
-            x: cx0 + cd.offset[0],
-            y: cy0 + cd.offset[1]
-        };
-    });
-
-    nodes.forEach(n => {
-        if (!n.clouds || n.clouds.length === 0) {
-            n.tx = cx0;
-            n.ty = cy0;
-            return;
-        }
-
-        let sx = 0, sy = 0, cnt = 0;
-        n.clouds.forEach(id => {
-            const c = centers[id];
-            if (c) {
-                sx += c.x;
-                sy += c.y;
-                cnt++;
-            }
-        });
-
-        if (cnt === 0) {
-            n.tx = cx0;
-            n.ty = cy0;
-        } else {
-            n.tx = sx / cnt;
-            n.ty = sy / cnt;
-        }
-    });
-}
-
-computeTargets();
-
-
-// ---------------------------- 价格颜色 ----------------------------
-const pricePalette = [
-    { min: 0, max: 5, c0: '#bff7d0', c1: '#007a2f' },
-    { min: 5, max: 15, c0: '#cfe7ff', c1: '#004f9f' },
-    { min: 15, max: 35, c0: '#f3daff', c1: '#6a0fb0' },
-    { min: 35, max: 9999, c0: '#ffd9d6', c1: '#b21a15' }
-];
-
-function priceColor(price) {
-    for (const seg of pricePalette) {
-        if (price >= seg.min && price <= seg.max) {
-            const t = (price - seg.min) / (seg.max - seg.min);
-            const c0 = hexToRgb(seg.c0);
-            const c1 = hexToRgb(seg.c1);
-
-            const r = Math.round(c0.r * (1 - t) + c1.r * t);
-            const g = Math.round(c0.g * (1 - t) + c1.g * t);
-            const b = Math.round(c0.b * (1 - t) + c1.b * t);
-
-            return `rgb(${r},${g},${b})`;
-        }
-    }
-    return '#999';
-}
-
-function borderColor(pct) {
-    if (pct === null) return '#999';
-    if (pct >= 85) return '#2ecc71';
-    if (pct >= 70) return '#0a84ff';
-    if (pct >= 40) return '#f1c40f';
-    if (pct >= 20) return '#ff3b30';
-    return '#8b0000';
-}
-
-// ---------------------------- 力导向布局 ----------------------------
-let sizeMode = 'players';
-
-document.getElementById('sizeBy').addEventListener('change', e => {
-    sizeMode = e.target.value;
-    updateSizes();
-});
-
-function updateSizes() {
-    const vals = nodes.map(n =>
-        sizeMode === 'players' ? n.player_count : n.reviews_total
-    );
-
-    const scale = d3
-        .scaleSqrt()
-        .domain([0, d3.max(vals)])
-        .range([4, 40]);
-
-    nodes.forEach(n => {
-        n.r = scale(sizeMode === 'players' ? n.player_count : n.reviews_total);
-    });
-
-    simulation.force(
-        'collide',
-        d3.forceCollide().radius(d => d.r + 4)
-    );
-
-    simulation.alpha(0.5).restart();
-}
-
-const simulation = d3
-    .forceSimulation(nodes)
-    .force('charge', d3.forceManyBody().strength(-8))
-    .force('center', d3.forceCenter(canvas.width / 2, canvas.height / 2))
-    .force('collide', d3.forceCollide().radius(d => d.r + 4))
-    .alphaDecay(0.02)
-    .on('tick', () => {
-        // 先把所有节点压回各自星云内
-        nodes.forEach(clampNodeToClouds);
-        // 再绘制
-        draw();
-    });
-
-window.simulation = simulation;
-
-
-// 星云吸引力
-cloudDefs.forEach(cd => {
-    const cx = canvas.width / 2 + cd.offset[0];
-    const cy = canvas.height / 2 + cd.offset[1];
-
-    simulation
-        .force(
-            'cloudX_' + cd.id,
-            d3.forceX(cx).strength(d => (d.clouds.includes(cd.id) ? 0.06 : 0))
-        )
-        .force(
-            'cloudY_' + cd.id,
-            d3.forceY(cy).strength(d => (d.clouds.includes(cd.id) ? 0.06 : 0))
-        );
-});
-
-// 初次调整节点大小
-updateSizes();
-
-// ---------------------------- 绘图 ----------------------------
-let hoverNode = null;
-
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    ctx.save();
-    ctx.translate(view.x, view.y);
-    ctx.scale(view.k, view.k);
-
-    // 星云背景（更明显版本）
-    cloudDefs.forEach(cd => {
-        const cx = canvas.width / 2 + cd.offset[0];
-        const cy = canvas.height / 2 + cd.offset[1];
-
-        // 1. 更饱和的填充
-        ctx.beginPath();
-        ctx.fillStyle = 'rgba(140, 170, 255, 0.16)'; // 原来的 0.08 → 0.16
-        ctx.ellipse(cx, cy, cd.r, cd.r * 0.8, 0, 0, Math.PI * 2);
-        ctx.fill();
-
-        // 2. 边框线让形状更清晰
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = 'rgba(80, 120, 255, 0.55)';
-        ctx.stroke();
-
-        // 3. 标签加大字体 + 加描边让更明显
-        ctx.font = 'bold 18px sans-serif';
-        ctx.fillStyle = 'rgba(20,20,20,0.85)';
-        ctx.strokeStyle = 'rgba(255,255,255,0.8)';
-        ctx.lineWidth = 3;
-
-        const labelX = cx - 40;
-        const labelY = cy - cd.r * 0.8 - 12;
-
-        ctx.strokeText(cd.id, labelX, labelY);
-        ctx.fillText(cd.id, labelX, labelY);
-    });
-
-    const sorted = [...nodes].sort((a, b) => b.r - a.r);
-
-    sorted.forEach(n => {
-        const { x, y, r } = n;
-
-        // 填充圆
-        ctx.beginPath();
-        ctx.fillStyle = priceColor(n.price_usd);
-        ctx.arc(x, y, r, 0, Math.PI * 2);
-        ctx.fill();
-
-        // 边框
-        ctx.beginPath();
-        ctx.strokeStyle = borderColor(n.positive_pct);
-        ctx.lineWidth = 2;
-        ctx.arc(x, y, r + 1, 0, Math.PI * 2);
-        ctx.stroke();
-    });
-
-    // hover 高亮
-    if (hoverNode) {
-        const n = hoverNode;
-        ctx.beginPath();
-        ctx.strokeStyle = '#ffd54f';
-        ctx.lineWidth = 4;
-        ctx.arc(n.x, n.y, n.r + 4, 0, Math.PI * 2);
-        ctx.stroke();
-    }
-
-    ctx.restore();
-}
-
-// ---------------------------- 鼠标 hover ----------------------------
-canvas.addEventListener('mousemove', e => {
-    const wp = screenToWorld(e.clientX, e.clientY);
-    hoverNode = findNodeNear(wp.x, wp.y);
-
-    if (hoverNode) {
-        showTooltip(e.clientX, e.clientY, hoverNode);
-    } else {
-        hideTooltip();
-    }
-
-    draw();
-});
-
-canvas.addEventListener('mouseleave', hideTooltip);
-
-function screenToWorld(sx, sy) {
-    const rect = canvas.getBoundingClientRect();
-    const mx = sx - rect.left;
-    const my = sy - rect.top;
-    return {
-        x: (mx - view.x) / view.k,
-        y: (my - view.y) / view.k
-    };
-}
-
-function findNodeNear(x, y) {
-    for (const n of nodes) {
-        const dx = n.x - x;
-        const dy = n.y - y;
-        if (dx * dx + dy * dy <= (n.r + 6) * (n.r + 6)) {
-            return n;
-        }
-    }
-    return null;
-}
-
-function showTooltip(sx, sy, n) {
-    tooltip.style.display = 'block';
-    tooltip.innerHTML = `
-    <strong>${escapeHtml(n.name)}</strong><br/>
-    价格：$${n.price_usd.toFixed(2)}<br/>
-    在线人数：${n.player_count}<br/>
-    评论数：${n.reviews_total}<br/>
-    好评率：${n.positive_pct ?? 'N/A'}%<br/>
-    星云：${n.clouds.join(', ')}
-  `;
-    tooltip.style.left = sx + 12 + 'px';
-    tooltip.style.top = sy + 12 + 'px';
-}
-
-function hideTooltip() {
-    tooltip.style.display = 'none';
-}
-
-// ---------------------------- 搜索定位 ----------------------------
-document.getElementById('searchBtn').addEventListener('click', () => {
-    const q = document.getElementById('searchBox').value.trim().toLowerCase();
-    if (!q) return;
-
-    const node = nodes.find(n => n.name.toLowerCase().includes(q));
-    if (!node) {
-        alert('未找到游戏');
-        return;
-    }
-
-    const cx = canvas.width / 2;
-    const cy = canvas.height / 2;
-
-    view.k = 1.8;
-    view.x = cx - node.x * view.k;
-    view.y = cy - node.y * view.k;
-
-    hoverNode = node;
-    draw();
+// 页面加载完成后初始化
+document.addEventListener("DOMContentLoaded", () => {
+    const games = preprocess(rawData);
+    setupGenreFilter(games);
+    fillSummaryCards(games);
+    initDashboard(games);
 });
