@@ -1,0 +1,2027 @@
+{
+  "categories": {
+    "education": [ "教育学习", "教程资源", "学习路线", "课程资料" ],
+    "ai_ml": [ "人工智能", "机器学习", "深度学习", "LLM", "生成式AI" ],
+    "web_dev": [ "前端开发", "后端开发", "全栈", "Web框架", "UI组件" ],
+    "mobile": [ "移动开发", "跨平台", "原生应用" ],
+    "devops": [ "运维部署", "容器化", "CI/CD", "监控" ],
+    "data_science": [ "数据科学", "数据分析", "可视化" ],
+    "system_design": [ "系统设计", "架构设计", "分布式系统" ],
+    "security": [ "网络安全", "渗透测试", "安全工具" ],
+    "tools": [ "开发工具", "效率工具", "命令行工具" ],
+    "database": [ "数据库", "数据存储", "缓存" ],
+    "blockchain": [ "区块链", "加密货币", "Web3" ],
+    "os": [ "操作系统", "内核开发", "系统编程" ],
+    "programming": [ "编程语言", "算法", "数据结构" ],
+    "productivity": [ "生产力工具", "笔记软件", "办公套件" ],
+    "media": [ "多媒体处理", "图像视频", "音频处理" ],
+    "api": [ "API服务", "接口开发", "微服务" ],
+    "community": [ "社区项目", "开源文化", "开发者生态" ],
+    "automation": [ "自动化", "爬虫", "机器人流程" ],
+    "cloud": [ "云计算", "云原生", "服务器less" ],
+    "game_dev": [ "游戏开发", "游戏引擎" ]
+  },
+
+  "projects_categorized": [
+    {
+      "full_name": "codecrafters-io/build-your-own-x",
+      "keywords": [ "教育学习", "教程资源", "编程实践", "动手项目" ]
+    },
+    {
+      "full_name": "freeCodeCamp/freeCodeCamp",
+      "keywords": [ "教育学习", "课程资料", "全栈开发", "开源课程" ]
+    },
+    {
+      "full_name": "sindresorhus/awesome",
+      "keywords": [ "资源集合", "开发者工具", "社区项目", "awesome列表" ]
+    },
+    {
+      "full_name": "public-apis/public-apis",
+      "keywords": [ "API服务", "数据接口", "开发者资源", "工具集成" ]
+    },
+    {
+      "full_name": "EbookFoundation/free-programming-books",
+      "keywords": [ "教育学习", "电子书籍", "编程资料", "学习资源" ]
+    },
+    {
+      "full_name": "kamranahmedse/developer-roadmap",
+      "keywords": [ "教育学习", "学习路线", "职业发展", "技术栈" ]
+    },
+    {
+      "full_name": "jwasham/coding-interview-university",
+      "keywords": [ "教育学习", "面试准备", "算法", "职业发展" ]
+    },
+    {
+      "full_name": "donnemartin/system-design-primer",
+      "keywords": [ "系统设计", "架构设计", "面试准备", "分布式系统" ]
+    },
+    {
+      "full_name": "996icu/996.ICU",
+      "keywords": [ "社区项目", "开发者权益", "开源文化", "社会议题" ]
+    },
+    {
+      "full_name": "vinta/awesome-python",
+      "keywords": [ "Python", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "awesome-selfhosted/awesome-selfhosted",
+      "keywords": [ "自托管", "服务器应用", "私有化部署", "工具集合" ]
+    },
+    {
+      "full_name": "practical-tutorials/project-based-learning",
+      "keywords": [ "教育学习", "项目实践", "动手学习", "教程资源" ]
+    },
+    {
+      "full_name": "facebook/react",
+      "keywords": [ "前端开发", "UI框架", "JavaScript库", "Web开发" ]
+    },
+    {
+      "full_name": "TheAlgorithms/Python",
+      "keywords": [ "算法", "数据结构", "Python", "编程实践" ]
+    },
+    {
+      "full_name": "torvalds/linux",
+      "keywords": [ "操作系统", "内核开发", "系统编程", "开源系统" ]
+    },
+    {
+      "full_name": "vuejs/vue",
+      "keywords": [ "前端开发", "UI框架", "渐进式框架", "Web开发" ]
+    },
+    {
+      "full_name": "ossu/computer-science",
+      "keywords": [ "教育学习", "计算机科学", "课程体系", "自学路线" ]
+    },
+    {
+      "full_name": "trimstray/the-book-of-secret-knowledge",
+      "keywords": [ "知识库", "技术笔记", "系统管理", "运维知识" ]
+    },
+    {
+      "full_name": "trekhleb/javascript-algorithms",
+      "keywords": [ "算法", "数据结构", "JavaScript", "编程实践" ]
+    },
+    {
+      "full_name": "tensorflow/tensorflow",
+      "keywords": [ "机器学习", "深度学习", "AI框架", "神经网络" ]
+    },
+    {
+      "full_name": "getify/You-Dont-Know-JS",
+      "keywords": [ "教育学习", "JavaScript", "语言深入", "书籍教程" ]
+    },
+    {
+      "full_name": "ohmyzsh/ohmyzsh",
+      "keywords": [ "命令行工具", "Shell扩展", "终端美化", "生产力工具" ]
+    },
+    {
+      "full_name": "CyC2018/CS-Notes",
+      "keywords": [ "教育学习", "计算机科学", "笔记整理", "面试准备" ]
+    },
+    {
+      "full_name": "Significant-Gravitas/AutoGPT",
+      "keywords": [ "人工智能", "自主代理", "LLM应用", "自动化" ]
+    },
+    {
+      "full_name": "microsoft/vscode",
+      "keywords": [ "开发工具", "代码编辑器", "IDE", "编程环境" ]
+    },
+    {
+      "full_name": "jackfrued/Python-100-Days",
+      "keywords": [ "教育学习", "Python教程", "百日计划", "编程入门" ]
+    },
+    {
+      "full_name": "flutter/flutter",
+      "keywords": [ "移动开发", "跨平台", "UI框架", "应用开发" ]
+    },
+    {
+      "full_name": "twbs/bootstrap",
+      "keywords": [ "前端开发", "CSS框架", "响应式设计", "UI组件" ]
+    },
+    {
+      "full_name": "github/gitignore",
+      "keywords": [ "开发工具", "Git配置", "版本控制", "模板文件" ]
+    },
+    {
+      "full_name": "n8n-io/n8n",
+      "keywords": [ "自动化", "工作流", "低代码平台", "集成工具" ]
+    },
+    {
+      "full_name": "avelino/awesome-go",
+      "keywords": [ "Go语言", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "jlevy/the-art-of-command-line",
+      "keywords": [ "命令行工具", "Shell技巧", "系统管理", "生产力工具" ]
+    },
+    {
+      "full_name": "AUTOMATIC1111/stable-diffusion-webui",
+      "keywords": [ "人工智能", "图像生成", "Stable Diffusion", "AI应用" ]
+    },
+    {
+      "full_name": "massgravel/Microsoft-Activation-Scripts",
+      "keywords": [ "系统工具", "激活工具", "Windows", "实用脚本" ]
+    },
+    {
+      "full_name": "ollama/ollama",
+      "keywords": [ "人工智能", "LLM部署", "模型管理", "本地AI" ]
+    },
+    {
+      "full_name": "huggingface/transformers",
+      "keywords": [ "机器学习", "自然语言处理", "预训练模型", "AI框架" ]
+    },
+    {
+      "full_name": "Snailclimb/JavaGuide",
+      "keywords": [ "教育学习", "Java指南", "面试准备", "技术文档" ]
+    },
+    {
+      "full_name": "airbnb/javascript",
+      "keywords": [ "JavaScript", "代码规范", "最佳实践", "编程风格" ]
+    },
+    {
+      "full_name": "langflow-ai/langflow",
+      "keywords": [ "人工智能", "LangChain可视化", "LLM应用", "工作流设计" ]
+    },
+    {
+      "full_name": "ytdl-org/youtube-dl",
+      "keywords": [ "多媒体处理", "视频下载", "命令行工具", "实用工具" ]
+    },
+    {
+      "full_name": "f/awesome-chatgpt-prompts",
+      "keywords": [ "人工智能", "提示工程", "ChatGPT", "LLM应用" ]
+    },
+    {
+      "full_name": "yt-dlp/yt-dlp",
+      "keywords": [ "多媒体处理", "视频下载", "命令行工具", "youtube-dl分支" ]
+    },
+    {
+      "full_name": "521xueweihan/HelloGitHub",
+      "keywords": [ "社区项目", "开源推荐", "月度榜单", "开发者社区" ]
+    },
+    {
+      "full_name": "vercel/next.js",
+      "keywords": [ "前端开发", "React框架", "服务器渲染", "全栈框架" ]
+    },
+    {
+      "full_name": "yangshun/tech-interview-handbook",
+      "keywords": [ "教育学习", "面试准备", "技术面试", "职业发展" ]
+    },
+    {
+      "full_name": "Genymobile/scrcpy",
+      "keywords": [ "移动开发", "Android投屏", "设备控制", "实用工具" ]
+    },
+    {
+      "full_name": "golang/go",
+      "keywords": [ "编程语言", "Go语言", "系统编程", "后端开发" ]
+    },
+    {
+      "full_name": "labuladong/fucking-algorithm",
+      "keywords": [ "算法", "数据结构", "刷题指南", "面试准备" ]
+    },
+    {
+      "full_name": "DigitalPlatDev/FreeDomain",
+      "keywords": [ "实用工具", "免费域名", "网络服务", "开发者工具" ]
+    },
+    {
+      "full_name": "microsoft/PowerToys",
+      "keywords": [ "系统工具", "Windows增强", "生产力工具", "实用程序" ]
+    },
+    {
+      "full_name": "Chalarangelo/30-seconds-of-code",
+      "keywords": [ "编程技巧", "代码片段", "JavaScript", "快速学习" ]
+    },
+    {
+      "full_name": "facebook/react-native",
+      "keywords": [ "移动开发", "跨平台", "React框架", "原生应用" ]
+    },
+    {
+      "full_name": "langchain-ai/langchain",
+      "keywords": [ "人工智能", "LLM框架", "链式调用", "AI应用开发" ]
+    },
+    {
+      "full_name": "langgenius/dify",
+      "keywords": [ "人工智能", "LLM应用平台", "可视化开发", "AI工作流" ]
+    },
+    {
+      "full_name": "krahets/hello-algo",
+      "keywords": [ "教育学习", "算法图解", "数据结构", "可视化学习" ]
+    },
+    {
+      "full_name": "electron/electron",
+      "keywords": [ "跨平台", "桌面应用", "Web技术", "应用框架" ]
+    },
+    {
+      "full_name": "kubernetes/kubernetes",
+      "keywords": [ "DevOps", "容器编排", "云原生", "微服务管理" ]
+    },
+    {
+      "full_name": "open-webui/open-webui",
+      "keywords": [ "人工智能", "Web界面", "LLM前端", "AI应用" ]
+    },
+    {
+      "full_name": "ripienaar/free-for-dev",
+      "keywords": [ "开发者工具", "免费服务", "资源集合", "实用资源" ]
+    },
+    {
+      "full_name": "justjavac/free-programming-books-zh_CN",
+      "keywords": [ "教育学习", "中文书籍", "编程资料", "学习资源" ]
+    },
+    {
+      "full_name": "nodejs/node",
+      "keywords": [ "后端开发", "JavaScript运行时", "服务器端", "编程平台" ]
+    },
+    {
+      "full_name": "excalidraw/excalidraw",
+      "keywords": [ "生产力工具", "手绘图表", "白板工具", "可视化协作" ]
+    },
+    {
+      "full_name": "d3/d3",
+      "keywords": [ "数据可视化", "JavaScript库", "图表生成", "前端开发" ]
+    },
+    {
+      "full_name": "mrdoob/three.js",
+      "keywords": [ "3D图形", "WebGL", "可视化", "游戏开发" ]
+    },
+    {
+      "full_name": "axios/axios",
+      "keywords": [ "前端开发", "HTTP客户端", "Promise API", "网络请求" ]
+    },
+    {
+      "full_name": "rust-lang/rust",
+      "keywords": [ "编程语言", "系统编程", "内存安全", "高性能" ]
+    },
+    {
+      "full_name": "microsoft/TypeScript",
+      "keywords": [ "编程语言", "JavaScript超集", "类型系统", "前端开发" ]
+    },
+    {
+      "full_name": "denoland/deno",
+      "keywords": [ "后端开发", "JavaScript运行时", "TypeScript原生", "安全运行时" ]
+    },
+    {
+      "full_name": "iptv-org/iptv",
+      "keywords": [ "多媒体", "IPTV", "流媒体", "电视频道" ]
+    },
+    {
+      "full_name": "goldbergyoni/nodebestpractices",
+      "keywords": [ "Node.js", "最佳实践", "代码规范", "架构指南" ]
+    },
+    {
+      "full_name": "GrowingGit/GitHub-Chinese-Top-Charts",
+      "keywords": [ "社区项目", "中文榜单", "开源趋势", "项目推荐" ]
+    },
+    {
+      "full_name": "facebook/create-react-app",
+      "keywords": [ "前端开发", "React脚手架", "快速启动", "开发工具" ]
+    },
+    {
+      "full_name": "godotengine/godot",
+      "keywords": [ "游戏开发", "游戏引擎", "开源引擎", "跨平台" ]
+    },
+    {
+      "full_name": "rustdesk/rustdesk",
+      "keywords": [ "远程桌面", "跨平台", "Rust开发", "实用工具" ]
+    },
+    {
+      "full_name": "microsoft/generative-ai-for-beginners",
+      "keywords": [ "人工智能", "生成式AI", "教育学习", "入门教程" ]
+    },
+    {
+      "full_name": "Hack-with-Github/Awesome-Hacking",
+      "keywords": [ "网络安全", "渗透测试", "安全工具", "黑客技术" ]
+    },
+    {
+      "full_name": "fatedier/frp",
+      "keywords": [ "网络工具", "内网穿透", "反向代理", "隧道技术" ]
+    },
+    {
+      "full_name": "shadcn-ui/ui",
+      "keywords": [ "前端开发", "UI组件", "设计系统", "React组件" ]
+    },
+    {
+      "full_name": "microsoft/terminal",
+      "keywords": [ "命令行工具", "终端模拟器", "Windows终端", "开发工具" ]
+    },
+    {
+      "full_name": "papers-we-love/papers-we-love",
+      "keywords": [ "教育学习", "学术论文", "计算机科学", "技术阅读" ]
+    },
+    {
+      "full_name": "deepseek-ai/DeepSeek-V3",
+      "keywords": [ "人工智能", "大语言模型", "LLM", "深度学习" ]
+    },
+    {
+      "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "keywords": [ "人工智能", "提示工程", "系统提示词", "LLM配置" ]
+    },
+    {
+      "full_name": "tauri-apps/tauri",
+      "keywords": [ "跨平台", "桌面应用", "轻量级框架", "Rust后端" ]
+    },
+    {
+      "full_name": "angular/angular",
+      "keywords": [ "前端开发", "框架", "TypeScript", "企业级应用" ]
+    },
+    {
+      "full_name": "mui/material-ui",
+      "keywords": [ "前端开发", "React组件", "Material Design", "UI库" ]
+    },
+    {
+      "full_name": "ant-design/ant-design",
+      "keywords": [ "前端开发", "React组件", "设计系统", "企业级UI" ]
+    },
+    {
+      "full_name": "Anduin2017/HowToCook",
+      "keywords": [ "生活技能", "烹饪指南", "菜谱集合", "实用手册" ]
+    },
+    {
+      "full_name": "mtdvio/every-programmer-should-know",
+      "keywords": [ "教育学习", "程序员知识", "技术基础", "职业发展" ]
+    },
+    {
+      "full_name": "comfyanonymous/ComfyUI",
+      "keywords": [ "人工智能", "Stable Diffusion", "图像生成", "工作流界面" ]
+    },
+    {
+      "full_name": "pytorch/pytorch",
+      "keywords": [ "机器学习", "深度学习", "AI框架", "张量计算" ]
+    },
+    {
+      "full_name": "jaywcjlove/awesome-mac",
+      "keywords": [ "资源集合", "Mac应用", "生产力工具", "软件推荐" ]
+    },
+    {
+      "full_name": "nvbn/thefuck",
+      "keywords": [ "命令行工具", "纠错工具", "Shell插件", "生产力工具" ]
+    },
+    {
+      "full_name": "neovim/neovim",
+      "keywords": [ "开发工具", "代码编辑器", "Vim现代化", "文本编辑器" ]
+    },
+    {
+      "full_name": "microsoft/Web-Dev-For-Beginners",
+      "keywords": [ "教育学习", "Web开发入门", "前端教程", "初学者课程" ]
+    },
+    {
+      "full_name": "supabase/supabase",
+      "keywords": [ "后端开发", "开源Firebase", "数据库", "认证服务" ]
+    },
+    {
+      "full_name": "ryanmcdermott/clean-code-javascript",
+      "keywords": [ "JavaScript", "代码规范", "最佳实践", "编程风格" ]
+    },
+    {
+      "full_name": "iluwatar/java-design-patterns",
+      "keywords": [ "设计模式", "Java", "架构设计", "编程实践" ]
+    },
+    {
+      "full_name": "puppeteer/puppeteer",
+      "keywords": [ "自动化", "浏览器控制", "爬虫工具", "测试工具" ]
+    },
+    {
+      "full_name": "fastapi/fastapi",
+      "keywords": [ "后端开发", "Python框架", "API开发", "异步Web" ]
+    },
+    {
+      "full_name": "2dust/v2rayN",
+      "keywords": [ "网络工具", "代理客户端", "V2Ray", "网络加速" ]
+    },
+    {
+      "full_name": "openai/whisper",
+      "keywords": [ "人工智能", "语音识别", "语音转文本", "多语言ASR" ]
+    },
+    {
+      "full_name": "deepseek-ai/DeepSeek-R1",
+      "keywords": [ "人工智能", "推理模型", "LLM", "数学推理" ]
+    },
+    {
+      "full_name": "tailwindlabs/tailwindcss",
+      "keywords": [ "前端开发", "CSS框架", "实用优先", "样式工具" ]
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "keywords": [ "人工智能", "LLM推理", "C++实现", "模型部署" ]
+    },
+    {
+      "full_name": "nvm-sh/nvm",
+      "keywords": [ "开发工具", "Node版本管理", "命令行工具", "环境管理" ]
+    },
+    {
+      "full_name": "PanJiaChen/vue-element-admin",
+      "keywords": [ "前端开发", "管理后台", "Vue模板", "企业应用" ]
+    },
+    {
+      "full_name": "storybookjs/storybook",
+      "keywords": [ "前端开发", "组件开发", "UI测试", "文档工具" ]
+    },
+    {
+      "full_name": "florinpop17/app-ideas",
+      "keywords": [ "教育学习", "项目灵感", "练手项目", "编程实践" ]
+    },
+    {
+      "full_name": "gin-gonic/gin",
+      "keywords": [ "后端开发", "Go框架", "Web框架", "高性能API" ]
+    },
+    {
+      "full_name": "bitcoin/bitcoin",
+      "keywords": [ "区块链", "加密货币", "比特币", "数字货币" ]
+    },
+    {
+      "full_name": "ChatGPTNextWeb/NextChat",
+      "keywords": [ "人工智能", "ChatGPT客户端", "Web应用", "LLM界面" ]
+    },
+    {
+      "full_name": "google-gemini/gemini-cli",
+      "keywords": [ "人工智能", "命令行工具", "Gemini API", "LLM交互" ]
+    },
+    {
+      "full_name": "django/django",
+      "keywords": [ "后端开发", "Python框架", "Web开发", "全栈框架" ]
+    },
+    {
+      "full_name": "clash-verge-rev/clash-verge-rev",
+      "keywords": [ "网络工具", "代理客户端", "Clash分支", "跨平台" ]
+    },
+    {
+      "full_name": "immich-app/immich",
+      "keywords": [ "自托管", "照片备份", "Google相册替代", "私有云" ]
+    },
+    {
+      "full_name": "gohugoio/hugo",
+      "keywords": [ "静态网站", "生成器", "博客框架", "快速建站" ]
+    },
+    {
+      "full_name": "opencv/opencv",
+      "keywords": [ "计算机视觉", "图像处理", "机器学习", "开源库" ]
+    },
+    {
+      "full_name": "sveltejs/svelte",
+      "keywords": [ "前端开发", "编译时框架", "响应式UI", "Web组件" ]
+    },
+    {
+      "full_name": "mermaid-js/mermaid",
+      "keywords": [ "文档工具", "图表生成", "流程图", "Markdown扩展" ]
+    },
+    {
+      "full_name": "oven-sh/bun",
+      "keywords": [ "后端开发", "JavaScript运行时", "打包工具", "测试运行器" ]
+    },
+    {
+      "full_name": "microsoft/markitdown",
+      "keywords": [ "开发工具", "Markdown编辑器", "文档工具", "文本处理" ]
+    },
+    {
+      "full_name": "home-assistant/core",
+      "keywords": [ "物联网", "智能家居", "自动化平台", "家庭助理" ]
+    },
+    {
+      "full_name": "laravel/laravel",
+      "keywords": [ "后端开发", "PHP框架", "Web开发", "全栈框架" ]
+    },
+    {
+      "full_name": "gothinkster/realworld",
+      "keywords": [ "教育学习", "示例项目", "全栈实现", "代码规范" ]
+    },
+    {
+      "full_name": "animate-css/animate.css",
+      "keywords": [ "前端开发", "CSS动画", "交互动效", "样式库" ]
+    },
+    {
+      "full_name": "macrozheng/mall",
+      "keywords": [ "后端开发", "电商系统", "Java项目", "微服务架构" ]
+    },
+    {
+      "full_name": "3b1b/manim",
+      "keywords": [ "教育学习", "数学动画", "可视化工具", "解释视频" ]
+    },
+    {
+      "full_name": "Shubhamsaboo/awesome-llm-apps",
+      "keywords": [ "人工智能", "LLM应用", "资源集合", "awesome列表" ]
+    },
+    {
+      "full_name": "tonsky/FiraCode",
+      "keywords": [ "开发工具", "编程字体", "连字字体", "代码美化" ]
+    },
+    {
+      "full_name": "rasbt/LLMs-from-scratch",
+      "keywords": [ "教育学习", "LLM实现", "从零开始", "深度学习" ]
+    },
+    {
+      "full_name": "MunGell/awesome-for-beginners",
+      "keywords": [ "教育学习", "初学者友好", "开源贡献", "新手项目" ]
+    },
+    {
+      "full_name": "ruanyf/weekly",
+      "keywords": [ "社区项目", "技术周刊", "资讯聚合", "知识分享" ]
+    },
+    {
+      "full_name": "microsoft/ML-For-Beginners",
+      "keywords": [ "教育学习", "机器学习入门", "课程资料", "初学者教程" ]
+    },
+    {
+      "full_name": "bregman-arie/devops-exercises",
+      "keywords": [ "DevOps", "练习项目", "面试准备", "实践题库" ]
+    },
+    {
+      "full_name": "microsoft/playwright",
+      "keywords": [ "自动化", "浏览器测试", "端到端测试", "爬虫工具" ]
+    },
+    {
+      "full_name": "louislam/uptime-kuma",
+      "keywords": [ "DevOps", "监控工具", "网站状态", "自托管" ]
+    },
+    {
+      "full_name": "spring-projects/spring-boot",
+      "keywords": [ "后端开发", "Java框架", "微服务", "企业应用" ]
+    },
+    {
+      "full_name": "DopplerHQ/awesome-interview-questions",
+      "keywords": [ "教育学习", "面试准备", "题库资源", "技术面试" ]
+    },
+    {
+      "full_name": "doocs/advanced-java",
+      "keywords": [ "教育学习", "Java进阶", "面试准备", "技术文档" ]
+    },
+    {
+      "full_name": "ByteByteGoHq/system-design-101",
+      "keywords": [ "系统设计", "架构设计", "教育学习", "技术课程" ]
+    },
+    {
+      "full_name": "syncthing/syncthing",
+      "keywords": [ "实用工具", "文件同步", "点对点传输", "自托管" ]
+    },
+    {
+      "full_name": "fighting41love/funNLP",
+      "keywords": [ "自然语言处理", "中文NLP", "数据集", "工具资源" ]
+    },
+    {
+      "full_name": "tensorflow/models",
+      "keywords": [ "机器学习", "预训练模型", "研究实现", "模型库" ]
+    },
+    {
+      "full_name": "anuraghazra/github-readme-stats",
+      "keywords": [ "开发者工具", "GitHub美化", "统计卡片", "个人主页" ]
+    },
+    {
+      "full_name": "hoppscotch/hoppscotch",
+      "keywords": [ "开发工具", "API测试", "HTTP客户端", "在线工具" ]
+    },
+    {
+      "full_name": "nomic-ai/gpt4all",
+      "keywords": [ "人工智能", "本地LLM", "开源模型", "隐私保护" ]
+    },
+    {
+      "full_name": "vitejs/vite",
+      "keywords": [ "前端开发", "构建工具", "开发服务器", "快速构建" ]
+    },
+    {
+      "full_name": "netdata/netdata",
+      "keywords": [ "DevOps", "监控工具", "实时监控", "系统监控" ]
+    },
+    {
+      "full_name": "MisterBooo/LeetCodeAnimation",
+      "keywords": [ "教育学习", "算法可视化", "LeetCode", "动画演示" ]
+    },
+    {
+      "full_name": "punkpeye/awesome-mcp-servers",
+      "keywords": [ "人工智能", "MCP协议", "资源集合", "LLM工具" ]
+    },
+    {
+      "full_name": "hacksider/Deep-Live-Cam",
+      "keywords": [ "人工智能", "实时换脸", "深度伪造", "视频处理" ]
+    },
+    {
+      "full_name": "FortAwesome/Font-Awesome",
+      "keywords": [ "前端开发", "图标库", "字体图标", "UI资源" ]
+    },
+    {
+      "full_name": "elastic/elasticsearch",
+      "keywords": [ "数据库", "搜索引擎", "数据分析", "全文检索" ]
+    },
+    {
+      "full_name": "junegunn/fzf",
+      "keywords": [ "命令行工具", "模糊查找", "Shell工具", "生产力工具" ]
+    },
+    {
+      "full_name": "typicode/json-server",
+      "keywords": [ "开发工具", "模拟API", "快速原型", "测试数据" ]
+    },
+    {
+      "full_name": "coder/code-server",
+      "keywords": [ "开发工具", "VS Code服务器", "远程开发", "Web IDE" ]
+    },
+    {
+      "full_name": "sdmg15/Best-websites-a-programmer-should-visit",
+      "keywords": [ "资源集合", "网站推荐", "开发者资源", "学习网站" ]
+    },
+    {
+      "full_name": "unionlabs/union",
+      "keywords": [ "人工智能", "多模态模型", "LLM集成", "AI平台" ]
+    },
+    {
+      "full_name": "astral-sh/uv",
+      "keywords": [ "开发工具", "Python包管理器", "快速安装", "环境管理" ]
+    },
+    {
+      "full_name": "d2l-ai/d2l-zh",
+      "keywords": [ "教育学习", "深度学习", "中文教材", "交互式学习" ]
+    },
+    {
+      "full_name": "modelcontextprotocol/servers",
+      "keywords": [ "人工智能", "MCP服务器", "LLM工具集成", "协议实现" ]
+    },
+    {
+      "full_name": "nestjs/nest",
+      "keywords": [ "后端开发", "Node.js框架", "TypeScript", "企业级应用" ]
+    },
+    {
+      "full_name": "vuejs/awesome-vue",
+      "keywords": [ "Vue.js", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "browser-use/browser-use",
+      "keywords": [ "人工智能", "浏览器自动化", "LLM控制", "RPA工具" ]
+    },
+    {
+      "full_name": "ventoy/Ventoy",
+      "keywords": [ "系统工具", "启动盘制作", "多重引导", "USB工具" ]
+    },
+    {
+      "full_name": "Alvin9999/new-pac",
+      "keywords": [ "网络工具", "代理配置", "翻墙指南", "网络加速" ]
+    },
+    {
+      "full_name": "swisskyrepo/PayloadsAllTheThings",
+      "keywords": [ "网络安全", "渗透测试", "漏洞利用", "安全研究" ]
+    },
+    {
+      "full_name": "redis/redis",
+      "keywords": [ "数据库", "缓存", "内存数据库", "键值存储" ]
+    },
+    {
+      "full_name": "CompVis/stable-diffusion",
+      "keywords": [ "人工智能", "图像生成", "扩散模型", "文生图" ]
+    },
+    {
+      "full_name": "thedaviddias/Front-End-Checklist",
+      "keywords": [ "前端开发", "检查清单", "最佳实践", "项目规范" ]
+    },
+    {
+      "full_name": "localsend/localsend",
+      "keywords": [ "实用工具", "文件传输", "局域网分享", "跨平台" ]
+    },
+    {
+      "full_name": "tesseract-ocr/tesseract",
+      "keywords": [ "计算机视觉", "OCR识别", "文字识别", "图像处理" ]
+    },
+    {
+      "full_name": "abi/screenshot-to-code",
+      "keywords": [ "人工智能", "截图转代码", "UI生成", "LLM应用" ]
+    },
+    {
+      "full_name": "awesomedata/awesome-public-datasets",
+      "keywords": [ "数据科学", "数据集", "资源集合", "研究数据" ]
+    },
+    {
+      "full_name": "moby/moby",
+      "keywords": [ "DevOps", "容器技术", "Docker引擎", "虚拟化" ]
+    },
+    {
+      "full_name": "grafana/grafana",
+      "keywords": [ "DevOps", "监控可视化", "仪表盘", "数据展示" ]
+    },
+    {
+      "full_name": "enaqx/awesome-react",
+      "keywords": [ "React", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "zed-industries/zed",
+      "keywords": [ "开发工具", "代码编辑器", "高性能编辑器", "Rust开发" ]
+    },
+    {
+      "full_name": "josephmisiti/awesome-machine-learning",
+      "keywords": [ "机器学习", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "pallets/flask",
+      "keywords": [ "后端开发", "Python框架", "微框架", "Web开发" ]
+    },
+    {
+      "full_name": "Stirling-Tools/Stirling-PDF",
+      "keywords": [ "实用工具", "PDF处理", "自托管", "文档工具" ]
+    },
+    {
+      "full_name": "sherlock-project/sherlock",
+      "keywords": [ "网络安全", "用户追踪", "开源情报", "社交媒体" ]
+    },
+    {
+      "full_name": "strapi/strapi",
+      "keywords": [ "后端开发", "无头CMS", "内容管理", "API生成" ]
+    },
+    {
+      "full_name": "Developer-Y/cs-video-courses",
+      "keywords": [ "教育学习", "计算机科学", "视频课程", "在线学习" ]
+    },
+    {
+      "full_name": "python/cpython",
+      "keywords": [ "编程语言", "Python解释器", "语言实现", "开源项目" ]
+    },
+    {
+      "full_name": "hakimel/reveal.js",
+      "keywords": [ "文档工具", "演示文稿", "HTML幻灯片", "Web演示" ]
+    },
+    {
+      "full_name": "ocornut/imgui",
+      "keywords": [ "游戏开发", "即时模式GUI", "UI框架", "C++库" ]
+    },
+    {
+      "full_name": "protocolbuffers/protobuf",
+      "keywords": [ "开发工具", "数据序列化", "协议缓冲区", "跨语言通信" ]
+    },
+    {
+      "full_name": "binary-husky/gpt_academic",
+      "keywords": [ "人工智能", "学术助手", "论文写作", "LLM应用" ]
+    },
+    {
+      "full_name": "PKUFlyingPig/cs-self-learning",
+      "keywords": [ "教育学习", "计算机科学", "自学路线", "课程体系" ]
+    },
+    {
+      "full_name": "openai/openai-cookbook",
+      "keywords": [ "人工智能", "OpenAI API", "使用示例", "开发指南" ]
+    },
+    {
+      "full_name": "swiftlang/swift",
+      "keywords": [ "编程语言", "Swift语言", "iOS开发", "Apple生态" ]
+    },
+    {
+      "full_name": "apache/superset",
+      "keywords": [ "数据科学", "数据可视化", "商业智能", "仪表盘" ]
+    },
+    {
+      "full_name": "firecrawl/firecrawl",
+      "keywords": [ "人工智能", "网络爬虫", "LLM数据采集", "网页抓取" ]
+    },
+    {
+      "full_name": "mlabonne/llm-course",
+      "keywords": [ "教育学习", "LLM课程", "深度学习", "AI教程" ]
+    },
+    {
+      "full_name": "jesseduffield/lazygit",
+      "keywords": [ "开发工具", "Git界面", "命令行工具", "Git客户端" ]
+    },
+    {
+      "full_name": "infiniflow/ragflow",
+      "keywords": [ "人工智能", "RAG系统", "检索增强生成", "文档问答" ]
+    },
+    {
+      "full_name": "lobehub/lobe-chat",
+      "keywords": [ "人工智能", "聊天客户端", "LLM界面", "开源ChatGPT" ]
+    },
+    {
+      "full_name": "base/node",
+      "keywords": [ "区块链", "二层网络", "以太坊扩容", "Coinbase开发" ]
+    },
+    {
+      "full_name": "obsproject/obs-studio",
+      "keywords": [ "多媒体", "直播推流", "屏幕录制", "视频制作" ]
+    },
+    {
+      "full_name": "caddyserver/caddy",
+      "keywords": [ "DevOps", "Web服务器", "自动HTTPS", "反向代理" ]
+    },
+    {
+      "full_name": "fffaraz/awesome-cpp",
+      "keywords": [ "C++", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "expressjs/express",
+      "keywords": [ "后端开发", "Node.js框架", "Web框架", "API开发" ]
+    },
+    {
+      "full_name": "twitter/the-algorithm",
+      "keywords": [ "算法", "推荐系统", "Twitter算法", "开源算法" ]
+    },
+    {
+      "full_name": "Eugeny/tabby",
+      "keywords": [ "开发工具", "终端模拟器", "SSH客户端", "跨平台" ]
+    },
+    {
+      "full_name": "danielmiessler/SecLists",
+      "keywords": [ "网络安全", "字典集合", "渗透测试", "安全工具" ]
+    },
+    {
+      "full_name": "nektos/act",
+      "keywords": [ "DevOps", "GitHub Actions", "本地测试", "工作流工具" ]
+    },
+    {
+      "full_name": "dair-ai/Prompt-Engineering-Guide",
+      "keywords": [ "人工智能", "提示工程", "LLM技巧", "最佳实践" ]
+    },
+    {
+      "full_name": "ansible/ansible",
+      "keywords": [ "DevOps", "自动化运维", "配置管理", "IT自动化" ]
+    },
+    {
+      "full_name": "binhnguyennus/awesome-scalability",
+      "keywords": [ "系统设计", "可扩展性", "架构模式", "高性能系统" ]
+    },
+    {
+      "full_name": "chartjs/Chart.js",
+      "keywords": [ "前端开发", "图表库", "数据可视化", "JavaScript图表" ]
+    },
+    {
+      "full_name": "AppFlowy-IO/AppFlowy",
+      "keywords": [ "生产力工具", "Notion替代", "开源协作", "项目管理" ]
+    },
+    {
+      "full_name": "leonardomso/33-js-concepts",
+      "keywords": [ "教育学习", "JavaScript核心", "概念解释", "技术面试" ]
+    },
+    {
+      "full_name": "PaddlePaddle/PaddleOCR",
+      "keywords": [ "计算机视觉", "OCR识别", "文字识别", "深度学习" ]
+    },
+    {
+      "full_name": "webpack/webpack",
+      "keywords": [ "前端开发", "模块打包器", "构建工具", "资源管理" ]
+    },
+    {
+      "full_name": "xtekky/gpt4free",
+      "keywords": [ "人工智能", "免费GPT", "API替代", "LLM服务" ]
+    },
+    {
+      "full_name": "OpenHands/OpenHands",
+      "keywords": [ "人工智能", "开源模型", "LLM社区", "模型训练" ]
+    },
+    {
+      "full_name": "juliangarnier/anime",
+      "keywords": [ "前端开发", "动画库", "JavaScript动画", "交互动效" ]
+    },
+    {
+      "full_name": "apache/echarts",
+      "keywords": [ "数据可视化", "图表库", "JavaScript图表", "数据分析" ]
+    },
+    {
+      "full_name": "lydiahallie/javascript-questions",
+      "keywords": [ "教育学习", "JavaScript问题", "面试准备", "语言理解" ]
+    },
+    {
+      "full_name": "prakhar1989/awesome-courses",
+      "keywords": [ "教育学习", "课程资源", "在线课程", "大学课程" ]
+    },
+    {
+      "full_name": "vllm-project/vllm",
+      "keywords": [ "人工智能", "LLM推理", "高效推理", "模型服务" ]
+    },
+    {
+      "full_name": "kdn251/interviews",
+      "keywords": [ "教育学习", "面试准备", "算法题解", "技术面试" ]
+    },
+    {
+      "full_name": "labmlai/annotated_deep_learning_paper_implementations",
+      "keywords": [ "教育学习", "深度学习论文", "代码实现", "论文复现" ]
+    },
+    {
+      "full_name": "TheAlgorithms/Java",
+      "keywords": [ "算法", "数据结构", "Java实现", "编程实践" ]
+    },
+    {
+      "full_name": "kelseyhightower/nocode",
+      "keywords": [ "讽刺项目", "无代码", "开发者幽默", "概念项目" ]
+    },
+    {
+      "full_name": "scikit-learn/scikit-learn",
+      "keywords": [ "机器学习", "Python库", "算法实现", "数据科学" ]
+    },
+    {
+      "full_name": "chrislgarry/Apollo-11",
+      "keywords": [ "教育学习", "历史代码", "阿波罗11号", "航天软件" ]
+    },
+    {
+      "full_name": "sindresorhus/awesome-nodejs",
+      "keywords": [ "Node.js", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "bradtraversy/design-resources-for-developers",
+      "keywords": [ "前端开发", "设计资源", "UI素材", "开发者资源" ]
+    },
+    {
+      "full_name": "hiyouga/LLaMA-Factory",
+      "keywords": [ "人工智能", "LLM微调", "模型训练", "参数高效" ]
+    },
+    {
+      "full_name": "keras-team/keras",
+      "keywords": [ "机器学习", "深度学习", "神经网络API", "高层接口" ]
+    },
+    {
+      "full_name": "localstack/localstack",
+      "keywords": [ "DevOps", "AWS模拟", "本地开发", "云服务测试" ]
+    },
+    {
+      "full_name": "facebook/docusaurus",
+      "keywords": [ "文档工具", "静态网站", "文档生成", "技术文档" ]
+    },
+    {
+      "full_name": "resume/resume.github.com",
+      "keywords": [ "开发者工具", "GitHub简历", "个人主页", "职业展示" ]
+    },
+    {
+      "full_name": "socketio/socket.io",
+      "keywords": [ "后端开发", "实时通信", "WebSocket", "双向通信" ]
+    },
+    {
+      "full_name": "NationalSecurityAgency/ghidra",
+      "keywords": [ "网络安全", "逆向工程", "反汇编工具", "安全分析" ]
+    },
+    {
+      "full_name": "FuelLabs/sway",
+      "keywords": [ "区块链", "智能合约语言", "Fuel区块链", "Rust风格" ]
+    },
+    {
+      "full_name": "prometheus/prometheus",
+      "keywords": [ "DevOps", "监控系统", "时序数据库", "告警系统" ]
+    },
+    {
+      "full_name": "lodash/lodash",
+      "keywords": [ "前端开发", "JavaScript工具库", "实用函数", "数组操作" ]
+    },
+    {
+      "full_name": "reduxjs/redux",
+      "keywords": [ "前端开发", "状态管理", "React生态", "JavaScript库" ]
+    },
+    {
+      "full_name": "alacritty/alacritty",
+      "keywords": [ "开发工具", "终端模拟器", "GPU加速", "Rust开发" ]
+    },
+    {
+      "full_name": "TapXWorld/ChinaTextbook",
+      "keywords": [ "教育学习", "教材内容", "中国教材", "教育资源" ]
+    },
+    {
+      "full_name": "openinterpreter/open-interpreter",
+      "keywords": [ "人工智能", "代码解释器", "本地执行", "LLM编程" ]
+    },
+    {
+      "full_name": "atom/atom",
+      "keywords": [ "开发工具", "代码编辑器", "可扩展编辑器", "GitHub开发" ]
+    },
+    {
+      "full_name": "rust-lang/rustlings",
+      "keywords": [ "教育学习", "Rust练习", "语言学习", "小练习" ]
+    },
+    {
+      "full_name": "ryanoasis/nerd-fonts",
+      "keywords": [ "开发工具", "编程字体", "图标字体", "终端美化" ]
+    },
+    {
+      "full_name": "h5bp/Front-end-Developer-Interview-Questions",
+      "keywords": [ "教育学习", "前端面试", "问题集合", "面试准备" ]
+    },
+    {
+      "full_name": "xingshaocheng/architect-awesome",
+      "keywords": [ "系统设计", "架构资源", "技术文档", "工程师成长" ]
+    },
+    {
+      "full_name": "toeverything/AFFiNE",
+      "keywords": [ "生产力工具", "Notion替代", "知识管理", "协作工具" ]
+    },
+    {
+      "full_name": "tldr-pages/tldr",
+      "keywords": [ "命令行工具", "简化文档", "快速参考", "命令示例" ]
+    },
+    {
+      "full_name": "traefik/traefik",
+      "keywords": [ "DevOps", "反向代理", "负载均衡", "云原生网关" ]
+    },
+    {
+      "full_name": "gorhill/uBlock",
+      "keywords": [ "实用工具", "广告拦截", "浏览器扩展", "隐私保护" ]
+    },
+    {
+      "full_name": "adam-p/markdown-here",
+      "keywords": [ "生产力工具", "Markdown转换", "浏览器扩展", "邮件格式化" ]
+    },
+    {
+      "full_name": "FoundationAgents/MetaGPT",
+      "keywords": [ "人工智能", "多智能体", "LLM协作", "任务分解" ]
+    },
+    {
+      "full_name": "jquery/jquery",
+      "keywords": [ "前端开发", "JavaScript库", "DOM操作", "浏览器兼容" ]
+    },
+    {
+      "full_name": "youngyangyang04/leetcode-master",
+      "keywords": [ "教育学习", "LeetCode题解", "算法练习", "面试准备" ]
+    },
+    {
+      "full_name": "spring-projects/spring-framework",
+      "keywords": [ "后端开发", "Java框架", "企业应用", "依赖注入" ]
+    },
+    {
+      "full_name": "shadowsocks/shadowsocks-windows",
+      "keywords": [ "网络工具", "代理客户端", "网络加速", "跨平台" ]
+    },
+    {
+      "full_name": "scrapy/scrapy",
+      "keywords": [ "Python", "爬虫框架", "数据采集", "网络爬虫" ]
+    },
+    {
+      "full_name": "commaai/openpilot",
+      "keywords": [ "自动驾驶", "驾驶辅助", "开源系统", "汽车科技" ]
+    },
+    {
+      "full_name": "minio/minio",
+      "keywords": [ "数据库", "对象存储", "S3兼容", "云存储" ]
+    },
+    {
+      "full_name": "nuxt/nuxt",
+      "keywords": [ "前端开发", "Vue框架", "服务器渲染", "全栈框架" ]
+    },
+    {
+      "full_name": "nocodb/nocodb",
+      "keywords": [ "数据库", "无代码平台", "电子表格转数据库", "可视化数据库" ]
+    },
+    {
+      "full_name": "CorentinJ/Real-Time-Voice-Cloning",
+      "keywords": [ "人工智能", "语音克隆", "实时语音", "深度学习" ]
+    },
+    {
+      "full_name": "meta-llama/llama",
+      "keywords": [ "人工智能", "大语言模型", "开源模型", "Meta开发" ]
+    },
+    {
+      "full_name": "angular/angular.js",
+      "keywords": [ "前端开发", "JavaScript框架", "MVW框架", "历史版本" ]
+    },
+    {
+      "full_name": "jgraph/drawio-desktop",
+      "keywords": [ "生产力工具", "图表绘制", "流程图", "矢量图形" ]
+    },
+    {
+      "full_name": "Solido/awesome-flutter",
+      "keywords": [ "Flutter", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "rails/rails",
+      "keywords": [ "后端开发", "Ruby框架", "Web开发", "全栈框架" ]
+    },
+    {
+      "full_name": "git/git",
+      "keywords": [ "开发工具", "版本控制", "分布式系统", "源代码管理" ]
+    },
+    {
+      "full_name": "BurntSushi/ripgrep",
+      "keywords": [ "命令行工具", "文本搜索", "快速搜索", "Rust开发" ]
+    },
+    {
+      "full_name": "FuelLabs/fuel-core",
+      "keywords": [ "区块链", "Fuel节点", "执行层", "以太坊扩容" ]
+    },
+    {
+      "full_name": "topjohnwu/Magisk",
+      "keywords": [ "移动开发", "Android root", "系统修改", "模块化框架" ]
+    },
+    {
+      "full_name": "FiloSottile/mkcert",
+      "keywords": [ "开发工具", "SSL证书", "本地HTTPS", "测试证书" ]
+    },
+    {
+      "full_name": "h5bp/html5-boilerplate",
+      "keywords": [ "前端开发", "HTML模板", "最佳实践", "快速启动" ]
+    },
+    {
+      "full_name": "PlexPt/awesome-chatgpt-prompts-zh",
+      "keywords": [ "人工智能", "中文提示词", "ChatGPT", "LLM应用" ]
+    },
+    {
+      "full_name": "scutan90/DeepLearning-500-questions",
+      "keywords": [ "教育学习", "深度学习问答", "中文资料", "面试准备" ]
+    },
+    {
+      "full_name": "zylon-ai/private-gpt",
+      "keywords": [ "人工智能", "私有化部署", "文档问答", "本地LLM" ]
+    },
+    {
+      "full_name": "unclecode/crawl4ai",
+      "keywords": [ "人工智能", "网络爬虫", "LLM数据采集", "智能抓取" ]
+    },
+    {
+      "full_name": "soimort/you-get",
+      "keywords": [ "多媒体处理", "视频下载", "命令行工具", "流媒体下载" ]
+    },
+    {
+      "full_name": "LadybirdBrowser/ladybird",
+      "keywords": [ "浏览器", "Web引擎", "开源浏览器", "跨平台" ]
+    },
+    {
+      "full_name": "ultralytics/yolov5",
+      "keywords": [ "计算机视觉", "目标检测", "深度学习", "实时检测" ]
+    },
+    {
+      "full_name": "sharkdp/bat",
+      "keywords": [ "命令行工具", "cat替代", "语法高亮", "文件查看" ]
+    },
+    {
+      "full_name": "pmndrs/zustand",
+      "keywords": [ "前端开发", "状态管理", "React状态", "轻量级库" ]
+    },
+    {
+      "full_name": "remix-run/react-router",
+      "keywords": [ "前端开发", "路由库", "React路由", "客户端路由" ]
+    },
+    {
+      "full_name": "gatsbyjs/gatsby",
+      "keywords": [ "前端开发", "静态网站", "React框架", "Jamstack" ]
+    },
+    {
+      "full_name": "ageitgey/face_recognition",
+      "keywords": [ "计算机视觉", "人脸识别", "Python库", "深度学习" ]
+    },
+    {
+      "full_name": "azl397985856/leetcode",
+      "keywords": [ "教育学习", "LeetCode题解", "算法练习", "面试准备" ]
+    },
+    {
+      "full_name": "FFmpeg/FFmpeg",
+      "keywords": [ "多媒体处理", "音视频处理", "编解码库", "流媒体" ]
+    },
+    {
+      "full_name": "OpenBB-finance/OpenBB",
+      "keywords": [ "金融科技", "投资分析", "数据平台", "开源金融" ]
+    },
+    {
+      "full_name": "cline/cline",
+      "keywords": [ "人工智能", "代码助手", "IDE插件", "开发工具" ]
+    },
+    {
+      "full_name": "AntonOsika/gpt-engineer",
+      "keywords": [ "人工智能", "代码生成", "项目生成", "LLM应用" ]
+    },
+    {
+      "full_name": "meilisearch/meilisearch",
+      "keywords": [ "数据库", "搜索引擎", "快速搜索", "开源搜索" ]
+    },
+    {
+      "full_name": "deepfakes/faceswap",
+      "keywords": [ "人工智能", "换脸技术", "深度学习", "图像处理" ]
+    },
+    {
+      "full_name": "withastro/astro",
+      "keywords": [ "前端开发", "静态网站", "岛屿架构", "性能优化" ]
+    },
+    {
+      "full_name": "Textualize/rich",
+      "keywords": [ "命令行工具", "终端美化", "Python库", "文本格式化" ]
+    },
+    {
+      "full_name": "golang-standards/project-layout",
+      "keywords": [ "Go语言", "项目结构", "最佳实践", "代码组织" ]
+    },
+    {
+      "full_name": "wasabeef/awesome-android-ui",
+      "keywords": [ "移动开发", "Android UI", "设计资源", "awesome列表" ]
+    },
+    {
+      "full_name": "pi-hole/pi-hole",
+      "keywords": [ "实用工具", "广告拦截", "DNS过滤", "网络隐私" ]
+    },
+    {
+      "full_name": "lencx/ChatGPT",
+      "keywords": [ "人工智能", "桌面客户端", "ChatGPT包装", "跨平台" ]
+    },
+    {
+      "full_name": "ElemeFE/element",
+      "keywords": [ "前端开发", "Vue组件", "UI库", "企业级应用" ]
+    },
+    {
+      "full_name": "Z4nzu/hackingtool",
+      "keywords": [ "网络安全", "黑客工具", "渗透测试", "安全套件" ]
+    },
+    {
+      "full_name": "rust-unofficial/awesome-rust",
+      "keywords": [ "Rust语言", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "pocketbase/pocketbase",
+      "keywords": [ "后端开发", "嵌入式数据库", "实时后端", "Go开发" ]
+    },
+    {
+      "full_name": "tiimgreen/github-cheat-sheet",
+      "keywords": [ "开发者工具", "GitHub技巧", "快速参考", "效率工具" ]
+    },
+    {
+      "full_name": "rclone/rclone",
+      "keywords": [ "实用工具", "云存储同步", "命令行工具", "数据备份" ]
+    },
+    {
+      "full_name": "maybe-finance/maybe",
+      "keywords": [ "金融科技", "个人理财", "开源财务", "财务管理" ]
+    },
+    {
+      "full_name": "github/spec-kit",
+      "keywords": [ "开发者工具", "GitHub规范", "代码规范", "最佳实践" ]
+    },
+    {
+      "full_name": "appwrite/appwrite",
+      "keywords": [ "后端开发", "BaaS平台", "后端即服务", "开源替代" ]
+    },
+    {
+      "full_name": "necolas/normalize.css",
+      "keywords": [ "前端开发", "CSS重置", "样式规范化", "浏览器兼容" ]
+    },
+    {
+      "full_name": "psf/requests",
+      "keywords": [ "Python", "HTTP库", "网络请求", "API调用" ]
+    },
+    {
+      "full_name": "Asabeneh/30-Days-Of-Python",
+      "keywords": [ "教育学习", "Python教程", "30天挑战", "编程入门" ]
+    },
+    {
+      "full_name": "RVC-Boss/GPT-SoVITS",
+      "keywords": [ "人工智能", "语音合成", "音色克隆", "实时语音" ]
+    },
+    {
+      "full_name": "facebookresearch/segment-anything",
+      "keywords": [ "计算机视觉", "图像分割", "零样本分割", "深度学习" ]
+    },
+    {
+      "full_name": "wagoodman/dive",
+      "keywords": [ "DevOps", "Docker分析", "镜像优化", "容器工具" ]
+    },
+    {
+      "full_name": "starship/starship",
+      "keywords": [ "命令行工具", "Shell提示", "终端美化", "跨平台" ]
+    },
+    {
+      "full_name": "marktext/marktext",
+      "keywords": [ "生产力工具", "Markdown编辑器", "所见即所得", "开源替代" ]
+    },
+    {
+      "full_name": "google/material-design-icons",
+      "keywords": [ "前端开发", "Material图标", "设计资源", "图标库" ]
+    },
+    {
+      "full_name": "laurent22/joplin",
+      "keywords": [ "生产力工具", "笔记软件", "开源笔记", "跨平台" ]
+    },
+    {
+      "full_name": "mozilla/pdf.js",
+      "keywords": [ "前端开发", "PDF渲染", "JavaScript库", "浏览器中PDF" ]
+    },
+    {
+      "full_name": "go-gitea/gitea",
+      "keywords": [ "开发工具", "Git托管", "自托管", "代码平台" ]
+    },
+    {
+      "full_name": "vuejs/core",
+      "keywords": [ "前端开发", "Vue核心", "框架源码", "JavaScript框架" ]
+    },
+    {
+      "full_name": "microsoft/autogen",
+      "keywords": [ "人工智能", "多智能体", "LLM协作", "自动生成" ]
+    },
+    {
+      "full_name": "ionic-team/ionic-framework",
+      "keywords": [ "移动开发", "跨平台", "混合应用", "Web技术" ]
+    },
+    {
+      "full_name": "ngosang/trackerslist",
+      "keywords": [ "实用工具", "BitTorrent跟踪器", "P2P网络", "资源列表" ]
+    },
+    {
+      "full_name": "openai/codex",
+      "keywords": [ "人工智能", "代码生成", "GPT-3衍生", "编程助手" ]
+    },
+    {
+      "full_name": "JetBrains/kotlin",
+      "keywords": [ "编程语言", "Kotlin语言", "Android开发", "JVM语言" ]
+    },
+    {
+      "full_name": "Mintplex-Labs/anything-llm",
+      "keywords": [ "人工智能", "本地LLM", "文档问答", "私有化部署" ]
+    },
+    {
+      "full_name": "WerWolv/ImHex",
+      "keywords": [ "开发工具", "十六进制编辑器", "逆向工程", "二进制分析" ]
+    },
+    {
+      "full_name": "romkatv/powerlevel10k",
+      "keywords": [ "命令行工具", "Zsh主题", "终端美化", "Shell配置" ]
+    },
+    {
+      "full_name": "sickcodes/Docker-OSX",
+      "keywords": [ "虚拟化", "Docker容器", "macOS虚拟化", "开发环境" ]
+    },
+    {
+      "full_name": "dani-garcia/vaultwarden",
+      "keywords": [ "安全工具", "密码管理", "Bitwarden替代", "自托管" ]
+    },
+    {
+      "full_name": "firstcontributions/first-contributions",
+      "keywords": [ "教育学习", "开源贡献", "新手指南", "Git练习" ]
+    },
+    {
+      "full_name": "google/guava",
+      "keywords": [ "Java", "工具库", "Google库", "实用函数" ]
+    },
+    {
+      "full_name": "TryGhost/Ghost",
+      "keywords": [ "内容管理", "博客平台", "开源CMS", "发布工具" ]
+    },
+    {
+      "full_name": "prettier/prettier",
+      "keywords": [ "开发工具", "代码格式化", "代码风格", "自动化格式化" ]
+    },
+    {
+      "full_name": "jekyll/jekyll",
+      "keywords": [ "静态网站", "博客生成器", "Ruby开发", "Markdown转换" ]
+    },
+    {
+      "full_name": "Semantic-Org/Semantic-UI",
+      "keywords": [ "前端开发", "UI框架", "语义化设计", "CSS框架" ]
+    },
+    {
+      "full_name": "FoundationAgents/OpenManus",
+      "keywords": [ "人工智能", "手部建模", "3D手部", "计算机视觉" ]
+    },
+    {
+      "full_name": "etcd-io/etcd",
+      "keywords": [ "数据库", "分布式键值存储", "配置管理", "服务发现" ]
+    },
+    {
+      "full_name": "PowerShell/PowerShell",
+      "keywords": [ "系统工具", "命令行Shell", "脚本语言", "自动化工具" ]
+    },
+    {
+      "full_name": "DefinitelyTyped/DefinitelyTyped",
+      "keywords": [ "TypeScript", "类型定义", "类型库", "JavaScript库类型" ]
+    },
+    {
+      "full_name": "vsouza/awesome-ios",
+      "keywords": [ "iOS开发", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "karpathy/nanoGPT",
+      "keywords": [ "人工智能", "小型GPT", "教育项目", "简化实现" ]
+    },
+    {
+      "full_name": "xai-org/grok-1",
+      "keywords": [ "人工智能", "大语言模型", "xAI开发", "开源模型" ]
+    },
+    {
+      "full_name": "pathwaycom/pathway",
+      "keywords": [ "数据科学", "实时数据处理", "流式计算", "Python库" ]
+    },
+    {
+      "full_name": "ethereum/go-ethereum",
+      "keywords": [ "区块链", "以太坊客户端", "Go实现", "智能合约平台" ]
+    },
+    {
+      "full_name": "chinese-poetry/chinese-poetry",
+      "keywords": [ "文化项目", "中国诗词", "数据集", "文化遗产" ]
+    },
+    {
+      "full_name": "poteto/hiring-without-whiteboards",
+      "keywords": [ "职业发展", "招聘实践", "技术面试", "公司文化" ]
+    },
+    {
+      "full_name": "jgthms/bulma",
+      "keywords": [ "前端开发", "CSS框架", "Flexbox布局", "响应式设计" ]
+    },
+    {
+      "full_name": "opendatalab/MinerU",
+      "keywords": [ "人工智能", "多模态理解", "文档分析", "LLM应用" ]
+    },
+    {
+      "full_name": "agalwood/Motrix",
+      "keywords": [ "实用工具", "下载管理器", "跨平台", "Aria2前端" ]
+    },
+    {
+      "full_name": "charlax/professional-programming",
+      "keywords": [ "教育学习", "职业发展", "编程实践", "工程师成长" ]
+    },
+    {
+      "full_name": "justjavac/awesome-wechat-weapp",
+      "keywords": [ "移动开发", "微信小程序", "资源集合", "awesome列表" ]
+    },
+    {
+      "full_name": "ultralytics/ultralytics",
+      "keywords": [ "计算机视觉", "YOLO框架", "目标检测", "深度学习" ]
+    },
+    {
+      "full_name": "cypress-io/cypress",
+      "keywords": [ "前端开发", "端到端测试", "自动化测试", "JavaScript测试" ]
+    },
+    {
+      "full_name": "mastodon/mastodon",
+      "keywords": [ "社交媒体", "去中心化", "开源社交", "联邦网络" ]
+    },
+    {
+      "full_name": "NARKOZ/hacker-scripts",
+      "keywords": [ "趣味项目", "自动化脚本", "黑客风格", "实用脚本" ]
+    },
+    {
+      "full_name": "typst/typst",
+      "keywords": [ "文档工具", "排版系统", "LaTeX替代", "学术写作" ]
+    },
+    {
+      "full_name": "unslothai/unsloth",
+      "keywords": [ "人工智能", "高效训练", "LLM优化", "深度学习加速" ]
+    },
+    {
+      "full_name": "dockur/windows",
+      "keywords": [ "虚拟化", "Windows容器", "Docker镜像", "开发环境" ]
+    },
+    {
+      "full_name": "Avik-Jain/100-Days-Of-ML-Code",
+      "keywords": [ "教育学习", "机器学习挑战", "100天计划", "实践学习" ]
+    },
+    {
+      "full_name": "AlistGo/alist",
+      "keywords": [ "实用工具", "文件管理", "云存储聚合", "自托管" ]
+    },
+    {
+      "full_name": "ReactiveX/RxJava",
+      "keywords": [ "Java", "响应式编程", "异步处理", "观察者模式" ]
+    },
+    {
+      "full_name": "iamkun/dayjs",
+      "keywords": [ "前端开发", "日期处理", "轻量级库", "Moment.js替代" ]
+    },
+    {
+      "full_name": "huginn/huginn",
+      "keywords": [ "自动化", "网络爬虫", "监控工具", "任务自动化" ]
+    },
+    {
+      "full_name": "algorithm-visualizer/algorithm-visualizer",
+      "keywords": [ "教育学习", "算法可视化", "交互式学习", "数据结构" ]
+    },
+    {
+      "full_name": "jesseduffield/lazydocker",
+      "keywords": [ "DevOps", "Docker管理", "命令行工具", "容器管理" ]
+    },
+    {
+      "full_name": "harry0703/MoneyPrinterTurbo",
+      "keywords": [ "人工智能", "视频生成", "自动化视频", "内容创作" ]
+    },
+    {
+      "full_name": "coollabsio/coolify",
+      "keywords": [ "DevOps", "自托管平台", "服务器管理", "应用部署" ]
+    },
+    {
+      "full_name": "moment/moment",
+      "keywords": [ "前端开发", "日期处理", "时间库", "JavaScript日期" ]
+    },
+    {
+      "full_name": "nlohmann/json",
+      "keywords": [ "C++", "JSON库", "数据序列化", "现代C++" ]
+    },
+    {
+      "full_name": "JuliaLang/julia",
+      "keywords": [ "编程语言", "科学计算", "高性能", "数据科学" ]
+    },
+    {
+      "full_name": "2dust/v2rayNG",
+      "keywords": [ "网络工具", "Android代理", "V2Ray客户端", "移动端" ]
+    },
+    {
+      "full_name": "pathwaycom/llm-app",
+      "keywords": [ "人工智能", "LLM应用模板", "快速开发", "示例项目" ]
+    },
+    {
+      "full_name": "dkhamsing/open-source-ios-apps",
+      "keywords": [ "iOS开发", "开源应用", "示例项目", "学习资源" ]
+    },
+    {
+      "full_name": "odoo/odoo",
+      "keywords": [ "企业应用", "ERP系统", "CRM系统", "开源商务" ]
+    },
+    {
+      "full_name": "TanStack/query",
+      "keywords": [ "前端开发", "数据获取", "状态管理", "React查询" ]
+    },
+    {
+      "full_name": "dbeaver/dbeaver",
+      "keywords": [ "数据库", "数据库工具", "SQL客户端", "跨平台" ]
+    },
+    {
+      "full_name": "lyswhut/lx-music-desktop",
+      "keywords": [ "多媒体", "音乐播放器", "桌面应用", "开源播放器" ]
+    },
+    {
+      "full_name": "minimaxir/big-list-of-naughty-strings",
+      "keywords": [ "测试工具", "边界测试", "字符串测试", "安全测试" ]
+    },
+    {
+      "full_name": "termux/termux-app",
+      "keywords": [ "移动开发", "Android终端", "Linux环境", "命令行工具" ]
+    },
+    {
+      "full_name": "x64dbg/x64dbg",
+      "keywords": [ "网络安全", "调试工具", "逆向工程", "Windows调试" ]
+    },
+    {
+      "full_name": "gogs/gogs",
+      "keywords": [ "开发工具", "Git托管", "自托管", "轻量级" ]
+    },
+    {
+      "full_name": "pandas-dev/pandas",
+      "keywords": [ "数据科学", "数据分析", "Python库", "数据处理" ]
+    },
+    {
+      "full_name": "hashicorp/terraform",
+      "keywords": [ "DevOps", "基础设施即代码", "云资源管理", "自动化部署" ]
+    },
+    {
+      "full_name": "lllyasviel/Fooocus",
+      "keywords": [ "人工智能", "图像生成", "简化界面", "Stable Diffusion" ]
+    },
+    {
+      "full_name": "type-challenges/type-challenges",
+      "keywords": [ "教育学习", "TypeScript练习", "类型体操", "语言深入" ]
+    },
+    {
+      "full_name": "Zie619/n8n-workflows",
+      "keywords": [ "自动化", "工作流示例", "n8n模板", "流程自动化" ]
+    },
+    {
+      "full_name": "FlowiseAI/Flowise",
+      "keywords": [ "人工智能", "可视化开发", "LangChain界面", "LLM应用" ]
+    },
+    {
+      "full_name": "karan/Projects",
+      "keywords": [ "教育学习", "项目创意", "编程练习", "实践项目" ]
+    },
+    {
+      "full_name": "kamranahmedse/design-patterns-for-humans",
+      "keywords": [ "教育学习", "设计模式", "通俗解释", "编程实践" ]
+    },
+    {
+      "full_name": "usememos/memos",
+      "keywords": [ "生产力工具", "笔记软件", "轻量级笔记", "自托管" ]
+    },
+    {
+      "full_name": "serverless/serverless",
+      "keywords": [ "云计算", "Serverless框架", "无服务器架构", "云函数" ]
+    },
+    {
+      "full_name": "typescript-cheatsheets/react",
+      "keywords": [ "教育学习", "TypeScript指南", "React类型", "快速参考" ]
+    },
+    {
+      "full_name": "square/okhttp",
+      "keywords": [ "移动开发", "HTTP客户端", "Java/Android", "网络库" ]
+    },
+    {
+      "full_name": "v2ray/v2ray-core",
+      "keywords": [ "网络工具", "代理核心", "网络协议", "隐私工具" ]
+    },
+    {
+      "full_name": "bigskysoftware/htmx",
+      "keywords": [ "前端开发", "HTML扩展", "Ajax简化", "现代Web" ]
+    },
+    {
+      "full_name": "kelseyhightower/kubernetes-the-hard-way",
+      "keywords": [ "教育学习", "Kubernetes部署", "动手实践", "详细教程" ]
+    },
+    {
+      "full_name": "slab/quill",
+      "keywords": [ "前端开发", "富文本编辑器", "WYSIWYG", "内容编辑" ]
+    },
+    {
+      "full_name": "serhii-londar/open-source-mac-os-apps",
+      "keywords": [ "macOS开发", "开源应用", "示例项目", "资源集合" ]
+    },
+    {
+      "full_name": "skylot/jadx",
+      "keywords": [ "移动开发", "Android反编译", "逆向工程", "Java反编译" ]
+    },
+    {
+      "full_name": "jellyfin/jellyfin",
+      "keywords": [ "多媒体", "媒体服务器", "开源流媒体", "自托管" ]
+    },
+    {
+      "full_name": "brillout/awesome-react-components",
+      "keywords": [ "前端开发", "React组件", "资源集合", "awesome列表" ]
+    },
+    {
+      "full_name": "jakevdp/PythonDataScienceHandbook",
+      "keywords": [ "教育学习", "数据科学", "Python教程", "Jupyter笔记" ]
+    },
+    {
+      "full_name": "pixijs/pixijs",
+      "keywords": [ "游戏开发", "2D渲染", "HTML5游戏", "WebGL库" ]
+    },
+    {
+      "full_name": "akullpp/awesome-java",
+      "keywords": [ "Java", "资源集合", "库集合", "awesome列表" ]
+    },
+    {
+      "full_name": "ziishaned/learn-regex",
+      "keywords": [ "教育学习", "正则表达式", "文本匹配", "模式匹配" ]
+    },
+    {
+      "full_name": "microsoft/ai-agents-for-beginners",
+      "keywords": [ "人工智能", "AI代理入门", "教育教程", "初学者指南" ]
+    },
+    {
+      "full_name": "docling-project/docling",
+      "keywords": [ "人工智能", "文档解析", "多模态理解", "文件处理" ]
+    },
+    {
+      "full_name": "cloudcommunity/Free-Certifications",
+      "keywords": [ "教育学习", "免费认证", "在线课程", "技能提升" ]
+    },
+    {
+      "full_name": "discourse/discourse",
+      "keywords": [ "社区平台", "论坛软件", "开源讨论", "在线社区" ]
+    },
+    {
+      "full_name": "1c7/chinese-independent-developer",
+      "keywords": [ "社区项目", "中国开发者", "独立开发者", "项目集合" ]
+    },
+    {
+      "full_name": "Homebrew/brew",
+      "keywords": [ "系统工具", "包管理器", "macOS工具", "软件安装" ]
+    },
+    {
+      "full_name": "Asabeneh/30-Days-Of-JavaScript",
+      "keywords": [ "教育学习", "JavaScript教程", "30天挑战", "编程入门" ]
+    },
+    {
+      "full_name": "run-llama/llama_index",
+      "keywords": [ "人工智能", "LLM数据框架", "检索增强", "文档索引" ]
+    },
+    {
+      "full_name": "oobabooga/text-generation-webui",
+      "keywords": [ "人工智能", "LLM界面", "本地部署", "Web界面" ]
+    },
+    {
+      "full_name": "dypsilon/frontend-dev-bookmarks",
+      "keywords": [ "前端开发", "资源集合", "书签整理", "学习资源" ]
+    },
+    {
+      "full_name": "android/architecture-samples",
+      "keywords": [ "移动开发", "Android架构", "示例项目", "最佳实践" ]
+    },
+    {
+      "full_name": "expo/expo",
+      "keywords": [ "移动开发", "React Native框架", "跨平台", "快速开发" ]
+    },
+    {
+      "full_name": "yeongpin/cursor-free-vip",
+      "keywords": [ "开发工具", "编辑器插件", "AI编程", "代码助手" ]
+    },
+    {
+      "full_name": "ColorlibHQ/AdminLTE",
+      "keywords": [ "前端开发", "管理后台模板", "Bootstrap主题", "仪表盘" ]
+    },
+    {
+      "full_name": "jestjs/jest",
+      "keywords": [ "前端开发", "测试框架", "JavaScript测试", "单元测试" ]
+    },
+    {
+      "full_name": "freqtrade/freqtrade",
+      "keywords": [ "金融科技", "量化交易", "加密货币交易", "自动化交易" ]
+    },
+    {
+      "full_name": "DovAmir/awesome-design-patterns",
+      "keywords": [ "设计模式", "资源集合", "架构模式", "awesome列表" ]
+    },
+    {
+      "full_name": "ggml-org/whisper.cpp",
+      "keywords": [ "人工智能", "语音识别", "C++实现", "本地部署" ]
+    },
+    {
+      "full_name": "anthropics/claude-code",
+      "keywords": [ "人工智能", "代码生成", "Claude API", "编程助手" ]
+    },
+    {
+      "full_name": "google/zx",
+      "keywords": [ "命令行工具", "脚本编写", "JavaScript Shell", "自动化脚本" ]
+    },
+    {
+      "full_name": "LeCoupa/awesome-cheatsheets",
+      "keywords": [ "教育学习", "速查表", "快速参考", "编程备忘" ]
+    },
+    {
+      "full_name": "microsoft/monaco-editor",
+      "keywords": [ "开发工具", "代码编辑器", "VS Code核心", "Web编辑器" ]
+    },
+    {
+      "full_name": "metabase/metabase",
+      "keywords": [ "数据科学", "商业智能", "数据可视化", "开源BI" ]
+    },
+    {
+      "full_name": "acmesh-official/acme.sh",
+      "keywords": [ "DevOps", "SSL证书", "自动续签", "Let's Encrypt" ]
+    },
+    {
+      "full_name": "meteor/meteor",
+      "keywords": [ "全栈开发", "JavaScript框架", "实时应用", "全平台" ]
+    },
+    {
+      "full_name": "prisma/prisma",
+      "keywords": [ "数据库", "ORM框架", "类型安全", "数据库工具" ]
+    },
+    {
+      "full_name": "GokuMohandas/Made-With-ML",
+      "keywords": [ "教育学习", "机器学习项目", "实践教程", "全栈ML" ]
+    },
+    {
+      "full_name": "jeecgboot/JeecgBoot",
+      "keywords": [ "后端开发", "低代码平台", "Java框架", "快速开发" ]
+    },
+    {
+      "full_name": "vercel/hyper",
+      "keywords": [ "开发工具", "终端模拟器", "Web技术", "跨平台" ]
+    },
+    {
+      "full_name": "isocpp/CppCoreGuidelines",
+      "keywords": [ "C++", "代码规范", "最佳实践", "编程指南" ]
+    },
+    {
+      "full_name": "ClickHouse/ClickHouse",
+      "keywords": [ "数据库", "列式存储", "实时分析", "大数据" ]
+    },
+    {
+      "full_name": "react-hook-form/react-hook-form",
+      "keywords": [ "前端开发", "表单处理", "React表单", "性能优化" ]
+    },
+    {
+      "full_name": "astral-sh/ruff",
+      "keywords": [ "Python", "代码检查", "格式化工具", "快速Linter" ]
+    },
+    {
+      "full_name": "OpenCut-app/OpenCut",
+      "keywords": [ "生产力工具", "剪贴板管理", "开源工具", "文本片段" ]
+    },
+    {
+      "full_name": "microsoft/AI-For-Beginners",
+      "keywords": [ "教育学习", "AI入门", "课程资料", "初学者教程" ]
+    },
+    {
+      "full_name": "astaxie/build-web-application-with-golang",
+      "keywords": [ "教育学习", "Go Web开发", "中文教程", "实战项目" ]
+    },
+    {
+      "full_name": "Leaflet/Leaflet",
+      "keywords": [ "前端开发", "地图库", "交互式地图", "GIS可视化" ]
+    },
+    {
+      "full_name": "grpc/grpc",
+      "keywords": [ "后端开发", "RPC框架", "高性能通信", "跨语言" ]
+    },
+    {
+      "full_name": "tldraw/tldraw",
+      "keywords": [ "生产力工具", "白板应用", "绘图工具", "协作绘图" ]
+    },
+    {
+      "full_name": "RocketChat/Rocket.Chat",
+      "keywords": [ "协作工具", "团队聊天", "开源Slack", "实时通信" ]
+    },
+    {
+      "full_name": "parcel-bundler/parcel",
+      "keywords": [ "前端开发", "打包工具", "零配置", "快速构建" ]
+    },
+    {
+      "full_name": "coreybutler/nvm-windows",
+      "keywords": [ "开发工具", "Node版本管理", "Windows版本", "环境管理" ]
+    },
+    {
+      "full_name": "mem0ai/mem0",
+      "keywords": [ "人工智能", "记忆系统", "LLM记忆", "上下文管理" ]
+    },
+    {
+      "full_name": "pyenv/pyenv",
+      "keywords": [ "开发工具", "Python版本管理", "环境隔离", "多版本" ]
+    },
+    {
+      "full_name": "babel/babel",
+      "keywords": [ "前端开发", "JavaScript编译器", "转译工具", "语法转换" ]
+    },
+    {
+      "full_name": "square/retrofit",
+      "keywords": [ "移动开发", "HTTP客户端", "类型安全", "Android/Java" ]
+    },
+    {
+      "full_name": "streamich/react-use",
+      "keywords": [ "前端开发", "React Hooks", "实用Hook", "代码复用" ]
+    },
+    {
+      "full_name": "aymericdamien/TensorFlow-Examples",
+      "keywords": [ "教育学习", "TensorFlow示例", "深度学习教程", "代码示例" ]
+    },
+    {
+      "full_name": "sudheerj/reactjs-interview-questions",
+      "keywords": [ "教育学习", "React面试", "问题集合", "面试准备" ]
+    },
+    {
+      "full_name": "coqui-ai/TTS",
+      "keywords": [ "人工智能", "文本转语音", "语音合成", "深度学习" ]
+    },
+    {
+      "full_name": "tw93/Pake",
+      "keywords": [ "开发工具", "网页打包", "桌面应用", "轻量级封装" ]
+    },
+    {
+      "full_name": "yangshun/front-end-interview-handbook",
+      "keywords": [ "教育学习", "前端面试", "指南手册", "面试准备" ]
+    },
+    {
+      "full_name": "GitSquared/edex-ui",
+      "keywords": [ "趣味项目", "科幻界面", "终端美化", "桌面应用" ]
+    },
+    {
+      "full_name": "ChrisTitusTech/winutil",
+      "keywords": [ "系统工具", "Windows优化", "脚本集合", "系统调优" ]
+    },
+    {
+      "full_name": "NaiboWang/EasySpider",
+      "keywords": [ "自动化", "可视化爬虫", "数据采集", "无代码爬虫" ]
+    },
+    {
+      "full_name": "FuelLabs/fuels-rs",
+      "keywords": [ "区块链", "Fuel SDK", "Rust开发", "智能合约" ]
+    },
+    {
+      "full_name": "FuelLabs/fuels-ts",
+      "keywords": [ "区块链", "Fuel SDK", "TypeScript开发", "智能合约" ]
+    },
+    {
+      "full_name": "apache/airflow",
+      "keywords": [ "数据科学", "工作流调度", "任务编排", "数据管道" ]
+    },
+    {
+      "full_name": "bevyengine/bevy",
+      "keywords": [ "游戏开发", "游戏引擎", "Rust开发", "数据驱动" ]
+    },
+    {
+      "full_name": "GitHubDaily/GitHubDaily",
+      "keywords": [ "社区项目", "GitHub日报", "开源资讯", "项目推荐" ]
+    },
+    {
+      "full_name": "penpot/penpot",
+      "keywords": [ "设计工具", "开源设计", "UI/UX设计", "Figma替代" ]
+    },
+    {
+      "full_name": "KRTirtho/spotube",
+      "keywords": [ "多媒体", "音乐播放器", "Spotify客户端", "开源替代" ]
+    },
+    {
+      "full_name": "iina/iina",
+      "keywords": [ "多媒体", "视频播放器", "macOS应用", "现代播放器" ]
+    },
+    {
+      "full_name": "docker/awesome-compose",
+      "keywords": [ "DevOps", "Docker示例", "多容器应用", "部署模板" ]
+    },
+    {
+      "full_name": "Unitech/pm2",
+      "keywords": [ "DevOps", "进程管理", "Node.js管理", "生产环境" ]
+    },
+    {
+      "full_name": "SimplifyJobs/Summer2026-Internships",
+      "keywords": [ "职业发展", "实习信息", "招聘资源", "学生机会" ]
+    },
+    {
+      "full_name": "getsentry/sentry",
+      "keywords": [ "DevOps", "错误监控", "应用性能", "实时监控" ]
+    },
+    {
+      "full_name": "Light-City/CPlusPlusThings",
+      "keywords": [ "教育学习", "C++教程", "中文资料", "编程基础" ]
+    },
+    {
+      "full_name": "spf13/cobra",
+      "keywords": [ "Go语言", "命令行框架", "CLI工具", "应用框架" ]
+    },
+    {
+      "full_name": "streamlit/streamlit",
+      "keywords": [ "数据科学", "Web应用", "Python应用", "快速原型" ]
+    },
+    {
+      "full_name": "virattt/ai-hedge-fund",
+      "keywords": [ "金融科技", "AI交易", "量化投资", "开源策略" ]
+    },
+    {
+      "full_name": "ziglang/zig",
+      "keywords": [ "编程语言", "系统编程", "C替代", "内存安全" ]
+    },
+    {
+      "full_name": "AykutSarac/jsoncrack.com",
+      "keywords": [ "开发工具", "JSON可视化", "数据查看", "图形化工具" ]
+    },
+    {
+      "full_name": "alex/what-happens-when",
+      "keywords": [ "教育学习", "计算机网络", "技术深入", "系统理解" ]
+    },
+    {
+      "full_name": "faif/python-patterns",
+      "keywords": [ "Python", "设计模式", "代码示例", "编程实践" ]
+    },
+    {
+      "full_name": "k88hudson/git-flight-rules",
+      "keywords": [ "开发工具", "Git技巧", "问题解决", "版本控制" ]
+    },
+    {
+      "full_name": "apache/spark",
+      "keywords": [ "数据科学", "大数据处理", "分布式计算", "流处理" ]
+    },
+    {
+      "full_name": "Kong/kong",
+      "keywords": [ "DevOps", "API网关", "微服务管理", "云原生" ]
+    },
+    {
+      "full_name": "slidevjs/slidev",
+      "keywords": [ "文档工具", "演示文稿", "开发者幻灯片", "Markdown幻灯片" ]
+    },
+    {
+      "full_name": "Alamofire/Alamofire",
+      "keywords": [ "移动开发", "HTTP客户端", "Swift库", "iOS开发" ]
+    },
+    {
+      "full_name": "gedoor/legado",
+      "keywords": [ "多媒体", "阅读应用", "小说阅读器", "开源阅读" ]
+    },
+    {
+      "full_name": "Stability-AI/stablediffusion",
+      "keywords": [ "人工智能", "图像生成", "扩散模型", "开源模型" ]
+    },
+    {
+      "full_name": "zhongyang219/TrafficMonitor",
+      "keywords": [ "系统工具", "网络监控", "Windows工具", "实时监控" ]
+    },
+    {
+      "full_name": "apachecn/ailearning",
+      "keywords": [ "教育学习", "AI教程", "中文资料", "机器学习" ]
+    },
+    {
+      "full_name": "mingrammer/diagrams",
+      "keywords": [ "文档工具", "架构图", "Python生成", "可视化图表" ]
+    },
+    {
+      "full_name": "helix-editor/helix",
+      "keywords": [ "开发工具", "代码编辑器", "模态编辑器", "Rust开发" ]
+    },
+    {
+      "full_name": "nolimits4web/swiper",
+      "keywords": [ "前端开发", "轮播组件", "触摸滑动", "响应式滑块" ]
+    },
+    {
+      "full_name": "apache/dubbo",
+      "keywords": [ "后端开发", "微服务框架", "RPC框架", "Java开发" ]
+    },
+    {
+      "full_name": "cli/cli",
+      "keywords": [ "开发工具", "GitHub CLI", "命令行工具", "GitHub接口" ]
+    },
+    {
+      "full_name": "upscayl/upscayl",
+      "keywords": [ "人工智能", "图像放大", "AI增强", "图片修复" ]
+    },
+    {
+      "full_name": "yarnpkg/yarn",
+      "keywords": [ "前端开发", "包管理器", "JavaScript依赖", "Node.js工具" ]
+    }
+  ]
+}
