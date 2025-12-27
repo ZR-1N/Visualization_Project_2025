@@ -3,3 +3,8 @@ __pycache__/
 .vscode/
 node_modules/
 .DS_Store
+
+# Data files
+cv-explorer/data/
+cv-explorer/web/data/
+cv-explorer/cv-explorer/web/data/
