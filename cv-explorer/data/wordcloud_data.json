@@ -1,0 +1,2224 @@
+{
+    "2014": [
+        {
+            "text": "convolutional neural network",
+            "size": 40872
+        },
+        {
+            "text": "deep learning",
+            "size": 38745
+        },
+        {
+            "text": "convolution",
+            "size": 37832
+        },
+        {
+            "text": "benchmark",
+            "size": 3776
+        },
+        {
+            "text": "image segmentation",
+            "size": 3056
+        },
+        {
+            "text": "natural language processing",
+            "size": 2887
+        },
+        {
+            "text": "inference",
+            "size": 2777
+        },
+        {
+            "text": "segmentation",
+            "size": 2640
+        },
+        {
+            "text": "pattern recognition",
+            "size": 2640
+        },
+        {
+            "text": "margin",
+            "size": 1172
+        },
+        {
+            "text": "denotation",
+            "size": 1155
+        },
+        {
+            "text": "support vector machine",
+            "size": 924
+        },
+        {
+            "text": "clutter",
+            "size": 918
+        },
+        {
+            "text": "categorization",
+            "size": 899
+        },
+        {
+            "text": "representation",
+            "size": 897
+        },
+        {
+            "text": "bittorrent tracker",
+            "size": 804
+        },
+        {
+            "text": "cluster analysis",
+            "size": 797
+        },
+        {
+            "text": "optical flow",
+            "size": 786
+        },
+        {
+            "text": "mathematics",
+            "size": 762
+        },
+        {
+            "text": "action recognition",
+            "size": 761
+        },
+        {
+            "text": "recurrent neural network",
+            "size": 736
+        },
+        {
+            "text": "data science",
+            "size": 713
+        },
+        {
+            "text": "architecture",
+            "size": 701
+        },
+        {
+            "text": "intuition",
+            "size": 695
+        },
+        {
+            "text": "biology",
+            "size": 675
+        },
+        {
+            "text": "computational model",
+            "size": 660
+        },
+        {
+            "text": "big data",
+            "size": 639
+        },
+        {
+            "text": "robustness",
+            "size": 625
+        },
+        {
+            "text": "transformative learning",
+            "size": 614
+        },
+        {
+            "text": "semantics",
+            "size": 613
+        },
+        {
+            "text": "machine learning",
+            "size": 611
+        },
+        {
+            "text": "facial expression",
+            "size": 604
+        },
+        {
+            "text": "natural language",
+            "size": 586
+        },
+        {
+            "text": "point cloud",
+            "size": 586
+        },
+        {
+            "text": "natural",
+            "size": 579
+        },
+        {
+            "text": "object",
+            "size": 571
+        },
+        {
+            "text": "histogram",
+            "size": 509
+        },
+        {
+            "text": "sentence",
+            "size": 508
+        },
+        {
+            "text": "perception",
+            "size": 501
+        },
+        {
+            "text": "context",
+            "size": 485
+        },
+        {
+            "text": "psychology",
+            "size": 473
+        },
+        {
+            "text": "biometrics",
+            "size": 465
+        },
+        {
+            "text": "activity recognition",
+            "size": 464
+        },
+        {
+            "text": "distributional semantics",
+            "size": 463
+        },
+        {
+            "text": "artificial neural network",
+            "size": 445
+        },
+        {
+            "text": "character",
+            "size": 443
+        },
+        {
+            "text": "tracking",
+            "size": 433
+        },
+        {
+            "text": "variety",
+            "size": 428
+        },
+        {
+            "text": "word",
+            "size": 417
+        },
+        {
+            "text": "world wide web",
+            "size": 416
+        }
+    ],
+    "2015": [
+        {
+            "text": "convolutional neural network",
+            "size": 17045
+        },
+        {
+            "text": "pascal",
+            "size": 14761
+        },
+        {
+            "text": "object detection",
+            "size": 12557
+        },
+        {
+            "text": "bottleneck",
+            "size": 12251
+        },
+        {
+            "text": "pattern recognition",
+            "size": 3823
+        },
+        {
+            "text": "mnist database",
+            "size": 2647
+        },
+        {
+            "text": "pixel",
+            "size": 2453
+        },
+        {
+            "text": "segmentation",
+            "size": 2382
+        },
+        {
+            "text": "machine learning",
+            "size": 1971
+        },
+        {
+            "text": "deep learning",
+            "size": 1877
+        },
+        {
+            "text": "data science",
+            "size": 1617
+        },
+        {
+            "text": "exploit",
+            "size": 1431
+        },
+        {
+            "text": "decision tree",
+            "size": 1346
+        },
+        {
+            "text": "big data",
+            "size": 1322
+        },
+        {
+            "text": "raw data",
+            "size": 1260
+        },
+        {
+            "text": "haze",
+            "size": 1159
+        },
+        {
+            "text": "radiance",
+            "size": 1118
+        },
+        {
+            "text": "hyperspectral imaging",
+            "size": 1060
+        },
+        {
+            "text": "natural language processing",
+            "size": 1057
+        },
+        {
+            "text": "representation",
+            "size": 1023
+        },
+        {
+            "text": "algorithm",
+            "size": 1001
+        },
+        {
+            "text": "benchmark",
+            "size": 959
+        },
+        {
+            "text": "overfitting",
+            "size": 862
+        },
+        {
+            "text": "biology",
+            "size": 827
+        },
+        {
+            "text": "sparse approximation",
+            "size": 800
+        },
+        {
+            "text": "object",
+            "size": 779
+        },
+        {
+            "text": "histogram",
+            "size": 753
+        },
+        {
+            "text": "categorization",
+            "size": 700
+        },
+        {
+            "text": "remote sensing",
+            "size": 674
+        },
+        {
+            "text": "point cloud",
+            "size": 673
+        },
+        {
+            "text": "cloud computing",
+            "size": 652
+        },
+        {
+            "text": "cluster analysis",
+            "size": 652
+        },
+        {
+            "text": "discriminative model",
+            "size": 644
+        },
+        {
+            "text": "classifier",
+            "size": 624
+        },
+        {
+            "text": "robustness",
+            "size": 617
+        },
+        {
+            "text": "robot",
+            "size": 614
+        },
+        {
+            "text": "photogrammetry",
+            "size": 562
+        },
+        {
+            "text": "question answering",
+            "size": 546
+        },
+        {
+            "text": "mirroring",
+            "size": 546
+        },
+        {
+            "text": "initialization",
+            "size": 541
+        },
+        {
+            "text": "neuroscience",
+            "size": 533
+        },
+        {
+            "text": "rgb color model",
+            "size": 531
+        },
+        {
+            "text": "inference",
+            "size": 526
+        },
+        {
+            "text": "support vector machine",
+            "size": 517
+        },
+        {
+            "text": "mathematics",
+            "size": 507
+        },
+        {
+            "text": "sentiment analysis",
+            "size": 506
+        },
+        {
+            "text": "scratch",
+            "size": 502
+        },
+        {
+            "text": "rectifier",
+            "size": 502
+        },
+        {
+            "text": "social media",
+            "size": 497
+        },
+        {
+            "text": "simultaneous localization and mapping",
+            "size": 489
+        }
+    ],
+    "2016": [
+        {
+            "text": "convolutional neural network",
+            "size": 11175
+        },
+        {
+            "text": "deep learning",
+            "size": 6600
+        },
+        {
+            "text": "machine learning",
+            "size": 6485
+        },
+        {
+            "text": "segmentation",
+            "size": 3941
+        },
+        {
+            "text": "benchmark",
+            "size": 3928
+        },
+        {
+            "text": "pattern recognition",
+            "size": 3705
+        },
+        {
+            "text": "transfer of learning",
+            "size": 3337
+        },
+        {
+            "text": "inductive transfer",
+            "size": 2870
+        },
+        {
+            "text": "point cloud",
+            "size": 2851
+        },
+        {
+            "text": "plant disease",
+            "size": 2832
+        },
+        {
+            "text": "natural language processing",
+            "size": 2285
+        },
+        {
+            "text": "parsing",
+            "size": 2102
+        },
+        {
+            "text": "recurrent neural network",
+            "size": 1963
+        },
+        {
+            "text": "artificial neural network",
+            "size": 1493
+        },
+        {
+            "text": "wearable computer",
+            "size": 1334
+        },
+        {
+            "text": "representation",
+            "size": 1288
+        },
+        {
+            "text": "biology",
+            "size": 1248
+        },
+        {
+            "text": "pooling",
+            "size": 1238
+        },
+        {
+            "text": "layer",
+            "size": 1139
+        },
+        {
+            "text": "cluster analysis",
+            "size": 1125
+        },
+        {
+            "text": "context",
+            "size": 1090
+        },
+        {
+            "text": "remote sensing",
+            "size": 964
+        },
+        {
+            "text": "domain adaptation",
+            "size": 955
+        },
+        {
+            "text": "robustness",
+            "size": 944
+        },
+        {
+            "text": "computer security",
+            "size": 932
+        },
+        {
+            "text": "discriminative model",
+            "size": 932
+        },
+        {
+            "text": "adaptation",
+            "size": 931
+        },
+        {
+            "text": "hash function",
+            "size": 915
+        },
+        {
+            "text": "support vector machine",
+            "size": 905
+        },
+        {
+            "text": "tree",
+            "size": 900
+        },
+        {
+            "text": "field",
+            "size": 877
+        },
+        {
+            "text": "algorithm",
+            "size": 869
+        },
+        {
+            "text": "question answering",
+            "size": 826
+        },
+        {
+            "text": "scalability",
+            "size": 816
+        },
+        {
+            "text": "photogrammetry",
+            "size": 799
+        },
+        {
+            "text": "exploit",
+            "size": 765
+        },
+        {
+            "text": "subject",
+            "size": 759
+        },
+        {
+            "text": "pixel",
+            "size": 759
+        },
+        {
+            "text": "sentence",
+            "size": 748
+        },
+        {
+            "text": "data science",
+            "size": 716
+        },
+        {
+            "text": "computation",
+            "size": 714
+        },
+        {
+            "text": "bilinear interpolation",
+            "size": 684
+        },
+        {
+            "text": "data mining",
+            "size": 683
+        },
+        {
+            "text": "pipeline",
+            "size": 670
+        },
+        {
+            "text": "information retrieval",
+            "size": 669
+        },
+        {
+            "text": "object",
+            "size": 641
+        },
+        {
+            "text": "relation",
+            "size": 634
+        },
+        {
+            "text": "relationship extraction",
+            "size": 623
+        },
+        {
+            "text": "autoencoder",
+            "size": 605
+        },
+        {
+            "text": "convolution",
+            "size": 600
+        }
+    ],
+    "2017": [
+        {
+            "text": "convolutional neural network",
+            "size": 51253
+        },
+        {
+            "text": "pooling",
+            "size": 38754
+        },
+        {
+            "text": "softmax function",
+            "size": 38508
+        },
+        {
+            "text": "dropout",
+            "size": 37789
+        },
+        {
+            "text": "deep learning",
+            "size": 7146
+        },
+        {
+            "text": "segmentation",
+            "size": 5067
+        },
+        {
+            "text": "pattern recognition",
+            "size": 4587
+        },
+        {
+            "text": "residual",
+            "size": 3931
+        },
+        {
+            "text": "benchmark",
+            "size": 3454
+        },
+        {
+            "text": "machine learning",
+            "size": 3348
+        },
+        {
+            "text": "robustness",
+            "size": 3048
+        },
+        {
+            "text": "artificial neural network",
+            "size": 2915
+        },
+        {
+            "text": "margin",
+            "size": 2653
+        },
+        {
+            "text": "object",
+            "size": 2489
+        },
+        {
+            "text": "data science",
+            "size": 2405
+        },
+        {
+            "text": "residual neural network",
+            "size": 2351
+        },
+        {
+            "text": "point cloud",
+            "size": 2113
+        },
+        {
+            "text": "discriminative model",
+            "size": 1953
+        },
+        {
+            "text": "scale",
+            "size": 1716
+        },
+        {
+            "text": "parsing",
+            "size": 1707
+        },
+        {
+            "text": "interpretability",
+            "size": 1566
+        },
+        {
+            "text": "detector",
+            "size": 1536
+        },
+        {
+            "text": "classifier",
+            "size": 1524
+        },
+        {
+            "text": "sobel operator",
+            "size": 1479
+        },
+        {
+            "text": "graph",
+            "size": 1444
+        },
+        {
+            "text": "inference",
+            "size": 1386
+        },
+        {
+            "text": "big data",
+            "size": 1378
+        },
+        {
+            "text": "adversarial system",
+            "size": 1353
+        },
+        {
+            "text": "object detection",
+            "size": 1305
+        },
+        {
+            "text": "natural language processing",
+            "size": 1300
+        },
+        {
+            "text": "feature selection",
+            "size": 1276
+        },
+        {
+            "text": "cluster analysis",
+            "size": 1274
+        },
+        {
+            "text": "question answering",
+            "size": 1251
+        },
+        {
+            "text": "computer graphics",
+            "size": 1247
+        },
+        {
+            "text": "context",
+            "size": 1181
+        },
+        {
+            "text": "transfer of learning",
+            "size": 1168
+        },
+        {
+            "text": "field",
+            "size": 1087
+        },
+        {
+            "text": "selection",
+            "size": 1083
+        },
+        {
+            "text": "prior probability",
+            "size": 1076
+        },
+        {
+            "text": "data pre-processing",
+            "size": 1058
+        },
+        {
+            "text": "crowds",
+            "size": 1046
+        },
+        {
+            "text": "discriminator",
+            "size": 1027
+        },
+        {
+            "text": "closeness",
+            "size": 1022
+        },
+        {
+            "text": "computation",
+            "size": 1018
+        },
+        {
+            "text": "kernel",
+            "size": 956
+        },
+        {
+            "text": "support vector machine",
+            "size": 951
+        },
+        {
+            "text": "process",
+            "size": 888
+        },
+        {
+            "text": "similarity",
+            "size": 865
+        },
+        {
+            "text": "biology",
+            "size": 854
+        },
+        {
+            "text": "overfitting",
+            "size": 843
+        }
+    ],
+    "2018": [
+        {
+            "text": "convolutional neural network",
+            "size": 16885
+        },
+        {
+            "text": "deep learning",
+            "size": 12937
+        },
+        {
+            "text": "pattern recognition",
+            "size": 6760
+        },
+        {
+            "text": "segmentation",
+            "size": 6117
+        },
+        {
+            "text": "graph",
+            "size": 4874
+        },
+        {
+            "text": "benchmark",
+            "size": 4814
+        },
+        {
+            "text": "artificial neural network",
+            "size": 3992
+        },
+        {
+            "text": "machine learning",
+            "size": 3905
+        },
+        {
+            "text": "adversarial system",
+            "size": 3819
+        },
+        {
+            "text": "natural language processing",
+            "size": 3803
+        },
+        {
+            "text": "inference",
+            "size": 3794
+        },
+        {
+            "text": "generalization",
+            "size": 3520
+        },
+        {
+            "text": "medicine",
+            "size": 3271
+        },
+        {
+            "text": "discriminative model",
+            "size": 3235
+        },
+        {
+            "text": "point cloud",
+            "size": 3130
+        },
+        {
+            "text": "robustness",
+            "size": 3030
+        },
+        {
+            "text": "action recognition",
+            "size": 2529
+        },
+        {
+            "text": "object detection",
+            "size": 2491
+        },
+        {
+            "text": "tree traversal",
+            "size": 2254
+        },
+        {
+            "text": "sentence",
+            "size": 2216
+        },
+        {
+            "text": "remote sensing",
+            "size": 2085
+        },
+        {
+            "text": "lidar",
+            "size": 2027
+        },
+        {
+            "text": "closed captioning",
+            "size": 2025
+        },
+        {
+            "text": "field",
+            "size": 1999
+        },
+        {
+            "text": "classifier",
+            "size": 1965
+        },
+        {
+            "text": "discriminator",
+            "size": 1752
+        },
+        {
+            "text": "boltzmann machine",
+            "size": 1674
+        },
+        {
+            "text": "residual",
+            "size": 1673
+        },
+        {
+            "text": "feature extraction",
+            "size": 1618
+        },
+        {
+            "text": "encoder",
+            "size": 1618
+        },
+        {
+            "text": "domain",
+            "size": 1600
+        },
+        {
+            "text": "context",
+            "size": 1590
+        },
+        {
+            "text": "bottleneck",
+            "size": 1580
+        },
+        {
+            "text": "reinforcement learning",
+            "size": 1570
+        },
+        {
+            "text": "pixel",
+            "size": 1510
+        },
+        {
+            "text": "generative grammar",
+            "size": 1393
+        },
+        {
+            "text": "leverage",
+            "size": 1388
+        },
+        {
+            "text": "identification",
+            "size": 1379
+        },
+        {
+            "text": "receiver operating characteristic",
+            "size": 1305
+        },
+        {
+            "text": "object",
+            "size": 1302
+        },
+        {
+            "text": "convolution",
+            "size": 1260
+        },
+        {
+            "text": "data science",
+            "size": 1254
+        },
+        {
+            "text": "process",
+            "size": 1237
+        },
+        {
+            "text": "word",
+            "size": 1172
+        },
+        {
+            "text": "support vector machine",
+            "size": 1152
+        },
+        {
+            "text": "perception",
+            "size": 1143
+        },
+        {
+            "text": "representation",
+            "size": 1138
+        },
+        {
+            "text": "transfer of learning",
+            "size": 1133
+        },
+        {
+            "text": "reciprocal",
+            "size": 1125
+        },
+        {
+            "text": "mean reciprocal rank",
+            "size": 1125
+        }
+    ],
+    "2019": [
+        {
+            "text": "convolutional neural network",
+            "size": 28465
+        },
+        {
+            "text": "deep learning",
+            "size": 24876
+        },
+        {
+            "text": "machine learning",
+            "size": 16947
+        },
+        {
+            "text": "pattern recognition",
+            "size": 11975
+        },
+        {
+            "text": "segmentation",
+            "size": 10981
+        },
+        {
+            "text": "artificial neural network",
+            "size": 7254
+        },
+        {
+            "text": "overfitting",
+            "size": 7178
+        },
+        {
+            "text": "point cloud",
+            "size": 6713
+        },
+        {
+            "text": "natural language processing",
+            "size": 6148
+        },
+        {
+            "text": "representation",
+            "size": 5478
+        },
+        {
+            "text": "object detection",
+            "size": 5295
+        },
+        {
+            "text": "embedding",
+            "size": 5286
+        },
+        {
+            "text": "benchmark",
+            "size": 5118
+        },
+        {
+            "text": "robustness",
+            "size": 5087
+        },
+        {
+            "text": "field",
+            "size": 4697
+        },
+        {
+            "text": "adversarial system",
+            "size": 4164
+        },
+        {
+            "text": "discriminative model",
+            "size": 4049
+        },
+        {
+            "text": "data science",
+            "size": 3975
+        },
+        {
+            "text": "interpretability",
+            "size": 3892
+        },
+        {
+            "text": "context",
+            "size": 3755
+        },
+        {
+            "text": "medicine",
+            "size": 3730
+        },
+        {
+            "text": "inference",
+            "size": 3717
+        },
+        {
+            "text": "graph",
+            "size": 2982
+        },
+        {
+            "text": "scalability",
+            "size": 2972
+        },
+        {
+            "text": "classifier",
+            "size": 2971
+        },
+        {
+            "text": "encoder",
+            "size": 2890
+        },
+        {
+            "text": "transfer of learning",
+            "size": 2645
+        },
+        {
+            "text": "domain",
+            "size": 2466
+        },
+        {
+            "text": "transformer",
+            "size": 2428
+        },
+        {
+            "text": "cluster analysis",
+            "size": 2341
+        },
+        {
+            "text": "process",
+            "size": 2239
+        },
+        {
+            "text": "leverage",
+            "size": 2186
+        },
+        {
+            "text": "remote sensing",
+            "size": 2139
+        },
+        {
+            "text": "residual",
+            "size": 2121
+        },
+        {
+            "text": "categorization",
+            "size": 2093
+        },
+        {
+            "text": "convolution",
+            "size": 2079
+        },
+        {
+            "text": "metric",
+            "size": 2055
+        },
+        {
+            "text": "class",
+            "size": 2036
+        },
+        {
+            "text": "theoretical computer science",
+            "size": 1985
+        },
+        {
+            "text": "joint",
+            "size": 1961
+        },
+        {
+            "text": "generative grammar",
+            "size": 1935
+        },
+        {
+            "text": "pyramid",
+            "size": 1924
+        },
+        {
+            "text": "object",
+            "size": 1876
+        },
+        {
+            "text": "generalization",
+            "size": 1670
+        },
+        {
+            "text": "identification",
+            "size": 1646
+        },
+        {
+            "text": "preprocessor",
+            "size": 1587
+        },
+        {
+            "text": "face",
+            "size": 1578
+        },
+        {
+            "text": "hyperspectral imaging",
+            "size": 1573
+        },
+        {
+            "text": "gan",
+            "size": 1526
+        },
+        {
+            "text": "synthetic aperture radar",
+            "size": 1484
+        }
+    ],
+    "2020": [
+        {
+            "text": "convolutional neural network",
+            "size": 31409
+        },
+        {
+            "text": "deep learning",
+            "size": 18930
+        },
+        {
+            "text": "pattern recognition",
+            "size": 14734
+        },
+        {
+            "text": "segmentation",
+            "size": 13823
+        },
+        {
+            "text": "machine learning",
+            "size": 10333
+        },
+        {
+            "text": "transformer",
+            "size": 7859
+        },
+        {
+            "text": "benchmark",
+            "size": 6469
+        },
+        {
+            "text": "graph",
+            "size": 6462
+        },
+        {
+            "text": "robustness",
+            "size": 6388
+        },
+        {
+            "text": "artificial neural network",
+            "size": 6195
+        },
+        {
+            "text": "object detection",
+            "size": 5087
+        },
+        {
+            "text": "medicine",
+            "size": 5071
+        },
+        {
+            "text": "discriminative model",
+            "size": 4857
+        },
+        {
+            "text": "natural language processing",
+            "size": 4159
+        },
+        {
+            "text": "transfer of learning",
+            "size": 4138
+        },
+        {
+            "text": "data science",
+            "size": 4051
+        },
+        {
+            "text": "residual",
+            "size": 4011
+        },
+        {
+            "text": "bert",
+            "size": 3928
+        },
+        {
+            "text": "coronavirus disease 2019",
+            "size": 3923
+        },
+        {
+            "text": "gan",
+            "size": 3884
+        },
+        {
+            "text": "context",
+            "size": 3863
+        },
+        {
+            "text": "adversarial system",
+            "size": 3766
+        },
+        {
+            "text": "embedding",
+            "size": 3313
+        },
+        {
+            "text": "remote sensing",
+            "size": 3308
+        },
+        {
+            "text": "encoder",
+            "size": 3303
+        },
+        {
+            "text": "cluster analysis",
+            "size": 3263
+        },
+        {
+            "text": "point cloud",
+            "size": 3147
+        },
+        {
+            "text": "pixel",
+            "size": 2958
+        },
+        {
+            "text": "inference",
+            "size": 2821
+        },
+        {
+            "text": "leverage",
+            "size": 2803
+        },
+        {
+            "text": "metric",
+            "size": 2671
+        },
+        {
+            "text": "identification",
+            "size": 2647
+        },
+        {
+            "text": "classifier",
+            "size": 2605
+        },
+        {
+            "text": "field",
+            "size": 2603
+        },
+        {
+            "text": "minimum bounding box",
+            "size": 2549
+        },
+        {
+            "text": "support vector machine",
+            "size": 2437
+        },
+        {
+            "text": "representation",
+            "size": 2433
+        },
+        {
+            "text": "bounding overwatch",
+            "size": 2351
+        },
+        {
+            "text": "random forest",
+            "size": 2263
+        },
+        {
+            "text": "algorithm",
+            "size": 2238
+        },
+        {
+            "text": "theoretical computer science",
+            "size": 2194
+        },
+        {
+            "text": "big data",
+            "size": 2135
+        },
+        {
+            "text": "regression",
+            "size": 2086
+        },
+        {
+            "text": "process",
+            "size": 2041
+        },
+        {
+            "text": "data mining",
+            "size": 2016
+        },
+        {
+            "text": "interpretability",
+            "size": 1985
+        },
+        {
+            "text": "feature extraction",
+            "size": 1932
+        },
+        {
+            "text": "pneumonia",
+            "size": 1898
+        },
+        {
+            "text": "generalization",
+            "size": 1822
+        },
+        {
+            "text": "tracking",
+            "size": 1783
+        }
+    ],
+    "2021": [
+        {
+            "text": "transformer",
+            "size": 25326
+        },
+        {
+            "text": "convolutional neural network",
+            "size": 20964
+        },
+        {
+            "text": "deep learning",
+            "size": 17520
+        },
+        {
+            "text": "segmentation",
+            "size": 13089
+        },
+        {
+            "text": "pattern recognition",
+            "size": 10858
+        },
+        {
+            "text": "machine learning",
+            "size": 9595
+        },
+        {
+            "text": "nerf",
+            "size": 9446
+        },
+        {
+            "text": "artificial neural network",
+            "size": 7267
+        },
+        {
+            "text": "natural language processing",
+            "size": 6663
+        },
+        {
+            "text": "benchmark",
+            "size": 5632
+        },
+        {
+            "text": "medicine",
+            "size": 4890
+        },
+        {
+            "text": "robustness",
+            "size": 4633
+        },
+        {
+            "text": "encoder",
+            "size": 4171
+        },
+        {
+            "text": "context",
+            "size": 3997
+        },
+        {
+            "text": "graph",
+            "size": 3608
+        },
+        {
+            "text": "interpretability",
+            "size": 3603
+        },
+        {
+            "text": "object detection",
+            "size": 3527
+        },
+        {
+            "text": "leverage",
+            "size": 3280
+        },
+        {
+            "text": "transfer of learning",
+            "size": 3161
+        },
+        {
+            "text": "sequence",
+            "size": 3157
+        },
+        {
+            "text": "rendering",
+            "size": 3007
+        },
+        {
+            "text": "computational linguistics",
+            "size": 3003
+        },
+        {
+            "text": "point cloud",
+            "size": 2977
+        },
+        {
+            "text": "radiance",
+            "size": 2866
+        },
+        {
+            "text": "field",
+            "size": 2838
+        },
+        {
+            "text": "discriminative model",
+            "size": 2737
+        },
+        {
+            "text": "remote sensing",
+            "size": 2696
+        },
+        {
+            "text": "detector",
+            "size": 2598
+        },
+        {
+            "text": "code",
+            "size": 2582
+        },
+        {
+            "text": "dependency",
+            "size": 2491
+        },
+        {
+            "text": "coronavirus disease 2019",
+            "size": 2487
+        },
+        {
+            "text": "inference",
+            "size": 2459
+        },
+        {
+            "text": "differentiable function",
+            "size": 2435
+        },
+        {
+            "text": "gan",
+            "size": 2396
+        },
+        {
+            "text": "bert",
+            "size": 2210
+        },
+        {
+            "text": "identification",
+            "size": 2189
+        },
+        {
+            "text": "embedding",
+            "size": 2169
+        },
+        {
+            "text": "classifier",
+            "size": 2127
+        },
+        {
+            "text": "face",
+            "size": 2093
+        },
+        {
+            "text": "residual",
+            "size": 2085
+        },
+        {
+            "text": "feature extraction",
+            "size": 2074
+        },
+        {
+            "text": "support vector machine",
+            "size": 1973
+        },
+        {
+            "text": "image segmentation",
+            "size": 1944
+        },
+        {
+            "text": "joint",
+            "size": 1932
+        },
+        {
+            "text": "sentence",
+            "size": 1892
+        },
+        {
+            "text": "reinforcement learning",
+            "size": 1889
+        },
+        {
+            "text": "adversarial system",
+            "size": 1861
+        },
+        {
+            "text": "representation",
+            "size": 1840
+        },
+        {
+            "text": "data science",
+            "size": 1802
+        },
+        {
+            "text": "environmental science",
+            "size": 1780
+        }
+    ],
+    "2022": [
+        {
+            "text": "transformer",
+            "size": 31528
+        },
+        {
+            "text": "convolutional neural network",
+            "size": 18737
+        },
+        {
+            "text": "deep learning",
+            "size": 14752
+        },
+        {
+            "text": "segmentation",
+            "size": 12169
+        },
+        {
+            "text": "pattern recognition",
+            "size": 10567
+        },
+        {
+            "text": "machine learning",
+            "size": 9472
+        },
+        {
+            "text": "artificial neural network",
+            "size": 6183
+        },
+        {
+            "text": "benchmark",
+            "size": 5420
+        },
+        {
+            "text": "natural language processing",
+            "size": 4539
+        },
+        {
+            "text": "object detection",
+            "size": 4501
+        },
+        {
+            "text": "robustness",
+            "size": 4341
+        },
+        {
+            "text": "medicine",
+            "size": 4254
+        },
+        {
+            "text": "data science",
+            "size": 3827
+        },
+        {
+            "text": "diffusion",
+            "size": 3349
+        },
+        {
+            "text": "inference",
+            "size": 3341
+        },
+        {
+            "text": "process",
+            "size": 3293
+        },
+        {
+            "text": "field",
+            "size": 3171
+        },
+        {
+            "text": "point cloud",
+            "size": 3093
+        },
+        {
+            "text": "remote sensing",
+            "size": 3047
+        },
+        {
+            "text": "discriminative model",
+            "size": 2844
+        },
+        {
+            "text": "transfer of learning",
+            "size": 2795
+        },
+        {
+            "text": "graph",
+            "size": 2659
+        },
+        {
+            "text": "context",
+            "size": 2624
+        },
+        {
+            "text": "encoder",
+            "size": 2456
+        },
+        {
+            "text": "rendering",
+            "size": 2407
+        },
+        {
+            "text": "identification",
+            "size": 2302
+        },
+        {
+            "text": "residual",
+            "size": 2286
+        },
+        {
+            "text": "embedding",
+            "size": 2282
+        },
+        {
+            "text": "interpretability",
+            "size": 2112
+        },
+        {
+            "text": "leverage",
+            "size": 1988
+        },
+        {
+            "text": "overfitting",
+            "size": 1971
+        },
+        {
+            "text": "classifier",
+            "size": 1954
+        },
+        {
+            "text": "gan",
+            "size": 1938
+        },
+        {
+            "text": "cluster analysis",
+            "size": 1808
+        },
+        {
+            "text": "categorization",
+            "size": 1804
+        },
+        {
+            "text": "speedup",
+            "size": 1735
+        },
+        {
+            "text": "adversarial system",
+            "size": 1719
+        },
+        {
+            "text": "hash function",
+            "size": 1697
+        },
+        {
+            "text": "generalization",
+            "size": 1691
+        },
+        {
+            "text": "convolution",
+            "size": 1682
+        },
+        {
+            "text": "feature extraction",
+            "size": 1680
+        },
+        {
+            "text": "algorithm",
+            "size": 1675
+        },
+        {
+            "text": "pooling",
+            "size": 1610
+        },
+        {
+            "text": "domain",
+            "size": 1593
+        },
+        {
+            "text": "object",
+            "size": 1581
+        },
+        {
+            "text": "human–computer interaction",
+            "size": 1547
+        },
+        {
+            "text": "lidar",
+            "size": 1542
+        },
+        {
+            "text": "biology",
+            "size": 1524
+        },
+        {
+            "text": "autoencoder",
+            "size": 1504
+        },
+        {
+            "text": "block",
+            "size": 1465
+        }
+    ],
+    "2023": [
+        {
+            "text": "transformer",
+            "size": 19256
+        },
+        {
+            "text": "convolutional neural network",
+            "size": 13593
+        },
+        {
+            "text": "deep learning",
+            "size": 12666
+        },
+        {
+            "text": "segmentation",
+            "size": 8910
+        },
+        {
+            "text": "pattern recognition",
+            "size": 8730
+        },
+        {
+            "text": "machine learning",
+            "size": 7935
+        },
+        {
+            "text": "object detection",
+            "size": 6433
+        },
+        {
+            "text": "robustness",
+            "size": 4926
+        },
+        {
+            "text": "diffusion",
+            "size": 4826
+        },
+        {
+            "text": "benchmark",
+            "size": 3838
+        },
+        {
+            "text": "field",
+            "size": 3526
+        },
+        {
+            "text": "artificial neural network",
+            "size": 3284
+        },
+        {
+            "text": "medicine",
+            "size": 3234
+        },
+        {
+            "text": "data science",
+            "size": 3198
+        },
+        {
+            "text": "context",
+            "size": 3097
+        },
+        {
+            "text": "remote sensing",
+            "size": 2490
+        },
+        {
+            "text": "identification",
+            "size": 2455
+        },
+        {
+            "text": "inference",
+            "size": 2413
+        },
+        {
+            "text": "algorithm",
+            "size": 2391
+        },
+        {
+            "text": "process",
+            "size": 2357
+        },
+        {
+            "text": "graph",
+            "size": 2162
+        },
+        {
+            "text": "feature extraction",
+            "size": 2138
+        },
+        {
+            "text": "transfer of learning",
+            "size": 2105
+        },
+        {
+            "text": "generative grammar",
+            "size": 2095
+        },
+        {
+            "text": "interpretability",
+            "size": 2057
+        },
+        {
+            "text": "natural language processing",
+            "size": 2032
+        },
+        {
+            "text": "encoder",
+            "size": 1998
+        },
+        {
+            "text": "point cloud",
+            "size": 1953
+        },
+        {
+            "text": "discriminative model",
+            "size": 1901
+        },
+        {
+            "text": "object",
+            "size": 1724
+        },
+        {
+            "text": "adversarial system",
+            "size": 1717
+        },
+        {
+            "text": "convolution",
+            "size": 1679
+        },
+        {
+            "text": "software deployment",
+            "size": 1584
+        },
+        {
+            "text": "block",
+            "size": 1566
+        },
+        {
+            "text": "gan",
+            "size": 1532
+        },
+        {
+            "text": "human–computer interaction",
+            "size": 1502
+        },
+        {
+            "text": "pooling",
+            "size": 1482
+        },
+        {
+            "text": "pyramid",
+            "size": 1468
+        },
+        {
+            "text": "clip",
+            "size": 1432
+        },
+        {
+            "text": "leverage",
+            "size": 1432
+        },
+        {
+            "text": "residual",
+            "size": 1402
+        },
+        {
+            "text": "generalization",
+            "size": 1334
+        },
+        {
+            "text": "categorization",
+            "size": 1320
+        },
+        {
+            "text": "representation",
+            "size": 1313
+        },
+        {
+            "text": "domain",
+            "size": 1299
+        },
+        {
+            "text": "cluster analysis",
+            "size": 1290
+        },
+        {
+            "text": "robot",
+            "size": 1227
+        },
+        {
+            "text": "classifier",
+            "size": 1203
+        },
+        {
+            "text": "computer security",
+            "size": 1196
+        },
+        {
+            "text": "drone",
+            "size": 1189
+        }
+    ],
+    "2024": [
+        {
+            "text": "transformer",
+            "size": 8138
+        },
+        {
+            "text": "diffusion",
+            "size": 5020
+        },
+        {
+            "text": "deep learning",
+            "size": 3174
+        },
+        {
+            "text": "segmentation",
+            "size": 2951
+        },
+        {
+            "text": "convolutional neural network",
+            "size": 2930
+        },
+        {
+            "text": "pattern recognition",
+            "size": 2437
+        },
+        {
+            "text": "machine learning",
+            "size": 2173
+        },
+        {
+            "text": "remote sensing",
+            "size": 1894
+        },
+        {
+            "text": "data science",
+            "size": 1502
+        },
+        {
+            "text": "artificial neural network",
+            "size": 1334
+        },
+        {
+            "text": "psychology",
+            "size": 1323
+        },
+        {
+            "text": "medicine",
+            "size": 1192
+        },
+        {
+            "text": "object detection",
+            "size": 1166
+        },
+        {
+            "text": "natural language processing",
+            "size": 1129
+        },
+        {
+            "text": "robustness",
+            "size": 1099
+        },
+        {
+            "text": "human–computer interaction",
+            "size": 917
+        },
+        {
+            "text": "environmental science",
+            "size": 900
+        },
+        {
+            "text": "mathematics",
+            "size": 895
+        },
+        {
+            "text": "graph",
+            "size": 885
+        },
+        {
+            "text": "context",
+            "size": 833
+        },
+        {
+            "text": "algorithm",
+            "size": 808
+        },
+        {
+            "text": "generative grammar",
+            "size": 793
+        },
+        {
+            "text": "field",
+            "size": 789
+        },
+        {
+            "text": "object",
+            "size": 774
+        },
+        {
+            "text": "identification",
+            "size": 766
+        },
+        {
+            "text": "engineering",
+            "size": 761
+        },
+        {
+            "text": "modal",
+            "size": 709
+        },
+        {
+            "text": "anomaly detection",
+            "size": 705
+        },
+        {
+            "text": "biology",
+            "size": 668
+        },
+        {
+            "text": "geology",
+            "size": 662
+        },
+        {
+            "text": "adversarial system",
+            "size": 645
+        },
+        {
+            "text": "point cloud",
+            "size": 640
+        },
+        {
+            "text": "domain",
+            "size": 562
+        },
+        {
+            "text": "physics",
+            "size": 562
+        },
+        {
+            "text": "transfer of learning",
+            "size": 549
+        },
+        {
+            "text": "benchmark",
+            "size": 542
+        },
+        {
+            "text": "scale",
+            "size": 536
+        },
+        {
+            "text": "fusion",
+            "size": 529
+        },
+        {
+            "text": "anomaly",
+            "size": 514
+        },
+        {
+            "text": "information retrieval",
+            "size": 505
+        },
+        {
+            "text": "speech recognition",
+            "size": 501
+        },
+        {
+            "text": "materials science",
+            "size": 496
+        },
+        {
+            "text": "image segmentation",
+            "size": 492
+        },
+        {
+            "text": "health care",
+            "size": 490
+        },
+        {
+            "text": "feature extraction",
+            "size": 482
+        },
+        {
+            "text": "shot",
+            "size": 478
+        },
+        {
+            "text": "computer security",
+            "size": 451
+        },
+        {
+            "text": "residual",
+            "size": 447
+        },
+        {
+            "text": "representation",
+            "size": 427
+        },
+        {
+            "text": "interpretability",
+            "size": 413
+        }
+    ]
+}
