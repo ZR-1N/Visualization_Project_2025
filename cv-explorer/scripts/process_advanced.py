@@ -118,215 +118,67 @@ METHOD_START_YEAR = {
 }
 
 SEMANTIC_TOPIC_DEFINITIONS = {
-    "Foundation models": [
-        r"\bfoundation\s+models?\b",
-        r"\blarge\s+(vision|multimodal)\s+models?\b",
-        r"\bvision\s+foundation\b"
-    ],
-    "Multimodal reasoning": [
-        r"\bvision[-\s]*language\b",
-        r"\bmultimodal\b",
-        r"\bimage[-\s]*text\b",
-        r"\bvideo[-\s]*text\b",
-        r"\bllava\b"
-    ],
-    "Autonomous driving": [
-        r"\bautonomous\s+driving\b",
-        r"\bself-driving\b",
-        r"\bbev\b",
-        r"\blane\s+(detection|segmentation)\b"
-    ],
-    "Medical imaging": [
-        r"\bmedical\s+imaging\b",
-        r"\bradiology\b",
-        r"\bct\b",
-        r"\bmri\b",
-        r"\bhistopathology\b"
-    ],
-    "Remote sensing": [
-        r"\bremote\s+sensing\b",
-        r"\bsatellite\b",
-        r"\bsar\b",
-        r"\baerial\s+image\b"
-    ],
-    "Human pose": [
-        r"\bpose\s+estimation\b",
-        r"\bskeleton\b",
-        r"\bhuman\s+mesh\b",
-        r"\bsmpl\b"
-    ],
-    "Video understanding": [
-        r"\bvideo\s+(recognition|understanding|captioning)\b",
-        r"\baction\s+recognition\b",
-        r"\btemporal\s+segment\b"
-    ],
-    "Robot learning": [
-        r"\brobot(ic)?\b",
-        r"\bmanipulation\b",
-        r"\bembodied\s+ai\b"
-    ],
-    "Generative 3D": [
-        r"\bnerf\b",
-        r"\bradiance\s+fields?\b",
-        r"\b3d\s+gaussian\b",
-        r"\bsplatting\b"
-    ],
-    "Scientific imaging": [
-        r"\bmicroscopy\b",
-        r"\bfluorescence\b",
-        r"\boptical\s+coherence\b"
-    ],
-    "Responsible AI": [
-        r"\bfair(ness)?\b",
-        r"\bbias\b",
-        r"\bmodel\s+card\b"
-    ]
+    "Cnn": [r"\bcnn\b", r"\bconvnet\b", r"\bconvolutional\b", r"\bresnet\b", r"\befficientnet\b"],
+    "Transformer": [r"\btransformer\b", r"\bself-attention\b", r"\bswin\b", r"\bdetr\b", r"\bvit\b"],
+    "Diffusion": [r"\bdiffusion\b", r"\bddpm\b", r"\bldm\b", r"\bstable\s+diffusion\b"],
+    "Gan": [r"\bgan\b", r"\badversarial\b", r"\bstylegan\b"],
+    "Nerf": [r"\bnerf\b", r"\bradiance\s+field\b", r"\bgaussian\s+splatting\b"],
+    "Gnn": [r"\bgnn\b", r"\bgraph\b", r"\bgcn\b"],
+    "Mlp": [r"\bmlp\b", r"\bperceptron\b"],
+    "Rnn": [r"\brnn\b", r"\blstm\b", r"\bgru\b"],
+    "Contrastive": [r"\bcontrastive\b", r"\bclip\b", r"\bsimclr\b", r"\bmoco\b"],
+    "Detection": [r"\bdetection\b", r"\byolo\b", r"\brcnn\b"],
+    "Segmentation": [r"\bsegmentation\b", r"\bmask\b", r"\bsam\b"],
+    "Generation": [r"\bgeneration\b", r"\bsynthesis\b"],
+    "Multimodal": [r"\bmultimodal\b", r"\bvision-language\b", r"\bvqa\b", r"\bcaptioning\b"]
 }
 
 TOPIC_PRIORITY = {
-    "Foundation models": 5,
-    "Multimodal reasoning": 5,
-    "Generative 3D": 4,
-    "Robot learning": 4,
-    "Autonomous driving": 4,
-    "Video understanding": 4,
-    "Human pose": 3,
-    "Medical imaging": 3,
-    "Responsible AI": 3,
-    "Remote sensing": 2,
-    "Scientific imaging": 2
+    "Diffusion": 10,
+    "Nerf": 9,
+    "Transformer": 8,
+    "Contrastive": 7,
+    "Gan": 6,
+    "Gnn": 5,
+    "Multimodal": 5,
+    "Detection": 4,
+    "Segmentation": 4,
+    "Cnn": 3,
+    "Rnn": 2,
+    "Mlp": 2,
+    "Generation": 1
 }
 
 CANONICAL_TOPIC_DEFINITIONS = {
-    "Vision Foundation & Multimodal": [
-        r"\bfoundation\s+models?\b",
-        r"\blarge\s+(vision|multimodal|language)\s+models?\b",
-        r"\bvision[-\s]*language\b",
-        r"\bvlm\b",
-        r"\bllm\b",
-        r"\bclip\b",
-        r"\bllava\b",
-        r"\bgpt\b",
-        r"\bgenerative\s+ai\b"
-    ],
-    "Generative Media & Diffusion": [
-        r"\bdiffusion\s+models?\b",
-        r"\btext-?to-?(image|video)\b",
-        r"\bgenerative\s+(image|video|media)\b",
-        r"\bimage\s+synthesis\b",
-        r"\bscore-?based\b",
-        r"\bgaussian\s+splatting\b"
-    ],
-    "Embodied AI & Robotics": [
-        r"\brobot(ic)?\b",
-        r"\bembodied\s+ai\b",
-        r"\bmanipulation\b",
-        r"\bgrasp(ing)?\b",
-        r"\bmobile\s+manipulation\b",
-        r"\bpolicy\s+learning\b"
-    ],
-    "Autonomous Driving & BEV": [
-        r"\bautonomous\s+driving\b",
-        r"\bself-?driving\b",
-        r"\bbev\b",
-        r"\bbird['’`-]?s\s+eye\s+view\b",
-        r"\blane\s+(detection|segmentation)\b",
-        r"\blidar\b",
-        r"\boccupancy\s+network\b"
-    ],
-    "Medical Imaging & Diagnostics": [
-        r"\bmedical\s+(imaging|diagnosis|image)\b",
-        r"\bradiology\b",
-        r"\bct\b",
-        r"\bmri\b",
-        r"\bhistopathology\b",
-        r"\bultrasound\b",
-        r"\bhealthcare\b",
-        r"\boncology\b",
-        r"\bdisease\s+detection\b",
-        r"\bclinical\b"
-    ],
-    "Remote Sensing & Earth Observation": [
-        r"\bremote\s+sensing\b",
-        r"\bsatellite\b",
-        r"\bsar\b",
-        r"\baerial\s+image\b",
-        r"\bearth\s+observation\b",
-        r"\bagriculture\b",
-        r"\bcrop\s+monitoring\b"
-    ],
-    "3D Vision & Reconstruction": [
-        r"\b3d\s+(reconstruction|generation|human)\b",
-        r"\bdepth\s+estimation\b",
-        r"\bpoint\s+clouds?\b",
-        r"\bnerf\b",
-        r"\bradiance\s+fields?\b",
-        r"\bgaussian\s+splatting\b",
-        r"\bmetaverse\b",
-        r"\bvirtual\s+reality\b"
-    ],
-    "Low-level Vision & Restoration": [
-        r"\bsuper-?resolution\b",
-        r"\bdenois(ing|e)\b",
-        r"\bdeblurr?ing\b",
-        r"\bderain(ing)?\b",
-        r"\bdehazing\b",
-        r"\bimage\s+restoration\b"
-    ],
-    "Video Intelligence & Tracking": [
-        r"\bvideo\s+(understanding|recognition|captioning)\b",
-        r"\baction\s+recognition\b",
-        r"\btemporal\s+(segment|localization)\b",
-        r"\btracking\b",
-        r"\bmot\b"
-    ],
-    "Human-centric Understanding": [
-        r"\bpose\s+estimation\b",
-        r"\bhuman\s+mesh\b",
-        r"\bsmpl\b",
-        r"\bre-?identification\b",
-        r"\bgait\b",
-        r"\bgesture\b"
-    ],
-    "Responsible & Efficient AI": [
-        r"\bfair(ness)?\b",
-        r"\bbias\b",
-        r"\bprivacy\b",
-        r"\bcompression\b",
-        r"\bdistillation\b",
-        r"\bgreen\s+ai\b"
-    ],
-    "Scientific & Industrial Imaging": [
-        r"\bmicroscopy\b",
-        r"\bspectroscopy\b",
-        r"\bmanufacturing\b",
-        r"\bdefect\s+detection\b",
-        r"\binspection\b",
-        r"\bnon-?destructive\b"
-    ],
-    "General Perception & Scene Understanding": [
-        r"\bobject\s+detection\b",
-        r"\b(image|semantic|panoptic|instance)\s+segmentation\b",
-        r"\bscene\s+parsing\b",
-        r"\bimage\s+classification\b",
-        r"\bretrieval\b"
-    ]
+    "Vision Transformer (ViT)": [r"\bvit\b", r"\bvision\s+transformer\b", r"\bswin\b", r"\bdeit\b", r"\bbeit\b", r"\bpvt\b", r"\bcait\b", r"\bt2t\b"],
+    "Diffusion Models": [r"\bdiffusion\b", r"\bddpm\b", r"\bldm\b", r"\bstable\s+diffusion\b", r"\bscore-based\b", r"\bdenoising\s+diffusion\b"],
+    "NeRF & Neural Fields": [r"\bnerf\b", r"\bradiance\s+field\b", r"\bgaussian\s+splatting\b", r"\bview\s+synthesis\b", r"\bimplicit\s+function\b"],
+    "Multimodal Alignment (CLIP)": [r"\bclip\b", r"\balign\b", r"\bcontrastive\s+language\b", r"\btext-image\s+matching\b", r"\bopen-vocabulary\b"],
+    "Large Vision-Language Models": [r"\bllava\b", r"\bminigpt\b", r"\bblip\b", r"\bflamingo\b", r"\bvisual\s+gpt\b", r"\binstructblip\b", r"\bvlm\b"],
+    "Object Detection": [r"\byolo\b", r"\byolov\d\b", r"\bcenternet\b", r"\befficientdet\b", r"\bssd\b", r"\bretina\b", r"\bfcos\b", r"\br-?cnn\b", r"\bfaster\s+rcnn\b", r"\bmask\s+rcnn\b", r"\bcascade\s+rcnn\b", r"\bregion\s+proposal\b", r"\bobject\s+detection\b", r"\bdetectors?\b"],
+    "DETR & Object Queries": [r"\bdetr\b", r"\bdeformable\s+detr\b", r"\bobject\s+query\b", r"\bset\s+prediction\b"],
+    "Segmentation (SAM & U-Net)": [r"\bunet\b", r"\bdeeplab\b", r"\bpspnet\b", r"\bmask2former\b", r"\bsegment\s+anything\b", r"\bsam\b", r"\bpanoptic\s+fpn\b"],
+    "GANs & Image Synthesis": [r"\bgan\b", r"\bstylegan\b", r"\bcyclegan\b", r"\bpix2pix\b", r"\bimage-to-image\b", r"\bbiggan\b", r"\bstyle\s+transfer\b"],
+    "CNN Backbones": [r"\bresnet\b", r"\befficientnet\b", r"\bvgg\b", r"\bdensenet\b", r"\bmobilenet\b", r"\bconvnext\b", r"\binception\b", r"\bxception\b"],
+    "Self-Supervised Learning": [r"\bsimclr\b", r"\bmoco\b", r"\bbyol\b", r"\bdino\b", r"\bmae\b", r"\bmasked\s+image\s+modeling\b", r"\bcontrastive\b"],
+    "3D Reconstruction & SLAM": [r"\bslam\b", r"\bstructure\s+from\s+motion\b", r"\bmulti-view\s+stereo\b", r"\bpoint\s+cloud\b", r"\bmesh\s+reconstruction\b"],
+    "Video & Motion": [r"\bvideo\s+transformer\b", r"\btime\s+series\b", r"\boptical\s+flow\b", r"\baction\s+recognition\b", r"\btracking\b", r"\bmot\b"]
 }
 
 CANONICAL_TOPIC_PRIORITY = {
-    "Vision Foundation & Multimodal": 9,
-    "Generative Media & Diffusion": 8,
-    "Embodied AI & Robotics": 7,
-    "Autonomous Driving & BEV": 7,
-    "Medical Imaging & Diagnostics": 7,
-    "Remote Sensing & Earth Observation": 6,
-    "3D Vision & Reconstruction": 6,
-    "Video Intelligence & Tracking": 5,
-    "Human-centric Understanding": 5,
-    "Low-level Vision & Restoration": 4,
-    "Responsible & Efficient AI": 4,
-    "Scientific & Industrial Imaging": 4,
-    "General Perception & Scene Understanding": 1
+    "Diffusion Models": 10,
+    "Large Vision-Language Models": 10,
+    "NeRF & Neural Fields": 9,
+    "Vision Transformer (ViT)": 9,
+    "Multimodal Alignment (CLIP)": 8,
+    "DETR & Object Queries": 8,
+    "Self-Supervised Learning": 7,
+    "GANs & Image Synthesis": 7,
+    "Object Detection": 6,
+    "Segmentation (SAM & U-Net)": 5,
+    "3D Reconstruction & SLAM": 5,
+    "CNN Backbones": 4,
+    "Video & Motion": 3
 }
 
 DEFAULT_PRIMARY_SEMANTIC = "Uncategorized Research"
@@ -376,7 +228,467 @@ LOW_VALUE_TERMS = {
     "business",
     "materials science",
     "geography",
-    "computer security"
+    'noise',
+    'algorithm',
+    'challenge',
+    'performance',
+    'accuracy',
+    'efficiency',
+    'robustness',
+    'framework',
+    'architecture',
+    'methodology',
+    'implementation',
+    'evaluation',
+    'experiment',
+    'ablation',
+    'comparison',
+    'overview',
+    'survey',
+    'review',
+    'perspective',
+    'future',
+    'trend',
+    'direction',
+    'opportunity',
+    'issue',
+    'limitation',
+    'gap',
+    'advance',
+    'progress',
+    'state',
+    'art',
+    'practice',
+    'application',
+    'usage',
+    'deployment',
+    'system',
+    'tool',
+    'platform',
+    'infrastructure',
+    'hardware',
+    'software',
+    'device',
+    'equipment',
+    'setup',
+    'configuration',
+    'parameter',
+    'setting',
+    'feature',
+    'representation',
+    'embedding',
+    'vector',
+    'space',
+    'manifold',
+    'distribution',
+    'function',
+    'mapping',
+    'transform',
+    'operation',
+    'layer',
+    'unit',
+    'block',
+    'module',
+    'component',
+    'part',
+    'element',
+    'structure',
+    'design',
+    'scheme',
+    'strategy',
+    'policy',
+    'protocol',
+    'standard',
+    'criterion',
+    'measure',
+    'metric',
+    'score',
+    'index',
+    'value',
+    'factor',
+    'term',
+    'concept',
+    'idea',
+    'notion',
+    'principle',
+    'theory',
+    'hypothesis',
+    'assumption',
+    'conjecture',
+    'proposition',
+    'lemma',
+    'theorem',
+    'proof',
+    'corollary',
+    'definition',
+    'example',
+    'sample',
+    'instance',
+    'case',
+    'scenario',
+    'situation',
+    'condition',
+    'environment',
+    'context',
+    'setting',
+    'background',
+    'foreground',
+    'object',
+    'subject',
+    'target',
+    'source',
+    'input',
+    'output',
+    'result',
+    'outcome',
+    'effect',
+    'impact',
+    'influence',
+    'consequence',
+    'implication',
+    'significance',
+    'importance',
+    'relevance',
+    'role',
+    'contribution',
+    'innovation',
+    'novelty',
+    'improvement',
+    'enhancement',
+    'extension',
+    'modification',
+    'adaptation',
+    'adjustment',
+    'correction',
+    'revision',
+    'update',
+    'upgrade',
+    'version',
+    'variant',
+    'alternative',
+    'option',
+    'choice',
+    'selection',
+    'decision',
+    'action',
+    'activity',
+    'behavior',
+    'process',
+    'procedure',
+    'routine',
+    'task',
+    'job',
+    'mission',
+    'goal',
+    'objective',
+    'aim',
+    'purpose',
+    'intention',
+    'motivation',
+    'reason',
+    'cause',
+    'explanation',
+    'interpretation',
+    'understanding',
+    'insight',
+    'knowledge',
+    'information',
+    'data',
+    'evidence',
+    'fact',
+    'truth',
+    'reality',
+    'world',
+    'universe',
+    'nature',
+    'life',
+    'human',
+    'person',
+    'people',
+    'user',
+    'customer',
+    'client',
+    'consumer',
+    'participant',
+    'observer',
+    'annotator',
+    'worker',
+    'agent',
+    'actor',
+    'player',
+    'partner',
+    'collaborator',
+    'competitor',
+    'adversary',
+    'attacker',
+    'defender',
+    'learner',
+    'teacher',
+    'student',
+    'expert',
+    'novice',
+    'beginner',
+    'professional',
+    'practitioner',
+    'researcher',
+    'scientist',
+    'engineer',
+    'developer',
+    'designer',
+    'architect',
+    'manager',
+    'leader',
+    'director',
+    'supervisor',
+    'administrator',
+    'organizer',
+    'coordinator',
+    'facilitator',
+    'mediator',
+    'arbitrator',
+    'judge',
+    'reviewer',
+    'critic',
+    'editor',
+    'publisher',
+    'author',
+    'writer',
+    'reader',
+    'viewer',
+    'listener',
+    'speaker',
+    'presenter',
+    'audience',
+    'crowd',
+    'group',
+    'team',
+    'community',
+    'society',
+    'organization',
+    'institution',
+    'institute',
+    'center',
+    'laboratory',
+    'department',
+    'division',
+    'section',
+    'branch',
+    'unit',
+    'sector',
+    'industry',
+    'market',
+    'economy',
+    'business',
+    'company',
+    'corporation',
+    'firm',
+    'enterprise',
+    'startup',
+    'agency',
+    'bureau',
+    'office',
+    'studio',
+    'workshop',
+    'factory',
+    'plant',
+    'facility',
+    'station',
+    'base',
+    'camp',
+    'site',
+    'location',
+    'place',
+    'area',
+    'region',
+    'zone',
+    'district',
+    'territory',
+    'country',
+    'nation',
+    'state',
+    'city',
+    'town',
+    'village',
+    'neighborhood',
+    'street',
+    'road',
+    'path',
+    'way',
+    'route',
+    'track',
+    'lane',
+    'channel',
+    'corridor',
+    'bridge',
+    'tunnel',
+    'gateway',
+    'portal',
+    'interface',
+    'boundary',
+    'border',
+    'edge',
+    'limit',
+    'margin',
+    'threshold',
+    'level',
+    'degree',
+    'extent',
+    'scope',
+    'range',
+    'scale',
+    'magnitude',
+    'dimension',
+    'size',
+    'volume',
+    'capacity',
+    'quantity',
+    'amount',
+    'number',
+    'count',
+    'frequency',
+    'rate',
+    'ratio',
+    'percentage',
+    'proportion',
+    'fraction',
+    'part',
+    'share',
+    'slice',
+    'piece',
+    'segment',
+    'section',
+    'fragment',
+    'bit',
+    'byte',
+    'pixel',
+    'voxel',
+    'point',
+    'line',
+    'curve',
+    'surface',
+    'plane',
+    'shape',
+    'form',
+    'pattern',
+    'texture',
+    'color',
+    'tone',
+    'shade',
+    'hue',
+    'brightness',
+    'contrast',
+    'saturation',
+    'intensity',
+    'luminance',
+    'illuminance',
+    'radiance',
+    'reflectance',
+    'transmittance',
+    'absorbance',
+    'scattering',
+    'diffraction',
+    'refraction',
+    'interference',
+    'polarization',
+    'dispersion',
+    'aberration',
+    'distortion',
+    'noise',
+    'blur',
+    'artifact',
+    'occlusion',
+    'shadow',
+    'reflection',
+    'specularity',
+    'highlight',
+    'glare',
+    'transparency',
+    'opacity',
+    'visibility',
+    'clarity',
+    'sharpness',
+    'focus',
+    'resolution',
+    'quality',
+    'fidelity',
+    'accuracy',
+    'precision',
+    'recall',
+    'sensitivity',
+    'specificity',
+    'reliability',
+    'validity',
+    'consistency',
+    'stability',
+    'robustness',
+    'efficiency',
+    'effectiveness',
+    'performance',
+    'speed',
+    'latency',
+    'throughput',
+    'bandwidth',
+    'storage',
+    'memory',
+    'compute',
+    'power',
+    'energy',
+    'cost',
+    'price',
+    'value',
+    'benefit',
+    'profit',
+    'revenue',
+    'income',
+    'budget',
+    'fund',
+    'grant',
+    'award',
+    'prize',
+    'honor',
+    'recognition',
+    'citation',
+    'reference',
+    'bibliography',
+    'appendix',
+    'supplement',
+    'material',
+    'code',
+    'software',
+    'data',
+    'dataset',
+    'model',
+    'network',
+    'system',
+    'method',
+    'algorithm',
+    'technique',
+    'approach',
+    'framework',
+    'pipeline',
+    'workflow',
+    'process',
+    'procedure',
+    'protocol',
+    'standard',
+    'policy',
+    'strategy',
+    'plan',
+    'project',
+    'program',
+    'initiative',
+    'campaign',
+    'movement',
+    'trend',
+    'direction',
+    'future',
+    'vision',
+    'mission',
+    'goal',
+    'objective',
+    'aim',
+    'target',
+    'purpose'
 }
 
 CONCEPT_BLACKLIST = {
@@ -399,7 +711,39 @@ COMMON_STOPWORDS = {
     'using', 'their', 'these', 'those', 'between', 'within', 'without', 'through',
     'towards', 'toward', 'upon', 'while', 'where', 'when', 'which', 'such', 'than',
     'also', 'however', 'therefore', 'overall', 'well', 'both', 'each', 'most',
-    'more', 'many', 'much', 'can', 'could', 'would', 'should', 'may', 'might'
+    'more', 'many', 'much', 'can', 'could', 'would', 'should', 'may', 'might',
+    'our', 'are', 'is', 'was', 'were', 'be', 'has', 'had', 'do', 'does', 'did', 'but',
+    'not', 'only', 'all', 'any', 'some', 'other', 'its', 'it', 'time', 'domain', 'year',
+    'years', 'two', 'new', 'one', 'use', 'used', 'using', 'research', 'review', 'machine',
+    'prediction', 'predict', 'predicting',
+    'feature', 'features', 'algorithm', 'algorithms', 'challenge', 'challenges',
+    'noise', 'human', 'image', 'images', 'visual', 'vision', 'performance', 'method',
+    'methods', 'proposed', 'approach', 'framework', 'system', 'study', 'analysis',
+    'evaluation', 'experiment', 'experiments', 'experimental', 'result', 'results',
+    'state-of-the-art', 'sota', 'dataset', 'datasets', 'benchmark', 'benchmarks',
+    'novel', 'new', 'paper', 'work', 'research', 'review', 'survey', 'overview',
+    'comprehensive', 'recent', 'advance', 'advances', 'trend', 'trends',
+    'problem', 'problems', 'solution', 'solutions', 'application', 'applications',
+    'technique', 'techniques', 'strategy', 'strategies', 'scheme', 'schemes',
+    'mechanism', 'mechanisms', 'model', 'models', 'network', 'networks',
+    'architecture', 'architectures', 'structure', 'structures', 'design', 'designs',
+    'learning', 'training', 'testing', 'validation', 'inference',
+    'deep', 'neural', 'machine', 'artificial', 'intelligence', 'computer',
+    'task', 'tasks', 'capability', 'capabilities', 'quality', 'improvement',
+    'accuracy', 'efficiency', 'robustness', 'generalization', 'complexity',
+    'parameter', 'parameters', 'component', 'components', 'module', 'modules',
+    'layer', 'layers', 'block', 'blocks', 'unit', 'units', 'input', 'output',
+    'representation', 'representations', 'information', 'context', 'content',
+    'detail', 'details', 'object', 'objects', 'scene', 'scenes', 'video', 'videos',
+    'sample', 'samples', 'example', 'examples', 'instance', 'instances',
+    'level', 'scale', 'resolution', 'size', 'speed', 'rate', 'time', 'real-time',
+    'based', 'high', 'low', 'large', 'small', 'simple', 'complex',
+    'fast', 'slow', 'strong', 'weak', 'good', 'bad', 'best', 'better',
+    'multi', 'single', 'cross', 'joint', 'dual', 'hybrid', 'hierarchical',
+    'global', 'local', 'spatial', 'temporal', 'spatiotemporal',
+    'end', 'pipeline', 'stage', 'step', 'phase',
+    'prior', 'post', 'pre', 're', 'non', 'semi', 'un', 'self',
+    'supervised', 'unsupervised', 'weakly', 'fully', 'different'
 }
 
 ACADEMIC_STOPWORDS = {
@@ -419,6 +763,21 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 WEB_DATA_DIR = PROJECT_ROOT / "web" / "data"
 
 
+YEARLY_DOMINANT_MAP = {
+    2014: {"theme": "Two-Stage Detection (R-CNN)", "keywords": [r"r-cnn", r"rcnn", r"region-based", r"alexnet", r"vgg"]},
+    2015: {"theme": "CNN Backbones (ResNet)", "keywords": [r"resnet", r"residual network", r"residual learning", r"batch normalization"]},
+    2016: {"theme": "YOLO & Real-time Detection", "keywords": [r"yolo", r"ssd", r"real-time detection", r"faster r-cnn"]},
+    2017: {"theme": "CNN Architectures (DenseNet)", "keywords": [r"densenet", r"dense connection", r"feature pyramid", r"fpn"]},
+    2018: {"theme": "GANs & Image Synthesis", "keywords": [r"gan", r"generative adversarial", r"pix2pix", r"cyclegan"]},
+    2019: {"theme": "Self-Supervised Learning", "keywords": [r"self-supervised", r"contrastive learning", r"moco", r"simclr", r"efficientnet"]},
+    2020: {"theme": "Vision Transformer (ViT)", "keywords": [r"vit", r"vision transformer", r"dosovitskiy", r"detr", r"nerf"]},
+    2021: {"theme": "Transformer Dominance (Swin)", "keywords": [r"transformer", r"swin", r"mae", r"clip"]},
+    2022: {"theme": "Diffusion Models", "keywords": [r"diffusion model", r"stable diffusion", r"latent diffusion", r"ddpm", r"imagen"]},
+    2023: {"theme": "Segmentation (SAM)", "keywords": [r"segment anything", r"sam", r"foundation model", r"controlnet", r"generative", r"diffusion"]},
+    2024: {"theme": "Generative AI & LLMs", "keywords": [r"multimodal", r"large language", r"gpt", r"gemini", r"vlm", r"llava", r"sora", r"generative", r"diffusion", r"autonomous", r"robotics", r"yolo", r"real-time"]}
+}
+
+
 class CategoryMatcher:
     def __init__(self, definitions):
         self.patterns = {}
@@ -436,6 +795,38 @@ PROBLEM_MATCHER = CategoryMatcher(PROBLEM_DEFINITIONS)
 METHOD_MATCHER = CategoryMatcher(METHOD_DEFINITIONS)
 TOPIC_MATCHER = CategoryMatcher(SEMANTIC_TOPIC_DEFINITIONS)
 PRIMARY_TOPIC_MATCHER = CategoryMatcher(CANONICAL_TOPIC_DEFINITIONS)
+
+
+STRICT_CONCEPT_WHITELIST = {
+    # Architectures & Models
+    "cnn", "convnet", "resnet", "densenet", "efficientnet", "vgg", "mobilenet", "inception", "xception",
+    "transformer", "vision transformer", "vit", "swin", "detr", "bert", "gpt", "clip", "t5", "mae",
+    "gan", "stylegan", "cyclegan", "pix2pix", "biggan", "vae", "vq-vae",
+    "diffusion", "ddpm", "ldm", "stable diffusion", "controlnet", "lora",
+    "nerf", "gaussian splatting", "3d gaussian splatting", "instant ngp",
+    "rnn", "lstm", "gru",
+    "gnn", "gcn", "gat", "pointnet", "pointnet++", "unet", "fpn", "mask r-cnn", "faster r-cnn", "yolo", "ssd",
+    "mlp", "mlp-mixer",
+
+    # Core Mechanisms
+    "attention", "self-attention", "cross-attention", "convolution",
+    "contrastive learning", "self-supervised learning", "representation learning",
+    "reinforcement learning", "transfer learning", "domain adaptation", "knowledge distillation",
+    "few-shot learning", "zero-shot learning", "meta-learning", "active learning",
+    "federated learning", "continual learning", "incremental learning",
+    "generative", "adversarial", "discriminative", "probabilistic", "bayesian",
+
+    # Tasks
+    "object detection", "semantic segmentation", "instance segmentation", "panoptic segmentation",
+    "image classification", "action recognition", "pose estimation", "depth estimation",
+    "optical flow", "visual tracking", "object tracking", "mot",
+    "image captioning", "vqa", "visual question answering", "text-to-image", "image-to-text",
+    "super-resolution", "denoising", "inpainting", "deblurring", "image restoration",
+    "3d reconstruction", "view synthesis", "slam", "structure from motion",
+    "face recognition", "person re-identification", "pedestrian detection",
+    "anomaly detection", "salient object detection", "edge detection",
+    "medical imaging", "remote sensing", "autonomous driving", "robotics"
+}
 
 
 def normalize_phrase(text):
@@ -496,6 +887,20 @@ def is_meaningful_concept(term):
     normalized = normalize_phrase(raw_text)
     if not normalized:
         return False
+
+    # Strict whitelist check
+    if normalized not in STRICT_CONCEPT_WHITELIST:
+        # Allow if it matches any of the semantic topic definitions regexes
+        # This is a bit expensive but ensures consistency
+        found = False
+        for pattern_list in SEMANTIC_TOPIC_DEFINITIONS.values():
+            combined = "|".join(pattern_list)
+            if re.search(combined, normalized, re.IGNORECASE):
+                found = True
+                break
+        if not found:
+            return False
+
     if normalized in CONCEPT_BLACKLIST:
         return False
     if normalized in GENERIC_CONCEPTS:
@@ -512,58 +917,379 @@ def is_meaningful_concept(term):
     return True
 
 
+CONCEPT_START_YEAR = {
+    "Transformer": 2017,
+    "Vision Transformer": 2020,
+    "Vision Transformer (ViT)": 2020,
+    "Diffusion": 2019,
+    "Diffusion Models": 2019,
+    "NeRF": 2020,
+    "NeRF & Neural Fields": 2020,
+    "CLIP": 2021,
+    "Multimodal Alignment (CLIP)": 2021,
+    "Swin": 2021,
+    "MAE": 2021,
+    "Self-Supervised Learning": 2019,
+    "DETR": 2020,
+    "DETR & Object Queries": 2020,
+    "Large Vision-Language Models": 2022,
+    "SAM": 2023,
+    # U-Net 2015, SAM 2023. This is a mixed category.
+    "Segmentation (SAM & U-Net)": 2015,
+    "YOLO": 2016,
+    "Object Detection": 2014,
+    "R-CNN": 2014,
+    "GAN": 2014,
+    "GANs & Image Synthesis": 2014,
+    "ResNet": 2015,
+    "CNN Backbones": 2012,
+    "CNN Architectures": 2012,
+    "Video & Motion": 2010,
+    "3D Reconstruction & SLAM": 2010,
+    "Contrastive": 2019
+}
+
+CONCEPT_END_YEAR = {
+    "Rnn": 2021,
+    "Lstm": 2021,
+    "Gru": 2021
+}
+
+TERM_HIERARCHY = {
+    "Object Detection": {"YOLO", "R-CNN", "DETR", "Detection", "DETR & Object Queries"},
+    "Detection": {"YOLO", "R-CNN", "DETR", "Object Detection"},
+    "Recognition": {"Face Recognition", "Action Recognition", "Re-Identification", "Image Classification"},
+    "Cnn": {"ResNet", "VGG", "EfficientNet", "CNN Backbones", "CNN Architectures"},
+    "Transformer": {"ViT", "Swin", "DETR", "Vision Transformer (ViT)", "Vision Transformer"},
+    "Generation": {"GAN", "Diffusion", "GANs & Image Synthesis", "Diffusion Models"},
+    "Segmentation": {"Segmentation (SAM & U-Net)", "Semantic Segmentation", "Instance Segmentation"},
+}
+
+ERA_SPECIFIC_WHITELIST = {
+    "2010-2012": {
+        "SIFT", "HOG", "SVM", "DPM", "Sparse Coding", "BoW", "GIST", "Deformable Part Models",
+        "Optical Flow", "Tracking", "Segmentation", "Detection", "Face Recognition", "Action Recognition",
+        "Object Detection", "Image Classification", "Machine Learning", "Pattern Recognition", "Clustering",
+        "Super-Resolution", "Denoising", "Inpainting", "Restoration", "Image Restoration"
+    },
+    "2013-2015": {
+        "CNN", "AlexNet", "VGG", "R-CNN", "Dropout", "ReLU", "SPP-net", "Fast R-CNN", "OverFeat",
+        "GoogLeNet", "Inception", "Deep Learning", "Convolutional Neural Network", "Detection", "Segmentation",
+        "Transfer Learning", "Fine-tuning", "Data Augmentation", "Optimization", "Neural Network",
+        "Recurrent Neural Network", "RNN", "LSTM"
+    },
+    "2016-2018": {
+        "ResNet", "YOLO", "Faster R-CNN", "SSD", "GAN", "DCGAN", "CycleGAN", "Pix2Pix",
+        "Mask R-CNN", "DenseNet", "MobileNet", "RetinaNet", "FPN", "LSTM", "RNN", "GRU", "Attention",
+        "Semantic Segmentation", "Instance Segmentation"
+    },
+    "2019-2021": {
+        "ViT", "Vision Transformer", "Transformer", "DETR", "EfficientNet", "Swin Transformer", "NeRF",
+        "Self-Supervised Learning", "Contrastive Learning", "SimCLR", "MoCo", "CLIP", "PointNet",
+        "GNN", "Graph Neural Network", "NAS", "AutoML", "Knowledge Distillation", "Domain Adaptation"
+    },
+    "2022-2025": {
+        "Diffusion", "Diffusion Models", "Stable Diffusion", "Latent Diffusion", "DDPM", "Generative AI",
+        "LLM", "Large Language Model", "Multimodal", "Vision-Language Model", "VLM", "CLIP",
+        "BLIP", "LLaVA", "SAM", "Segment Anything", "Gaussian Splatting", "3D Gaussian Splatting",
+        "YOLOv8", "YOLOv9", "YOLOv10", "BEV", "Occupancy Network", "Foundation Model", "LoRA", "ControlNet",
+        "Sora", "Gemini", "GPT-4", "Prompt Engineering", "Zero-Shot", "Few-Shot", "Transformer", "Generative"
+    }
+}
+
+
+def get_allowed_concepts_for_year(year):
+    if not year:
+        return set()
+    allowed = set()
+
+    # Always allow core tasks if they are not superseded (but we handle superseding via TERM_HIERARCHY)
+    # Actually, let's just use the era whitelist + strict global whitelist
+    # But we need to make sure we don't block "Detection" in 2024 if it's not redundant.
+    # The user wants "High Quality" keywords.
+
+    # Cumulative approach? No, strictly era-based is safer to avoid "RNN" in 2024.
+    # But "CNN" is still relevant in 2024.
+    # So we should allow previous eras' terms *unless* they are explicitly deprecated.
+
+    # Better approach:
+    # 1. Start with concepts from current era.
+    # 2. Add concepts from *previous* eras (accumulated).
+    # 3. Remove concepts in CONCEPT_END_YEAR if year > end_year.
+
+    ranges = [
+        (2010, 2012), (2013, 2015), (2016, 2018), (2019, 2021), (2022, 2025)
+    ]
+
+    for start, end in ranges:
+        if start <= year:  # If this era has started by `year`
+            key = f"{start}-{end}"
+            if key in ERA_SPECIFIC_WHITELIST:
+                allowed.update(ERA_SPECIFIC_WHITELIST[key])
+
+    return allowed
+
+
 def derive_semantic_tags(paper, tfidf_row, feature_names, limit, cluster_label=None):
     title = pick_field(paper, "title", "") or ""
     abstract = pick_field(paper, "abstract", "") or ""
+    year_val = normalize_year(pick_field(paper, "year"))
+
+    # Pre-calculate allowed concepts for this year
+    allowed_concepts_set = get_allowed_concepts_for_year(year_val)
+    if not allowed_concepts_set:
+        # Fallback for years outside our ranges (e.g. pre-2010), allow everything in STRICT_WHITELIST
+        allowed_concepts_set = STRICT_CONCEPT_WHITELIST
+
     topic_hits = sorted(TOPIC_MATCHER.find_matches(f"{title} {abstract}"))
     topic_hits.sort(key=lambda name: TOPIC_PRIORITY.get(name, 1), reverse=True)
-    topic_labels = [
-        prettify_concept(label)
-        for label in topic_hits
-        if is_meaningful_concept(label)
-    ]
+
+    # Filter topic_hits by start year
+    valid_topic_labels = []
+    for label in topic_hits:
+        pretty = prettify_concept(label)
+
+        # Check against allowed set
+        # We need to be careful: allowed_concepts_set has Title Case terms.
+        # But we should also allow fuzzy matching if needed? No, let's be strict.
+        # However, ERA_SPECIFIC_WHITELIST might not cover everything in SEMANTIC_TOPIC_DEFINITIONS.
+        # So let's allow if it's in allowed_concepts_set OR it passes the old checks AND is not banned.
+
+        # Actually, user wants strict whitelist.
+        # So we check if `pretty` is in `allowed_concepts_set`.
+        # But `allowed_concepts_set` might be missing some generic terms like "Object Detection".
+        # I added "Detection" to eras.
+
+        # Let's enforce strictness:
+        # 1. Must be in allowed_concepts_set (which accumulates over eras)
+        # 2. Must NOT be in CONCEPT_END_YEAR blacklist for this year
+
+        # Check whitelist
+        # We need normalized comparison
+        if not any(normalize_phrase(pretty) == normalize_phrase(a) for a in allowed_concepts_set):
+            continue
+
+        start_year = CONCEPT_START_YEAR.get(
+            label) or CONCEPT_START_YEAR.get(pretty)
+        if start_year and year_val and year_val < start_year:
+            continue
+
+        end_year = CONCEPT_END_YEAR.get(pretty)
+        if end_year and year_val and year_val > end_year:
+            continue
+
+        # New strict whitelist check
+        # We check if the concept is "allowed" for this year.
+        # This handles the "RNN in 2024" case because "RNN" is in 2016-2018 era but has end_year=2021.
+
+        # Wait, get_allowed_concepts_for_year accumulates all previous eras.
+        # So "RNN" (from 2016-2018) WILL be in `allowed_concepts_set` for 2024!
+        # So we MUST rely on CONCEPT_END_YEAR to remove it.
+
+        if is_meaningful_concept(label):
+            valid_topic_labels.append(pretty)
 
     raw_concepts = ensure_list(pick_field(paper, "concepts", []))
-    curated = [prettify_concept(concept)
-               for concept in raw_concepts if is_meaningful_concept(concept)]
+    curated = []
+    for concept in raw_concepts:
+        if not is_meaningful_concept(concept):
+            continue
+        term = prettify_concept(concept)
+
+        # Check against allowed set
+        if not any(normalize_phrase(term) == normalize_phrase(a) for a in allowed_concepts_set):
+            continue
+
+        start_year = CONCEPT_START_YEAR.get(term)
+        if start_year and year_val and year_val < start_year:
+            continue
+
+        end_year = CONCEPT_END_YEAR.get(term)
+        if end_year and year_val and year_val > end_year:
+            continue
+
+        curated.append(term)
 
     tfidf_terms = []
     if tfidf_row is not None and feature_names is not None:
-        tfidf_terms = [
-            prettify_concept(term)
-            for term in top_terms_for_row(tfidf_row, feature_names, max(limit * 2, 6))
-            if is_meaningful_concept(term)
-        ]
+        raw_terms = top_terms_for_row(
+            tfidf_row, feature_names, max(limit * 2, 6))
+        for term in raw_terms:
+            pretty = prettify_concept(term)
+            if not is_meaningful_concept(pretty):
+                continue
+
+            # Check against allowed set
+            if not any(normalize_phrase(pretty) == normalize_phrase(a) for a in allowed_concepts_set):
+                continue
+
+            start_year = CONCEPT_START_YEAR.get(pretty)
+            if start_year and year_val and year_val < start_year:
+                continue
+
+            end_year = CONCEPT_END_YEAR.get(pretty)
+            if end_year and year_val and year_val > end_year:
+                continue
+
+            tfidf_terms.append(pretty)
 
     enriched_context = " ".join(filter(
         None, [title, abstract, " ".join(raw_concepts), " ".join(tfidf_terms[:6])]))
-    fallback_primary = cluster_label if cluster_label else topic_labels[0] if topic_labels else None
-    primary_label = select_canonical_semantic(
-        enriched_context, fallback_primary)
-    
+
+    primary_label = DEFAULT_PRIMARY_SEMANTIC
+
+    # Priority 0: Explicit Yearly Dominant Theme (User Design)
+    if year_val in YEARLY_DOMINANT_MAP:
+        cfg = YEARLY_DOMINANT_MAP[year_val]
+        # Check if any keyword matches
+        for pat in cfg["keywords"]:
+            if re.search(pat, enriched_context, re.IGNORECASE):
+                primary_label = cfg["theme"]
+                # Inject the keyword into concepts
+                raw_concepts.insert(0, prettify_concept(
+                    pat.replace(r"\\b", "").replace(r"-", " ")))
+                break
+
+    # Priority 1: Canonical Topics (High-level tracks)
+    if primary_label == DEFAULT_PRIMARY_SEMANTIC:
+        candidate = select_canonical_semantic(enriched_context, None)
+        # Check start/end year for canonical topic
+        start_year = CONCEPT_START_YEAR.get(candidate)
+        end_year = CONCEPT_END_YEAR.get(candidate)
+        if not (start_year and year_val and year_val < start_year) and \
+           not (end_year and year_val and year_val > end_year):
+            primary_label = candidate
+
+    # Priority 2: Problem Definitions (from Sankey)
+    if primary_label == DEFAULT_PRIMARY_SEMANTIC:
+        problem_hits = sorted(PROBLEM_MATCHER.find_matches(enriched_context))
+        if problem_hits:
+            primary_label = prettify_concept(problem_hits[0])
+
+    # Priority 3: Method Definitions (from Sankey)
+    if primary_label == DEFAULT_PRIMARY_SEMANTIC:
+        method_hits = sorted(METHOD_MATCHER.find_matches(enriched_context))
+        if method_hits:
+            # Check start/end year for method
+            cand = prettify_concept(method_hits[0])
+            start_year = CONCEPT_START_YEAR.get(cand)
+            end_year = CONCEPT_END_YEAR.get(cand)
+            if not (start_year and year_val and year_val < start_year) and \
+               not (end_year and year_val and year_val > end_year):
+                primary_label = cand
+
+    fallback_primary = None
+    if cluster_label:
+        start_year = CONCEPT_START_YEAR.get(cluster_label)
+        end_year = CONCEPT_END_YEAR.get(cluster_label)
+        # Check strict whitelist for cluster label too
+        is_allowed = any(normalize_phrase(cluster_label) ==
+                         normalize_phrase(a) for a in allowed_concepts_set)
+
+        if is_allowed and not (start_year and year_val and year_val < start_year) and \
+           not (end_year and year_val and year_val > end_year):
+            fallback_primary = cluster_label
+
+    if not fallback_primary and valid_topic_labels:
+        fallback_primary = valid_topic_labels[0]
+
     # If still default, try to force a cluster label or top keyword
     if primary_label == DEFAULT_PRIMARY_SEMANTIC:
-        if cluster_label:
-            primary_label = cluster_label
-        elif topic_labels:
-            primary_label = topic_labels[0]
+        if fallback_primary:
+            primary_label = fallback_primary
         elif tfidf_terms:
             primary_label = tfidf_terms[0]
-            
+        elif curated:
+            primary_label = curated[0]
+
     secondary_bucket = []
     if cluster_label and cluster_label != primary_label:
-        secondary_bucket.append(cluster_label)
+        # Filter secondary cluster label by year too
+        start_year = CONCEPT_START_YEAR.get(cluster_label)
+        end_year = CONCEPT_END_YEAR.get(cluster_label)
+        is_allowed = any(normalize_phrase(cluster_label) ==
+                         normalize_phrase(a) for a in allowed_concepts_set)
 
-    buckets = ([primary_label], topic_labels,
+        if is_allowed and not (start_year and year_val and year_val < start_year) and \
+           not (end_year and year_val and year_val > end_year):
+            secondary_bucket.append(cluster_label)
+
+    buckets = ([primary_label], valid_topic_labels,
                curated, secondary_bucket, tfidf_terms)
     seen = set()
     output = []
+
+    # Prepend explicit Problem/Method matches to concepts if not already primary
+    context_problems = sorted(PROBLEM_MATCHER.find_matches(enriched_context))
+    context_methods = sorted(METHOD_MATCHER.find_matches(enriched_context))
+
+    prioritized_concepts = []
+    for p in context_problems:
+        prioritized_concepts.append(prettify_concept(p))
+    for m in context_methods:
+        prioritized_concepts.append(prettify_concept(m))
+
+    for term in prioritized_concepts:
+        normalized = normalize_phrase(term)
+        if not normalized or normalized in seen:
+            continue
+        # Also filter concepts by year
+        start_year = CONCEPT_START_YEAR.get(term)
+        end_year = CONCEPT_END_YEAR.get(term)
+        if start_year and year_val and year_val < start_year:
+            continue
+        if end_year and year_val and year_val > end_year:
+            continue
+
+        # Check against allowed set
+        if not any(normalize_phrase(term) == normalize_phrase(a) for a in allowed_concepts_set):
+            continue
+
+        # Hierarchy check
+        is_redundant = False
+        if term in TERM_HIERARCHY:
+            children = TERM_HIERARCHY[term]
+            for existing in output:
+                if existing in children or normalize_phrase(existing) in {normalize_phrase(c) for c in children}:
+                    is_redundant = True
+                    break
+        if is_redundant:
+            continue
+
+        seen.add(normalized)
+        output.append(term)
+
     target = max(limit, 3)
     for bucket in buckets:
         for term in bucket:
             normalized = normalize_phrase(term)
             if not normalized or normalized in seen:
                 continue
+
+            # Year check
+            start_year = CONCEPT_START_YEAR.get(term)
+            end_year = CONCEPT_END_YEAR.get(term)
+            if start_year and year_val and year_val < start_year:
+                continue
+            if end_year and year_val and year_val > end_year:
+                continue
+
+            # Check against allowed set
+            if not any(normalize_phrase(term) == normalize_phrase(a) for a in allowed_concepts_set):
+                continue
+
+            # Hierarchy check
+            is_redundant = False
+            if term in TERM_HIERARCHY:
+                children = TERM_HIERARCHY[term]
+                for existing in output:
+                    # Check if any existing term is a child of the current term
+                    if existing in children or normalize_phrase(existing) in {normalize_phrase(c) for c in children}:
+                        is_redundant = True
+                        break
+            if is_redundant:
+                continue
+
             seen.add(normalized)
             output.append(term)
             if len(output) >= target:
@@ -572,8 +1298,33 @@ def derive_semantic_tags(paper, tfidf_row, feature_names, limit, cluster_label=N
             break
 
     if not output:
-        output.append(DEFAULT_PRIMARY_SEMANTIC)
-    return output[:target]
+        if tfidf_terms:
+            output.append(tfidf_terms[0])
+        elif curated:
+            output.append(curated[0])
+        else:
+            output.append(DEFAULT_PRIMARY_SEMANTIC)
+
+    # Post-process to remove redundant parents (e.g. remove "Detection" if "YOLO" is present)
+    final_output = []
+    to_remove = set()
+    for parent in output:
+        if parent in TERM_HIERARCHY:
+            children = TERM_HIERARCHY[parent]
+            for child in output:
+                if child == parent:
+                    continue
+                if child in children or normalize_phrase(child) in {normalize_phrase(c) for c in children}:
+                    to_remove.add(parent)
+                    break
+
+    final_output = [c for c in output if c not in to_remove]
+
+    # Ensure we still have something
+    if not final_output and output:
+        final_output = output[:1]
+
+    return final_output[:target]
 
 
 def pick_field(record, alias_key, default=None):
@@ -700,12 +1451,30 @@ def build_semantic_clusters(tfidf_matrix, feature_names, desired_clusters):
         keywords = keywords_from_vector(mean_vector, feature_names, limit=6)
         context = " ".join(keywords[:6])
         canonical = select_canonical_semantic(context)
+
+        # Try to improve cluster label with Problems/Methods if canonical fails
+        if not canonical or canonical == DEFAULT_PRIMARY_SEMANTIC:
+            problem_hits = sorted(PROBLEM_MATCHER.find_matches(context))
+            if problem_hits:
+                canonical = prettify_concept(problem_hits[0])
+            else:
+                method_hits = sorted(METHOD_MATCHER.find_matches(context))
+                if method_hits:
+                    canonical = prettify_concept(method_hits[0])
+
         if canonical:
             label = canonical
         elif keywords:
             label = " / ".join(keywords[:3])
         else:
             label = f"Emerging Cluster {cluster_id + 1}"
+
+        if label == "Uncategorized Research":
+            if keywords:
+                label = " / ".join(keywords[:2])
+            else:
+                label = f"Cluster {cluster_id + 1}"
+
         cluster_titles[cluster_id] = label
 
     return labels, cluster_titles
@@ -857,6 +1626,16 @@ def build_landscape(papers, max_features, top_terms, semantic_clusters):
         if cluster_assignments is not None:
             cluster_idx = int(cluster_assignments[idx])
             cluster_label = cluster_titles.get(cluster_idx)
+
+            # Verify cluster label against year
+            if cluster_label:
+                c_start = CONCEPT_START_YEAR.get(cluster_label)
+                c_end = CONCEPT_END_YEAR.get(cluster_label)
+                if c_start and year and year < c_start:
+                    cluster_label = None
+                elif c_end and year and year > c_end:
+                    cluster_label = None
+
         concepts = derive_semantic_tags(
             paper, row, feature_names, top_terms, cluster_label=cluster_label)
         record["concepts"] = concepts

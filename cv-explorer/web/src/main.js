@@ -9,7 +9,8 @@ const state = {
     wordcloud: null,
     filters: {
         year: null
-    }
+    },
+    selection: null // Add selection state
 };
 
 let routerInstance = null;
@@ -19,7 +20,8 @@ const dataSources = [
     { key: "summary", paths: ["./data/summary.json", "../data/summary.json"] },
     { key: "landscape", paths: ["./data/landscape_data.json", "../data/landscape_data.json"] },
     { key: "sankey", paths: ["./data/sankey_data.json", "../data/sankey_data.json"] },
-    { key: "wordcloud", paths: ["./data/wordcloud_data.json", "../data/wordcloud_data.json"] }
+    { key: "wordcloud", paths: ["./data/wordcloud_data.json", "../data/wordcloud_data.json"] },
+    { key: "leaderboard", paths: ["./data/leaderboard_seeds.json", "../data/leaderboard_seeds.json"] }
 ];
 
 function setupNavigation(router) {
@@ -31,58 +33,120 @@ function setupNavigation(router) {
     });
 }
 
-function setupLanding(router) {
-    const landing = d3.select("#landing-shell");
-    if (landing.empty()) {
-        return;
-    }
+function setupSpaceXLanding(router) {
+    const portal = d3.select("#portal-container");
+    if (portal.empty()) return;
 
     const body = d3.select("body");
-    const navItems = d3.selectAll(".nav-links li");
+    const sections = document.querySelectorAll('.snap-section');
+    const navDots = document.querySelectorAll('.side-nav .dot');
+    const clockEl = document.getElementById("digital-clock");
+    const portalHeader = d3.select("#portal-header");
+    const appNavbar = d3.select(".navbar");
+    const viewContainer = d3.select("#view-container");
+    const sideNav = d3.select(".side-nav");
+    const scrollControls = d3.select(".scroll-controls");
 
-    function activateView(targetView = "overview") {
-        if (body.classed("landing-active")) {
-            body.classed("landing-active", false);
-            landing.classed("is-leaving", true);
-            setTimeout(() => {
-                landing.style("display", "none");
-            }, 900);
-        }
-
-        if (targetView) {
-            router.navigateTo(targetView);
-            navItems.classed("active", function () {
-                return d3.select(this).attr("data-view") === targetView;
-            });
-        }
+    // 1. Digital Clock
+    function updateClock() {
+        if (!clockEl) return;
+        const now = new Date();
+        const pad = n => n.toString().padStart(2, '0');
+        const str = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        clockEl.textContent = str;
     }
+    setInterval(updateClock, 1000);
+    updateClock();
 
-    landing.selectAll('[data-action="enter"]').on("click", (event) => {
-        event.preventDefault();
-        activateView("overview");
-    });
-    landing.selectAll(".landing-card[data-view]").on("click", function () {
-        const targetView = d3.select(this).attr("data-view") || "overview";
-        activateView(targetView);
-    });
+    // 2. Intersection Observer for Scroll Spy
+    const observerOptions = {
+        root: portal.node(),
+        threshold: 0.5
+    };
 
-    const overviewLink = landing.select('a[href="#landing-panels"]');
-    if (!overviewLink.empty()) {
-        overviewLink.on("click", (event) => {
-            event.preventDefault();
-            const targetEl = document.getElementById("landing-panels");
-            if (!targetEl) {
-                return;
-            }
-            const container = landing.node();
-            const offsetTop = targetEl.offsetTop - 32;
-            if (container?.scrollTo) {
-                container.scrollTo({ top: offsetTop, behavior: "smooth" });
-            } else {
-                window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Update active section class
+                sections.forEach(s => s.classList.remove('active'));
+                entry.target.classList.add('active');
+
+                // Update nav dots
+                const id = entry.target.getAttribute('id');
+                navDots.forEach(dot => {
+                    dot.classList.toggle('active', dot.getAttribute('href') === `#${id}`);
+                });
             }
         });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    // 3. Scroll Controls
+    d3.selectAll('.side-nav .dot, .scroll-controls button').on('click', function (event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('data-target') || this.getAttribute('href');
+        let targetEl;
+
+        if (this.id === 'btn-prev' || this.id === 'btn-next') {
+            const currentSection = document.querySelector('.snap-section.active');
+            targetEl = this.id === 'btn-next' ? currentSection?.nextElementSibling : currentSection?.previousElementSibling;
+        } else if (this.id === 'btn-top') {
+            targetEl = document.getElementById('section-overview');
+        } else if (this.id === 'btn-bottom') {
+            targetEl = document.getElementById('section-ai');
+        } else if (targetId) {
+            targetEl = document.querySelector(targetId);
+        }
+
+        if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    // 4. Enter View Logic
+    function enterView(viewName) {
+        // Transition Out Portal
+        body.classed("landing-active", false);
+        portal.style("display", "none");
+        sideNav.style("display", "none");
+        scrollControls.style("display", "none");
+        portalHeader.style("transform", "translateY(-100%)");
+
+        // Transition In App
+        appNavbar.style("display", "flex").style("opacity", 0)
+            .transition().duration(500).style("opacity", 1);
+        viewContainer.style("display", "block").style("opacity", 0)
+            .transition().duration(500).style("opacity", 1);
+
+        // Navigate Router
+        router.navigateTo(viewName);
+        d3.selectAll(".nav-links li").classed("active", function () {
+            return d3.select(this).attr("data-view") === viewName;
+        });
     }
+
+    d3.selectAll('.enter-view-btn').on('click', function () {
+        const section = this.closest('.snap-section');
+        const viewName = section.getAttribute('data-target');
+        enterView(viewName);
+    });
+
+    // 5. Back to Portal Logic
+    d3.select("#back-to-portal").on("click", function () {
+        // Transition Out App
+        appNavbar.transition().duration(300).style("opacity", 0)
+            .on("end", () => appNavbar.style("display", "none"));
+        viewContainer.transition().duration(300).style("opacity", 0)
+            .on("end", () => viewContainer.style("display", "none"));
+
+        // Transition In Portal
+        body.classed("landing-active", true);
+        portal.style("display", "block");
+        sideNav.style("display", "flex");
+        scrollControls.style("display", "flex");
+        portalHeader.style("transform", "translateY(0)");
+    });
 }
 
 function hydrateLandingStats() {
@@ -152,6 +216,18 @@ function bridgeDispatcher() {
             dispatcher.call("paperSelected", null, payload);
         }
     });
+
+    // Persist selection to state
+    dispatcher.on("paperSelected.state", payload => {
+        // If selecting the same item, keep the existing cache if valid
+        if (state.selection &&
+            state.selection.title === payload.title &&
+            state.selection.summary === payload.summary) {
+            return;
+        }
+        state.selection = payload;
+        console.log("[State] Selection updated:", payload?.title || "None");
+    });
 }
 
 async function fetchDatasetWithFallback(key, paths = []) {
@@ -201,7 +277,7 @@ async function init() {
         hydrateLandingStats();
         routerInstance = initRouter("#view-container", dispatcher, state);
         setupNavigation(routerInstance);
-        setupLanding(routerInstance);
+        setupSpaceXLanding(routerInstance);
         setupGlobalPanel();
         bridgeDispatcher();
         routerInstance.navigateTo('overview');

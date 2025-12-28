@@ -7,87 +7,127 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-contour@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-geo@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="landing-active">
-    <div id="landing-shell">
-        <div class="landing-stars" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span>
+    <!-- SpaceX-style Portal -->
+    <header id="portal-header">
+        <div class="header-left">
+            <div class="logo">CV Explorer <span class="version">2014-2024</span></div>
         </div>
-        <div class="landing-content">
-            <header class="landing-hero">
-                <p class="hero-tag">CV Explorer · 2014—2024</p>
-                <h1>构建你的计算机视觉十年坐标系</h1>
-                <p class="hero-lede">一张整合发展趋势、语义地貌、研究流动与 AI 解读的沉浸式雷达图谱，让科研者更快把握视觉领域的主脉络与突变点。</p>
-                <div class="hero-cta-row">
-                    <button class="cta-button primary" data-action="enter">开启沉浸探索</button>
-                    <a class="cta-button ghost" href="#landing-panels">模块概览</a>
-                </div>
-                <dl class="hero-stat-row">
-                    <div>
-                        <dt>论文总量</dt>
-                        <dd data-stat="total-papers">12,640+</dd>
-                    </div>
-                    <div>
-                        <dt>TOP venue</dt>
-                        <dd>CVPR · ICCV · ECCV</dd>
-                    </div>
-                    <div>
-                        <dt>信号刷新</dt>
-                        <dd>年度级联</dd>
-                    </div>
-                </dl>
-            </header>
-            <section id="landing-panels" class="landing-panels">
-                <article class="landing-card" data-view="overview">
-                    <p class="card-tag">View 01</p>
-                    <h3>发展概览</h3>
-                    <p>堆叠年度规模与引用脉搏，快速定位增长跃迁与波动年份。</p>
-                    <span class="card-link">进入视图 →</span>
-                </article>
-                <article class="landing-card" data-view="landscape">
-                    <p class="card-tag">View 02</p>
-                    <h3>语义景观</h3>
-                    <p>以语义岛和密度层渲染研究地形，寻找热点岛屿与冷门边界。</p>
-                    <span class="card-link">进入视图 →</span>
-                </article>
-                <article class="landing-card" data-view="flow">
-                    <p class="card-tag">View 03</p>
-                    <h3>研究流向</h3>
-                    <p>追踪跨主题引用流线，洞察能量从何处流出、又流向哪里。</p>
-                    <span class="card-link">进入视图 →</span>
-                </article>
-                <article class="landing-card" data-view="wordcloud">
-                    <p class="card-tag">View 04</p>
-                    <h3>关键词词云</h3>
-                    <p>权重化的关键词频谱与变化率，让趋势词一目了然。</p>
-                    <span class="card-link">进入视图 →</span>
-                </article>
-                <article class="landing-card" data-view="ai">
-                    <p class="card-tag">View 05</p>
-                    <h3>AI 深度解读</h3>
-                    <p>用语义片段与精选提示，把图表洞察转成可行动的研究灵感。</p>
-                    <span class="card-link">进入视图 →</span>
-                </article>
-            </section>
-            <div class="landing-scroll" data-action="enter">
-                <span>直接进入数据驾驶舱</span>
+        <div class="header-center">
+            <span class="project-brief">计算机视觉十年可视化分析图谱</span>
+        </div>
+        <div class="header-right">
+            <div id="digital-clock">00:00:00</div>
+        </div>
+    </header>
+
+    <div class="snap-container" id="portal-container">
+        <!-- Section 1: Overview (Home) -->
+        <section id="section-overview" class="snap-section" data-target="overview">
+            <div class="section-content">
+                <p class="section-tag">VIEW 01</p>
+                <h1>发展概览 · Overview</h1>
+                <p class="section-desc">堆叠年度规模与引用脉搏，快速定位增长跃迁与波动年份。</p>
+                <button class="enter-view-btn">进入视图</button>
             </div>
-        </div>
+            <div class="section-bg"></div>
+        </section>
+
+        <!-- Section 2: Landscape -->
+        <section id="section-landscape" class="snap-section" data-target="landscape">
+            <div class="section-content">
+                <p class="section-tag">VIEW 02</p>
+                <h1>语义景观 · Landscape</h1>
+                <p class="section-desc">以语义岛和密度层渲染研究地形，寻找热点岛屿与冷门边界。</p>
+                <button class="enter-view-btn">进入视图</button>
+            </div>
+            <div class="section-bg"></div>
+        </section>
+
+        <!-- Section 3: Flow -->
+        <section id="section-flow" class="snap-section" data-target="flow">
+            <div class="section-content">
+                <p class="section-tag">VIEW 03</p>
+                <h1>研究流向 · Research Flow</h1>
+                <p class="section-desc">追踪跨主题引用流线，洞察能量从何处流出、又流向哪里。</p>
+                <button class="enter-view-btn">进入视图</button>
+            </div>
+            <div class="section-bg"></div>
+        </section>
+
+        <!-- Section 4: Wordcloud -->
+        <section id="section-wordcloud" class="snap-section" data-target="wordcloud">
+            <div class="section-content">
+                <p class="section-tag">VIEW 04</p>
+                <h1>关键词词云 · Word Cloud</h1>
+                <p class="section-desc">权重化的关键词频谱与变化率，让趋势词一目了然。</p>
+                <button class="enter-view-btn">进入视图</button>
+            </div>
+            <div class="section-bg"></div>
+        </section>
+
+        <!-- Section 5: Leaderboard -->
+        <section id="section-leaderboard" class="snap-section" data-target="leaderboard">
+            <div class="section-content">
+                <p class="section-tag">VIEW 05</p>
+                <h1>学术封神榜 · Pantheon</h1>
+                <p class="section-desc">瞻仰 AI 历史上的泰斗级人物与镇山之作，致敬人类智慧的巅峰时刻。</p>
+                <button class="enter-view-btn">进入视图</button>
+            </div>
+            <div class="section-bg"></div>
+        </section>
+
+        <!-- Section 6: AI Insight -->
+        <section id="section-ai" class="snap-section" data-target="ai">
+            <div class="section-content">
+                <p class="section-tag">VIEW 06</p>
+                <h1>AI 深度解读 · AI Insight</h1>
+                <p class="section-desc">用语义片段与精选提示，把图表洞察转成可行动的研究灵感。</p>
+                <button class="enter-view-btn">进入视图</button>
+            </div>
+            <div class="section-bg"></div>
+        </section>
     </div>
-    <nav class="navbar">
-        <div class="logo">CV Explorer <span>2014-2024</span></div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <a href="#section-overview" class="dot active" data-target="#section-overview"></a>
+        <a href="#section-landscape" class="dot" data-target="#section-landscape"></a>
+        <a href="#section-flow" class="dot" data-target="#section-flow"></a>
+        <a href="#section-wordcloud" class="dot" data-target="#section-wordcloud"></a>
+        <a href="#section-leaderboard" class="dot" data-target="#section-leaderboard"></a>
+        <a href="#section-ai" class="dot" data-target="#section-ai"></a>
+    </nav>
+
+    <!-- Scroll Controls -->
+    <div class="scroll-controls">
+        <button id="btn-prev" title="Previous View">↑</button>
+        <button id="btn-next" title="Next View">↓</button>
+        <button id="btn-top" title="Back to Top">⤒</button>
+        <button id="btn-bottom" title="Go to Bottom">⤓</button>
+    </div>
+
+    <!-- App Navigation (Hidden by default in Portal Mode) -->
+    <nav class="navbar" style="display: none;">
+        <div class="logo" id="back-to-portal" style="cursor: pointer;" title="返回门户首页">CV Explorer <span>2014-2024</span>
+        </div>
         <ul class="nav-links">
             <li class="active" data-view="overview">发展概览</li>
             <li data-view="landscape">语义景观</li>
             <li data-view="flow">研究流向</li>
             <li data-view="wordcloud">关键词词云</li>
+            <li data-view="leaderboard">学术封神榜</li>
             <li data-view="ai">AI 深度解读</li>
         </ul>
     </nav>
 
-    <main id="view-container">
+    <main id="view-container" style="display: none;">
         <div class="loading">数据加载中...</div>
     </main>
 

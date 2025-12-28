@@ -4,6 +4,7 @@ import { renderLandscape } from './views/landscape.js';
 import { renderFlow } from './views/flow.js';
 import { renderAiPanel } from './views/ai_panel.js';
 import { renderWordCloud } from './views/word_cloud.js';
+import { renderLeaderboard } from './views/leaderboard.js';
 
 export function initRouter(containerSelector, dispatcher, state) {
     const routes = {
@@ -11,7 +12,8 @@ export function initRouter(containerSelector, dispatcher, state) {
         'landscape': renderLandscape,
         'flow': renderFlow,
         'wordcloud': renderWordCloud,
-        'ai': renderAiPanel
+        'ai': renderAiPanel,
+        'leaderboard': renderLeaderboard
     };
 
     const mount = d3.select(containerSelector);

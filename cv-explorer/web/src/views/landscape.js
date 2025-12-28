@@ -79,28 +79,23 @@ export function renderLandscape(container, state, dispatcher) {
         ? d3.interpolateSpectral
         : d3.interpolateViridis; // Fallback
 
-    const spectralScale = d3.scaleSequential()
-        .domain([maxYear || 1, minYear || 0])
-        .interpolator(interpolator);
-
     const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
+
+    // 颜色不再使用语义颜色，而是回归年份颜色
     const semanticColor = d => {
-        const key = semanticLabelOf(d);
-        // 如果是数字年份（旧逻辑），fallback 到年份颜色
-        if (Number.isFinite(d)) return yearColor(d);
-        // 如果是对象（数据点），取其 label
-        if (d && typeof d === 'object') return colorScale(semanticLabelOf(d));
-        // 否则直接 hash 字符串
-        return colorScale(key);
+        if (Number.isFinite(d.year)) return yearColor(d.year);
+        return '#94a3b8';
     };
 
-    // 保留 yearColor 供 fallback 使用
+    // 保留 yearColor 仅作为降级方案，但主要使用 semanticColor
     const yearColor = value => {
         if (!Number.isFinite(value)) return '#94a3b8';
-        const tone = d3.color(spectralScale(value));
-        if (!tone) return '#94a3b8';
-        tone.opacity = 0.9;
-        return tone.formatRgb();
+        // 使用与图例一致的逻辑：minYear -> 1 (Spectral左), maxYear -> 0 (Spectral右)
+        // 注意 d3.interpolateSpectral 通常蓝紫色在 0，红色在 1
+        // 我们希望旧年份(min)是冷色/暖色，新年份(max)是暖色/冷色
+        // 这里沿用之前的逻辑：(maxYear - value) / (maxYear - minYear)
+        // value=max -> 0, value=min -> 1
+        return d3.color(interpolator((maxYear - value) / (maxYear - minYear))).formatRgb();
     };
 
     const citationExtent = d3.extent(dataset, d => d.citations || 1);
@@ -213,19 +208,46 @@ export function renderLandscape(container, state, dispatcher) {
         });
 
     const legendBlock = controlPanel.append('div').attr('class', 'landscape-legend');
-    legendBlock.append('p').text('颜色 = 语义主题 | 线条 = 论文密度');
+    legendBlock.append('p').text('颜色 = 年份分布 | 线条 = 论文密度');
 
-    // Add semantic legend
-    const semanticLegendGrid = legendBlock.append('div').attr('class', 'landscape-legend-grid');
-    const topSemantics = Array.from(new Set(dataset.map(semanticLabelOf)))
-        .filter(label => label !== 'Others' && label !== 'Uncategorized Research')
-        .slice(0, 12); // Show top 12 categories
+    // 移除语义图例的生成逻辑，因为颜色不再代表语义
+    // const semanticLegendGrid = legendBlock.append('div').attr('class', 'landscape-legend-grid');
+    // ...
 
-    semanticLegendGrid.selectAll('.landscape-legend-item')
-        .data(topSemantics)
-        .join('div')
-        .attr('class', 'landscape-legend-item')
-        .html(d => `<span class="swatch" style="background:${colorScale(d)}"></span>${d}`);
+    // 改为生成年份渐变图例
+    const gradientWrap = legendBlock.append('div').attr('class', 'landscape-legend-gradient');
+    const gradientStops = 10;
+    const yearSpan = maxYear - minYear;
+
+    // 生成渐变条
+    const gradientBar = gradientWrap.append('div')
+        .style('height', '12px')
+        .style('width', '100%')
+        .style('border-radius', '6px')
+        .style('background', `linear-gradient(to right, ${d3.range(gradientStops).map(i => {
+            const t = i / (gradientStops - 1);
+            // 注意：interpolateSpectral 通常是 0=红(旧), 1=蓝(新)，或者反过来
+            // 这里我们希望左边是旧年份，右边是新年份
+            // 我们的 yearColor 逻辑是：(maxYear - value) / (maxYear - minYear)
+            // 当 value = minYear -> (max-min)/(max-min) = 1
+            // 当 value = maxYear -> 0/(max-min) = 0
+            // 所以 0 对应 maxYear, 1 对应 minYear
+            // 我们希望左边(minYear)对应 1，右边(maxYear)对应 0
+            return interpolator(1 - t);
+        }).join(',')
+            })`);
+
+    // 生成年份标签
+    const labelRow = gradientWrap.append('div')
+        .style('display', 'flex')
+        .style('justify-content', 'space-between')
+        .style('margin-top', '4px')
+        .style('font-size', '11px')
+        .style('color', '#94a3b8');
+
+    labelRow.append('span').text(minYear);
+    labelRow.append('span').text(Math.floor((minYear + maxYear) / 2));
+    labelRow.append('span').text(maxYear);
 
     /* Removed Year Gradient Legend
     const gradientWrap = legendBlock.append('div').attr('class', 'landscape-legend-gradient');
@@ -319,6 +341,7 @@ export function renderLandscape(container, state, dispatcher) {
 
         return grouped
             .map(([name, meta]) => ({ name, ...meta }))
+            .filter(d => d.name !== 'Others' && d.name !== 'Uncategorized Research' && d.name !== 'General Computer Vision')
             .sort((a, b) => (b.score - a.score) || (b.count - a.count) || (b.importance - a.importance))
             .slice(0, anchorCount);
     }
@@ -589,9 +612,15 @@ export function renderLandscape(container, state, dispatcher) {
         data.forEach(entry => {
             // Deduplicate concepts per paper to ensure total % <= 100%
             const uniqueConcepts = new Set();
-            if (entry.semantic_primary) uniqueConcepts.add(entry.semantic_primary);
-            if (entry.semantic_cluster) uniqueConcepts.add(entry.semantic_cluster);
-            (entry.concepts || []).slice(0, 1).forEach(term => uniqueConcepts.add(term));
+            const blacklist = new Set(['Uncategorized Research', 'Others', 'General Computer Vision']);
+
+            const addIfValid = term => {
+                if (term && !blacklist.has(term)) uniqueConcepts.add(term);
+            };
+
+            addIfValid(entry.semantic_primary);
+            addIfValid(entry.semantic_cluster);
+            (entry.concepts || []).slice(0, 1).forEach(addIfValid);
 
             uniqueConcepts.forEach(term => {
                 conceptCounts.set(term, (conceptCounts.get(term) || 0) + 1);
@@ -728,12 +757,10 @@ export function renderLandscape(container, state, dispatcher) {
                 <div>语义簇：${semanticLabelOf(point)}</div>
                 <div>关键词：${(point.concepts || []).slice(0, 3).join(' / ') || '—'}</div>
             `);
-        updateHoverCard(point);
     }
 
     function hideTooltip() {
         tooltip.classed('hidden', true);
-        updateHoverCard(null);
     }
 
     function updateHoverCard(point) {
@@ -755,21 +782,35 @@ export function renderLandscape(container, state, dispatcher) {
         if (target) {
             showTooltip(target, event);
             canvas.style.cursor = 'pointer';
+            if (!selectedPaper) {
+                updateHoverCard(target);
+            }
         } else {
             hideTooltip();
             canvas.style.cursor = 'default';
+            if (!selectedPaper) {
+                updateHoverCard(null);
+            }
         }
     };
 
     const handleLeave = () => {
         hideTooltip();
         canvas.style.cursor = 'default';
+        if (!selectedPaper) {
+            updateHoverCard(null);
+        }
     };
 
     const handleClick = event => {
         const target = findNearestPoint(event);
         if (target) {
+            selectedPaper = target;
+            updateHoverCard(target);
             dispatcher.call('paperSelectedSync', canvas, target);
+        } else {
+            selectedPaper = null;
+            updateHoverCard(null);
         }
     };
 
