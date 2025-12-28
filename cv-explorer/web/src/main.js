@@ -1,5 +1,6 @@
 // web/src/main.js
 import { initRouter } from './router.js';
+import { ParticleBackground } from './bg-animation.js';
 
 const dispatcher = d3.dispatch("viewUpdate", "paperSelected", "paperSelectedSync");
 const state = {
@@ -47,6 +48,9 @@ function setupSpaceXLanding(router) {
     const sideNav = d3.select(".side-nav");
     const scrollControls = d3.select(".scroll-controls");
 
+    // Initialize Background Animation
+    const bgAnimation = new ParticleBackground('bg-canvas');
+
     // 1. Digital Clock
     function updateClock() {
         if (!clockEl) return;
@@ -76,6 +80,11 @@ function setupSpaceXLanding(router) {
                 navDots.forEach(dot => {
                     dot.classList.toggle('active', dot.getAttribute('href') === `#${id}`);
                 });
+
+                // Update Background Animation Mode
+                if (bgAnimation) {
+                    bgAnimation.setMode(id);
+                }
             }
         });
     }, observerOptions);
