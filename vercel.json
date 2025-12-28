@@ -2,22 +2,26 @@
     "version": 2,
     "builds": [
         {
-            "src": "backend/server.py",
+            "src": "cv-explorer/backend/server.py",
             "use": "@vercel/python"
         },
         {
-            "src": "web/**",
+            "src": "cv-explorer/web/**",
             "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/backend/server.py"
+            "dest": "/cv-explorer/backend/server.py"
+        },
+        {
+            "src": "/",
+            "dest": "/cv-explorer/web/index.html"
         },
         {
             "src": "/(.*)",
-            "dest": "/web/$1"
+            "dest": "/cv-explorer/web/$1"
         }
     ]
 }
