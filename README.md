@@ -1,13 +1,39 @@
-# Visualization Project
+# CV Explorer | 计算机视觉十年可视化分析 (2014—2024)
 
-This repository contains the source code for the Visualization Project.
+构建你的计算机视觉十年坐标系。这是一张整合发展趋势、语义地貌、研究流动与 AI 解读的沉浸式雷达图谱，旨在帮助科研者更快把握视觉领域的主脉络与突变点。
 
-## Data
+**论文总量**: 12,640+ (CVPR · ICCV · ECCV)
 
-The data files are not included in this repository due to their size. You can download the required data files from the link below:
+## 功能模块 (Features)
 
-[Download Data from Google Drive](https://drive.google.com/...) **(Placeholder: Link to be updated)**
+该项目包含以下五个核心可视化视图：
 
-Please download the data and place it in the corresponding directories:
-- `cv-explorer/data/`
-- `cv-explorer/web/data/`
+1.  **发展概览 (Overview)**
+    *   堆叠年度规模与引用脉搏，快速定位增长跃迁与波动年份。
+
+2.  **语义景观 (Landscape)**
+    *   以语义岛和密度层渲染研究地形，寻找热点岛屿与冷门边界。
+
+3.  **研究流向 (Flow)**
+    *   追踪跨主题引用流线，洞察能量从何处流出、又流向哪里。
+
+4.  **关键词词云 (Wordcloud)**
+    *   权重化的关键词频谱与变化率，让趋势词一目了然。
+
+5.  **AI 深度解读 (AI Analysis)**
+    *   用语义片段与精选提示，把图表洞察转成可行动的研究灵感。
+
+## 数据下载 (Data Download)
+
+由于数据文件体积较大，本项目的数据文件未包含在 Git 仓库中。请通过以下链接下载完整的数据集：
+
+👉 **[下载数据 (Google Drive)](https://drive.google.com/...)** (链接待更新 / Link TBD)
+
+下载后，请将数据文件解压并放置在以下目录结构中：
+
+*   `cv-explorer/data/`
+*   `cv-explorer/web/data/`
+
+## 运行项目
+
+直接打开 `cv-explorer/web/index.html` 即可在本地浏览可视化效果（需配合本地服务器以解决跨域问题，推荐使用 VS Code 的 Live Server 插件）。
