@@ -8,12 +8,20 @@
         {
             "src": "cv-explorer/web/**",
             "use": "@vercel/static"
+        },
+        {
+            "src": "cv-explorer/data/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
             "dest": "/cv-explorer/backend/server.py"
+        },
+        {
+            "src": "/data/(.*)",
+            "dest": "/cv-explorer/data/$1"
         },
         {
             "src": "/",
