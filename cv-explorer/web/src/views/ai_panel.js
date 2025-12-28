@@ -329,8 +329,8 @@ export function renderAiPanel(container, state, dispatcher) {
 
         showLoadingState(payload);
 
-        // 使用后端 API
-        const apiUrl = 'http://localhost:5000/api/analyze';
+        // 使用后端 API (相对路径以适配 Vercel)
+        const apiUrl = '/api/analyze';
 
         // 模拟延迟或实际请求
         pendingTimer = setTimeout(async () => {
