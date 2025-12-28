@@ -1,0 +1,188 @@
+{
+    "yearly": {
+        "2014": {
+            "count": 2267,
+            "cites": 139496
+        },
+        "2015": {
+            "count": 2737,
+            "cites": 97852
+        },
+        "2016": {
+            "count": 3401,
+            "cites": 107571
+        },
+        "2017": {
+            "count": 4170,
+            "cites": 218806
+        },
+        "2018": {
+            "count": 6004,
+            "cites": 213973
+        },
+        "2019": {
+            "count": 9626,
+            "cites": 328081
+        },
+        "2020": {
+            "count": 12512,
+            "cites": 360917
+        },
+        "2021": {
+            "count": 14551,
+            "cites": 312871
+        },
+        "2022": {
+            "count": 16304,
+            "cites": 267159
+        },
+        "2023": {
+            "count": 19629,
+            "cites": 219309
+        },
+        "2024": {
+            "count": 12614,
+            "cites": 67463
+        }
+    },
+    "venues": {
+        "CVPR": {
+            "2014": 1670,
+            "2015": 2037,
+            "2016": 2629,
+            "2017": 3279,
+            "2018": 4885,
+            "2019": 7754,
+            "2020": 9353,
+            "2021": 9179,
+            "2022": 9113,
+            "2023": 9270,
+            "2024": 9003
+        },
+        "ICCV": {
+            "2014": 381,
+            "2015": 403,
+            "2016": 467,
+            "2017": 539,
+            "2018": 685,
+            "2019": 1160,
+            "2020": 1875,
+            "2021": 3224,
+            "2022": 4138,
+            "2023": 6046,
+            "2024": 1147
+        },
+        "ECCV": {
+            "2014": 216,
+            "2015": 297,
+            "2016": 305,
+            "2017": 352,
+            "2018": 434,
+            "2019": 712,
+            "2020": 1284,
+            "2021": 2148,
+            "2022": 3053,
+            "2023": 4313,
+            "2024": 2464
+        }
+    },
+    "keywords": {
+        "2014": {
+            "Segmentation": 153,
+            "Optical Flow": 18,
+            "Object Detection": 16,
+            "Action Recognition": 13,
+            "Inpainting": 10,
+            "Image Restoration": 9
+        },
+        "2015": {
+            "Segmentation": 156,
+            "Optical Flow": 23,
+            "Object Detection": 20,
+            "Action Recognition": 10,
+            "Inpainting": 10,
+            "Image Restoration": 10
+        },
+        "2016": {
+            "Segmentation": 181,
+            "Object Detection": 31,
+            "Optical Flow": 27,
+            "Inpainting": 13,
+            "Image Restoration": 12,
+            "Action Recognition": 11
+        },
+        "2017": {
+            "Segmentation": 217,
+            "Object Detection": 32,
+            "Optical Flow": 22,
+            "Action Recognition": 15,
+            "Inpainting": 12,
+            "Image Restoration": 9
+        },
+        "2018": {
+            "Segmentation": 289,
+            "Object Detection": 75,
+            "Optical Flow": 38,
+            "Action Recognition": 28,
+            "Inpainting": 25,
+            "Image Restoration": 14
+        },
+        "2019": {
+            "Segmentation": 611,
+            "Object Detection": 151,
+            "Inpainting": 46,
+            "Optical Flow": 44,
+            "Domain Adaptation": 41,
+            "Action Recognition": 35,
+            "Image Restoration": 16
+        },
+        "2020": {
+            "Segmentation": 868,
+            "Object Detection": 231,
+            "Domain Adaptation": 56,
+            "Optical Flow": 53,
+            "Inpainting": 50,
+            "Action Recognition": 42,
+            "Image Restoration": 26
+        },
+        "2021": {
+            "Segmentation": 1062,
+            "Object Detection": 283,
+            "Domain Adaptation": 76,
+            "Optical Flow": 65,
+            "Inpainting": 53,
+            "Action Recognition": 34,
+            "Image Restoration": 17
+        },
+        "2022": {
+            "Segmentation": 1257,
+            "Object Detection": 394,
+            "Domain Adaptation": 78,
+            "Inpainting": 56,
+            "Optical Flow": 50,
+            "Action Recognition": 29,
+            "Image Restoration": 25,
+            "Diffusion": 3
+        },
+        "2023": {
+            "Segmentation": 1644,
+            "Object Detection": 604,
+            "Domain Adaptation": 87,
+            "Inpainting": 77,
+            "Optical Flow": 52,
+            "Action Recognition": 48,
+            "Image Restoration": 35,
+            "Diffusion": 34
+        },
+        "2024": {
+            "Segmentation": 865,
+            "Object Detection": 206,
+            "Diffusion": 183,
+            "Domain Adaptation": 73,
+            "Action Recognition": 45,
+            "Inpainting": 39,
+            "Image Restoration": 26,
+            "Optical Flow": 22
+        }
+    }
+}

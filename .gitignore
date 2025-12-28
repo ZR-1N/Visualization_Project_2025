@@ -5,6 +5,10 @@ node_modules/
 .DS_Store
 
 # Data files
-cv-explorer/data/
-cv-explorer/web/data/
-cv-explorer/cv-explorer/web/data/
+cv-explorer/data/*
+!cv-explorer/data/landscape_data.json
+!cv-explorer/data/sankey_data.json
+!cv-explorer/data/summary.json
+!cv-explorer/data/wordcloud_data.json
+!cv-explorer/data/leaderboard_seeds.json
+
