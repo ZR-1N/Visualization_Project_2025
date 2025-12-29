@@ -118,6 +118,52 @@ export function renderOverview(container, state, dispatcher) {
         .attr('class', 'cite-line')
         .attr('d', citeLine);
 
+    // Add Legend
+    const legend = chartGroup.append('g')
+        .attr('class', 'chart-legend')
+        .attr('transform', `translate(20, 10)`);
+
+    // Legend Item 1: Paper Count
+    const legendItem1 = legend.append('g');
+    legendItem1.append('rect')
+        .attr('width', 12)
+        .attr('height', 12)
+        .attr('rx', 2)
+        .attr('fill', 'var(--accent-color)')
+        .attr('fill-opacity', 0.4);
+    
+    legendItem1.append('text')
+        .attr('x', 18)
+        .attr('y', 10)
+        .text('论文数量')
+        .attr('fill', '#94a3b8')
+        .style('font-size', '12px');
+
+    // Legend Item 2: Citations
+    const legendItem2 = legend.append('g')
+        .attr('transform', `translate(90, 0)`);
+    
+    legendItem2.append('line')
+        .attr('x1', 0)
+        .attr('y1', 6)
+        .attr('x2', 20)
+        .attr('y2', 6)
+        .attr('stroke', 'var(--secondary-color)')
+        .attr('stroke-width', 2);
+
+    legendItem2.append('circle')
+        .attr('cx', 10)
+        .attr('cy', 6)
+        .attr('r', 3)
+        .attr('fill', 'var(--secondary-color)');
+
+    legendItem2.append('text')
+        .attr('x', 26)
+        .attr('y', 10)
+        .text('引用次数')
+        .attr('fill', '#94a3b8')
+        .style('font-size', '12px');
+
     chartGroup.append('g')
         .attr('class', 'axis axis-x')
         .attr('transform', `translate(0,${innerHeight})`)
