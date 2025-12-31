@@ -351,7 +351,8 @@ export function renderAiPanel(container, state, dispatcher) {
                         // Pass extra context for scholars/papers
                         desc: payload.summary, // Using summary as desc for scholar
                         authors: payload.authors,
-                        concepts: payload.concepts
+                        concepts: payload.concepts,
+                        leaderboardView: payload.leaderboardView
                     }
                 };
 

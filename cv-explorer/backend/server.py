@@ -94,10 +94,7 @@ def call_deepseek(text, context, api_key, prompt_type=None):
                 user_content = (
                     f"请介绍南开大学计算机视觉领域的杰出学者 {name}。\n"
                     f"他/她在南开大学媒体计算团队（NKU Media Lab）中扮演着重要角色。\n"
-                    f"背景信息：{desc or '该学者以计算机视觉科研见长。'}\n"
-                    f"代表成果提示：{tags or 'CV 代表作'}。\n"
-                    "请重点解读其在 CV 领域的核心学术地位，以及对他/她所代表的南开视觉研究力量的评价。\n"
-                    "输出 Markdown，250 字以内，语气凝练、充满敬意。"
+                    f"请重点解读其在 CV 领域的核心学术地位，以及对他/她所代表的南开视觉研究力量的评价。"
                 )
             else:
                 user_content = (
