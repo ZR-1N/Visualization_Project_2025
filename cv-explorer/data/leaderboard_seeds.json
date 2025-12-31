@@ -1,263 +1,475 @@
 {
-  "scholars": [
-    {
-      "rank": 1,
-      "name": "Yoshua Bengio",
-      "aff": "Mila / U of Montreal",
-      "citations": 880000,
-      "tags": [
-        "Deep Learning",
-        "GANs",
-        "Attention",
-        "NLP"
-      ],
-      "desc": "引用量最高的计算机科学家。图灵奖得主，深度学习三巨头之一，持续推动 AI 基础研究。",
-      "image": "./assets/scholars/yoshua_bengio.jpg"
-    },
-    {
-      "rank": 2,
-      "name": "Geoffrey Hinton",
-      "aff": "U of Toronto",
-      "citations": 850000,
-      "tags": [
-        "Backpropagation",
-        "Deep Learning",
-        "AlexNet",
-        "Dropout"
-      ],
-      "desc": "深度学习教父，图灵奖得主。反向传播算法的推广者，现代 AI 的奠基人。",
-      "image": "./assets/scholars/geoffrey_hinton.jpg"
-    },
-    {
-      "rank": 3,
-      "name": "Kaiming He",
-      "aff": "MIT / FAIR",
-      "citations": 780000,
-      "tags": [
-        "ResNet",
-        "Mask R-CNN",
-        "MAE",
-        "Faster R-CNN"
-      ],
-      "desc": "当代 CV 领域引用最高的学者。ResNet (29w+) 让深层网络训练成为可能。",
-      "image": "./assets/scholars/kaiming_he.jpg"
-    },
-    {
-      "rank": 4,
-      "name": "Ilya Sutskever",
-      "aff": "SSI / OpenAI (Ex)",
-      "citations": 720000,
-      "tags": [
-        "AlexNet",
-        "GPT",
-        "Seq2Seq",
-        "AlphaGo"
-      ],
-      "desc": "OpenAI 前首席科学家。从 AlexNet 到 GPT 系列，他主导了 AI 的每一次范式转移。",
-      "image": "./assets/scholars/llya_sutskever.jpg"
-    },
-    {
-      "rank": 5,
-      "name": "Andrew Zisserman",
-      "aff": "University of Oxford",
-      "citations": 600000,
-      "tags": [
-        "VGG",
-        "Two-Stream",
-        "Visual Geometry"
-      ],
-      "desc": "计算机视觉泰斗，VGG 网络提出者。在多视几何和视频理解领域贡献卓越。",
-      "image": "./assets/scholars/andrew_zisserman.jpg"
-    },
-    {
-      "rank": 6,
-      "name": "Ross Girshick",
-      "aff": "FAIR (Meta AI)",
-      "citations": 560000,
-      "tags": [
-        "R-CNN",
-        "Fast R-CNN",
-        "Faster R-CNN",
-        "YOLO"
-      ],
-      "desc": "目标检测领域的绝对权威。R-CNN 系列开创了现代物体检测的先河。",
-      "image": "./assets/scholars/ross_girshick.jpg"
-    },
-    {
-      "rank": 7,
-      "name": "Yann LeCun",
-      "aff": "NYU / Meta AI",
-      "citations": 550000,
-      "tags": [
-        "CNN",
-        "LeNet",
-        "Self-supervised Learning"
-      ],
-      "desc": "图灵奖得主，CNN 之父。他的卷积网络架构是现代计算机视觉的基石。",
-      "image": "./assets/scholars/yann_lecun.jpg"
-    },
-    {
-      "rank": 8,
-      "name": "Ian Goodfellow",
-      "aff": "DeepMind / Apple (Ex)",
-      "citations": 520000,
-      "tags": [
-        "GANs",
-        "Adversarial Examples",
-        "Deep Learning"
-      ],
-      "desc": "GAN 之父。他提出的生成对抗网络赋予了机器“想象力”和创造力。",
-      "image": "./assets/scholars/lan_goodfellow.jpg"
-    },
-    {
-      "rank": 9,
-      "name": "Quoc V. Le",
-      "aff": "Google DeepMind",
-      "citations": 460000,
-      "tags": [
-        "Seq2Seq",
-        "AutoML",
-        "Inception",
-        "Doc2Vec"
-      ],
-      "desc": "Google Brain 核心成员，Seq2Seq 和 AutoML 的提出者，定义了序列建模范式。",
-      "image": "./assets/scholars/quoc_v.le.png"
-    },
-    {
-      "rank": 10,
-      "name": "Oriol Vinyals",
-      "aff": "Google DeepMind",
-      "citations": 430000,
-      "tags": [
-        "Seq2Seq",
-        "AlphaStar",
-        "Show and Tell",
-        "Transformer"
-      ],
-      "desc": "DeepMind 首席科学家，AlphaStar 负责人，在深度学习与强化学习结合领域贡献巨大。",
-      "image": "./assets/scholars/oriol_vinyals.jpg"
-    }
-  ],
-  "papers": [
-    {
-      "rank": 1,
-      "title": "Deep Residual Learning for Image Recognition",
-      "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
-      "year": 2016,
-      "citations": 298446,
-      "venue": "CVPR"
-    },
-    {
-      "rank": 2,
-      "title": "Adam: A Method for Stochastic Optimization",
-      "authors": "Diederik P. Kingma, Jimmy Ba",
-      "year": 2014,
-      "citations": 232903,
-      "venue": "ICLR"
-    },
-    {
-      "rank": 3,
-      "title": "Attention Is All You Need",
-      "authors": "Ashish Vaswani, Noam Shazeer, et al.",
-      "year": 2017,
-      "citations": 209837,
-      "venue": "NeurIPS"
-    },
-    {
-      "rank": 4,
-      "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
-      "authors": "Karen Simonyan, Andrew Zisserman",
-      "year": 2014,
-      "citations": 154750,
-      "venue": "ICLR"
-    },
-    {
-      "rank": 5,
-      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-      "authors": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova",
-      "year": 2019,
-      "citations": 152304,
-      "venue": "NAACL"
-    },
-    {
-      "rank": 6,
-      "title": "ImageNet Classification with Deep Convolutional Neural Networks",
-      "authors": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
-      "year": 2012,
-      "citations": 150773,
-      "venue": "NeurIPS"
-    },
-    {
-      "rank": 7,
-      "title": "Long Short-Term Memory",
-      "authors": "Sepp Hochreiter, Jürgen Schmidhuber",
-      "year": 1997,
-      "citations": 139805,
-      "venue": "Neural Computation"
-    },
-    {
-      "rank": 8,
-      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
-      "authors": "Olaf Ronneberger, Philipp Fischer, Thomas Brox",
-      "year": 2015,
-      "citations": 126005,
-      "venue": "MICCAI"
-    },
-    {
-      "rank": 9,
-      "title": "Generative Adversarial Nets",
-      "authors": "Ian Goodfellow, et al.",
-      "year": 2014,
-      "citations": 89202,
-      "venue": "NeurIPS"
-    },
-    {
-      "rank": 10,
-      "title": "Distinctive Image Features from Scale-Invariant Keypoints",
-      "authors": "David G. Lowe",
-      "year": 2004,
-      "citations": 81581,
-      "venue": "IJCV"
-    },
-    {
-      "rank": 11,
-      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
-      "authors": "Alexey Dosovitskiy, Lucas Beyer, et al.",
-      "year": 2021,
-      "citations": 80906,
-      "venue": "ICLR"
-    },
-    {
-      "rank": 12,
-      "title": "Support-vector networks",
-      "authors": "Corinna Cortes, Vladimir Vapnik",
-      "year": 1995,
-      "citations": 80084,
-      "venue": "Machine Learning"
-    },
-    {
-      "rank": 13,
-      "title": "Going Deeper with Convolutions",
-      "authors": "Christian Szegedy, et al.",
-      "year": 2015,
-      "citations": 70771,
-      "venue": "CVPR"
-    },
-    {
-      "rank": 14,
-      "title": "You Only Look Once: Unified, Real-Time Object Detection",
-      "authors": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi",
-      "year": 2016,
-      "citations": 70454,
-      "venue": "CVPR"
-    },
-    {
-      "rank": 15,
-      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
-      "authors": "Sergey Ioffe, Christian Szegedy",
-      "year": 2015,
-      "citations": 64352,
-      "venue": "ICML"
-    }
-  ]
+  "global": {
+    "scholars": [
+      {
+        "rank": 1,
+        "name": "Yoshua Bengio",
+        "aff": "Mila / U of Montreal",
+        "citations": 880000,
+        "tags": [
+          "Deep Learning",
+          "GANs",
+          "Attention",
+          "NLP"
+        ],
+        "desc": "引用量最高的计算机科学家。图灵奖得主，深度学习三巨头之一，持续推动 AI 基础研究。",
+        "image": "./assets/scholars/yoshua_bengio.jpg"
+      },
+      {
+        "rank": 2,
+        "name": "Geoffrey Hinton",
+        "aff": "U of Toronto",
+        "citations": 850000,
+        "tags": [
+          "Backpropagation",
+          "Deep Learning",
+          "AlexNet",
+          "Dropout"
+        ],
+        "desc": "深度学习教父，图灵奖得主。反向传播算法的推广者，现代 AI 的奠基人。",
+        "image": "./assets/scholars/geoffrey_hinton.jpg"
+      },
+      {
+        "rank": 3,
+        "name": "Kaiming He",
+        "aff": "MIT / FAIR",
+        "citations": 780000,
+        "tags": [
+          "ResNet",
+          "Mask R-CNN",
+          "MAE",
+          "Faster R-CNN"
+        ],
+        "desc": "当代 CV 领域引用最高的学者。ResNet (29w+) 让深层网络训练成为可能。",
+        "image": "./assets/scholars/kaiming_he.jpg"
+      },
+      {
+        "rank": 4,
+        "name": "Ilya Sutskever",
+        "aff": "SSI / OpenAI (Ex)",
+        "citations": 720000,
+        "tags": [
+          "AlexNet",
+          "GPT",
+          "Seq2Seq",
+          "AlphaGo"
+        ],
+        "desc": "OpenAI 前首席科学家。从 AlexNet 到 GPT 系列，他主导了 AI 的每一次范式转移。",
+        "image": "./assets/scholars/llya_sutskever.jpg"
+      },
+      {
+        "rank": 5,
+        "name": "Andrew Zisserman",
+        "aff": "University of Oxford",
+        "citations": 600000,
+        "tags": [
+          "VGG",
+          "Two-Stream",
+          "Visual Geometry"
+        ],
+        "desc": "计算机视觉泰斗，VGG 网络提出者。在多视几何和视频理解领域贡献卓越。",
+        "image": "./assets/scholars/andrew_zisserman.jpg"
+      },
+      {
+        "rank": 6,
+        "name": "Ross Girshick",
+        "aff": "FAIR (Meta AI)",
+        "citations": 560000,
+        "tags": [
+          "R-CNN",
+          "Fast R-CNN",
+          "Faster R-CNN",
+          "YOLO"
+        ],
+        "desc": "目标检测领域的绝对权威。R-CNN 系列开创了现代物体检测的先河。",
+        "image": "./assets/scholars/ross_girshick.jpg"
+      },
+      {
+        "rank": 7,
+        "name": "Yann LeCun",
+        "aff": "NYU / Meta AI",
+        "citations": 550000,
+        "tags": [
+          "CNN",
+          "LeNet",
+          "Self-supervised Learning"
+        ],
+        "desc": "图灵奖得主，CNN 之父。他的卷积网络架构是现代计算机视觉的基石。",
+        "image": "./assets/scholars/yann_lecun.jpg"
+      },
+      {
+        "rank": 8,
+        "name": "Ian Goodfellow",
+        "aff": "DeepMind / Apple (Ex)",
+        "citations": 520000,
+        "tags": [
+          "GANs",
+          "Adversarial Examples",
+          "Deep Learning"
+        ],
+        "desc": "GAN 之父。他提出的生成对抗网络赋予了机器“想象力”和创造力。",
+        "image": "./assets/scholars/lan_goodfellow.jpg"
+      },
+      {
+        "rank": 9,
+        "name": "Quoc V. Le",
+        "aff": "Google DeepMind",
+        "citations": 460000,
+        "tags": [
+          "Seq2Seq",
+          "AutoML",
+          "Inception",
+          "Doc2Vec"
+        ],
+        "desc": "Google Brain 核心成员，Seq2Seq 和 AutoML 的提出者，定义了序列建模范式。",
+        "image": "./assets/scholars/quoc_v.le.png"
+      },
+      {
+        "rank": 10,
+        "name": "Oriol Vinyals",
+        "aff": "Google DeepMind",
+        "citations": 430000,
+        "tags": [
+          "Seq2Seq",
+          "AlphaStar",
+          "Show and Tell",
+          "Transformer"
+        ],
+        "desc": "DeepMind 首席科学家，AlphaStar 负责人，在深度学习与强化学习结合领域贡献巨大。",
+        "image": "./assets/scholars/oriol_vinyals.jpg"
+      }
+    ],
+    "papers": [
+      {
+        "rank": 1,
+        "title": "Deep Residual Learning for Image Recognition",
+        "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+        "year": 2016,
+        "citations": 298446,
+        "venue": "CVPR"
+      },
+      {
+        "rank": 2,
+        "title": "Adam: A Method for Stochastic Optimization",
+        "authors": "Diederik P. Kingma, Jimmy Ba",
+        "year": 2014,
+        "citations": 232903,
+        "venue": "ICLR"
+      },
+      {
+        "rank": 3,
+        "title": "Attention Is All You Need",
+        "authors": "Ashish Vaswani, Noam Shazeer, et al.",
+        "year": 2017,
+        "citations": 209837,
+        "venue": "NeurIPS"
+      },
+      {
+        "rank": 4,
+        "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+        "authors": "Karen Simonyan, Andrew Zisserman",
+        "year": 2014,
+        "citations": 154750,
+        "venue": "ICLR"
+      },
+      {
+        "rank": 5,
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "authors": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova",
+        "year": 2019,
+        "citations": 152304,
+        "venue": "NAACL"
+      },
+      {
+        "rank": 6,
+        "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "authors": "Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton",
+        "year": 2012,
+        "citations": 150773,
+        "venue": "NeurIPS"
+      },
+      {
+        "rank": 7,
+        "title": "Long Short-Term Memory",
+        "authors": "Sepp Hochreiter, Jürgen Schmidhuber",
+        "year": 1997,
+        "citations": 139805,
+        "venue": "Neural Computation"
+      },
+      {
+        "rank": 8,
+        "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "authors": "Olaf Ronneberger, Philipp Fischer, Thomas Brox",
+        "year": 2015,
+        "citations": 126005,
+        "venue": "MICCAI"
+      },
+      {
+        "rank": 9,
+        "title": "Generative Adversarial Nets",
+        "authors": "Ian Goodfellow, et al.",
+        "year": 2014,
+        "citations": 89202,
+        "venue": "NeurIPS"
+      },
+      {
+        "rank": 10,
+        "title": "Distinctive Image Features from Scale-Invariant Keypoints",
+        "authors": "David G. Lowe",
+        "year": 2004,
+        "citations": 81581,
+        "venue": "IJCV"
+      },
+      {
+        "rank": 11,
+        "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+        "authors": "Alexey Dosovitskiy, Lucas Beyer, et al.",
+        "year": 2021,
+        "citations": 80906,
+        "venue": "ICLR"
+      },
+      {
+        "rank": 12,
+        "title": "Support-vector networks",
+        "authors": "Corinna Cortes, Vladimir Vapnik",
+        "year": 1995,
+        "citations": 80084,
+        "venue": "Machine Learning"
+      },
+      {
+        "rank": 13,
+        "title": "Going Deeper with Convolutions",
+        "authors": "Christian Szegedy, et al.",
+        "year": 2015,
+        "citations": 70771,
+        "venue": "CVPR"
+      },
+      {
+        "rank": 14,
+        "title": "You Only Look Once: Unified, Real-Time Object Detection",
+        "authors": "Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi",
+        "year": 2016,
+        "citations": 70454,
+        "venue": "CVPR"
+      },
+      {
+        "rank": 15,
+        "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+        "authors": "Sergey Ioffe, Christian Szegedy",
+        "year": 2015,
+        "citations": 64352,
+        "venue": "ICML"
+      }
+    ]
+  },
+  "nankai": {
+    "scholars": [
+      {
+        "rank": 1,
+        "name": "程明明 (M.M. Cheng)",
+        "aff": "Nankai University",
+        "citations": 76141,
+        "tags": [
+          "Saliency",
+          "Res2Net",
+          "Backbone"
+        ],
+        "desc": "国家杰青，其研究在显著性检测和高效骨干网络领域具有国际引领地位。",
+        "image": "./assets/scholars/M.M. Cheng.jpg"
+      },
+      {
+        "rank": 2,
+        "name": "范登平 (D.P. Fan)",
+        "aff": "Nankai University",
+        "citations": 35030,
+        "tags": [
+          "Structure-measure",
+          "Pranet",
+          "PVT"
+        ],
+        "desc": "专注于视觉对象切割与评价指标，提出的 S-measure 被广泛采用。",
+        "image": "./assets/scholars/D.P. Fan.jpg"
+      },
+      {
+        "rank": 3,
+        "name": "侯淇彬 (Q. Hou)",
+        "aff": "Nankai University",
+        "citations": 26288,
+        "tags": [
+          "Coordinate Attention",
+          "Strip Pooling"
+        ],
+        "desc": "在轻量化注意力机制和高效卷积设计方面有突出贡献。",
+        "image": "./assets/scholars/Q. Hou.jpg"
+      },
+      {
+        "rank": 4,
+        "name": "李翔 (X. Li)",
+        "aff": "Nankai University",
+        "citations": 22524,
+        "tags": [
+          "SKNet",
+          "GFL",
+          "Object Detection"
+        ],
+        "desc": "主要研究方向为目标检测与动态神经元设计，SKNet 是该领域的代表作。",
+        "image": "./assets/scholars/X. Li.jpg"
+      },
+      {
+        "rank": 5,
+        "name": "李重仪 (C. Li)",
+        "aff": "Nankai University",
+        "citations": 22105,
+        "tags": [
+          "Zero-DCE",
+          "Underwater Enhancement"
+        ],
+        "desc": "弱光图像增强与水下视觉专家，Zero-DCE 开启了零参考增强新范式。",
+        "image": "./assets/scholars/C. Li.jpg"
+      },
+      {
+        "rank": 6,
+        "name": "郭春乐 (C.L. Guo)",
+        "aff": "Nankai University",
+        "citations": 12265,
+        "tags": [
+          "Image Restoration",
+          "Low-light"
+        ],
+        "desc": "在图像复原、增强及底层视觉任务上产出了多篇高引论文。",
+        "image": "./assets/scholars/C.L. Guo.jpg"
+      },
+      {
+        "rank": 7,
+        "name": "刘云 (Y. Liu)",
+        "aff": "Nankai University",
+        "citations": 12206,
+        "tags": [
+          "Edge Detection",
+          "Deep Learning"
+        ],
+        "desc": "在边缘检测及卷积特征提取方面具有深入的研究积累。",
+        "image": "./assets/scholars/Y. Liu.png"
+      },
+      {
+        "rank": 8,
+        "name": "杨巨峰 (J. Yang)",
+        "aff": "Nankai University",
+        "citations": 7394,
+        "tags": [
+          "Visual Emotion",
+          "Object Detection"
+        ],
+        "desc": "南开大学教授，主要研究视觉情感计算及复杂场景下的物体检测。",
+        "image": "./assets/scholars/J. Yang.jpg"
+      },
+      {
+        "rank": 9,
+        "name": "刘夏雷 (X. Liu)",
+        "aff": "Nankai University",
+        "citations": 6084,
+        "tags": [
+          "Continual Learning",
+          "Adaptation"
+        ],
+        "desc": "专注于持续学习与领域自适应，提升模型的终身学习能力。",
+        "image": "./assets/scholars/X. Liu.jpg"
+      },
+      {
+        "rank": 10,
+        "name": "任博 (B. Ren)",
+        "aff": "Nankai University",
+        "citations": 3754,
+        "tags": [
+          "Struck",
+          "Tracking",
+          "VOT"
+        ],
+        "desc": "视觉跟踪专家，早期参与的 Struck 算法曾获 ICCV 最佳论文荣誉。",
+        "image": "./assets/scholars/B. Ren.jpg"
+      }
+    ],
+    "papers": [
+      {
+        "rank": 1,
+        "title": "Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions",
+        "authors": "Wang, Wenhai, et al. (NKU Team)",
+        "year": 2021,
+        "citations": 5200,
+        "venue": "ICCV"
+      },
+      {
+        "rank": 2,
+        "title": "Res2Net: A New Multi-scale Backbone Architecture",
+        "authors": "Shang-Hua Gao, Ming-Ming Cheng, et al.",
+        "year": 2019,
+        "citations": 4800,
+        "venue": "IEEE TPAMI"
+      },
+      {
+        "rank": 3,
+        "title": "Global Contrast Based Salient Region Detection",
+        "authors": "Ming-Ming Cheng, et al.",
+        "year": 2015,
+        "citations": 4500,
+        "venue": "IEEE TPAMI"
+      },
+      {
+        "rank": 4,
+        "title": "Selective Kernel Networks",
+        "authors": "Xiang Li, Wenhai Wang, et al.",
+        "year": 2019,
+        "citations": 3900,
+        "venue": "CVPR"
+      },
+      {
+        "rank": 5,
+        "title": "Coordinate Attention for Efficient Mobile Network Design",
+        "authors": "Qibin Hou, et al.",
+        "year": 2021,
+        "citations": 3500,
+        "venue": "CVPR"
+      },
+      {
+        "rank": 6,
+        "title": "Generalized Focal Loss: Learning Qualified and Distributed Bounding Boxes",
+        "authors": "Xiang Li, et al.",
+        "year": 2020,
+        "citations": 3100,
+        "venue": "NeurIPS"
+      },
+      {
+        "rank": 7,
+        "title": "Zero-reference Deep Curve Estimation for Low-light Image Enhancement",
+        "authors": "Chongyi Li, Chunle Guo, et al.",
+        "year": 2020,
+        "citations": 2900,
+        "venue": "CVPR"
+      },
+      {
+        "rank": 8,
+        "title": "Structure-measure: A New Way to Evaluate Foreground Maps",
+        "authors": "Deng-Ping Fan, et al.",
+        "year": 2017,
+        "citations": 2600,
+        "venue": "ICCV"
+      },
+      {
+        "rank": 9,
+        "title": "Struck: Structured Output Tracking with Kernels",
+        "authors": "Sam Hare, Stuart Golodetz, Amir Saffari, Bo Ren, et al.",
+        "year": 2016,
+        "citations": 2400,
+        "venue": "IEEE TPAMI"
+      },
+      {
+        "rank": 10,
+        "title": "Attention Mechanisms in Computer Vision: A Survey",
+        "authors": "Meng-Hao Guo, Ming-Ming Cheng, et al.",
+        "year": 2022,
+        "citations": 2100,
+        "venue": "Computational Visual Media"
+      }
+    ]
+  }
 }

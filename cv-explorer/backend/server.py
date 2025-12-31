@@ -23,8 +23,22 @@ API_KEYS = {
 
 def generate_mock_response(text, context, prompt_type=None):
     if prompt_type == "scholar_profile":
+        name = text
+        desc = context.get("desc") or context.get("summary") or "这位学者以计算机视觉研究闻名。"
+        view_mode = context.get("leaderboardView")
+        if view_mode == "nankai":
+            return {
+                "summary": (
+                    f"**{name}** 是南开大学媒体计算团队的中坚力量。\n\n"
+                    f"1. **🎓 NKU 使命**：深耕南开计算机视觉方向，{desc}\n"
+                    "2. **🧠 核心贡献**：以领先的视觉模型与评价体系，树立 NKU 在国际 CV 社群的辨识度。\n"
+                    "3. **🏛️ 阵列气质**：代表了南开视觉研究力量的进取精神，是青年学者的标杆。 (Mock Mode)"
+                ),
+                "keywords": ["NKU", "Computer Vision", "Media Lab"],
+                "confidence": 0.95
+            }
         return {
-            "summary": f"**{text}** 是 AI 领域的传奇人物。\n\n1. **👑 封神理由**：他是深度学习革命的奠基人之一，图灵奖得主。\n2. **🧠 核心贡献**：{context.get('desc', '推动了深度学习的发展')}。\n3. **🌟 历史地位**：他在 AI 发展长河中不仅是先驱，更是精神领袖。 (Mock Mode)",
+            "summary": f"**{name}** 是 AI 领域的传奇人物。\n\n1. **👑 封神理由**：他是深度学习革命的奠基人之一，图灵奖得主。\n2. **🧠 核心贡献**：{desc}.\n3. **🌟 历史地位**：他在 AI 发展长河中不仅是先驱，更是精神领袖。 (Mock Mode)",
             "keywords": ["Deep Learning", "Turing Award", "AI Safety"],
             "confidence": 0.95
         }
@@ -74,16 +88,27 @@ def call_deepseek(text, context, api_key, prompt_type=None):
             name = text
             desc = context.get("desc", "")
             tags = ", ".join(context.get("concepts", []))
+            view_mode = context.get("leaderboardView")
             system_prompt = "你是一个AI名人堂解说员。请用 Markdown 格式回答，语气专业且带有崇敬感。"
-            user_content = (
-                f"请介绍计算机科学家 {name}。\n"
-                f"背景信息：{desc}\n"
-                f"请用 Markdown 格式回答：\n"
-                f"1. **👑 封神理由**：一句话概括他为什么是 Top 级别。\n"
-                f"2. **🧠 核心贡献**：通俗解释他的 1-2 个代表作（如 {tags}）。\n"
-                f"3. **🌟 历史地位**：他在 AI 发展长河中的坐标。\n"
-                f"字数 250 字以内，保持简洁有力。"
-            )
+            if view_mode == "nankai":
+                user_content = (
+                    f"请介绍南开大学计算机视觉领域的杰出学者 {name}。\n"
+                    f"他/她在南开大学媒体计算团队（NKU Media Lab）中扮演着重要角色。\n"
+                    f"背景信息：{desc or '该学者以计算机视觉科研见长。'}\n"
+                    f"代表成果提示：{tags or 'CV 代表作'}。\n"
+                    "请重点解读其在 CV 领域的核心学术地位，以及对他/她所代表的南开视觉研究力量的评价。\n"
+                    "输出 Markdown，250 字以内，语气凝练、充满敬意。"
+                )
+            else:
+                user_content = (
+                    f"请介绍计算机科学家 {name}。\n"
+                    f"背景信息：{desc}\n"
+                    f"请用 Markdown 格式回答：\n"
+                    f"1. **👑 封神理由**：一句话概括他为什么是 Top 级别。\n"
+                    f"2. **🧠 核心贡献**：通俗解释他的 1-2 个代表作（如 {tags}）。\n"
+                    f"3. **🌟 历史地位**：他在 AI 发展长河中的坐标。\n"
+                    f"字数 250 字以内，保持简洁有力。"
+                )
         elif prompt_type == "paper_impact":
             title = text
             system_prompt = "你是一个技术史学家。请用 Markdown 格式解读经典论文。"

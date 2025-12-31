@@ -65,7 +65,8 @@ export function renderWordCloud(container, state, dispatcher) {
     const yearBlock = controlPanel.append('div').attr('class', 'wordcloud-control');
     yearBlock.append('label').text('年份');
     const yearValue = yearBlock.append('div').attr('class', 'wordcloud-control-value').text(selectedYear);
-    const yearSlider = yearBlock.append('input')
+    const yearSliderWrap = yearBlock.append('div').attr('class', 'wordcloud-slider');
+    const yearSlider = yearSliderWrap.append('input')
         .attr('type', 'range')
         .attr('min', years[0])
         .attr('max', years[years.length - 1])
@@ -81,7 +82,8 @@ export function renderWordCloud(container, state, dispatcher) {
     const countBlock = controlPanel.append('div').attr('class', 'wordcloud-control');
     countBlock.append('label').text('可视关键词');
     const countValue = countBlock.append('div').attr('class', 'wordcloud-control-value').text(maxWords);
-    countBlock.append('input')
+    const countSliderWrap = countBlock.append('div').attr('class', 'wordcloud-slider');
+    countSliderWrap.append('input')
         .attr('type', 'range')
         .attr('min', 20)
         .attr('max', 120)
@@ -96,7 +98,8 @@ export function renderWordCloud(container, state, dispatcher) {
     const citationBlock = controlPanel.append('div').attr('class', 'wordcloud-control');
     citationBlock.append('label').text('引用阈值');
     const citationValue = citationBlock.append('div').attr('class', 'wordcloud-control-value').text(formatNumber(minCitations));
-    citationBlock.append('input')
+    const citationSliderWrap = citationBlock.append('div').attr('class', 'wordcloud-slider');
+    citationSliderWrap.append('input')
         .attr('type', 'range')
         .attr('min', globalMin)
         .attr('max', globalMax)
@@ -124,24 +127,6 @@ export function renderWordCloud(container, state, dispatcher) {
         .text('重新排布')
         .on('click', () => runLayout());
 
-    const legend = controlPanel.append('div').attr('class', 'wordcloud-legend');
-    legend.selectAll('.wordcloud-legend-item')
-        .data(clusterDefs)
-        .join('div')
-        .attr('class', 'wordcloud-legend-item')
-        .html(d => `
-            <span class="swatch" style="background:${d.color}"></span>
-            <div>
-                <strong>${d.label}</strong>
-                <small>${d.description}</small>
-            </div>
-        `);
-
-    const rankingBlock = controlPanel.append('div').attr('class', 'wordcloud-ranking');
-    rankingBlock.append('h3').text('Top 5 热词');
-    const rankingList = rankingBlock.append('ol').attr('class', 'wordcloud-ranking-list');
-    const rankingEmpty = rankingBlock.append('div').attr('class', 'wordcloud-ranking-empty').text('暂无关键词，试着降低阈值。');
-
     const stageBadge = stagePanel.append('div').attr('class', 'wordcloud-stage-status');
     const loader = stagePanel.append('div').attr('class', 'wordcloud-loading hidden').text('布局计算中...');
     const tooltip = stagePanel.append('div').attr('class', 'chart-tooltip hidden wordcloud-tooltip');
@@ -167,6 +152,24 @@ export function renderWordCloud(container, state, dispatcher) {
         .attr('class', 'wordcloud-button ghost')
         .text('复制提示词')
         .on('click', () => copyPrompt());
+
+    const legend = controlPanel.append('div').attr('class', 'wordcloud-legend');
+    legend.selectAll('.wordcloud-legend-item')
+        .data(clusterDefs)
+        .join('div')
+        .attr('class', 'wordcloud-legend-item')
+        .html(d => `
+            <span class="swatch" style="background:${d.color}"></span>
+            <div>
+                <strong>${d.label}</strong>
+                <small>${d.description}</small>
+            </div>
+        `);
+
+    const rankingBlock = insightPanel.append('div').attr('class', 'wordcloud-ranking');
+    rankingBlock.append('h3').text('Top 5 热词');
+    const rankingList = rankingBlock.append('ol').attr('class', 'wordcloud-ranking-list');
+    const rankingEmpty = rankingBlock.append('div').attr('class', 'wordcloud-ranking-empty').text('暂无关键词，试着降低阈值。');
 
     const ro = new ResizeObserver(() => runLayout());
     ro.observe(stagePanel.node());
@@ -270,7 +273,11 @@ export function renderWordCloud(container, state, dispatcher) {
         const bounds = stagePanel.node().getBoundingClientRect();
         const width = Math.max(420, bounds.width);
         const height = Math.max(360, bounds.height);
-        svg.attr('viewBox', `0 0 ${width} ${height}`);
+        const verticalOffset = Math.min(8, Math.max(28, Math.round(height * 0.08)));
+        svg
+            .attr('width', width)
+            .attr('height', height)
+            .attr('viewBox', `0 0 ${width} ${height}`);
 
         const layoutWords = words.map(word => ({
             ...word,
@@ -285,7 +292,7 @@ export function renderWordCloud(container, state, dispatcher) {
             .font('Space Grotesk')
             .fontSize(d => d.size)
             .on('end', placed => {
-                drawWords(placed, width, height);
+                drawWords(placed, width, height, verticalOffset);
                 loader.classed('hidden', true);
                 activeLayout = null;
             });
@@ -293,7 +300,7 @@ export function renderWordCloud(container, state, dispatcher) {
         activeLayout.start();
     }
 
-    function drawWords(words, width, height) {
+    function drawWords(words, width, height, verticalOffset = 0) {
         const nodes = wordGroup.selectAll('text')
             .data(words, d => d.text);
 
@@ -306,7 +313,7 @@ export function renderWordCloud(container, state, dispatcher) {
                 .attr('data-cluster', d => d.clusterId)
                 .attr('opacity', 0)
                 .text(d => d.text)
-                .attr('transform', `translate(${width / 2}, ${height / 2})`)
+                .attr('transform', `translate(${width / 2}, ${height / 2 + verticalOffset})`)
                 .on('mouseenter', (event, d) => showTooltip(event, d))
                 .on('mousemove', (event, d) => showTooltip(event, d))
                 .on('mouseleave', hideTooltip)
@@ -314,7 +321,7 @@ export function renderWordCloud(container, state, dispatcher) {
                 .classed('is-new', d => d.isNew)
                 .transition()
                 .duration(450)
-                .attr('transform', d => `translate(${d.x + width / 2}, ${d.y + height / 2}) rotate(${d.rotate})`)
+                .attr('transform', d => `translate(${d.x + width / 2}, ${d.y + height / 2 + verticalOffset}) rotate(${d.rotate})`)
                 .attr('opacity', 0.95),
             update => update
                 .classed('is-new', d => d.isNew)
@@ -323,7 +330,7 @@ export function renderWordCloud(container, state, dispatcher) {
                 .duration(350)
                 .attr('font-size', d => d.size)
                 .attr('fill', d => clusterColor(d.clusterId))
-                .attr('transform', d => `translate(${d.x + width / 2}, ${d.y + height / 2}) rotate(${d.rotate})`)
+                .attr('transform', d => `translate(${d.x + width / 2}, ${d.y + height / 2 + verticalOffset}) rotate(${d.rotate})`)
                 .attr('opacity', 0.95),
             exit => exit.transition().duration(200).attr('opacity', 0).remove()
         );

@@ -56,8 +56,15 @@ function setupSpaceXLanding(router) {
         if (!clockEl) return;
         const now = new Date();
         const pad = n => n.toString().padStart(2, '0');
-        const str = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
-        clockEl.textContent = str;
+        const dateStr = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+        const timeStr = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        const dateEl = clockEl.querySelector('.clock-date');
+        const timeEl = clockEl.querySelector('.clock-time');
+        if (dateEl) dateEl.textContent = dateStr;
+        if (timeEl) timeEl.textContent = timeStr;
+        if (!dateEl && !timeEl) {
+            clockEl.textContent = `${dateStr} ${timeStr}`;
+        }
     }
     setInterval(updateClock, 1000);
     updateClock();

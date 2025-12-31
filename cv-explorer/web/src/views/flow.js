@@ -50,7 +50,7 @@ export function renderFlow(container, state, dispatcher) {
     controlPanel.append('h2').text('研究流向');
     controlPanel.append('p')
         .attr('class', 'flow-tip')
-        .text('左侧筛选问题域 / 方法族或搜索关键字，右侧桑基图支持拖拽缩放。');
+        .text('左侧筛选问题域 / 方法族或搜索关键字，右侧桑基图会自适应面板并可悬停查看细节。');
 
     const filterGroup = controlPanel.append('div').attr('class', 'flow-control-stack');
 
@@ -159,10 +159,6 @@ export function renderFlow(container, state, dispatcher) {
 
     const tooltip = stagePanel.append('div').attr('class', 'chart-tooltip hidden');
     const statusBar = stagePanel.append('div').attr('class', 'flow-stage-status');
-    const zoomControls = stagePanel.append('div').attr('class', 'flow-zoom-controls');
-    const zoomInBtn = zoomControls.append('button').attr('class', 'flow-button').text('+');
-    const zoomOutBtn = zoomControls.append('button').attr('class', 'flow-button').text('−');
-    const zoomResetBtn = zoomControls.append('button').attr('class', 'flow-button ghost').text('重置');
 
     const svg = stagePanel.append('svg')
         .attr('class', 'flow-chart');
@@ -183,23 +179,7 @@ export function renderFlow(container, state, dispatcher) {
         .text(d => d);
 
     const valueFormatter = d3.format(',.0f');
-    const zoomFormatter = d3.format('.0%');
-
-    let currentTransform = d3.zoomIdentity;
-
-    const zoomBehavior = d3.zoom()
-        .scaleExtent([0.6, 2.5])
-        .on('zoom', event => {
-            currentTransform = event.transform;
-            rootGroup.attr('transform', currentTransform);
-            zoomControls.attr('data-zoom', zoomFormatter(currentTransform.k));
-        });
-
-    svg.call(zoomBehavior);
-
-    zoomInBtn.on('click', () => svg.transition().duration(220).call(zoomBehavior.scaleBy, 1.2));
-    zoomOutBtn.on('click', () => svg.transition().duration(220).call(zoomBehavior.scaleBy, 0.8));
-    zoomResetBtn.on('click', () => svg.transition().duration(220).call(zoomBehavior.transform, d3.zoomIdentity));
+    const chartMargin = { top: -150, right: 40, bottom: 250, left: 60 };
 
     const resizeObserver = new ResizeObserver(() => draw());
     resizeObserver.observe(stagePanel.node());
@@ -420,21 +400,47 @@ export function renderFlow(container, state, dispatcher) {
         }
 
         const bounds = stagePanel.node().getBoundingClientRect();
-        const width = bounds.width || 960;
-        const dynamicHeight = Math.max(bounds.height, Math.max(problems.size, methods.size) * 42 + 160);
+        const fallbackWidth = 960;
+        const measuredWidth = bounds.width && bounds.width > 0 ? bounds.width : fallbackWidth;
+        const panelWidth = Math.max(measuredWidth, 2000);
+        const nodeBands = Math.max(problems.size, methods.size) || 1;
+        const desiredHeight = nodeBands * 38 + 220;
+        const measuredHeight = bounds.height && bounds.height > 0 ? bounds.height : desiredHeight;
+        const panelHeight = Math.max(measuredHeight, desiredHeight);
+        const availableWidth = Math.max(panelWidth - chartMargin.left - chartMargin.right, 220);
+        const innerWidth = availableWidth;
+        const innerHeight = Math.max(panelHeight - chartMargin.top - chartMargin.bottom, 360);
+
+        let labelGutter = Math.max(56, Math.min(innerWidth * 0.18, innerWidth / 3));
+        let flowWidth = innerWidth - labelGutter * 2;
+        const minFlowWidth = Math.min(760, Math.max(730, innerWidth * 0.5));
+        if (flowWidth < minFlowWidth && labelGutter > 32) {
+            const reclaim = Math.min(labelGutter - 32, (minFlowWidth - flowWidth) / 2);
+            if (reclaim > 0) {
+                labelGutter -= reclaim;
+                flowWidth = innerWidth - labelGutter * 2.5;
+            }
+        }
+        if (flowWidth < 140) {
+            flowWidth = Math.max(flowWidth, innerWidth - 64);
+        }
+        const translateX = chartMargin.left + labelGutter;
+        const labelOffset = Math.max(12, Math.min(32, labelGutter - 12));
 
         svg
-            .attr('width', width)
-            .attr('height', dynamicHeight)
-            .attr('viewBox', `0 0 ${width} ${dynamicHeight}`)
+            .attr('width', panelWidth)
+            .attr('height', panelHeight)
+            .attr('viewBox', `0 0 ${panelWidth} ${panelHeight}`)
             .attr('preserveAspectRatio', 'xMidYMid meet');
+
+        rootGroup.attr('transform', `translate(${translateX},${chartMargin.top})`);
 
         const sankey = d3Sankey()
             .nodeId(d => d.name)
             .nodeWidth(18)
-            .nodePadding(22)
+            .nodePadding(20)
             .nodeAlign(sankeyCenter)
-            .extent([[0, 0], [width, dynamicHeight - 40]]);
+            .extent([[0, 0], [Math.max(flowWidth, 0), innerHeight - 40]]);
 
         const nodes = Array.from(new Set(filteredLinks.flatMap(d => [d.source, d.target])), name => ({ name }));
         const graph = sankey({
@@ -531,13 +537,11 @@ export function renderFlow(container, state, dispatcher) {
             });
 
         nodesSel.select('text')
-            .attr('x', d => (d.depth === 0 ? -10 : (d.x1 - d.x0) + 10))
+            .attr('x', d => (d.depth === 0 ? -labelOffset : (d.x1 - d.x0) + labelOffset))
             .attr('y', d => (d.y1 - d.y0) / 2)
             .attr('dy', '0.35em')
             .attr('text-anchor', d => (d.depth === 0 ? 'end' : 'start'))
             .text(d => d.name);
-
-        rootGroup.attr('transform', currentTransform);
 
         refreshNodeStates();
         updateSummary(filteredLinks);
@@ -646,7 +650,6 @@ export function renderFlow(container, state, dispatcher) {
         dispatcher.on('viewUpdate.flow', null);
         tooltip.remove();
         svg.remove();
-        zoomControls.remove();
         statusBar.remove();
         resizeObserver.disconnect();
         stopPlayback();

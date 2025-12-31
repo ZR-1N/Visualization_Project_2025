@@ -41,8 +41,8 @@ export function renderLandscape(container, state, dispatcher) {
 
     const numberFormat = d3.format(',');
     const layout = container.append('div').attr('class', 'landscape-layout');
-    const controlPanel = layout.append('div').attr('class', 'panel landscape-controls');
     const stagePanel = layout.append('div').attr('class', 'panel landscape-stage');
+    const controlPanel = layout.append('div').attr('class', 'panel landscape-controls');
 
     const canvas = stagePanel.append('canvas').attr('class', 'landscape-canvas').node();
     const ctx = canvas.getContext('2d');
@@ -110,11 +110,13 @@ export function renderLandscape(container, state, dispatcher) {
     const yExtent = normalizeExtent(d3.extent(dataset, d => d.y));
     const padding = 30;
     let pointerCache = [];
+    let selectedPaper = null;
 
     controlPanel.append('h2').text('语义学术地图');
     controlPanel.append('p').attr('class', 'flow-tip').text('拖拽、缩放解锁“语义锚点”，观察学科势力版图。');
 
-    const yearRow = controlPanel.append('div').attr('class', 'control-row');
+    const sliderRow = controlPanel.append('div').attr('class', 'landscape-mini-row');
+    const yearRow = sliderRow.append('div').attr('class', 'control-row mini-card');
     const yearHeader = yearRow.append('div').attr('class', 'control-row-head');
     yearHeader.append('label').text('年份');
     const yearValue = yearHeader.append('span').attr('class', 'control-value');
@@ -164,7 +166,7 @@ export function renderLandscape(container, state, dispatcher) {
         .attr('value', d => d)
         .text(d => (d === 'ALL' ? '全部会议' : d));
 
-    const anchorRow = controlPanel.append('div').attr('class', 'control-row');
+    const anchorRow = sliderRow.append('div').attr('class', 'control-row mini-card');
     const anchorHeader = anchorRow.append('div').attr('class', 'control-row-head');
     anchorHeader.append('label').text('语义锚点');
     const anchorValue = anchorHeader.append('span').attr('class', 'control-value').text(anchorCount);
@@ -181,7 +183,7 @@ export function renderLandscape(container, state, dispatcher) {
             draw();
         });
 
-    const smoothingRow = controlPanel.append('div').attr('class', 'control-row');
+    const smoothingRow = sliderRow.append('div').attr('class', 'control-row mini-card');
     const smoothingHeader = smoothingRow.append('div').attr('class', 'control-row-head');
     smoothingHeader.append('label').text('语义平滑');
     const smoothingValue = smoothingHeader.append('span').attr('class', 'control-value').text(`${Math.round(smoothingFactor * 100)}%`);
@@ -266,8 +268,8 @@ export function renderLandscape(container, state, dispatcher) {
         .attr('class', 'digest-tip')
         .text('语义脉络速览');
     const digestGrid = digestBlock.append('div').attr('class', 'landscape-digest-grid');
-    hoverCard = controlPanel.append('div')
-        .attr('class', 'landscape-hover')
+    hoverCard = stagePanel.append('div')
+        .attr('class', 'landscape-hover stage-hover')
         .html(defaultHoverHtml);
     const pointKey = point => point.id || `${point.title}-${point.year}`;
 

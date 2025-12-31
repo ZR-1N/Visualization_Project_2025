@@ -32,9 +32,10 @@ export function renderOverview(container, state, dispatcher) {
     controlPanel.append('h2').text('筛选面板');
     controlPanel.append('p').text('选择年份可同步到其他视图，快速观察该年度的热点走势。');
 
-    const sliderBlock = controlPanel.append('div').attr('class', 'control-block');
-    sliderBlock.append('label').text('年份').attr('for', 'overview-year-range');
-    const sliderValue = sliderBlock.append('div').attr('class', 'control-value').text(selectedYear);
+    const sliderBlock = controlPanel.append('div').attr('class', 'control-row overview-slider-panel');
+    const sliderHead = sliderBlock.append('div').attr('class', 'control-row-head');
+    sliderHead.append('label').text('年份').attr('for', 'overview-year-range');
+    const sliderValue = sliderHead.append('div').attr('class', 'control-value').text(selectedYear);
     const sliderInput = sliderBlock.append('input')
         .attr('type', 'range')
         .attr('min', years[0])
@@ -59,9 +60,11 @@ export function renderOverview(container, state, dispatcher) {
         { id: 'cites', label: '年度引用数', subtitle: '累计引用' }
     ];
 
-    const metricCardSelection = controlPanel.append('div')
-        .attr('class', 'metric-cards')
-        .selectAll('.metric-card')
+    const metricPanel = controlPanel.append('div').attr('class', 'metric-panel');
+    metricPanel.append('h3').text('年度指标');
+    const metricGrid = metricPanel.append('div').attr('class', 'metric-grid');
+
+    const metricCardSelection = metricGrid.selectAll('.metric-card')
         .data(metricMeta)
         .join('div')
         .attr('class', 'metric-card');
@@ -70,6 +73,15 @@ export function renderOverview(container, state, dispatcher) {
     metricCardSelection.append('div').attr('class', 'metric-value');
     metricCardSelection.append('div').attr('class', 'metric-delta');
     metricCardSelection.append('div').attr('class', 'metric-subtitle').text(d => d.subtitle);
+
+    const miniGrid = controlPanel.append('div').attr('class', 'overview-mini-grid');
+    const venuePanel = miniGrid.append('div').attr('class', 'overview-mini-panel');
+    venuePanel.append('h3').text('Top Venues');
+    const venueList = venuePanel.append('div').attr('class', 'overview-mini-list');
+
+    const keywordPanel = miniGrid.append('div').attr('class', 'overview-mini-panel');
+    keywordPanel.append('h3').text('Top Keywords');
+    const keywordList = keywordPanel.append('ul').attr('class', 'overview-mini-list overview-keyword-list');
 
     const chartWidth = trendPanel.node().clientWidth || 800;
     const chartHeight = Math.max(300, trendPanel.node().clientHeight || 360);
@@ -119,9 +131,12 @@ export function renderOverview(container, state, dispatcher) {
         .attr('d', citeLine);
 
     // Add Legend
+    // Remove existing legend to prevent duplicates if re-rendered
+    chartGroup.select('.chart-legend').remove();
+
     const legend = chartGroup.append('g')
         .attr('class', 'chart-legend')
-        .attr('transform', `translate(20, 10)`);
+        .attr('transform', `translate(20, 10)`); // Position at top-left of chart area
 
     // Legend Item 1: Paper Count
     const legendItem1 = legend.append('g');
@@ -129,40 +144,44 @@ export function renderOverview(container, state, dispatcher) {
         .attr('width', 12)
         .attr('height', 12)
         .attr('rx', 2)
-        .attr('fill', 'var(--accent-color)')
+        .attr('fill', '#38bdf8') // Hex for --accent-color
         .attr('fill-opacity', 0.4);
-    
+
     legendItem1.append('text')
         .attr('x', 18)
         .attr('y', 10)
         .text('论文数量')
         .attr('fill', '#94a3b8')
-        .style('font-size', '12px');
+        .style('font-size', '12px')
+        .style('font-family', 'sans-serif');
 
     // Legend Item 2: Citations
     const legendItem2 = legend.append('g')
         .attr('transform', `translate(90, 0)`);
-    
+
     legendItem2.append('line')
         .attr('x1', 0)
         .attr('y1', 6)
         .attr('x2', 20)
         .attr('y2', 6)
-        .attr('stroke', 'var(--secondary-color)')
+        .attr('stroke', '#fbbf24') // Hex for --secondary-color
         .attr('stroke-width', 2);
 
     legendItem2.append('circle')
         .attr('cx', 10)
         .attr('cy', 6)
         .attr('r', 3)
-        .attr('fill', 'var(--secondary-color)');
+        .attr('fill', '#fbbf24');
 
     legendItem2.append('text')
         .attr('x', 26)
         .attr('y', 10)
         .text('引用次数')
         .attr('fill', '#94a3b8')
-        .style('font-size', '12px');
+        .style('font-size', '12px')
+        .style('font-family', 'sans-serif');
+
+    console.log('Legend added to chart');
 
     chartGroup.append('g')
         .attr('class', 'axis axis-x')
@@ -289,24 +308,31 @@ export function renderOverview(container, state, dispatcher) {
         const keywordEntries = summary.keywords?.[year] || {};
         const keywordData = Object.entries(keywordEntries)
             .sort((a, b) => b[1] - a[1])
-            .slice(0, 8);
+            .slice(0, 6);
 
-        const venueItems = venueList.selectAll('.insight-item')
+        const venueItems = venueList.selectAll('.overview-mini-item')
             .data(venueData, d => d.venue)
             .join(enter => {
-                const block = enter.append('div').attr('class', 'insight-item');
-                block.append('span').attr('class', 'insight-label');
-                block.append('span').attr('class', 'insight-value');
-                return block;
+                const row = enter.append('div').attr('class', 'overview-mini-item');
+                row.append('span').attr('class', 'label');
+                row.append('span').attr('class', 'value');
+                return row;
             });
 
-        venueItems.select('.insight-label').text(d => d.venue);
-        venueItems.select('.insight-value').text(d => formatNumber(d.value));
+        venueItems.select('.label').text(d => d.venue);
+        venueItems.select('.value').text(d => formatNumber(d.value));
 
-        keywordList.selectAll('li')
-            .data(keywordData)
-            .join('li')
-            .text(d => `${d[0]} · ${formatNumber(d[1])}`);
+        const keywordItems = keywordList.selectAll('li')
+            .data(keywordData, d => d[0])
+            .join(enter => {
+                const li = enter.append('li').attr('class', 'overview-mini-item');
+                li.append('span').attr('class', 'label');
+                li.append('span').attr('class', 'value');
+                return li;
+            });
+
+        keywordItems.select('.label').text(d => d[0]);
+        keywordItems.select('.value').text(d => formatNumber(d[1]));
 
         updateMetricCards(year);
         updateSnapshot(year, venueData, keywordData);
@@ -318,14 +344,6 @@ export function renderOverview(container, state, dispatcher) {
     const snapshotSection = insightPanel.append('div').attr('class', 'insight-block');
     snapshotSection.append('h3').text('年度快照');
     const snapshotCopy = snapshotSection.append('p').attr('class', 'insight-tip insight-snapshot');
-
-    const venueSection = insightPanel.append('div').attr('class', 'insight-block');
-    venueSection.append('h3').text('Top Venues');
-    const venueList = venueSection.append('div').attr('class', 'insight-list');
-
-    const keywordSection = insightPanel.append('div').attr('class', 'insight-block');
-    keywordSection.append('h3').text('Top Keywords');
-    const keywordList = keywordSection.append('ul').attr('class', 'keyword-list');
 
     function updateMetricCards(year) {
         metricCardSelection.each(function (meta) {
