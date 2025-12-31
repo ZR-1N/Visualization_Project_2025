@@ -140,19 +140,6 @@ export function renderWordCloud(container, state, dispatcher) {
     const insightMeta = insightCard.append('p').attr('class', 'ai-meta').text('—');
     const insightText = insightCard.append('p').attr('class', 'wordcloud-ai-text').text('从词云中选择任意关键词，即可生成上下文提示。');
 
-    const promptBlock = insightPanel.append('div').attr('class', 'wordcloud-prompt-block');
-    promptBlock.append('label').text('Prompt 预览');
-    const promptArea = promptBlock.append('textarea')
-        .attr('readonly', true)
-        .attr('rows', 5)
-        .attr('class', 'wordcloud-prompt')
-        .property('value', '');
-    const promptActions = promptBlock.append('div').attr('class', 'wordcloud-prompt-actions');
-    const copyButton = promptActions.append('button')
-        .attr('class', 'wordcloud-button ghost')
-        .text('复制提示词')
-        .on('click', () => copyPrompt());
-
     const legend = controlPanel.append('div').attr('class', 'wordcloud-legend');
     legend.selectAll('.wordcloud-legend-item')
         .data(clusterDefs)
@@ -368,8 +355,6 @@ export function renderWordCloud(container, state, dispatcher) {
         insightTitle.text(word.text);
         insightMeta.text(`${selectedYear} · 引用 ${formatNumber(word.value)} · ${trendLabel}`);
         insightText.text(summary);
-        const prompt = `请以研究分析师的口吻，用 4 句话解释关键词 “${word.text}” 在 ${selectedYear} 年计算机视觉领域的研究动向、典型任务与未来机会，当前引用量约 ${formatNumber(word.value)} 次，${trendLabel}。`;
-        promptArea.property('value', prompt);
         dispatcher.call('paperSelectedSync', stagePanel.node(), {
             title: `${word.text} ｜ ${selectedYear}`,
             year: selectedYear,
@@ -409,27 +394,6 @@ export function renderWordCloud(container, state, dispatcher) {
         if (top.length === 0) {
             rankingList.selectAll('li').remove();
         }
-    }
-
-    function copyPrompt() {
-        const text = promptArea.property('value');
-        if (!text) return;
-        if (navigator?.clipboard?.writeText) {
-            navigator.clipboard.writeText(text).then(() => flashCopyState());
-        } else {
-            const textarea = document.createElement('textarea');
-            textarea.value = text;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textarea);
-            flashCopyState();
-        }
-    }
-
-    function flashCopyState() {
-        copyButton.text('已复制');
-        setTimeout(() => copyButton.text('复制提示词'), 1500);
     }
 
     const externalHandler = payload => {

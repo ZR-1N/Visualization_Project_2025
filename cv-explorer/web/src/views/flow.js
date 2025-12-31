@@ -157,6 +157,9 @@ export function renderFlow(container, state, dispatcher) {
     summarySection.append('h3').text('Top 流向');
     const summaryList = summarySection.append('div').attr('class', 'flow-summary-list');
 
+    stagePanel.append('div').attr('class', 'flow-stage-legend legend-problem').text('问题域');
+    stagePanel.append('div').attr('class', 'flow-stage-legend legend-method').text('方法族');
+
     const tooltip = stagePanel.append('div').attr('class', 'chart-tooltip hidden');
     const statusBar = stagePanel.append('div').attr('class', 'flow-stage-status');
 
@@ -179,7 +182,7 @@ export function renderFlow(container, state, dispatcher) {
         .text(d => d);
 
     const valueFormatter = d3.format(',.0f');
-    const chartMargin = { top: -150, right: 40, bottom: 250, left: 60 };
+    const chartMargin = { top: 50, right: 50, bottom: 0, left: 40 };
 
     const resizeObserver = new ResizeObserver(() => draw());
     resizeObserver.observe(stagePanel.node());
@@ -401,13 +404,14 @@ export function renderFlow(container, state, dispatcher) {
 
         const bounds = stagePanel.node().getBoundingClientRect();
         const fallbackWidth = 960;
+        const fallbackHeight = 520;
         const measuredWidth = bounds.width && bounds.width > 0 ? bounds.width : fallbackWidth;
-        const panelWidth = Math.max(measuredWidth, 2000);
+        const panelWidth = Math.max(measuredWidth, fallbackWidth);
         const nodeBands = Math.max(problems.size, methods.size) || 1;
-        const desiredHeight = nodeBands * 38 + 220;
-        const measuredHeight = bounds.height && bounds.height > 0 ? bounds.height : desiredHeight;
+        const desiredHeight = Math.max(nodeBands * 40 + 220, fallbackHeight);
+        const measuredHeight = bounds.height && bounds.height > 0 ? bounds.height : fallbackHeight;
         const panelHeight = Math.max(measuredHeight, desiredHeight);
-        const availableWidth = Math.max(panelWidth - chartMargin.left - chartMargin.right, 220);
+        const availableWidth = Math.max(panelWidth - chartMargin.left - chartMargin.right, 360);
         const innerWidth = availableWidth;
         const innerHeight = Math.max(panelHeight - chartMargin.top - chartMargin.bottom, 360);
 
@@ -431,7 +435,8 @@ export function renderFlow(container, state, dispatcher) {
             .attr('width', panelWidth)
             .attr('height', panelHeight)
             .attr('viewBox', `0 0 ${panelWidth} ${panelHeight}`)
-            .attr('preserveAspectRatio', 'xMidYMid meet');
+            .attr('preserveAspectRatio', 'xMidYMid meet')
+            .style('height', `${panelHeight}px`);
 
         rootGroup.attr('transform', `translate(${translateX},${chartMargin.top})`);
 

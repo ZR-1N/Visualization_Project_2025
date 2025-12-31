@@ -109,8 +109,10 @@ export function renderLandscape(container, state, dispatcher) {
     const xExtent = normalizeExtent(d3.extent(dataset, d => d.x));
     const yExtent = normalizeExtent(d3.extent(dataset, d => d.y));
     const padding = 30;
+    const clamp = (value, [min, max]) => Math.min(Math.max(value, min), max);
     let pointerCache = [];
     let selectedPaper = null;
+    let cachedScales = { xScale: null, yScale: null };
 
     controlPanel.append('h2').text('语义学术地图');
     controlPanel.append('p').attr('class', 'flow-tip').text('拖拽、缩放解锁“语义锚点”，观察学科势力版图。');
@@ -210,7 +212,7 @@ export function renderLandscape(container, state, dispatcher) {
         });
 
     const legendBlock = controlPanel.append('div').attr('class', 'landscape-legend');
-    legendBlock.append('p').text('颜色 = 年份分布 | 线条 = 论文密度');
+    legendBlock.append('p').text('颜色 = 发表年份 | 线条&深浅 = 论文密度');
 
     // 移除语义图例的生成逻辑，因为颜色不再代表语义
     // const semanticLegendGrid = legendBlock.append('div').attr('class', 'landscape-legend-grid');
@@ -223,6 +225,7 @@ export function renderLandscape(container, state, dispatcher) {
 
     // 生成渐变条
     const gradientBar = gradientWrap.append('div')
+        .attr('class', 'gradient-bar')
         .style('height', '12px')
         .style('width', '100%')
         .style('border-radius', '6px')
@@ -240,16 +243,14 @@ export function renderLandscape(container, state, dispatcher) {
             })`);
 
     // 生成年份标签
-    const labelRow = gradientWrap.append('div')
-        .style('display', 'flex')
-        .style('justify-content', 'space-between')
-        .style('margin-top', '4px')
-        .style('font-size', '11px')
-        .style('color', '#94a3b8');
+    const labelRow = gradientWrap.append('div').attr('class', 'legend-range-row');
+    const midpointYear = Math.floor((minYear + maxYear) / 2);
 
-    labelRow.append('span').text(minYear);
-    labelRow.append('span').text(Math.floor((minYear + maxYear) / 2));
-    labelRow.append('span').text(maxYear);
+    labelRow.append('span').attr('class', 'legend-year').text(minYear);
+    labelRow.append('span').attr('class', 'legend-arrow').text('⇢');
+    labelRow.append('span').attr('class', 'legend-year').text(midpointYear);
+    labelRow.append('span').attr('class', 'legend-arrow').text('⇢');
+    labelRow.append('span').attr('class', 'legend-year').text(maxYear);
 
     /* Removed Year Gradient Legend
     const gradientWrap = legendBlock.append('div').attr('class', 'landscape-legend-gradient');
@@ -271,10 +272,39 @@ export function renderLandscape(container, state, dispatcher) {
     hoverCard = stagePanel.append('div')
         .attr('class', 'landscape-hover stage-hover')
         .html(defaultHoverHtml);
+
+    const miniMapSize = { width: 150, height: 100 };
+    const miniPadding = 12;
+    const miniMap = stagePanel.append('div').attr('class', 'landscape-mini-map');
+    miniMap.append('h4').text('全景雷达');
+    const miniSvg = miniMap.append('svg')
+        .attr('width', miniMapSize.width)
+        .attr('height', miniMapSize.height);
+    miniSvg.append('rect')
+        .attr('class', 'mini-backdrop')
+        .attr('x', 0)
+        .attr('y', 0)
+        .attr('width', miniMapSize.width)
+        .attr('height', miniMapSize.height)
+        .attr('rx', 12)
+        .attr('ry', 12);
+    const miniPointLayer = miniSvg.append('g').attr('class', 'mini-point-layer');
+    const miniViewport = miniSvg.append('rect').attr('class', 'mini-viewport');
+
+    const miniX = d3.scaleLinear().domain(xExtent).range([miniPadding, miniMapSize.width - miniPadding]);
+    const miniY = d3.scaleLinear().domain(yExtent).range([miniMapSize.height - miniPadding, miniPadding]);
+
+    miniSvg.on('click', event => {
+        event.stopPropagation();
+        const [mx, my] = d3.pointer(event);
+        const targetX = clamp(miniX.invert(mx), xExtent);
+        const targetY = clamp(miniY.invert(my), yExtent);
+        flyTo(targetX, targetY);
+    });
     const pointKey = point => point.id || `${point.title}-${point.year}`;
 
     const zoom = d3.zoom()
-        .scaleExtent([0.5, 4])
+        .scaleExtent([0.75, 6])
         .on('zoom', event => {
             transform = event.transform;
             draw();
@@ -356,6 +386,7 @@ export function renderLandscape(container, state, dispatcher) {
         const data = filteredData();
         const xScale = d3.scaleLinear().domain(xExtent).range([padding, canvas.width - padding]);
         const yScale = d3.scaleLinear().domain(yExtent).range([canvas.height - padding, padding]);
+        cachedScales = { xScale, yScale };
         const projectX = value => transform.applyX(xScale(value));
         const projectY = value => transform.applyY(yScale(value));
 
@@ -367,6 +398,7 @@ export function renderLandscape(container, state, dispatcher) {
         updateSummary(anchors);
         updateDigest(data, anchors);
         updateStageBadge(data, anchors);
+        updateMiniMap(data, xScale, yScale);
     }
 
     function drawDensityContours(data, projectX, projectY) {
@@ -396,7 +428,7 @@ export function renderLandscape(container, state, dispatcher) {
                 .y(d => d.y)
                 .weight(d => d.weight)
                 .size([canvas.width, canvas.height])
-                .bandwidth(Math.max(25, 90 / transform.k))
+                .bandwidth(Math.max(22, 120 / (transform.k + 0.3)))
                 .thresholds(d3.range(0.02, 0.18, 0.02));
 
             const contours = density(projected);
@@ -431,7 +463,7 @@ export function renderLandscape(container, state, dispatcher) {
             const screenX = projectX(point.x);
             const screenY = projectY(point.y);
             const baseRadius = radiusScale(point.citations || 1);
-            const radius = Math.max(2, baseRadius * (0.7 + transform.k * 0.3));
+            const radius = Math.max(1.5, Math.min(9, baseRadius * (0.55 + Math.sqrt(Math.max(transform.k, 0.8)) * 0.35)));
 
             ctx.beginPath();
             const tone = yearColor(point.year);
@@ -465,7 +497,8 @@ export function renderLandscape(container, state, dispatcher) {
         const fontScale = d3.scaleLinear()
             .domain([0, d3.max(anchors, d => (d.score ?? d.importance)) || 1])
             .range([13, 24]);
-        const showDetailed = transform.k >= 1.5;
+        const detailLevel = transform.k;
+        const showDetailed = detailLevel >= 2;
 
         const islandPayload = showDetailed
             ? []
@@ -544,7 +577,8 @@ export function renderLandscape(container, state, dispatcher) {
             d.screenY >= 0 && d.screenY <= viewHeight
         ));
 
-        const spotlight = d3.sort(annotated, (a, b) => (b.citations || 0) - (a.citations || 0)).slice(0, 6);
+        const spotlightLimit = detailLevel >= 3.6 ? 8 : (detailLevel >= 2.8 ? 5 : 3);
+        const spotlight = d3.sort(annotated, (a, b) => (b.citations || 0) - (a.citations || 0)).slice(0, spotlightLimit);
         const paperNodes = paperLayer.selectAll('.paper-chip').data(spotlight, d => d.id);
         const paperEnter = paperNodes.enter().append('g').attr('class', 'paper-chip');
         paperEnter.append('rect').attr('class', 'chip-bg');
@@ -682,6 +716,21 @@ export function renderLandscape(container, state, dispatcher) {
         stageBadge.text(`${badgeYear} · ${data.length} 篇 · ${badgeAnchor}`);
     }
 
+    function flyTo(targetX, targetY) {
+        if (!cachedScales.xScale || !cachedScales.yScale || !canvas.width || !canvas.height) return;
+        const baseX = cachedScales.xScale(targetX);
+        const baseY = cachedScales.yScale(targetY);
+        const next = d3.zoomIdentity
+            .translate(canvas.width / 2, canvas.height / 2)
+            .scale(transform.k)
+            .translate(-baseX, -baseY);
+        stageSelection
+            .transition()
+            .duration(600)
+            .ease(d3.easeCubicOut)
+            .call(zoom.transform, next);
+    }
+
     function drawQuadrantBackdrop(c, width, height, projectX, projectY) {
         c.save();
         const left = projectX(xExtent[0]);
@@ -728,6 +777,46 @@ export function renderLandscape(container, state, dispatcher) {
         c.fillText('Applied Labs', left + 18, bottom - 16);
 
         c.restore();
+    }
+
+    function updateMiniMap(data, xScale, yScale) {
+        if (!miniPointLayer) return;
+
+        const miniPoints = miniPointLayer.selectAll('circle')
+            .data(data, pointKey);
+
+        miniPoints.enter()
+            .append('circle')
+            .attr('class', 'mini-point')
+            .attr('r', 1.8)
+            .merge(miniPoints)
+            .attr('cx', d => miniX(d.x))
+            .attr('cy', d => miniY(d.y))
+            .attr('fill', d => yearColor(d.year))
+            .attr('opacity', 0.75);
+
+        miniPoints.exit().remove();
+
+        if (!canvas.width || !canvas.height || !data.length) {
+            miniViewport.attr('width', 0).attr('height', 0);
+            return;
+        }
+
+        const dataX0 = clamp(xScale.invert(transform.invertX(0)), xExtent);
+        const dataX1 = clamp(xScale.invert(transform.invertX(canvas.width)), xExtent);
+        const dataY0 = clamp(yScale.invert(transform.invertY(canvas.height)), yExtent);
+        const dataY1 = clamp(yScale.invert(transform.invertY(0)), yExtent);
+
+        const pixelX0 = miniX(dataX0);
+        const pixelX1 = miniX(dataX1);
+        const pixelY0 = miniY(dataY0);
+        const pixelY1 = miniY(dataY1);
+
+        miniViewport
+            .attr('x', Math.min(pixelX0, pixelX1))
+            .attr('y', Math.min(pixelY0, pixelY1))
+            .attr('width', Math.max(8, Math.abs(pixelX1 - pixelX0)))
+            .attr('height', Math.max(8, Math.abs(pixelY1 - pixelY0)));
     }
 
     function findNearestPoint(event) {
