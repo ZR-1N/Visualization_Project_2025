@@ -63,7 +63,7 @@ export function renderLandscape(container, state, dispatcher) {
     let selectedYear = Number.isFinite(requestedYear) && years.includes(requestedYear)
         ? requestedYear
         : latestYear;
-    let showAllYears = true; // 默认显示所有年份，避免因年份过滤导致初始空白
+    let showAllYears = false; // 默认限定在某一年（通常为最新年份）
     let selectedVenue = 'ALL';
     let anchorCount = 12;
     let smoothingFactor = 0.4;

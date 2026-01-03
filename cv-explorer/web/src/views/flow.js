@@ -157,8 +157,8 @@ export function renderFlow(container, state, dispatcher) {
     summarySection.append('h3').text('Top 流向');
     const summaryList = summarySection.append('div').attr('class', 'flow-summary-list');
 
-    stagePanel.append('div').attr('class', 'flow-stage-legend legend-problem').text('问题域');
-    stagePanel.append('div').attr('class', 'flow-stage-legend legend-method').text('方法族');
+    const problemLegend = stagePanel.append('div').attr('class', 'flow-stage-legend legend-problem').text('问题域');
+    const methodLegend = stagePanel.append('div').attr('class', 'flow-stage-legend legend-method').text('方法族');
 
     const tooltip = stagePanel.append('div').attr('class', 'chart-tooltip hidden');
     const statusBar = stagePanel.append('div').attr('class', 'flow-stage-status');
@@ -422,14 +422,14 @@ export function renderFlow(container, state, dispatcher) {
             const reclaim = Math.min(labelGutter - 32, (minFlowWidth - flowWidth) / 2);
             if (reclaim > 0) {
                 labelGutter -= reclaim;
-                flowWidth = innerWidth - labelGutter * 2.5;
+                flowWidth = innerWidth - labelGutter * 2;
             }
         }
         if (flowWidth < 140) {
             flowWidth = Math.max(flowWidth, innerWidth - 64);
         }
         const translateX = chartMargin.left + labelGutter;
-        const labelOffset = Math.max(12, Math.min(32, labelGutter - 12));
+        const labelOffset = Math.max(20, Math.min(32, labelGutter - 12));
 
         svg
             .attr('width', panelWidth)
@@ -439,6 +439,8 @@ export function renderFlow(container, state, dispatcher) {
             .style('height', `${panelHeight}px`);
 
         rootGroup.attr('transform', `translate(${translateX},${chartMargin.top})`);
+
+        positionStageLegends(panelWidth, translateX, Math.max(flowWidth, 0), labelOffset);
 
         const sankey = d3Sankey()
             .nodeId(d => d.name)
@@ -550,6 +552,32 @@ export function renderFlow(container, state, dispatcher) {
 
         refreshNodeStates();
         updateSummary(filteredLinks);
+    }
+
+    function positionStageLegends(panelWidth, translateX, flowWidthValue, labelOffset = 0) {
+        if (!problemLegend || !methodLegend) return;
+        const stageWidth = panelWidth || stagePanel.node()?.getBoundingClientRect().width || 0;
+        if (!stageWidth) return;
+        const padding = 16;
+        const legendTop = Math.max(10, chartMargin.top - 34);
+        const problemWidth = problemLegend.node()?.offsetWidth || 0;
+        const methodWidth = methodLegend.node()?.offsetWidth || 0;
+        const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
+        const problemAnchor = translateX - labelOffset - Math.max(18, labelOffset * 0.5);
+        const methodAnchor = translateX + flowWidthValue + labelOffset;
+
+        const problemLeft = clamp(problemAnchor - problemWidth / 2, padding, Math.max(padding, stageWidth - padding - problemWidth));
+        const methodLeft = clamp(methodAnchor - methodWidth / 2, padding, Math.max(padding, stageWidth - padding - methodWidth));
+
+        problemLegend
+            .style('top', `${legendTop}px`)
+            .style('left', `${problemLeft}px`)
+            .style('right', 'auto');
+
+        methodLegend
+            .style('top', `${legendTop}px`)
+            .style('left', `${methodLeft}px`)
+            .style('right', 'auto');
     }
 
     function showTooltip(event, title, value, meta = {}) {

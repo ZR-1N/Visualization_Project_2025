@@ -31,9 +31,9 @@ export function renderWordCloud(container, state, dispatcher) {
 
     const years = yearKeys.map(Number).sort((a, b) => a - b);
     let selectedYear = years.includes(state.filters?.year) ? state.filters.year : years[years.length - 1];
-    let maxWords = 60;
+    let maxWords = 40;
     let minCitations = 0;
-    let allowTilt = true;
+    let allowTilt = false;
     let selectedToken = null;
     let activeLayout = null;
 
