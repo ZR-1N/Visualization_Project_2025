@@ -6,7 +6,10 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-Vercel-black?style=for-the-badge&logo=vercel)](https://visualization-project-2025.vercel.app/)
 [![GitHub Repo](https://img.shields.io/badge/repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/ZR-1N/Visualization_Project_2025)
+⚠️** 注意**：项目包含大文件，无法直接随仓库下载。
+ 完整项目已打包在 Google Drive 上，您可以通过以下链接获取并在本地部署。
 
+https://drive.google.com/file/d/10rypllFWuEFH49B3XAQnK6kfabzsqmZW/view?usp=sharing
 ---
 
 ## 🌌 Project Vision / 项目愿景
@@ -216,6 +219,7 @@ Developed by the Computer Science Team at Nankai University. Special gratitude t
 
 - Deployment / 在线部署: https://visualization-project-2025.vercel.app/
 - Repository / 代码仓库: https://github.com/ZR-1N/Visualization_Project_2025
+- Google Drive/ 完整项目: https://drive.google.com/file/d/10rypllFWuEFH49B3XAQnK6kfabzsqmZW/view?usp=sharing
 
 ---
 © 2026 CV Explorer Team(\o/\o/\o/). Built with Love in Nankai University.
