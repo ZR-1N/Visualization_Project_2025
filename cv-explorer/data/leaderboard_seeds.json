@@ -377,16 +377,15 @@
       },
       {
         "rank": 10,
-        "name": "任博 (B. Ren)",
+        "name": "戴一冕 (Y. Dai)",
         "aff": "Nankai University",
-        "citations": 3754,
+        "citations": 4831	,
         "tags": [
-          "Struck",
-          "Tracking",
-          "VOT"
+          "Remote Sensing",
+          "Object Detection"
         ],
-        "desc": "视觉跟踪专家，早期参与的 Struck 算法曾获 ICCV 最佳论文荣誉。",
-        "image": "./assets/scholars/B. Ren.jpg"
+        "desc": "专注于遥感目标检测方法研究，尤其侧重弱小目标检测算法设计。",
+        "image": "./assets/scholars/Y. Dai.jpg"
       }
     ],
     "papers": [
