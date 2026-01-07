@@ -6,10 +6,11 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-Vercel-black?style=for-the-badge&logo=vercel)](https://visualization-project-2025.vercel.app/)
 [![GitHub Repo](https://img.shields.io/badge/repo-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/ZR-1N/Visualization_Project_2025)
-⚠️** 注意**：项目包含大文件，无法直接随仓库下载。
- 完整项目已打包在 Google Drive 上，您可以通过以下链接获取并在本地部署。
 
-https://drive.google.com/file/d/10rypllFWuEFH49B3XAQnK6kfabzsqmZW/view?usp=sharing
+> ⚠️ **注意**：项目包含大文件，无法直接随仓库下载。  
+> 完整项目已打包在 Google Drive，可通过以下链接获取：  
+> https://drive.google.com/file/d/10rypllFWuEFH49B3XAQnK6kfabzsqmZW/view?usp=sharing
+
 ---
 
 ## 🌌 Project Vision / 项目愿景
